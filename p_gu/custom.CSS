@@ -8,6 +8,7 @@ html {
 body {
 	letter-spacing: -0.05em !important;
 	background: transparent;
+}
 
 canvas {
 	cursor: url('./p_gu.cur'), auto;
