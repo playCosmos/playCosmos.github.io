@@ -3,14 +3,12 @@
 html {
 	background: linear-gradient(to bottom, #D1EFFA, #ffffff);
 	height: auto !important;
+	cursor: url('./p_gu.png'), auto;
 	}
+
 body {
 	letter-spacing: -0.05em !important;
 	background: transparent;
-}
-
-element.style {
-    cursor: url('./p_gu.ani'), auto;
 }
 /*
 canvas {
