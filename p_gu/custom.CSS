@@ -7,11 +7,12 @@ html {
 body {
 	letter-spacing: -0.05em !important;
 	background: transparent;
-}
-
-canvas {
 	cursor: url('../p_gu/p_gu.ani'), auto;
 }
+/*
+canvas {
+	cursor: url('../p_gu/p_gu.ani'), auto;
+}*/
 
 /* 작성자 (스트리머) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
