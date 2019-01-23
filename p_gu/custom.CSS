@@ -70,6 +70,10 @@ header #right-search-form>input[type='text'] {
 	color: #6cbcd9;
 }
 
+#main .menu-wrapper>a>i.fa.fa-square {
+	color: #6cbcd9;
+}
+
 /* 전체 테두리 */
 header #header-bar>.row,
 #main .menu-wrapper,
