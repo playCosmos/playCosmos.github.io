@@ -35,7 +35,7 @@ header #header-bar>.row {
 	border-bottom: none;
 }
 
-/* 헤더 배너 */
+/* 트위치 로고 */
 header .row>div:nth-child(1)>a {
 	display: block;
 	width: 200px;
@@ -49,7 +49,7 @@ header .row>div:nth-child(1)>a>img {
 	opacity: 0.8;
 }
 
-/* 검색폼 보더 */
+/* 검색 창 */
 header #right-search-form>input[type='text'] {
 	border: 3px solid #6cbcd9;
 	border-radius: 10px;
@@ -63,10 +63,7 @@ header #right-search-form>input[type='text'] {
 
 .fa-navicon:before,
 .fa-reorder:before,
-.fa-bars:before {
-	color: white;
-}
-
+.fa-bars:before,
 .fa-square:before {
 	color: #6cbcd9;
 }
@@ -111,7 +108,7 @@ header #header-bar a.dropdown-toggle,
 }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
-div#board-info {
+#board-info {
 	height:auto;
 	margin-bottom:10px;
 	background:#fff;
@@ -119,13 +116,13 @@ div#board-info {
 	border-top-left-radius: 10px; 
 }
 
-div#board-info>img,
-div#board-info>h1,
-div#board-info>#board-info-bottom {
+#board-info>img,
+#board-info>h1,
+#board-info>#board-info-bottom {
 	float:left!important;
 }
 
-div#board-info>img#board-info-profile-img {
+#board-info>img#board-info-profile-img {
 	animation:ProfileImageRotate 1s ease 1s;
 	animation-fill-mode:both;
 	width:90px;
@@ -134,22 +131,28 @@ div#board-info>img#board-info-profile-img {
 	border:3px dashed rgba(108, 188, 217, .80);
 }
 
-div#board-info>h1 {
+#board-info>h1 {
 	margin-top:12px;
 	width:calc(100% - 110px);
 }
-div#board-info>h1>a {
+#board-info>h1>a {
 	font-size:23px;
 	transition:.2s ease 0s;
 }
-div#board-info>h1>a:hover {
+
+#board-info>h1>a:hover {
 	color: #6cbcd9;
 }
 
-div#board-info>#board-info-bottom {
+#board-info > #board-info-bottom {
 	margin-top:10px;
 	width:calc(100% - 110px);
 	color: #6cbcd9;
+}
+
+/* 생방송 알림 */
+#board-info h1>a.badge.badge-live:after {
+  content: " 생방 습격";
 }
 
 /* 좌측메뉴 숏컷링크 글씨 색상 */
@@ -163,99 +166,84 @@ div#board-info>#board-info-bottom {
 	height: 0.15em;
 }
 
-/* 게시글 관련부분 */
+/* 일반 게시글 */
 div#article-list {
 	background:#fff;
 	border-radius:20px;
-	padding:0;
 }
-div#article-list div#article-list-category {
-	border:0;
-	padding:5px;
-}
-div#article-list div.article-list-row {
-	width: calc(100% - 40px);
-	background:#fdfdfd;
-	margin: 3px 20px 0 20px;
+
+/* 게시글 */
+#article-list .article-list-row {
+	margin: 3px 0 0 0;
 	border-radius:15px;
 	border:1px solid #eee;
 	transition:.15s ease 0s;
 }
-div#article-list div.article-list-row div.item div.list-header {
-	border:0;
-}
-div#article-list div.article-list-row .v0 span {
+
+#article-list .article-list-row .v0 span {
 	background:#ccc!important;
 }
-div#article-list div.article-list-row>div.item>.list-title {
-	border-bottom:0;
+
+#article-list>.article-list-row>.item>.list-checkbox,
+#article-list>.article-list-row>.item>.list-header,
+#article-list>.article-list-row>.item>.list-category,
+#article-list>.article-list-row>.item>.list-title,
+#article-list>.article-list-row>.item>.list-blocked,
+#article-list>.article-list-row>.item>.list-time {
+	border:0;
 }
-div#article-list div.article-list-row>div.item>.list-title>a:visited {
+#article-list .article-list-row>.item > .list-title>a:visited {
 	color:#999!important;
 }
-div#article-list div.article-list-row>div.item>.list-time {
-	border-bottom:0;
-}
-div#article-list div.article-list-row:hover {
-	background:rgba(10, 135, 255, .20);
-}
-div#article-list div.article-list-row.notice {
+
+#article-list div.article-list-row.notice {
 	border: 1px solid rgba(108, 188, 217, .30);
 	background: rgba(127, 199, 255, 0.2);
 }
-div#article-list div.article-list-row.notice:hover {
-	background:rgba(10, 135, 255, .20);
+
+#article-list .article-list-row:hover,
+#article-list div.article-list-row.notice:hover {
+	background: rgba(10, 135, 255, .20);
 }
-div#article-list #article-list-menu>.btn.best {
+
+#article-list #article-list-menu>.btn.best,
+#article-list #article-list-menu>.btn.write {
 	border-radius:15px;
 	background:#6cbcd9;
 	color:#fff;
 }
-div#article-list #article-list-menu>.btn.write {
-	border-radius:15px;
-	background:#6cbcd9;
-	color:#fff;
-}
-div#article-list #article-list-menu .pagination>li>a {
+
+#article-list #article-list-menu .pagination>li>a {
 	color:#6cbcd9;
-	/*border-radius:50%;*/
 	margin-left:5px;
 }
-div#article-list #article-list-menu .pagination>li>a:hover {
+#article-list #article-list-menu .pagination>li>a:hover {
 	transition:.3s ease 0s;
 	background:#fafafa;
 }
-div#article-list #article-list-menu .pagination>li.active>a {
+#article-list #article-list-menu .pagination>li.active > a {
 	color:#fff;
 	font-weight:bold;
 }
-div#article-list form.input-group input[type="text"] {
+
+#article-list form.input-group input[type="text"] {
 	padding:10px;
 	height:34px!important;
 	border:1px solid #ccc;
 	border-radius: 17px;
-	/*rder-left:0;
-	border-right:0;*/
 }
-div#article-list form.input-group .input-group-btn button {
+#article-list form.input-group .input-group-btn button {
 	border:1px solid #ccc;
 }
-div#article-list form.input-group .input-group-btn button:hover {
+#article-list form.input-group .input-group-btn button:hover {
 	transition:.3s ease 0s;
 }
 
-div#article-list form.input-group .input-group-btn button.btn.square.btn-default.dropdown-toggle {
-	/*padding-left:15px;
-	padding-right:10px;*/
-	border-radius:17px;
-	/*rder-top-right-radius:0;
-	border-bottom-right-radius:0;*/
-}
-div#article-list form.input-group .input-group-btn button.btn.square.btn-default {
-	/*padding-left:10px;
-	padding-right:15px;*/
+#article-list form.input-group .input-group-btn button.btn.square.btn-default.dropdown-toggle,
+#article-list form.input-group .input-group-btn button.btn.square.btn-default {
 	border-radius:17px;
 }
+
 /* 검색 돋보기 버튼 왼쪽 마진 */
 .input-group-btn:last-child>.btn,
 .input-group-btn:last-child>.btn-group { margin-left: 1px; }
@@ -263,34 +251,34 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
 	width:120px!important
 }
+
 #article-list #article-list-category {
-	border-top:2px solid #6cbcd9;
+	border:0;
+	/*padding-left: 15px;
+	padding-right: 15px;*/
 	background:white;
-	/*
-	background: -webkit-linear-gradient(45deg, 
-	#ffb4b4 0%,
-	#ffe1b5 11%,
-	#f0ffb5 22%,
-	#c4ffb5 33%,
-	#b5ffd3 44%,
-	#b5ffff 55%,
-	#b5d3ff 66%,
-	#c4b5ff 77%,
-	#f0b5ff 88%,
-	#ffb5e1 100%)*/
 }
+
 #article-list #article-list-category > a.active,
-#article-list #article-list-category>a {
+#article-list #article-list-category > a {
 	background: transparent;
-	border: 1px solid transparent;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+  padding: 11px 30px;
 }
-#article-list #article-list-category>a:hover {
+
+#article-list #article-list-category > a[href="/p_gu"] {
+    padding: 11px 16px
+}
+
+#article-list #article-list-category > a:hover {
 	background: transparent;
-	animation: infinite rainbowLinkBG 3s
+	/*animation: infinite rainbowLinkBG 3s*/
 }
 
 .fa.fa-home{
-	animation: infinite rainbow 3s
+	color: black;
+	/*animation: infinite rainbow 3s*/
 }
 #article-list>.article-list-row>.item>.list-header>span {
 	background-color: #6cbcd9;
@@ -301,10 +289,15 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
 	color: #6cbcd9;
 }
+
 .pagination>.active>a,
+.pagination>.active>span{
+	background-color: #333333;
+	border-color:#333333;  
+}
+
 .pagination>.active>a:focus,
 .pagination>.active>a:hover,
-.pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
 	background-color: #6cbcd9;
@@ -316,7 +309,8 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 .pagination>li>span:hover {
 	color:#6a2b5f;
 }
-.pagination>li>a, .pagination>li>span {
+.pagination>li>a,
+.pagination>li>span {
 	color:#6a2b5f;
 }
 #article-content-wrapper>.header {
@@ -338,9 +332,15 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 #main .menu-wrapper>a {
 	padding:.5em 1.4em .5em .7em!important
 }
+
+a[href="/p_gu"] {
+	color: black;
+}
+
 a {
 	color: #6cbcd9;
 }
+
 span.a-badge i.fa.fa-info-circle {
 	color: #6cbcd9;
 }
@@ -418,7 +418,8 @@ span.a-badge i.fa.fa-info-circle {
 	color: #6cbcd9;
 }
 
-.btn-group-sm>.btn, .btn-sm{
+.btn-group-sm>.btn,
+.btn-sm{
 	/*color: #6cbcd9;*/
 }
 .btn-primary {
