@@ -106,6 +106,10 @@ header #header-bar a.dropdown-toggle,
 .caret {
 	color: #6cbcd9;
 }
+.label-default {
+    background-color: #6cbcd9;
+}
+
 /* 스트리머 게시판 상단 정보 글씨색상 */
 div#board-info {
 	height:auto;
