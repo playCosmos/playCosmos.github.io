@@ -209,6 +209,7 @@ div#article-list {
 #article-list #article-list-menu>.btn.best,
 #article-list #article-list-menu>.btn.write {
 	border-radius:15px;
+	border-color: #6cbcd9;
 	background:#6cbcd9;
 	color:#fff;
 }
@@ -370,9 +371,6 @@ span.a-badge i.fa.fa-info-circle {
 	border-bottom: 0px 
 }
 
-#article-list #article-list-menu>.btn.best {
-	border-color: #6cbcd9;
-}
 .badge {
 	display: inline-block;
 	min-width: 10px;
