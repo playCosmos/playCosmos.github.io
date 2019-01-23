@@ -10,7 +10,7 @@ body {
 	background: transparent;
 
 canvas {
-	cursor: url('./p_gu.png'), auto;
+	cursor: url('./p_gu.cur'), auto;
 }
 
 /* 작성자 (스트리머) */
