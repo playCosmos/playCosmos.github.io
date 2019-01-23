@@ -7,7 +7,10 @@ html {
 body {
 	letter-spacing: -0.05em !important;
 	background: transparent;
-	cursor: url('../p_gu/p_gu.ani'), auto;
+}
+
+element.style {
+    cursor: url('./p_gu.ani'), auto;
 }
 /*
 canvas {
