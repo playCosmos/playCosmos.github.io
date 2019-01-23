@@ -9,6 +9,10 @@ body {
     background: transparent;
 }
 
+canvas {
+	cursor: url(p_gu.cur), auto;
+}
+
 /* 작성자 (스트리머) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
     content: url(https://static-cdn.jtvnw.net/badges/v1/d91cb9e8-09a1-40b4-aa90-9b75c3785920/1?raw=true);
