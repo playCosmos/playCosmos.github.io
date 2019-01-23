@@ -3,7 +3,7 @@
 html {
 	background: linear-gradient(to bottom, #D1EFFA, #ffffff);
 	height: auto !important;
-	cursor: url('./p_gu.cur'), auto;
+	cursor: url(./p_gu.cur), auto;
 }
 
 body {
