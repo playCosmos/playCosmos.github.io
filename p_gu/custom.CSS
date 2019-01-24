@@ -266,7 +266,7 @@ div#article-list {
 #article-list #article-list-category {
 	border:0;
 	background:white;
-  text-align: center;
+	text-align: center;
 }
 
 #article-list #article-list-category > a.active,
@@ -274,11 +274,11 @@ div#article-list {
 	background: transparent;
 	border-top: 2px solid;
 	border-bottom: 2px solid;
-  padding: 11px 38.8px;
+	padding: 11px 38.8px;
 }
 
 #article-list #article-list-category > a[href="/p_gu"] {
-    padding: 11px 16px
+	padding: 11px 16px
 }
 
 #article-list #article-list-category > a:hover {
