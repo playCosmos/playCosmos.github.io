@@ -310,11 +310,7 @@ div#article-list {
 }
 
 .pagination>.active>a,
-.pagination>.active>span{
-	background-color: #333333;
-	border-color:#333333;  
-}
-
+.pagination>.active>span,
 .pagination>.active>a:focus,
 .pagination>.active>a:hover,
 .pagination>.active>span:focus,
