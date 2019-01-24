@@ -1,4 +1,4 @@
-/* 2019.01.23 수정 */
+/* 2019.01.24 수정 */
 /* 팽구 */
 html {
 	background: linear-gradient(to bottom, #D1EFFA, #ffffff);
@@ -225,6 +225,8 @@ div#article-list {
 }
 #article-list #article-list-menu .pagination>li>a:hover {
 	transition:.3s ease 0s;
+	color: #6cbcd9;
+	border-color: #6cbcd9;
 	background:#fafafa;
 }
 #article-list #article-list-menu .pagination>li.active > a {
@@ -309,31 +311,34 @@ div#article-list {
 	color: #6cbcd9;
 }
 
+.pagination>.active>a:focus,
+.pagination>.active>a:hover {
+	color:#6a2b5f;
+}
+/*#article-list #article-list-menu .pagination>li.active > a:hover {}*/
 .pagination>.active>a,
 .pagination>.active>span,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
 	background-color: #6cbcd9;
-	border-color:#6a2b5f;
+	border-color:#6cbcd9;
 }
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-	color:#6a2b5f;
+	color:#6cbcd9;
 }
 .pagination>li>a,
 .pagination>li>span {
-	color:#6a2b5f;
+	color:#6cbcd9;
 }
 #article-content-wrapper>.header {
-	border-top:2px solid #6a2b5f;
+	border-top:2px solid #6cbcd9;
 }
 #article-reply-area#reply-real-area.reply>.reply-header>.reply-writer.logged,
 #article-reply-area#reply-best-area.reply>.reply-header>.reply-writer.logged {
-	color:#6a2b5f;
+	color:#6cbcd9;
 }
 #article-info>h2 {
 	font-weight:bold
