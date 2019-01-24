@@ -276,6 +276,7 @@ div#article-list {
 }
 #article-list form.input-group input[type="text"] {
 	padding:10px;
+	margin-left: 1px;
 	border:1px solid #ccc;
 	border-radius: 17px;
 }
