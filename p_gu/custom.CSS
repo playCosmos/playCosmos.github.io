@@ -367,9 +367,7 @@ a {
 span.a-badge i.fa.fa-info-circle {
 	color: #6cbcd9;
 }
-#article-list>.article-list-row {
-	border-right:none
-}
+
 #article-list #article-list-menu {
 	box-sizing:border-box;
 	width:unset;
