@@ -235,9 +235,9 @@ div#article-list {
 }
 
 #article-list #article-list-menu .pagination>li>a {
-	color:#6cbcd9;
-	margin-left:5px;
+	margin-left:1px;
 }
+
 #article-list #article-list-menu .pagination>li>a:hover {
 	transition:.3s ease 0s;
 	color: #6cbcd9;
@@ -250,6 +250,11 @@ div#article-list {
 }
 #article-list #article-list-menu .pagination>li.active > a:hover {
 	color: #6cbcd9;
+}
+
+#article-list #article-list-menu .pagination>li.active > a,
+#article-list #article-list-menu .pagination>li>a {
+	border-radius: 20px;
 }
 
 .pagination>.active>a:focus,
