@@ -233,7 +233,32 @@ div#article-list {
 	color:#fff;
 	font-weight:bold;
 }
+#article-list #article-list-menu .pagination>li.active > a:hover {
+	color: #6cbcd9;
+}
 
+.pagination>.active>a:focus,
+.pagination>.active>a:hover {
+	color: #6cbcd9;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	background-color: #6cbcd9;
+	border-color:#6cbcd9;
+}
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+	color:#6cbcd9;
+}
+.pagination>li>a,
+.pagination>li>span {
+	color:#6cbcd9;
+}
 #article-list form.input-group input[type="text"] {
 	padding:10px;
 	height:34px!important;
@@ -311,28 +336,6 @@ div#article-list {
 	color: #6cbcd9;
 }
 
-.pagination>.active>a:focus,
-.pagination>.active>a:hover {
-	color:#6a2b5f;
-}
-/*#article-list #article-list-menu .pagination>li.active > a:hover {}*/
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-	background-color: #6cbcd9;
-	border-color:#6cbcd9;
-}
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-	color:#6cbcd9;
-}
-.pagination>li>a,
-.pagination>li>span {
-	color:#6cbcd9;
-}
 #article-content-wrapper>.header {
 	border-top:2px solid #6cbcd9;
 }
