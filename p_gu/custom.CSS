@@ -207,16 +207,31 @@ div#article-list {
 }
 
 #article-list>.article-list-row.hot {
-	animation: infinite rainbow 7s;
+	animation: infinite rainbow30 7s;
 }
 
 /* 버튼 */
+.btn-primary,
 #article-list #article-list-menu>.btn.best,
 #article-list #article-list-menu>.btn.write {
 	border-radius:15px;
 	border-color: #6cbcd9;
 	background:#6cbcd9;
 	color:#fff;
+}
+
+.btn-primary:hover,
+#article-list #article-list-menu>.btn.best:hover,
+#article-list #article-list-menu>.btn.write:hover {
+	border-color: #e3e3e3;
+	/*background:#6cbcd9;*/
+	color:#333333;
+	animation: infinite rainbow 7s;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+	padding: 6px 12px;
 }
 
 #article-list #article-list-menu .pagination>li>a {
@@ -314,7 +329,7 @@ div#article-list {
 }
 
 #article-list #article-list-category > a:hover {
-	background: transparent;
+	background-color: transparent;
 	/*animation: infinite rainbowLinkBG 3s*/
 }
 
@@ -436,16 +451,6 @@ span.a-badge i.fa.fa-info-circle {
 	color: #6cbcd9;
 }
 
-.btn-group-sm>.btn,
-.btn-sm{
-	/*color: #6cbcd9;*/
-}
-.btn-primary {
-	background: #6cbcd9;
-	border-radius: 15px;
-	border: 1px solid #e5e5e5;
-}
-
 @keyframes rainbowLinkBG {
 	0% { border: 1px solid #ffb4b4; }
 	11% { border: 1px solid #ffe1b5; }
@@ -458,7 +463,32 @@ span.a-badge i.fa.fa-info-circle {
 	88% { border: 1px solid #f0b5ff; }
 	100% { border: 1px solid #ffb5e1; }
 }
+
 @keyframes rainbow {
+	0% { background-color: #ff7e7e; }
+	5% { background-color: #ffa57e; }
+	10% { background-color: #ffcb7e; }
+	15% { background-color: #fff27e; }
+	20% { background-color: #e5ff7e; }
+	25% { background-color: #bfff7e; }
+	30% { background-color: #98ff7e; }
+	35% { background-color: #7eff8b; }
+	40% { background-color: #7effb2; }
+	45% { background-color: #7effd8; }
+	50% { background-color: #7effff; }
+	55% { background-color: #7ed8ff; }
+	60% { background-color: #7eb2ff; }
+	65% { background-color: #7e8bff; }
+	70% { background-color: #837eff; }
+	75% { background-color: #987eff; }
+	80% { background-color: #bf7eff; }
+	85% { background-color: #e57eff; }
+	90% { background-color: #ff7ef2; }
+	95% { background-color: #ff7ecb; }
+	100% { background-color: #ff7ea5; }
+}
+
+@keyframes rainbow30 {
 	0% { background-color: #ff7e7e30; }
 	5% { background-color: #ffa57e30; }
 	10% { background-color: #ffcb7e30; }
