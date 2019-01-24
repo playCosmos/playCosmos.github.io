@@ -175,7 +175,7 @@ div#article-list {
 /* 게시글 */
 #article-list .article-list-row {
 	margin: 3px 0 0 0;
-	border-radius:15px;
+	border-radius:20px;
 	border:1px solid #eee;
 	transition:.15s ease 0s;
 }
@@ -279,6 +279,7 @@ div#article-list {
 .pagination>li>span {
 	color:#6cbcd9;
 }
+
 #article-list form.input-group input[type="text"] {
 	padding:10px;
 	margin-left: 1px;
