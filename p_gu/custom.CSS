@@ -206,6 +206,11 @@ div#article-list {
 	background: rgba(10, 135, 255, .20);
 }
 
+#article-list>.article-list-row.hot {
+	animation: infinite rainbow 7s;
+}
+
+/* 버튼 */
 #article-list #article-list-menu>.btn.best,
 #article-list #article-list-menu>.btn.write {
 	border-radius:15px;
@@ -293,9 +298,13 @@ div#article-list {
 #article-list>.article-list-row>.item>.list-header>span {
 	background-color: #6cbcd9;
 }
+
+/* 게시글 댓글 수 */
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
 	color: #6cbcd9;
 }
+
+/* 로그인한 게시글 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
 	color: #6cbcd9;
 }
@@ -448,14 +457,25 @@ span.a-badge i.fa.fa-info-circle {
 	100% { border: 1px solid #ffb5e1; }
 }
 @keyframes rainbow {
-	0% { color: #ff7e7e; background: transparent; }
-	11% { color: #ffcc7e; background: transparent; }
-	22% { color: #e5ff7e; background: transparent; }
-	33% { color: #98ff7e; background: transparent; }
-	44% { color: #7effb2; background: transparent; }
-	55% { color: #7effff; background: transparent; }
-	66% { color: #7eb2ff; background: transparent; }
-	77% { color: #837eff; background: transparent; }
-	88% { color: #e57eff; background: transparent; }
-	100% { color: #ff7ecc; background: transparent; }
+	0% { background-color: #ff7e7e30; }
+	5% { background-color: #ffa57e30; }
+	10% { background-color: #ffcb7e30; }
+	15% { background-color: #fff27e30; }
+	20% { background-color: #e5ff7e30; }
+	25% { background-color: #bfff7e30; }
+	30% { background-color: #98ff7e30; }
+	35% { background-color: #7eff8b30; }
+	40% { background-color: #7effb230; }
+	45% { background-color: #7effd830; }
+	50% { background-color: #7effff30; }
+	55% { background-color: #7ed8ff30; }
+	60% { background-color: #7eb2ff30; }
+	65% { background-color: #7e8bff30; }
+	70% { background-color: #837eff30; }
+	75% { background-color: #987eff30; }
+	80% { background-color: #bf7eff30; }
+	85% { background-color: #e57eff30; }
+	90% { background-color: #ff7ef230; }
+	95% { background-color: #ff7ecb30; }
+	100% { background-color: #ff7ea530; }
 }
