@@ -11,7 +11,7 @@ body {
 	background: transparent;
 }
 
-/* 마우스 */
+/* 마우스 커서 링크 */
 .row>div:nth-child(1)>a,
 
 #header-bar a.dropdown-toggle,
@@ -22,6 +22,7 @@ body {
 #favoriteDropdownMenu>li>a,
 #favoriteDropdownMenu>li>a>span.delrow,
 #playgroundDropdownMenu>li>a,
+.dropdown-menu>li>a,
 
 #main .menu-wrapper>a,
 #main .menu-wrapper a:nth-last-child(1),
@@ -42,6 +43,8 @@ body {
 	cursor: url(./p_guLink.cur), auto;
 }
 
+/* 마우스 커서 텍스트 */
+header #right-search-form>input[type='text'],
 #board-info #viewers-area #viewers:before,
 #board-info #viewers-area #viewers:after,
 #article-list #boardSearchForm .form-control{
