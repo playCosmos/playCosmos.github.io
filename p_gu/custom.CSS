@@ -14,7 +14,8 @@ body {
 /* 마우스 커서 링크 */
 .row>div:nth-child(1)>a,
 
-header #right-search-form>#right-search-btn,
+#right-search-form>#right-search-btn,
+#header-bar #header-top-notice a,
 #header-bar a.dropdown-toggle,
 
 #latestDropdownMenu>li>a,
@@ -48,7 +49,8 @@ header #right-search-form>#right-search-btn,
 header #right-search-form>input[type='text'],
 #board-info #viewers-area #viewers:before,
 #board-info #viewers-area #viewers:after,
-#article-list #boardSearchForm .form-control{
+#article-list #boardSearchForm .form-control,
+.fr-box.fr-basic.fr-element {
 	cursor: url(./p_guText.cur), auto;
 }
 
