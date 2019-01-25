@@ -14,6 +14,7 @@ body {
 /* 마우스 커서 링크 */
 .row>div:nth-child(1)>a,
 
+header #right-search-form>#right-search-btn,
 #header-bar a.dropdown-toggle,
 
 #latestDropdownMenu>li>a,
