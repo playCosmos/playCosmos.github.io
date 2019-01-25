@@ -25,6 +25,7 @@ body {
 
 #main .menu-wrapper>a,
 #main .menu-wrapper a:nth-last-child(1),
+#board-info h1>a,
 #board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn,
 .btn,
@@ -42,8 +43,7 @@ body {
 
 #board-info #viewers-area #viewers:before,
 #board-info #viewers-area #viewers:after,
-#article-list #boardSearchForm .form-control,
-#board-info h1>a {
+#article-list #boardSearchForm .form-control{
 	cursor: url(./p_guText.cur), auto;
 }
 
