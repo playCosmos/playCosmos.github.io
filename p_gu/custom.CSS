@@ -40,6 +40,8 @@ body {
 	cursor: url(./p_guLink.cur), auto;
 }
 
+#board-info #viewers-area #viewers:before,
+#board-info #viewers-area #viewers:after,
 #article-list #boardSearchForm .form-control,
 #board-info h1>a {
 	cursor: url(./p_guText.cur), auto;
@@ -451,13 +453,11 @@ span.a-badge i.fa.fa-info-circle {
 /* 게시판 접두 */
 #board-info #viewers-area #viewers:before {
 	content: "보스 레이드 ";
-	cursor: text
 }
 
 /* 게시판 접미 */ 
 #board-info #viewers-area #viewers:after {
 	content: "명 대기중";
-	cursor: text
 }
 
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
