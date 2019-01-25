@@ -3,18 +3,48 @@
 html {
 	background: linear-gradient(to bottom, #D1EFFA, #ffffff);
 	height: auto !important;
+	cursor: url(./p_gu.cur), auto;
 }
 
 body {
 	letter-spacing: -0.05em !important;
 	background: transparent;
-	cursor: url(./p_gu.cur), auto;
 }
-/*
-canvas {
-	cursor: url(./p_gu.cur), auto;
+
+/* 마우스 */
+.row>div:nth-child(1)>a,
+
+#header-bar a.dropdown-toggle,
+
+#latestDropdownMenu>li>a,
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.label.label-default,
+#favoriteDropdownMenu>li>a,
+#favoriteDropdownMenu>li>a>span.delrow,
+#playgroundDropdownMenu>li>a,
+
+#main .menu-wrapper>a,
+#main .menu-wrapper a:nth-last-child(1),
+#board-info #board-info-bottom a,
+#board-info #board-info-bottom #addFavoriteBtn,
+.btn,
+
+#article-list #article-list-category > a.active,
+#article-list #article-list-category>a ,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+#article-list>.article-list-row>.item>.list-title>a,
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+	cursor: url(./p_guLink.cur), auto;
 }
-*/
+
+#article-list #boardSearchForm .form-control
+#board-info h1>a {
+	cursor: url(./p_guText.cur), auto;
+}
+
 /* 작성자 (스트리머) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
 	content: url(https://static-cdn.jtvnw.net/badges/v1/d91cb9e8-09a1-40b4-aa90-9b75c3785920/1?raw=true);
