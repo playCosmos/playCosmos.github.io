@@ -45,6 +45,8 @@ body {
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a,
 
 .btn,
 .fr-toolbar .fr-command.fr-btn,
