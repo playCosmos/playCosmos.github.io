@@ -40,7 +40,7 @@ body {
 	cursor: url(./p_guLink.cur), auto;
 }
 
-#article-list #boardSearchForm .form-control
+#article-list #boardSearchForm .form-control,
 #board-info h1>a {
 	cursor: url(./p_guText.cur), auto;
 }
