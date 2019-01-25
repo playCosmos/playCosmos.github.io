@@ -35,7 +35,8 @@ body {
 #article-list #article-option-area>#article-option-area-toggle-btn,
 #article-list>.article-list-row>.item>.list-title>.list-writer>span,
 #article-list>.article-list-row>.item>.list-title>a,
-
+#article-list #article-list-menu .pagination>li.active > a,
+#article-list #article-list-menu .pagination>li>a,
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
 	cursor: url(./p_guLink.cur), auto;
