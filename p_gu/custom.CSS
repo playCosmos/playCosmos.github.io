@@ -230,6 +230,7 @@ div#article-list {
 	background:#ccc!important;
 }
 
+/* 게시글 사이 구분선 제거 */
 #article-list>.article-list-row>.item>.list-checkbox,
 #article-list>.article-list-row>.item>.list-header,
 #article-list>.article-list-row>.item>.list-category,
