@@ -3,7 +3,8 @@
 
 /* 마우스 커서 기본 */
 html,
-body {
+body,
+.fr-popup.emoticons {
 	cursor: url(./cur.png) 2 5, auto;
 }
 
