@@ -22,7 +22,7 @@ body,
 }
 
 /* 마우스 커서 링크 */
-button, a,
+a[href="/lastc"],
 .row>div:nth-child(1)>a,
 
 #right-search-form>#right-search-btn,
