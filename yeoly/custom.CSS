@@ -286,7 +286,7 @@ div#article-list #article-list-menu .pagination>li.active>a {
 }
 div#article-list form.input-group input[type="text"] {
 	padding:6px;
-	height:34px!important;
+	/*height:34px!important;*/
 	border:1px solid #ccc;
 	border-left:0;
 	border-right:0;
