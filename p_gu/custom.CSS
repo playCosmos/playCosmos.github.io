@@ -3,7 +3,6 @@
 html {
 	background: linear-gradient(to bottom, #D1EFFA, #ffffff);
 	height: auto !important;
-	cursor: url(./p_gu.cur), auto;
 }
 
 body {
@@ -11,7 +10,19 @@ body {
 	background: transparent;
 }
 
+/* 마우스 커서 기본 */
+html,
+body,
+.fr-popup.emoticons,
+.fr-desktop,
+.fr-active,
+.fr-tooltip,
+.fr-sticky-off {
+	cursor: url(./p_gu.cur), auto;
+}
+
 /* 마우스 커서 링크 */
+button, a,
 .row>div:nth-child(1)>a,
 
 #right-search-form>#right-search-btn,
