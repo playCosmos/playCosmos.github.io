@@ -13,6 +13,7 @@ body,
 }
 
 /* 마우스 커서 링크 */
+a,
 .row>div:nth-child(1)>a,
 
 #right-search-form>#right-search-btn,
