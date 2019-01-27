@@ -65,6 +65,10 @@ header #right-search-form>input[type='text'],
 	cursor: url(./text.png) 2 5, auto;
 }
 
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"]{
+content: url(https://static-cdn.jtvnw.net/badges/v1/3d708844-e50a-4a14-bf42-ab9c6ac0c50c/1?raw=true);
+}
+
 html {
   background: linear-gradient(to bottom, #ffecf0, #ffecf0);
   height: auto !important;
