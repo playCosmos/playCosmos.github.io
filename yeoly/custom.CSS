@@ -4,7 +4,7 @@
 /* 마우스 커서 기본 */
 html,
 body {
-	cursor: url(https://upload.tgd.kr/20190127/081b6ef3408de2b1b8655a9509c0d762.png) 2 5, auto;
+	cursor: url(./cur.png) 2 5, auto;
 }
 
 /* 마우스 커서 링크 */
@@ -47,7 +47,7 @@ body {
 .btn,
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-	cursor: url(https://upload.tgd.kr/20190127/a06ab0eeea8c2b4405143902374d8aae.png) 2 5, auto;
+	cursor: url(./link.png) 2 5, auto;
 }
 
 /* 마우스 커서 텍스트 */
@@ -56,7 +56,7 @@ header #right-search-form>input[type='text'],
 #board-info #viewers-area #viewers:after,
 #article-list #boardSearchForm .form-control,
 .fr-box.fr-basic.fr-element {
-	cursor: url(https://upload.tgd.kr/20190127/f70fe3e88302d371a83829636c610fe5.png) 2 5, auto;
+	cursor: url(./text.png) 2 5, auto;
 }
 
 html {
