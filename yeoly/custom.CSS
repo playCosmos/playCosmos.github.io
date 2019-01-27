@@ -7,7 +7,8 @@ body,
 .fr-popup.emoticons,
 .fr-desktop,
 .fr-active,
-.fr-tooltip{
+.fr-tooltip,
+.fr-sticky-off{
 	cursor: url(./cur.png) 2 5, auto;
 }
 
