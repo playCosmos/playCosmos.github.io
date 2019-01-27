@@ -4,7 +4,9 @@
 /* 마우스 커서 기본 */
 html,
 body,
-.fr-popup.emoticons {
+.fr-popup.emoticons,
+.fr-desktop,
+.fr-active{
 	cursor: url(./cur.png) 2 5, auto;
 }
 
