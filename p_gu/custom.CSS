@@ -18,7 +18,7 @@ body,
 .fr-active,
 .fr-tooltip,
 .fr-sticky-off {
-	cursor: url(./p_gu.cur), auto;
+	cursor: url(./p_gu.png) 4 5, auto;
 }
 
 /* 마우스 커서 링크 */
@@ -62,7 +62,7 @@ a[href="#lastc"],
 .btn,
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-	cursor: url(./p_guLink.cur), auto;
+	cursor: url(./p_guLink.png) 4 5, auto;
 }
 
 /* 마우스 커서 텍스트 */
@@ -71,7 +71,7 @@ header #right-search-form>input[type='text'],
 #board-info #viewers-area #viewers:after,
 #article-list #boardSearchForm .form-control,
 .fr-box.fr-basic.fr-element {
-	cursor: url(./p_guText.cur), auto;
+	cursor: url(./p_guText.png) 4 5, auto;
 }
 
 /* 작성자 (스트리머) */
