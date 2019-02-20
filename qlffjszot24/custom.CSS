@@ -76,7 +76,6 @@ header .row>div:nth-child(1)>a {
 	margin-bottom: -10px;
 	margin-left: -10px;
 }
-
 header .row>div:nth-child(1)>a>img {
 	display: none;
 }
@@ -211,14 +210,12 @@ div#article-list div.article-list-row div.item div.list-header {
 div#article-list div.article-list-row .v0 span {
 	background:#ccc!important;
 }
-div#article-list div.article-list-row>div.item>.list-title {
-	border-bottom:0;	
+div#article-list div.article-list-row>div.item>.list-title,
+div#article-list div.article-list-row>div.item>.list-time {
+	border-bottom:0;
 }
 div#article-list div.article-list-row>div.item>.list-title>a:visited {
 	color:#999!important;
-}
-div#article-list div.article-list-row>div.item>.list-time {
-	border-bottom:0;
 }
 div#article-list div.article-list-row:hover {
 	background:rgba(125, 167, 202, .33);
