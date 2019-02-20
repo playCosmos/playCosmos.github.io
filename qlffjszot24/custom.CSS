@@ -79,8 +79,6 @@ header .row>div:nth-child(1)>a {
 
 header .row>div:nth-child(1)>a>img {
 	display: none;
-	filter: grayscale(100%);
-	opacity: 0.8;
 }
 
 /* 검색폼 보더 */
@@ -227,16 +225,12 @@ div#article-list div.article-list-row:hover {
 }
 div#article-list div.article-list-row.notice {
 	border: 1px solid rgba(79, 105, 126, .20);
-    background: rgba(125, 167, 202, .10);
+	background: rgba(125, 167, 202, .10);
 }
 div#article-list div.article-list-row.notice:hover {
 	background:rgba(79, 105, 126, .2);
 }
-div#article-list #article-list-menu>.btn.best {
-	border-radius:15px;
-	background: #8EC5FC;
-	color:#fff;
-}
+div#article-list #article-list-menu>.btn.best,
 div#article-list #article-list-menu>.btn.write {
 	border-radius:15px;
 	background: #8EC5FC;
@@ -282,7 +276,6 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 	border-top-right-radius:17px;
 	border-bottom-right-radius:17px;
 }
-
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
 	width:120px!important
 }
@@ -356,7 +349,6 @@ span.a-badge i.fa.fa-info-circle {
 	padding-bottom:20px;
 	height:unset
 }
-
 #article-list>.article-list-row>.item>.list-checkbox{
 	border-bottom: 0px 
 }
