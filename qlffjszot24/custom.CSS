@@ -22,7 +22,8 @@ select.form-control,
 input[type=checkbox],
 input[type=radio],
 .opt {
-	cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; /* 4 5는 가로 5번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
+	cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important;
+	 /* 3 5는 가로 4번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
 }
 
 /* 마우스 커서 링크 */
@@ -357,32 +358,32 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 #article-list>.article-list-row>.item>.list-checkbox{
-    border-bottom: 0px 
+	border-bottom: 0px 
 }
 
 #article-list #article-list-menu>.btn.best {
-     border-color: #8EC5FC;
+	border-color: #8EC5FC;
 }
 .badge {
-    display: inline-block;
-    min-width: 10px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-color: #8EC5FC;
-    border-radius: 10px;
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #8EC5FC;
+	border-radius: 10px;
 }
 
 .btn-primary {
-  background: #8EC5FC !important;
-  border: 1px solid #e5e5e5;
-  border-radius: 20px;
-  padding: 6px 10px;
+	background: #8EC5FC !important;
+	border: 1px solid #e5e5e5;
+	border-radius: 20px;
+	padding: 6px 10px;
 }
 
 /* 게시판 접두 */
