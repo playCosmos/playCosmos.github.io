@@ -164,9 +164,9 @@ header #header-bar a.dropdown-toggle,
 #board-info {
 	height:auto;
 	background:#fff;
+	margin: 0;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px; 
-	padding-bottom: 0;
 }
 
 #board-info>img,
@@ -180,8 +180,13 @@ header #header-bar a.dropdown-toggle,
 	margin-right:20px;
 	border-radius:50%;
 	border:3px dashed rgba(108, 188, 217, .80);
+	transition: all 0.2s ease-out;
 }
 
+#board-info>img#board-info-profile-img:hover {
+	transform:scale(1.1);
+}
+	
 #board-info>h1 {
 	margin-top:12px;
 	width:calc(100% - 110px);
@@ -204,6 +209,14 @@ header #header-bar a.dropdown-toggle,
 /* 생방송 알림 */
 #board-info h1>a.badge.badge-live:after {
   content: " 생방 습격";
+}
+
+/* 트게더 인원 */
+#board-info #viewers-area #viewers:before {
+	content: "보스 레이드 ";
+}
+#board-info #viewers-area #viewers:after {
+	content: "명 대기중";
 }
 
 /* 일반 게시글 */
@@ -459,16 +472,6 @@ span.a-badge i.fa.fa-info-circle {
 	vertical-align: middle;
 	background-color: #6cbcd9;
 	border-radius: 10px;
-}
-
-/* 게시판 접두 */
-#board-info #viewers-area #viewers:before {
-	content: "보스 레이드 ";
-}
-
-/* 게시판 접미 */ 
-#board-info #viewers-area #viewers:after {
-	content: "명 대기중";
 }
 
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
