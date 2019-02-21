@@ -56,13 +56,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
 	width: 18px;
 }
 
-/* 전체 쉐도우 */
-header #header-bar>.row,
-#main .menu-wrapper,
-#main #main-content>div.frame {
-	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* 로고밑 NAV bar */
 header #header-bar>.row {
 	border-top: 4px solid #6cbcd9;
@@ -128,6 +121,7 @@ header #header-bar>.row,
 #main #main-content>div.frame {
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px; 
+	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* 헤더 검색 버튼 */
