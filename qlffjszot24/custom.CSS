@@ -22,7 +22,7 @@ select.form-control,
 input[type=checkbox],
 input[type=radio],
 .opt {
-	cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; /* 4 5는 가로 5번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
+	cursor: url(./cur/pointer.png) 3 5, auto !important; /* 4 5는 가로 5번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
 }
 
 /* 마우스 커서 링크 */
@@ -40,7 +40,7 @@ input[type=radio],
 .fr-view img.fr-dib.fr-fil,
 .pull-left,
 a {
-	cursor: url(https://upload.tgd.kr/20190220/12c6c1fda96dcab1854eddeaf0b365f4.png) 3 5, auto !important;
+	cursor: url(./cur/hand.png) 3 5, auto !important;
 }
 
 /* 마우스 커서 텍스트 */
@@ -48,7 +48,7 @@ span#viewers,
 #article-list #boardSearchForm .form-control,
 .fr-box.fr-basic.fr-element,
 input[type='text'] {
-	cursor: url(https://upload.tgd.kr/20190220/10b7072018d3161b41fc70ef78b54add.png) 3 5, auto !important;
+	cursor: url(./cur/text.png) 3 5, auto !important;
 }
       
 /* 전체 쉐도우 */
@@ -70,7 +70,7 @@ header .row>div:nth-child(1)>a {
 	display: block;
 	width: 200px;
 	height: 60px;
-	background: url(https://upload.tgd.kr/20190219/d0855091829d7e2847f0636899b8b65b.png) no-repeat;
+	background: url(./logo/Logo.png) no-repeat;
 	background-size: auto 60px;
 	margin-bottom: -10px;
 	margin-left: -10px;
