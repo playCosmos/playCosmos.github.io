@@ -22,8 +22,7 @@ select.form-control,
 input[type=checkbox],
 input[type=radio],
 .opt {
-	cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important;
-	 /* 3 5는 가로 4번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
+	cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; /* 4 5는 가로 5번째 세로 6번째 점을 클릭 지점으로 한다는 의미 */
 }
 
 /* 마우스 커서 링크 */
@@ -76,8 +75,11 @@ header .row>div:nth-child(1)>a {
 	margin-bottom: -10px;
 	margin-left: -10px;
 }
+
 header .row>div:nth-child(1)>a>img {
 	display: none;
+	filter: grayscale(100%);
+	opacity: 0.8;
 }
 
 /* 검색폼 보더 */
@@ -85,7 +87,17 @@ header #right-search-form>input[type='text'] {
 	border: 3px solid #8EC5FC;
 	border-radius: 17px;
 }
-
+.dropdown.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+}
+.dropdown .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
+}
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
 #main .menu-wrapper>.header {
 	background: #8EC5FC;
@@ -210,24 +222,30 @@ div#article-list div.article-list-row div.item div.list-header {
 div#article-list div.article-list-row .v0 span {
 	background:#ccc!important;
 }
-div#article-list div.article-list-row>div.item>.list-title,
-div#article-list div.article-list-row>div.item>.list-time {
-	border-bottom:0;
+div#article-list div.article-list-row>div.item>.list-title {
+	border-bottom:0;	
 }
 div#article-list div.article-list-row>div.item>.list-title>a:visited {
 	color:#999!important;
+}
+div#article-list div.article-list-row>div.item>.list-time {
+	border-bottom:0;
 }
 div#article-list div.article-list-row:hover {
 	background:rgba(125, 167, 202, .33);
 }
 div#article-list div.article-list-row.notice {
 	border: 1px solid rgba(79, 105, 126, .20);
-	background: rgba(125, 167, 202, .10);
+    background: rgba(125, 167, 202, .10);
 }
 div#article-list div.article-list-row.notice:hover {
 	background:rgba(79, 105, 126, .2);
 }
-div#article-list #article-list-menu>.btn.best,
+div#article-list #article-list-menu>.btn.best {
+	border-radius:15px;
+	background: #8EC5FC;
+	color:#fff;
+}
 div#article-list #article-list-menu>.btn.write {
 	border-radius:15px;
 	background: #8EC5FC;
@@ -273,6 +291,7 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 	border-top-right-radius:17px;
 	border-bottom-right-radius:17px;
 }
+
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
 	width:120px!important
 }
@@ -346,33 +365,34 @@ span.a-badge i.fa.fa-info-circle {
 	padding-bottom:20px;
 	height:unset
 }
+
 #article-list>.article-list-row>.item>.list-checkbox{
-	border-bottom: 0px 
+    border-bottom: 0px 
 }
 
 #article-list #article-list-menu>.btn.best {
-	border-color: #8EC5FC;
+     border-color: #8EC5FC;
 }
 .badge {
-	display: inline-block;
-	min-width: 10px;
-	padding: 3px 7px;
-	font-size: 12px;
-	font-weight: 700;
-	line-height: 1;
-	color: #fff;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	background-color: #8EC5FC;
-	border-radius: 10px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #8EC5FC;
+    border-radius: 10px;
 }
 
 .btn-primary {
-	background: #8EC5FC !important;
-	border: 1px solid #e5e5e5;
-	border-radius: 20px;
-	padding: 6px 10px;
+  background: #8EC5FC !important;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 6px 10px;
 }
 
 /* 게시판 접두 */
