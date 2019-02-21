@@ -170,10 +170,10 @@ header #header-bar a.dropdown-toggle,
 /* 스트리머 게시판 상단 정보 글씨색상 */
 #board-info {
 	height:auto;
-	margin-bottom:10px;
 	background:#fff;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px; 
+	padding-bottom: 0;
 }
 
 #board-info>img,
