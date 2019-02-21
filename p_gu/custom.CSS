@@ -101,7 +101,7 @@ header #right-search-form>input[type='text'] {
 .fa-reorder:before,
 .fa-bars:before,
 .fa-square:before {
-	color: #6cbcd9;
+	/*color: #6cbcd9;*/
 }
 
 #main .menu-wrapper>a>i.fa.fa-square {
