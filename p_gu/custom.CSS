@@ -17,60 +17,37 @@ body,
 .fr-desktop,
 .fr-active,
 .fr-tooltip,
-.fr-sticky-off {
+.fr-sticky-off,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt  {
 	cursor: url(./p_gu.png) 4 5, auto;
 }
 
 /* 마우스 커서 링크 */
-a[href="#lastc"],
-.row>div:nth-child(1)>a,
-
 #right-search-form>#right-search-btn,
-#header-bar #header-top-notice a,
-#header-bar a.dropdown-toggle,
-
-#latestDropdownMenu>li>a,
-#latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.label.label-default,
-#favoriteDropdownMenu>li>a,
-#favoriteDropdownMenu>li>a>span.delrow,
-#playgroundDropdownMenu>li>a,
-.dropdown-menu>li>a,
-
-#main .menu-wrapper>a,
-#main .menu-wrapper a:nth-last-child(1),
-#board-info h1>a,
-#board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn,
-
-#article-list #article-list-category > a.active,
-#article-list #article-list-category>a,
-
 #article-list #article-option-area>#article-option-area-toggle-btn,
 #article-list>.article-list-row>.item>.list-title>.list-writer>span,
-#article-list>.article-list-row>.item>.list-title>a,
-#article-list #article-list-menu .pagination>li.active > a,
-#article-list #article-list-menu .pagination>li>a,
-
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a,
-
 .btn,
 .fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn {
+.fr-popup .fr-command.fr-btn,
+.fr-view img.fr-dib.fr-fil,
+.pull-left,
+a {
 	cursor: url(./p_guLink.png) 4 5, auto;
 }
 
 /* 마우스 커서 텍스트 */
-header #right-search-form>input[type='text'],
-#board-info #viewers-area #viewers:before,
-#board-info #viewers-area #viewers:after,
+span#viewers,
 #article-list #boardSearchForm .form-control,
-.fr-box.fr-basic.fr-element {
+.fr-box.fr-basic.fr-element,
+input[type='text'] {
 	cursor: url(./p_guText.png) 4 5, auto;
 }
 
@@ -166,6 +143,19 @@ header #header-bar a.dropdown-toggle,
     background-color: #6cbcd9;
 }
 
+/* 드롭다운 애니메이션 */
+.dropdown.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+}
+.dropdown .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
+}
+
 /* 스트리머 게시판 상단 정보 글씨색상 */
 #board-info {
 	height:auto;
@@ -191,7 +181,6 @@ header #header-bar a.dropdown-toggle,
 #board-info>h1 {
 	margin-top:12px;
 	width:calc(100% - 110px);
-}
 #board-info>h1>a {
 	font-size:23px;
 	transition:.2s ease 0s;
@@ -250,6 +239,8 @@ div#article-list {
 #article-list>.article-list-row>.item>.list-time {
 	border:0;
 }
+
+/* 방문한 게시글 제목 */
 #article-list .article-list-row>.item > .list-title>a:visited {
 	color:#999!important;
 }
