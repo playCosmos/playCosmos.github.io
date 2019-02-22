@@ -52,7 +52,8 @@ input[type='text'] {
 *:focus { outline: none !important; }
 
 /* 게시글 스트리머 아이콘 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"],
+img[src="https://static-cdn.jtvnw.net/chat-badges/moderator.png"]{
 	content: url(https://static-cdn.jtvnw.net/badges/v1/d91cb9e8-09a1-40b4-aa90-9b75c3785920/1?raw=true);
 	width: 18px;
 }
