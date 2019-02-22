@@ -414,6 +414,7 @@ div#article-list {
 	border:0;
 	background:white;
 	text-align: center;
+	padding-bottom: 0.5em;
 }
 
 #article-list #article-list-category > a.active,
@@ -441,7 +442,7 @@ div#article-list {
 	color: white !important;
 }
 
-#article-list #article-list-category > a[href="p_gu?category=16589533"].active {
+#article-list #article-list-category > a[href="/p_gu?category=16589533"].active {
 	background: #ff4646;
 	border: 2px solid #ff4646;
 	color: white !important;
