@@ -86,8 +86,8 @@ header #right-search-form>input[type='text'] {
 	border: 3px solid #6cbcd9;
 	border-radius: 10px;
 }
-header #right-search-form>input[type='text']:focus {	
-  animation: glow 800ms ease-out infinite alternate;
+header #right-search-form>input[type='text']:focus {
+	animation: glow 800ms ease-out infinite alternate;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
@@ -572,12 +572,12 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 @keyframes glow {
-  0% {
-    border-color: #6cbcd9;
-    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
-  }
-  100% {
-    border-color: #aaeeff;
-    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
-  }
+	0% {
+		border-color: #6cbcd9;
+		box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+	}
+	100% {
+		border-color: #aaeeff;
+		box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+	}
 }
