@@ -424,15 +424,63 @@ div#article-list {
 	padding: 11px 38px;
 }
 
-#article-list #article-list-category > a[href="/p_gu"] {
-	padding: 11px 16px
-}
-
 #article-list #article-list-category > a:hover {
 	background-color: transparent;
 	/*animation: infinite rainbowLinkBG 3s*/
 	transform: scale(1.05);
 	transition: .15s;
+}
+
+#article-list #article-list-category > a[href="/p_gu"] {
+	padding: 11px 16px
+}
+
+a.nav-link {
+	
+}
+
+a.nav-link.active {
+	background: currentColor;
+}
+
+#article-list #article-list-category > a[href="/p_gu"].active {
+	
+}
+
+#article-list #article-list-category > a[href="p_gu?category=16589533"].active {
+	background: #ff4646;
+	border: 2px solid #ff4646;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16589550"].active {
+	background: #ff9940;
+	border: 2px solid #ff9940;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16595095"].active {
+	background: #ffdd33;
+	border: 2px solid #ffdd33;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16595119"].active {
+	background: #34dd4d;
+	border: 2px solid #34dd4d;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16595154"].active {
+	background: #33bbff;
+	border: 2px solid #33bbff;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16595160"].active {
+	background: #4646ee;
+	border: 2px solid #4646ee;
+	color: white !important;
+}
+#article-list #article-list-category > a[href="/p_gu?category=16595112"].active {
+	background: #dd55ee;
+	border: 2px solid #dd55ee;
+	color: white !important;
 }
 
 .fa.fa-home{
