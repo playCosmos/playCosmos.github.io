@@ -9,6 +9,10 @@ body {
 	background: transparent;
 }
 
+*:focus {
+    outline: none !important;
+   }
+
 /* 마우스 커서 기본 */
 html,
 body,
@@ -81,6 +85,13 @@ header .row>div:nth-child(1)>a>img {
 header #right-search-form>input[type='text'] {
 	border: 3px solid #6cbcd9;
 	border-radius: 10px;
+}
+header #right-search-form>input[type='text']:focus {	
+  -webkit-animation: glow 800ms ease-out infinite alternate;
+  -moz-animation: glow 800ms ease-out infinite alternate;
+  -o-animation: glow 800ms ease-out infinite alternate;
+  -ms-animation: glow 800ms ease-out infinite alternate;
+  animation: glow 800ms ease-out infinite alternate;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
@@ -562,4 +573,55 @@ span.a-badge i.fa.fa-info-circle {
 	90% { background-color: #ff7ef230; }
 	95% { background-color: #ff7ecb30; }
 	100% { background-color: #ff7ea530; }
+}
+
+@-webkit-keyframes glow {
+  0% {
+    border-color: #6cbcd9;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+  }
+  100% {
+    border-color: #aaeeff;
+    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+  }
+}
+@-moz-keyframes glow {
+  0% {
+    border-color: #6cbcd9;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+  }
+  100% {
+    border-color: #aaeeff;
+    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+  }
+}
+@-o-keyframes glow {
+  0% {
+    border-color: #6cbcd9;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+  }
+  100% {
+    border-color: #aaeeff;
+    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+  }
+}
+@-ms-keyframes glow {
+  0% {
+    border-color: #6cbcd9;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+  }
+  100% {
+    border-color: #aaeeff;
+    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+  }
+}
+@keyframes glow {
+  0% {
+    border-color: #6cbcd9;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0;
+  }
+  100% {
+    border-color: #aaeeff;
+    box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0;
+  }
 }
