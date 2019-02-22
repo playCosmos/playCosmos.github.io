@@ -107,6 +107,14 @@ header #right-search-form>input[type='text']:focus {
 header #right-search-form>#right-search-btn {
 	color: #6cbcd9;
 }
+header #right-search-form>#right-search-btn:hover {
+	transform: scale(1.15);
+	transition: .2s;
+}
+header #right-search-form>#right-search-btn:focus {
+	transform: scale(1.15);
+	color: #aaeeff;
+}
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
 #main .menu-wrapper {
