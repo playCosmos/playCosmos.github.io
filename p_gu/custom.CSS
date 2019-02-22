@@ -108,11 +108,11 @@ header #right-search-form>#right-search-btn {
 	color: #6cbcd9;
 }
 header #right-search-form>#right-search-btn:hover {
-	transform: scale(1.2);
+	transform: scale(1.25);
 	transition: .2s;
 }
 header #right-search-form>#right-search-btn:focus {
-	transform: scale(1.2);
+	transform: scale(1.25);
 	color: #aaeeff;
 }
 
