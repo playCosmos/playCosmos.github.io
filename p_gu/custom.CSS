@@ -435,14 +435,6 @@ div#article-list {
 	padding: 11px 16px
 }
 
-a.nav-link {
-	
-}
-
-a.nav-link.active {
-	background: currentColor;
-}
-
 #article-list #article-list-category > a[href="/p_gu"].active {
 	background: #000;
 	border: 2px solid #000;
@@ -486,7 +478,7 @@ a.nav-link.active {
 }
 
 .fa.fa-home{
-	color: black;
+	/*color: black;*/
 	/*animation: infinite rainbow 3s*/
 }
 #article-list>.article-list-row>.item>.list-header>span {
