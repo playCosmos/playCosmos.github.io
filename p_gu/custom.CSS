@@ -414,7 +414,7 @@ div#article-list {
 	border:0;
 	background:white;
 	text-align: center;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.25em;
 }
 
 #article-list #article-list-category > a.active,
