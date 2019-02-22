@@ -8,60 +8,36 @@ body,
 .fr-desktop,
 .fr-active,
 .fr-tooltip,
-.fr-sticky-off{
+.fr-sticky-off,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt  {
 	cursor: url(./cur.png) 2 5, auto;
 }
 
 /* 마우스 커서 링크 */
-button, a,
-.row>div:nth-child(1)>a,
-
 #right-search-form>#right-search-btn,
-#header-bar #header-top-notice a,
-#header-bar a.dropdown-toggle,
-
-#latestDropdownMenu>li>a,
-#latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.label.label-default,
-#favoriteDropdownMenu>li>a,
-#favoriteDropdownMenu>li>a>span.delrow,
-#playgroundDropdownMenu>li>a,
-.dropdown-menu>li>a,
-
-#main .menu-wrapper>a,
-#main .menu-wrapper a:nth-last-child(1),
-#board-info h1>a,
-#board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn,
-
-#article-list #article-list-category > a.active,
-#article-list #article-list-category>a,
-
 #article-list #article-option-area>#article-option-area-toggle-btn,
 #article-list>.article-list-row>.item>.list-title>.list-writer>span,
-#article-list>.article-list-row>.item>.list-title>a,
-#article-list #article-list-menu .pagination>li.active > a,
-#article-list #article-list-menu .pagination>li>a,
-
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a,
-
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
 .btn,
 .fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn {
+.fr-popup .fr-command.fr-btn,
+.fr-view img.fr-dib.fr-fil,
+.pull-left,
+ins.adsbygoogle,
+a {
 	cursor: url(./link.png) 2 5, auto;
 }
 
 /* 마우스 커서 텍스트 */
-header #right-search-form>input[type='text'],
-#board-info #viewers-area #viewers:before,
-#board-info #viewers-area #viewers:after,
+span#viewers,
 #article-list #boardSearchForm .form-control,
-.fr-box.fr-basic.fr-element {
+.fr-box.fr-basic.fr-element,
+input[type='text'] {
 	cursor: url(./text.png) 2 5, auto;
 }
 
@@ -80,15 +56,16 @@ letter-spacing: -0.05em !important;
 }
 
 /* 전체 쉐도우 */
-
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
   box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 로고밑 NAV bar */
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
 
+/* 로고밑 NAV bar */
 header #header-bar>.row {
   border-top: 4px solid #ffa7c0;
   border-right: none;
@@ -96,7 +73,6 @@ header #header-bar>.row {
 }
 
 /* 헤더 배너 */
-
 header .row>div:nth-child(1)>a {
   display: block;
   width: 173px;
@@ -107,20 +83,15 @@ header .row>div:nth-child(1)>a {
 
 header .row>div:nth-child(1)>a>img {
   display: none;
-	
-	filter: grayscale(100%);
-  opacity: 0.8;
 }
 
 /* 검색폼 보더 */
-
 header #right-search-form>input[type='text'] {
   border: 3px solid #ffa7c0;
   border-radius: 17px;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
-
 #main .menu-wrapper>.header {
   background: #ffa7c0;
   border-top-left-radius: 17px;
@@ -148,7 +119,6 @@ header #header-bar>.row,
 }
 
 /* 헤더 검색 버튼 */
-
 header #right-search-form>#right-search-btn {
   color: #ffa7c0;
 }
