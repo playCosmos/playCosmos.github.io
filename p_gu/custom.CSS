@@ -36,7 +36,6 @@ input[type=radio],
 .fr-popup .fr-command.fr-btn,
 .fr-view img.fr-dib.fr-fil,
 .pull-left,
-ins.adsbygoogle,
 a {
 	cursor: url(./cur/hand.png) 4 5, auto !important;
 }
@@ -160,7 +159,11 @@ header #header-bar {
 	margin-top: .75em;
 	margin-bottom: .75em;
 }
-
+header #header-bar #header-top-notice:hover{
+	transform: scale(1.04);
+	transition: .1s;
+	
+}
 /* 헤더 광고 배경색 */
 header #header-bar #header-top-notice strong.notice-badge {
 	background: #6cbcd9;
