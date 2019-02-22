@@ -149,9 +149,10 @@ header #header-bar>.row,
 	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 헤더-바디 간격 */
+/* 헤더 상하단 간격 */
 header #header-bar {
-    margin-bottom: .75em;
+	margin-top: .75em;
+	margin-bottom: .75em;
 }
 
 /* 헤더 광고 배경색 */
