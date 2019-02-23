@@ -76,7 +76,6 @@ header .row>div:nth-child(1)>a {
 
 header .row>div:nth-child(1)>a>img {
 	display: none;
-	opacity: 0.8;
 }
 
 /* 검색 폼 */
