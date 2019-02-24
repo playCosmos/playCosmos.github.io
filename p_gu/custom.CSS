@@ -160,8 +160,7 @@ header #header-bar {
 }
 header #header-bar #header-top-notice:hover{
 	transform: scale(1.04);
-	transition: .1s;
-	
+	transition: .1s;	
 }
 /* 헤더 광고 배경색 */
 header #header-bar #header-top-notice strong.notice-badge {
@@ -258,6 +257,14 @@ div#article-list {
 	background:#fff;
 	border-radius:20px;
 	margin-top: 0;
+}
+#article-info .article-profile-img {
+	transition: .2s;
+}
+
+#article-info .article-profile-img:hover {	
+	transform: scale(1.2);
+	transition: .2s;
 }
 
 /* 게시글 */
