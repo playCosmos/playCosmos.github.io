@@ -28,7 +28,6 @@ input[type=radio],
 .fr-popup .fr-command.fr-btn,
 .fr-view img.fr-dib.fr-fil,
 .pull-left,
-ins.adsbygoogle,
 a {
 	cursor: url(./link.png) 2 5, auto;
 }
@@ -42,24 +41,24 @@ input[type='text'] {
 }
 
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"]{
-content: url(https://static-cdn.jtvnw.net/badges/v1/3d708844-e50a-4a14-bf42-ab9c6ac0c50c/1?raw=true);
+	content: url(https://static-cdn.jtvnw.net/badges/v1/3d708844-e50a-4a14-bf42-ab9c6ac0c50c/1?raw=true);
 }
 
 html {
-  background: linear-gradient(to bottom, #ffecf0, #ffecf0);
-  height: auto !important;
+	background: linear-gradient(to bottom, #ffecf0, #ffecf0);
+	height: auto !important;
 }
 body {
-letter-spacing: -0.05em !important;
-  background: transparent;
-  font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: -0.05em !important;
+	background: transparent;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 전체 쉐도우 */
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
-  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -67,87 +66,87 @@ header #header-bar>.row,
 
 /* 로고밑 NAV bar */
 header #header-bar>.row {
-  border-top: 4px solid #ffa7c0;
-  border-right: none;
-  border-bottom: none;
+	border-top: 4px solid #ffa7c0;
+	border-right: none;
+	border-bottom: none;
 }
 
 /* 헤더 배너 */
 header .row>div:nth-child(1)>a {
-  display: block;
-  width: 173px;
-  height: 50px;
-  background: url(./logo.png) no-repeat;
-  background-size: auto 50px;
+	display: block;
+	width: 173px;
+	height: 50px;
+	background: url(./logo.png) no-repeat;
+	background-size: auto 50px;
 }
 
 header .row>div:nth-child(1)>a>img {
-  display: none;
+	display: none;
 }
 
 /* 검색폼 보더 */
 header #right-search-form>input[type='text'] {
-  border: 3px solid #ffa7c0;
-  border-radius: 17px;
+	border: 3px solid #ffa7c0;
+	border-radius: 17px;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
 #main .menu-wrapper>.header {
-  background: #ffa7c0;
-  border-top-left-radius: 17px;
-  border-top-right-radius: 17px;
+	background: #ffa7c0;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
 }
 
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-  color: white;
+	color: white;
 }
 
 .fa-square:before {
-  color: #ffa7c0;
+	color: #ffa7c0;
 }
 
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
- border-radius: 20px; 
+	border-radius: 20px; 
 }
 
 #main .menu-wrapper {
-  border: none;
+	border: none;
 }
 
 /* 헤더 검색 버튼 */
 header #right-search-form>#right-search-btn {
-  color: #ffa7c0;
+	color: #ffa7c0;
 }
 
 /* 헤더 [광고]배경색 */
 header #header-bar #header-top-notice strong.notice-badge {
-  background: #ffa7c0;
+	background: #ffa7c0;
 }
 
 /* fa색상 */
 header #header-bar .fa {
-  color: #ffa7c0;
+	color: #ffa7c0;
 }
 
 .label-default {
-    background-color: #ffa7c0;
+	background-color: #ffa7c0;
 }
 
 /* 드롭다운 애니메이션 */
 .dropdown.open .dropdown-menu {
-    opacity: unset;
-    transform: unset;
+	opacity: unset;
+	transform: unset;
 }
 .dropdown .dropdown-menu {
-    display: block !important;
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: top;
-    transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
 }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
@@ -175,7 +174,7 @@ div#board-info>h1 {
 div#board-info>h1>a {
 	font-family: 'Jua', sans-serif;
 	font-size: 23px;
-transition:.2s ease 0s;
+	transition:.2s ease 0s;
 }
 div#board-info>h1>a:hover {
 	color:#ffa7c0;
@@ -187,20 +186,17 @@ div#board-info>#board-info-bottom {
 }
 
 /* 좌측메뉴 숏컷링크 글씨 색상 */
-
 #main .menu-wrapper>a>em {
-  color: #ffa7c0;
+	color: #ffa7c0;
 }
 
 /* 좌측메뉴 메뉴사이의 공간 색상 */
-
 #main .menu-wrapper .spacer {
-  background: #ffa7c0;
-  height: 0.15em;
+	background: #ffa7c0;
+	height: 0.15em;
 }
 
 /* 게시글 관련부분 */
-
 div#article-list {
 	background:#fff;
 	border-radius:20px;
@@ -218,7 +214,7 @@ div#article-list div.article-list-row {
 	margin:4px 5px 0 5px;
 	border-radius:15px;
 	border:1px solid #eee;
-transition:.15s ease 0s;
+	transition:.15s ease 0s;
 }
 div#article-list div.article-list-row div.item div.list-header {
 	border:0;
@@ -240,7 +236,7 @@ div#article-list div.article-list-row:hover {
 }
 div#article-list div.article-list-row.notice {
 	border: 1px solid rgba(179, 91, 143, .20);
-    background: rgba(238, 122, 190, .10);
+	background: rgba(238, 122, 190, .10);
 }
 div#article-list div.article-list-row.notice:hover {
 	background:rgba(179, 91, 143, .2);
@@ -278,7 +274,7 @@ div#article-list form.input-group .input-group-btn button {
 	border:1px solid #ccc;
 }
 div#article-list form.input-group .input-group-btn button:hover {
-transition:.3s ease 0s;
+	transition:.3s ease 0s;
 }
 div#article-list form.input-group .input-group-btn button.btn.square.btn-default.dropdown-toggle {
 	padding-left:15px;
@@ -363,31 +359,28 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 #article-list>.article-list-row>.item>.list-checkbox{
-    border-bottom: 0px 
+	border-bottom: 0px 
 }
 
 #article-list #article-list-menu>.btn.best {
-     border-color: #ffa7c0;
+	border-color: #ffa7c0;
 }
 .badge {
-    display: inline-block;
-    min-width: 10px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-color: #ffa7c0;
-    border-radius: 10px;
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #ffa7c0;
+	border-radius: 10px;
 }
 
-
-
-
 .btn-primary {
-  background: #ffa7c0 !important;
-  
+	background: #ffa7c0 !important;
+	
 }
