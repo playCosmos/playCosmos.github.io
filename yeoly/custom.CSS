@@ -135,6 +135,19 @@ header #header-bar .fa {
   color: #ffa7c0;
 }
 
+/* 드롭다운 애니메이션 */
+.dropdown.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+}
+.dropdown .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
+}
+
 /* 스트리머 게시판 상단 정보 글씨색상 */
 div#board-info {
 	height:auto;
