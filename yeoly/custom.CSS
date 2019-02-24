@@ -124,15 +124,17 @@ header #right-search-form>#right-search-btn {
 }
 
 /* 헤더 [광고]배경색 */
-
 header #header-bar #header-top-notice strong.notice-badge {
   background: #ffa7c0;
 }
 
 /* fa색상 */
-
 header #header-bar .fa {
   color: #ffa7c0;
+}
+
+.label-default {
+    background-color: #ffa7c0;
 }
 
 /* 드롭다운 애니메이션 */
