@@ -256,7 +256,6 @@ div#article-list #article-list-menu>.btn.write {
 	color:#fff;
 }
 div#article-list #article-list-menu .pagination>li>a {
-	color:#ffa7c0;
 	border-radius:50%;
 	margin-left:5px;
 }
@@ -296,8 +295,6 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 	border-bottom-right-radius:17px;
 }
 
-
-
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
 	width:120px!important
 }
@@ -319,19 +316,20 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
 	background-color:#ffa7c0;
-	border-color:#D1B2FF
+	border-color:#ffa7c0
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-	color:#D1B2FF
+	color:#ffa7c0
 }
-.pagination>li>a, .pagination>li>span {
-	color:#D1B2FF
+.pagination>li>a,
+.pagination>li>span {
+	color:#ffa7c0
 }
 #article-content-wrapper>.header {
-	border-top:2px solid #D1B2FF
+	border-top:2px solid #ffa7c0
 }
 #article-reply-area#reply-real-area.reply>.reply-header>.reply-writer.logged, #article-reply-area#reply-best-area.reply>.reply-header>.reply-writer.logged {
-	color:#D1B2FF
+	color:#ffa7c0
 }
 #article-info>h2 {
 	font-weight:bold
