@@ -36,3 +36,24 @@ header #right-search-form>#right-search-btn:focus {
     transform-origin: top;
     transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
 }
+
+
+
+#article-list #article-list-category>a {
+  position: relative;
+  transition: ease-out 0.3s 0.1s;
+}
+#article-list #article-list-category>a::after {
+  height: 2px;
+  width: 100%;
+  background: #6242ad;
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+#article-list #article-list-category>a:hover::after {
+  transform: scaleX(1);
+}
