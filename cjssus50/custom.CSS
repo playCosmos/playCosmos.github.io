@@ -1,6 +1,29 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+/* 검색 창 */
+header #right-search-form>input[type='text'] {
+}
+
+header #right-search-form>input[type='text']:hover {
+	transform: scale(1.05);
+	transition: .2s;
+}
+header #right-search-form>input[type='text']:focus {
+	transform: scale(1.05);
+}
+
+/* 검색 버튼 */
+header #right-search-form>#right-search-btn {
+}
+header #right-search-form>#right-search-btn:hover {
+	transform: scale(1.25);
+	transition: .2s;
+}
+header #right-search-form>#right-search-btn:focus {
+	transform: scale(1.25);
+}
+
 /* 드롭다운 애니메이션 */
 .dropdown.open .dropdown-menu {
     opacity: unset;
