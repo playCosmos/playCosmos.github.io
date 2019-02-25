@@ -147,11 +147,12 @@ header #header-bar #header-top-notice:hover{
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area> #article-option-area-toggle-btn {
 	background: #eaeaea;
-	width: 38px;
-	height: 38px;
-	border-radius: 19px;
+	width: 34px;
+	height: 34px;
+	border-radius: 12px;
 	border: 2px solid;
 	transition:.2s ease 0s;
+	line-height: inherit;
 }
 
 /* 카테고리 */
