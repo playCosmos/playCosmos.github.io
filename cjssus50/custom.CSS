@@ -2,18 +2,12 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-html, body {
-	background: transparent;
-}
+html, body { background: transparent; }
 
-a {
-	color: #c3a7cc;
-}
+a { color: #c3a7cc; }
 
 /*************** header ***************/
-header {
-    padding: .5em 0 .5em 0;
-}
+header { padding: .5em 0 .5em 0; }
 
 header .row>div:nth-child(1) > a > img {
 	filter: hue-rotate(8deg) saturate(2.56) brightness(1.28) contrast(0.36);
@@ -43,9 +37,7 @@ header #right-search-form>#right-search-btn:focus {
 }
 
 /* 상단바 */
-header #header-bar {
-	margin-bottom: 0.5em;
-}
+header #header-bar { margin-bottom: 0.5em; }
 
 header #header-bar>.row {
 	border-top: 3px solid #c3a7cc;
@@ -70,11 +62,11 @@ header #header-bar>.row {
     transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
 }
 #latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.delrow{
+#favoriteDropdownMenu>li>a>span.delrow {
 	color: #c3a7cc;
 }
 #favoriteDropdownMenu>li>a>span.label.label-default,
-.dropdown-menu .divider{
+.dropdown-menu .divider {
 	background-color: #c3a7cc;
 }
 
