@@ -38,7 +38,7 @@ header #right-search-form>#right-search-btn:focus {
 }
 
 
-
+/* 카테고리 애니메이션 */
 #article-list #article-list-category>a {
   position: relative;
   transition: ease-out 0.3s 0.1s;
