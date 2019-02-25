@@ -356,26 +356,26 @@ div#article-list {
 	border-radius: 20px;
 }
 
+/* 트게더 페이지 */
 .pagination>.active>a:focus,
 .pagination>.active>a:hover {
 	color: #6cbcd9;
 }
-
 .pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
 	background-color: #6cbcd9;
 	border-color:#6cbcd9;
 }
+.pagination>li>a,
 .pagination>li>a:focus,
 .pagination>li>a:hover,
+.pagination>li>span
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-	color:#6cbcd9;
-}
-.pagination>li>a,
-.pagination>li>span {
 	color:#6cbcd9;
 }
 
