@@ -1,3 +1,4 @@
+/* 파랑 : #96bcff */
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
