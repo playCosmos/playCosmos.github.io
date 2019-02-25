@@ -3,7 +3,7 @@
 *:focus { outline: none !important; }
 
 html, body {
-	background: white;
+	background: transparent;
 }
 
 a {
