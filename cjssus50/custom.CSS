@@ -73,7 +73,7 @@ header #header-bar>.row {
 	background-color: #c3a7cc;
 }
 
-/* 상단 광고 */
+/*  */
 header #header-bar #header-top-notice strong.notice-badge{
 	background: #c3a7cc;
 }
@@ -205,7 +205,7 @@ header #header-bar #header-top-notice:hover{
 	color: #c3a7cc;
 }
 
-/* 게시글 호버링 */
+/* 게시글 */
 #article-list .article-list-row:hover,
 #article-list div.article-list-row.notice:hover {
 	transform:scale(1.01);
