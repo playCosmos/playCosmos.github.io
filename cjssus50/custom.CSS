@@ -57,3 +57,9 @@ header #right-search-form>#right-search-btn:focus {
 #article-list #article-list-category>a:hover::after {
   transform: scaleX(1);
 }
+
+/* 게시글 호버링 */
+#article-list .article-list-row:hover,
+#article-list div.article-list-row.notice:hover {
+	transform:scale(1.005);
+}
