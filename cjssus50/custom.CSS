@@ -37,7 +37,7 @@ header #right-search-form>#right-search-btn:focus {
     transition: all 0.4s cubic-bezier(0.17, 1.44, 0, 1);
 }
 
-
+/* 상단 광고 */
 header #header-bar #header-top-notice:hover{
 	transform: scale(1.04);
 	transition: .1s;	
