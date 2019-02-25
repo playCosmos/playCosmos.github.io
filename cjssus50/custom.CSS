@@ -121,6 +121,7 @@ header #header-bar #header-top-notice:hover{
 	background: white;
 	border: 1px solid #c3a7cc;
 	border-radius: 12px;
+	margin-bottom: 0.5em;
 }
 #board-info h1{
 	font-size: 28px;
