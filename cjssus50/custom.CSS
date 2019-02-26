@@ -46,7 +46,6 @@ header #right-search-form>#right-search-btn:focus {
 header #header-bar {
 	margin-bottom: 0.5em;
 }
-
 header #header-bar>.row {
 	border-top: 3px solid #c3a7cc;
 	border-bottom: 1px solid #c3a7cc;
@@ -144,6 +143,10 @@ header #header-bar #header-top-notice:hover{
 }
 
 /* 공지 숨기기 버튼 */
+#article-list #article-option-area {
+	right: 2px;
+	top: 2px
+}
 #article-list #article-option-area> #article-option-area-toggle-btn {
 	background: #eaeaea;
 	width: 34px;
@@ -253,23 +256,20 @@ header #header-bar #header-top-notice:hover{
 	background: transparent;
 }
 
-/*  */
+/* 댓글 */
 #article-reply-area {
 	padding: 0;
 	background: white;
 	border: 1px solid #c3a7cc;
 	border-radius: 0 0 12px 12px;
 }
-
 #article-reply-area > .header h5 {
 	color: #c3a7cc;
 }
-
 #article-reply-area #reply-real-area .reply > .reply-header,
 #article-reply-area #reply-best-area .reply > .reply-header {
 	padding: 0.1em 0.5em
 }
-
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
 	color: #c3a7cc;
