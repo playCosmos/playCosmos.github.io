@@ -82,7 +82,7 @@ header #header-bar #header-top-notice strong.notice-badge{
 	background: #c3a7cc;
 }
 header #header-bar #header-top-notice:hover{
-	transform: scale(1.025);
+	transform: scale(1.04);
 	transition: .1s;	
 }
 
