@@ -17,7 +17,7 @@ header {
 }
 
 header .row>div:nth-child(1) > a > img {
-	filter: hue-rotate(8deg) saturate(2.56) brightness(1.28) contrast(0.36);
+	hue-rotate(2deg) saturate(1.6) brightness(1.8) contrast(0.3);
 }
 
 /* 검색 창 */
