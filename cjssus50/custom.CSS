@@ -325,7 +325,15 @@ header #header-bar #header-top-notice:hover{
 .fr-toolbar.fr-top {
 	border-top: 3px solid #c3a7cc;
 }
-	
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+	color: #c3a7cc;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top: 4px solid #c3a7cc;
+}
+
 /* 트게더 페이지 */
 .pagination>.active>a,
 .pagination>.active>a:focus,
