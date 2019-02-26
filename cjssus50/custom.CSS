@@ -271,6 +271,7 @@ header #header-bar #header-top-notice:hover{
 	margin-top: 0.5em;
 }
 #article-info>h2 {
+	margin-top: 5px;
 	margin-left: 5px;
 }
 #article-info #article-info-writer,
