@@ -287,6 +287,7 @@ header #header-bar #header-top-notice:hover{
 .pagination>.active>span:focus {
 	background-color: #c3a7cc;
 	border-color: #c3a7cc;
+	transition: .2s;
 }
 .pagination>.active>a:hover,
 .pagination>.active>span:hover,
@@ -295,12 +296,14 @@ header #header-bar #header-top-notice:hover{
 	background-color: white;
 	border-color: #c3a7cc;
 	color:#c3a7cc;
+	transition: .2s;
 }
 .pagination>li>a,
 .pagination>li>a:focus,
 .pagination>li>span
 .pagination>li>span:focus {
 	color:#c3a7cc;
+	transition: .2s;
 }
 
 /* 버튼 */
@@ -309,6 +312,7 @@ header #header-bar #header-top-notice:hover{
 	background-color: #c3a7cc !important;
 	border-color: #c3a7cc !important;
 	border-radius: 0;
+	transition: .2s;
 }
 .btn:hover,
 .btn:focus{
