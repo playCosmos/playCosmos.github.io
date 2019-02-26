@@ -270,6 +270,18 @@ header #header-bar #header-top-notice:hover{
 	border-radius: 12px 12px 0 0;
 	margin-top: 0.5em;
 }
+#article-info>h2 {
+	margin-left: 5px;
+}
+#article-info #article-info-writer,
+#article-content-wrapper>.header>#article-time
+{
+	margin-left: 8px;
+}
+#article-content-wrapper>.header>#article-views
+{
+	margin-right: 8px;
+}
 #article-content-wrapper {
 	padding: 0;
 	background: white;
