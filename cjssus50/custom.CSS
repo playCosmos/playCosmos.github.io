@@ -47,9 +47,7 @@ header #header-bar {
 	margin-bottom: 0.5em;
 }
 header #header-bar>.row {
-	border-top: 2px solid #c3a7cc;
-	border-bottom: 2px solid #c3a7cc;
-	border-right: none;
+	border: 2px solid #c3a7cc;
 	border-radius: 12px;
 }
 
@@ -57,7 +55,7 @@ header #header-bar>.row {
 .dropdown.open .dropdown-menu {
 	opacity: unset;
 	transform: unset;
-	border: 1px solid #c3a7cc;
+	border: 2px solid #c3a7cc;
 	border-radius: 10px;
 	box-shadow: 0 2px 2px rgba(0,0,0,.275);
 }
@@ -75,6 +73,7 @@ header #header-bar>.row {
 #favoriteDropdownMenu>li>a>span.label.label-default,
 .dropdown-menu .divider {
 	background-color: #c3a7cc;
+	height: 2px;
 }
 
 /* 전광판 */
