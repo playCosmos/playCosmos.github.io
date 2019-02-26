@@ -219,6 +219,9 @@ header #header-bar #header-top-notice:hover{
 }
 
 /* 게시글 */
+#article-list>.article-list-row {
+	border:none;
+}
 #article-list>.article-list-row.notice {
     background-color: #c3a7cc33;
 }
@@ -234,7 +237,9 @@ header #header-bar #header-top-notice:hover{
 #article-list div.article-list-row.notice:hover {
 	transform:scale(1.01);
 }
-
+#article-list>.article-list-row>.item>.list-header {
+	border-left: none;
+}
 /* 게시글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
 	background: #c3a7cc;
