@@ -133,6 +133,7 @@ header #header-bar #header-top-notice:hover{
 	color: #c3a7cc;
 	transition: .2s;
 }
+
 #board-info #board-info-bottom a {	
 	color: #c3a7cc;
 	font-size: 14px;
@@ -146,7 +147,6 @@ header #header-bar #header-top-notice:hover{
 #board-info>#board-info-bottom {
 	float:left!important;
 }
-
 #board-info>img#board-info-profile-img {
 	width: 80px;
 	margin-right: 15px;
@@ -158,6 +158,7 @@ header #header-bar #header-top-notice:hover{
 	border-radius: 8px;
 	transform:scale(1.1);
 }
+
 /*************** article ***************/
 #article-list {
 	background: white;
