@@ -158,7 +158,6 @@ header #header-bar #header-top-notice:hover{
 }
 #article-list #article-option-area> #article-option-area-toggle-btn:hover,
 #article-list #article-option-area> #article-option-area-toggle-btn:focus {
-	transform: scale(1.05);
 	transition:.2s ease 0s;
 }
 	
