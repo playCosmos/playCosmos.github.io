@@ -282,8 +282,12 @@ header #header-bar #header-top-notice:hover{
 	background: transparent;
 }
 #article-content-wrapper #article-content {
-    margin: 0 .5em;
-    border: none;
+	margin: 0 .5em;
+	border: none;
+}
+#article-content-wrapper>.footer {
+	border-top: 2px solid #c3a7cc;
+	background: white;
 }
 
 /* 댓글 */
