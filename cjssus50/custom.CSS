@@ -156,7 +156,12 @@ header #header-bar #header-top-notice:hover{
 	transition:.2s ease 0s;
 	line-height: inherit;
 }
-
+#article-list #article-option-area> #article-option-area-toggle-btn:hover,
+#article-list #article-option-area> #article-option-area-toggle-btn:focus {
+	transform: scale(1.05);
+	transition:.2s ease 0s;
+}
+	
 /* 카테고리 */
 #article-list #article-list-category {
 	background: transparent;
