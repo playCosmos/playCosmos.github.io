@@ -281,6 +281,10 @@ header #header-bar #header-top-notice:hover{
 	border-bottom: 2px solid #c3a7cc;
 	background: transparent;
 }
+#article-content-wrapper #article-content {
+    margin: 0 .5em;
+    border: none;
+}
 
 /* 댓글 */
 #article-reply-area {
