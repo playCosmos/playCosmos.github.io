@@ -96,6 +96,7 @@ header #header-bar #header-top-notice:hover{
 	width: 180px;
 }
 #main .menu-wrapper > a {
+	padding: .3em .5em .3em .5em;
 	letter-spacing: -0.05em; 
 }
 #main .menu-wrapper .spacer {
