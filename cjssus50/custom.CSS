@@ -82,6 +82,10 @@ header #header-bar>.row {
 #favoriteDropdownMenu>li>a>span.delrow {
 	color: #c3a7cc;
 }
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
 #favoriteDropdownMenu>li>a>span.label.label-default {
 	background-color: #c3a7cc;
 }
