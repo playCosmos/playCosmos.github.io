@@ -10,9 +10,6 @@ body {
 a {
 	color: #c3a7cc;
 }
-a:hover {
-    background-color: transparent;
-}
 /*************** header ***************/
 header {
 	padding: .5em 0 .5em 0;
