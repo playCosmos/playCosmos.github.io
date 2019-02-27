@@ -10,6 +10,7 @@ body {
 a {
 	color: #c3a7cc;
 }
+
 /*************** header ***************/
 header {
 	padding: .5em 0 .5em 0;
@@ -96,11 +97,6 @@ header #header-bar>.row {
 header #header-bar #header-top-notice strong.notice-badge{
 	background: #c3a7cc;
 }
-/*
-header #header-bar #header-top-notice:hover{
-	transform: scale(1.04);
-	transition: .1s;	
-}*/
 
 /*************** main ***************/
 /* 트게더 메뉴 */
