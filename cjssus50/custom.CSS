@@ -93,6 +93,10 @@ header #header-bar #header-top-notice:hover{
 #main .menu-wrapper {
 	border: 2px solid #c3a7cc;
 	border-radius: 12px 12px 0 0;
+	width: 180px;
+}
+#main .menu-wrapper > a {
+	letter-spacing: -0.05em; 
 }
 #main .menu-wrapper .spacer {
 	background: #c3a7cc;
