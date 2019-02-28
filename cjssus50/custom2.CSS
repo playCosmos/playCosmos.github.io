@@ -280,8 +280,6 @@ header #header-bar #header-top-notice strong.notice-badge{
 /* 게시글 검색 창 */
 #article-list #boardSearchForm .form-control {
 	border-color: #98bcff;
-	border-right: none;
-	border-left: none;
 }
 
 /* 게시글 본문 */
@@ -396,4 +394,7 @@ header #header-bar #header-top-notice strong.notice-badge{
 .btn:focus{
 	color: #98bcff !important;
 	background-color: #fff !important;
+}
+.btn.square {
+    margin-right: -2px;
 }
