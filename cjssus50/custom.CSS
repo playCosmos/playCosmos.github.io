@@ -51,6 +51,7 @@ header #header-bar>.row {
 }
 
 /* 상단바 드롭다운 */
+.input-group-btn.open .dropdown-menu,
 .dropdown.open .dropdown-menu {
 	opacity: unset;
 	transform: unset;
@@ -58,6 +59,7 @@ header #header-bar>.row {
 	border-radius: 10px;
 	box-shadow: 0 2px 2px rgba(0,0,0,.275);
 }
+.input-group-btn .dropdown-menu,
 .dropdown .dropdown-menu {
 	display: block !important;
 	opacity: 0;
