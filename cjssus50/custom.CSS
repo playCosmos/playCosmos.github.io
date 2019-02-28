@@ -50,50 +50,6 @@ header #header-bar>.row {
 	border-radius: 12px;
 }
 
-/* 상단바 드롭다운 */
-.input-group-btn.open .dropdown-menu,
-.dropdown.open .dropdown-menu {
-	opacity: unset;
-	transform: unset;
-	border: 2px solid #c3a7cc;
-	border-radius: 10px;
-	box-shadow: 0 2px 2px rgba(0,0,0,.275);
-}
-.input-group-btn .dropdown-menu,
-.dropdown .dropdown-menu {
-	display: block !important;
-	opacity: 0;
-	transform: scale(0);
-	transform-origin: top;
-	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
-	padding: 8px 0 3px 0px;
-}
-.dropdown-menu>li>a {
-	transition: .1s;
-}
-.dropdown-menu>li>a:hover {
-	background: transparent;
-	transform: scaleX(1.04);
-	transition: .1s;
-}
-
-#latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.delrow {
-	color: #c3a7cc;
-}
-#latestDropdownMenu>li>a>span.delrow:hover,
-#favoriteDropdownMenu>li>a>span.delrow:hover {
-	background: transparent;
-}
-#favoriteDropdownMenu>li>a>span.label.label-default {
-	background-color: #c3a7cc;
-}
-.dropdown-menu .divider {
-	background-color: #c3a7cc;
-	height: 2px;
-	margin: 3px 0;
-}
-
 /* 전광판 */
 header #header-bar #header-top-notice strong.notice-badge{
 	background: #c3a7cc;
@@ -382,6 +338,50 @@ header #header-bar #header-top-notice strong.notice-badge{
 	color:#c3a7cc;
 	background: transparent;
 	transition: .2s;
+}
+
+/* 드롭다운 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid #c3a7cc;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.275);
+}
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+.dropdown-menu>li>a {
+	transition: .1s;
+}
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: .1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: #c3a7cc;
+}
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: #c3a7cc;
+}
+.dropdown-menu .divider {
+	background-color: #c3a7cc;
+	height: 2px;
+	margin: 3px 0;
 }
 
 /* 버튼 */
