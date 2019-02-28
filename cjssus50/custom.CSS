@@ -6,7 +6,6 @@ html,
 body {
 	background: transparent;
 }
-
 a {
 	color: #c3a7cc;
 }
@@ -381,6 +380,7 @@ header #header-bar #header-top-notice strong.notice-badge{
 .pagination>li>span
 .pagination>li>span:focus {
 	color:#c3a7cc;
+	background: transparent;
 	transition: .2s;
 }
 
