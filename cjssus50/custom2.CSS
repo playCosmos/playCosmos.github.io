@@ -238,15 +238,15 @@ header #header-bar #header-top-notice strong.notice-badge{
 	border:none;
 }
 #article-list>.article-list-row.notice {
-    background-color: #c3a7cc33;
+    background-color: #98bcff33;
 }
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus {
-    background-color: #c3a7cc55;
+    background-color: #98bcff55;
 }
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
-	background-color: #c3a7cc22;
+	background-color: #98bcff22;
 }
 #article-list .article-list-row:hover,
 #article-list div.article-list-row.notice:hover {
