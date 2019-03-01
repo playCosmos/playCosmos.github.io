@@ -39,7 +39,7 @@ header .row>div:nth-child(1) > a > img {
 
 /* 검색 창 */
 header #right-search-form>input[type='text'] {
-	border: 3px solid var(--mainColor);
+	border: 2px solid var(--mainColor);
 	transition: .2s;
 }
 header #right-search-form>input[type='text']:hover,
