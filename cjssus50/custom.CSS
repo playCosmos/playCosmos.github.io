@@ -4,9 +4,9 @@
 /* 컬러 설정 */
 :root {
 	--mainColor: #c3a7cc;
-	--mainColor55: #c3a7cc55;
-	--mainColor33: #c3a7cc33;
-	--mainColor22: #c3a7cc22;
+	--mainColor5: #c3a7cc55;
+	--mainColor3: #c3a7cc33;
+	--mainColor2: #c3a7cc22;
 	--bgColor: #f3edf5;
 }
 
@@ -86,7 +86,7 @@ header #header-bar>.row {
 	letter-spacing: -0.05em; 
 }
 #main .menu-wrapper > a:hover {
-	background-color: var(--mainColor);
+	background-color: var(--mainColor2);
 }
 #main .menu-wrapper .spacer {
 	background: var(--mainColor);
@@ -218,15 +218,15 @@ header #header-bar>.row {
 	border:none;
 }
 #article-list>.article-list-row.notice {
-    background-color: var(--mainColor33);
+    background-color: var(--mainColor3);
 }
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus {
-    background-color: var(--mainColor55);
+    background-color: var(--mainColor5);
 }
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
-	background-color: var(--mainColor22);
+	background-color: var(--mainColor2);
 }
 #article-list .article-list-row:hover,
 #article-list div.article-list-row.notice:hover {
@@ -314,7 +314,7 @@ header #header-bar>.row {
 }
 #article-reply-area #reply-real-area .reply.active,
 #article-reply-area #reply-best-area .reply.active{
-	background-color: #c3a7cc22;
+	background-color: var(--mainColor2);
 }
 #article-reply-area #reply-real-area .reply > .reply-header,
 #article-reply-area #reply-best-area .reply > .reply-header {
