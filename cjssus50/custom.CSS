@@ -243,6 +243,7 @@ header #header-bar>.row {
 	border: none;
 }
 
+#article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
     background-color: var(--mainColor3);
 }
