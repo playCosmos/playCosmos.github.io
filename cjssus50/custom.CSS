@@ -1,7 +1,7 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-/* 컬러 설정 */
+/* 컬러 설정 부분 */
 :root {
 	--mainColor: #c3a7cc;
 	--mainColor5: #c3a7cc55;
