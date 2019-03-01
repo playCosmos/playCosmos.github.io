@@ -284,7 +284,6 @@ header #header-bar>.row {
 	border-top: 2px solid #c3a7cc;
 	background: white;
 }
-
 /* 댓글 */
 #article-reply-area {
 	padding: 0;
@@ -294,6 +293,10 @@ header #header-bar>.row {
 }
 #article-reply-area > .header h5 {
 	color: #c3a7cc;
+}
+#article-reply-area #reply-real-area .reply.active,
+#article-reply-area #reply-best-area .reply.active{
+	background-color: #c3a7cc22;
 }
 #article-reply-area #reply-real-area .reply > .reply-header,
 #article-reply-area #reply-best-area .reply > .reply-header {
