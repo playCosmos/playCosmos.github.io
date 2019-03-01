@@ -4,12 +4,15 @@
 /* 컬러 설정 */
 :root {
 	--mainColor: #c3a7cc;
+	--mainColor55: #c3a7cc55;
+	--mainColor33: #c3a7cc33;
+	--mainColor22: #c3a7cc22;
 	--bgColor: #f3edf5;
 }
 
 html,
 body {
-	background: #f3edf5;
+	background: var(--bgColor);
 }
 
 a {
@@ -27,7 +30,7 @@ header .row>div:nth-child(1) > a > img {
 
 /* 검색 창 */
 header #right-search-form>input[type='text'] {
-	border: 3px solid var(--mainColor);;
+	border: 3px solid var(--mainColor);
 	transition: .2s;
 }
 header #right-search-form>input[type='text']:hover,
@@ -38,7 +41,7 @@ header #right-search-form>input[type='text']:focus {
 
 /* 검색 버튼 */
 header #right-search-form>#right-search-btn {
-	color: #c3a7cc;
+	color: var(--mainColor);
 	transition: .2s;
 }
 header #right-search-form>#right-search-btn:hover,
@@ -52,7 +55,7 @@ header #header-bar {
 	margin-bottom: 0.5em;
 }
 header #header-bar>.row {
-	border: 2px solid #c3a7cc;
+	border: 2px solid var(--mainColor);
 	border-radius: 12px;
 }
 
@@ -74,7 +77,7 @@ header #header-bar>.row {
 	letter-spacing: -0.05em; 
 }
 #main .menu-wrapper > a:hover {
-	background-color: #c3a7cc22;
+	background-color: var(--mainColor);
 }
 #main .menu-wrapper .spacer {
 	background: var(--mainColor);
@@ -206,15 +209,15 @@ header #header-bar>.row {
 	border:none;
 }
 #article-list>.article-list-row.notice {
-    background-color: #c3a7cc33;
+    background-color: var(--mainColor33);
 }
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus {
-    background-color: #c3a7cc55;
+    background-color: var(--mainColor55);
 }
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
-	background-color: #c3a7cc22;
+	background-color: var(--mainColor22);
 }
 #article-list .article-list-row:hover,
 #article-list div.article-list-row.notice:hover {
