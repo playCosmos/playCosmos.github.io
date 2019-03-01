@@ -221,7 +221,9 @@ header #header-bar>.row {
     background-color: var(--mainColor3);
 }
 #article-list>.article-list-row.notice:hover,
-#article-list>.article-list-row.notice:focus {
+#article-list>.article-list-row.notice:focus,
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus {
     background-color: var(--mainColor5);
 }
 #article-list>.article-list-row:hover,
