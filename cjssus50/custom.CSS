@@ -58,6 +58,7 @@ header #header-bar #header-top-notice strong.notice-badge{
 /*************** main ***************/
 /* 트게더 메뉴 */
 #main .menu-wrapper {
+	background: white;
 	border: 2px solid #c3a7cc;
 	border-radius: 12px 12px 0 0;
 	width: 180px;
@@ -65,6 +66,9 @@ header #header-bar #header-top-notice strong.notice-badge{
 #main .menu-wrapper > a {
 	padding: .35em .5em .35em .5em;
 	letter-spacing: -0.05em; 
+}
+#main .menu-wrapper > a:hover {
+	background-color: #c3a7cc22;
 }
 #main .menu-wrapper .spacer {
 	background: #c3a7cc;
