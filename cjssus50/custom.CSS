@@ -489,5 +489,19 @@ header #header-bar>.row {
 }
 
 .btn.square {
-    margin-right: -2px;
+	margin-right: -2px;
+}
+
+i.fa.fa-heart {
+	animation: heartbeat 1.15s infinite;
+}
+
+/*************** animation ***************/
+@keyframes heartbeat {
+	0% { transform: scale(1); }
+	25% { transform: scale(1.25); }
+	35% { transform: scale(0.9); }
+	50% { transform: scale(1.15); }
+	70% { transform: scale(0.95); }
+	100% { transform: scale(1); }
 }
