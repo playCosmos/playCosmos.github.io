@@ -348,6 +348,11 @@ header #header-bar>.row {
 	background: white;
 }
 
+#article-neighbor-list:hover,
+#article-neighbor-list:focus {
+	background-color: var(--mainColor2);
+}
+
 #article-neighbor-list>div>span.indicator,
 #article-neighbor-list>div>a,
 #article-neighbor-list>div>span.author{
