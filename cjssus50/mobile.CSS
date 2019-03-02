@@ -1,3 +1,6 @@
-#header-top-notice {
-display: none;
+
+#header-top-notice,
+#board-info>a.board-right-menu[href="/cjssus50/profile"],
+#board-info>a.board-right-menu[href="/clips?streamer_id=214655362"] {
+  display: none;
 }
