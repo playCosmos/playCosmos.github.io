@@ -342,6 +342,11 @@ header #header-bar>.row {
 	background: white;
 }
 
+#article-neighbor-list>div>a,
+#article-neighbor-list>div>span.indicator {
+	color: var(--mainColor);
+}
+
 /* 댓글 */
 #article-reply-area {
 	padding: 0;
