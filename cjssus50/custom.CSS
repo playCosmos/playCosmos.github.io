@@ -342,6 +342,12 @@ header #header-bar>.row {
 	background: white;
 }
 
+#article-neighbor-list {
+    border: 2px solid var(--mainColor);
+    border-radius: 12px;
+    background: white;
+}
+
 #article-neighbor-list>div>a,
 #article-neighbor-list>div>span.indicator {
 	color: var(--mainColor);
