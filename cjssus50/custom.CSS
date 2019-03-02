@@ -348,8 +348,9 @@ header #header-bar>.row {
     background: white;
 }
 
+#article-neighbor-list>div>span.indicator,
 #article-neighbor-list>div>a,
-#article-neighbor-list>div>span.indicator {
+#article-neighbor-list>div>span.author{
 	color: var(--mainColor);
 }
 
