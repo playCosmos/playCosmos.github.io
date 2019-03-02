@@ -365,6 +365,7 @@ header #header-bar>.row {
 	background: white;
 	border: 2px solid var(--mainColor);
 	border-radius: 0 0 12px 12px;
+	margin-bottom: 1em;
 }
 
 #article-reply-area > .header h5 {
