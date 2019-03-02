@@ -245,14 +245,14 @@ header #header-bar>.row {
 
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
-    background-color: var(--mainColor3);
+	background-color: var(--mainColor3);
 }
 
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus,
 #article-list>.article-list-row.hot:hover,
 #article-list>.article-list-row.hot:focus {
-    background-color: var(--mainColor5);
+	background-color: var(--mainColor5);
 }
 
 #article-list>.article-list-row:hover,
@@ -277,8 +277,8 @@ header #header-bar>.row {
 /* 게시글 추천 수 0 */
 #article-list>.article-list-row>.item>.list-header.v0>span,
 #article-list>.article-list-row>.item>.list-header.v0>span:hover {
-    color: transparent !important;
-    background-color: transparent !important;
+	color: transparent !important;
+	background-color: transparent !important;
 }
 
 /* 게시글 댓글 수 */
@@ -343,9 +343,9 @@ header #header-bar>.row {
 }
 
 #article-neighbor-list {
-    border: 2px solid var(--mainColor);
-    border-radius: 12px;
-    background: white;
+	border: 2px solid var(--mainColor);
+	border-radius: 12px;
+	background: white;
 }
 
 #article-neighbor-list>div>span.indicator,
