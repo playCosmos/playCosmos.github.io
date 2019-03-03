@@ -28,3 +28,8 @@
 #article-list>.notice>.item>a.list-title>span.a-badge {
 	display: none;
 }
+
+nav#nav {
+    animation: slide .5s cubic-bezier(.28,1.54,.55,.9);
+    /*transform: translateZ(999px);*/
+}
