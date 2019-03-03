@@ -19,8 +19,19 @@
 }
 
 /* 공지 숨기기 버튼 높이 맞춤 */
-#article-list #article-option-area {
+#article-list #article-option-area,
+#article-list #article-option-area>#article-option-area-toggle-btn {
 	height: 34px;
+	width: 34px;
+}
+
+#article-list #article-list-category {
+	background: white;
+}
+
+#article-list #article-list-category>a {
+	background: transparent;
+	color: var(--mainColor);
 }
 
 /* 공지 작성자, 댓글 수 표시 제거 */
