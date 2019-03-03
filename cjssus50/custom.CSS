@@ -237,7 +237,8 @@ header #header-bar>.row {
 #article-list #article-list-category>a::after {
 	height: 2px;
 	width: 100%;
-	background: var(--mainColor);
+	/*background: var(--mainColor);*/
+	background: currentColor;
 	content: "";
 	position: absolute;
 	left: 0px;
