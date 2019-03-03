@@ -348,14 +348,14 @@ header #header-bar>.row {
 	background: white;
 }
 
-#article-neighbor-list:hover,
-#article-neighbor-list:focus {
-	background-color: var(--mainColor2);
+#article-neighbor-list>div:hover,
+#article-neighbor-list>div:focus {
+	background: linear-gradient(to right, white, var(--mainColor2), white);
 }
 
 #article-neighbor-list>div>span.indicator,
 #article-neighbor-list>div>a,
-#article-neighbor-list>div>span.author{
+#article-neighbor-list>div>span.author {
 	color: var(--mainColor);
 }
 
