@@ -15,9 +15,7 @@
   display: none;
 } */
 /* 아이콘 위치 맞춤 */
-/*#article-list>.notice>.item>a.list-title>span.a-badge {
-  width: 35px;
-  text-align:left;
-  padding-left:10px;
+#article-list>.notice>.item>a.list-title>span.a-badge {
+  display: none;
 }
-*/
+
