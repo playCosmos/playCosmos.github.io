@@ -2,7 +2,7 @@
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
 	--mainColor: #c3a7cc;	 /* 메인 컬러 */
-	--mainColor2: #c3a7cc22; /* 트게더 메뉴, 게시글 hover */
+	--mainColor1: #c3a7cc11; /* 게시글 hover */
 	--mainColor3: #c3a7cc33; /* 공지, 인기글 */
 	--mainColor5: #c3a7cc55; /* 공지, 인기글 hover */
 	--logoURL: url([여기에 로고 주소 입력]);
@@ -23,12 +23,17 @@ header {
 }
 
 /* 공지 숨기기 버튼 높이 맞춤 */
-#article-list #article-option-area,
+#article-list #article-option-area{}
+
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	height: 34px;
 	width: 34px;
+	border-radius: 8px;
+	border: 2px solid;
+	line-height: inherit;
+	opacity: 0.7;
 }
-
+/*#article-list #article-option-area>#article-option-area-toggle-btn*/
 #article-list #article-list-category {
     background: white;
     /*border-top: 2px solid var(--mainColor);
@@ -51,6 +56,19 @@ header {
 	display: none;
 }
 
+/* 게시글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+	background-color: var(--mainColor);
+}
+/* 게시글 댓글 수 */
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+	color: var(--mainColor);
+}
+
+/* 로그인한 게시글 작성자 */
+#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
+	color: var(--mainColor);
+}
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor3);
@@ -66,15 +84,73 @@ header {
 
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
-	background-color: var(--mainColor2);
+	background-color: var(--mainColor1);
 }
 
-/* 방문 했던 공지글 색 그대로  */
+/* 방문 했던 공지글 색 진하게  */
 #article-list>.article-list-row>.item>a.list-title:visited {
-    color: currentColor;
+    color: #555 !important;
 }
 
 nav#nav {
     animation: slide .5s cubic-bezier(.28,1.54,.55,.9);
     /*transform: translateZ(999px);*/
+}
+
+
+/* 트게더 페이지 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+	background-color: var(--mainColor);
+	border-color: var(--mainColor);
+}
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
+}
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--mainColor);
+	background: transparent;
+}
+
+/* 버튼 */
+.btn {
+	color: #fff !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	border-radius: 0;
+	transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--mainColor) !important;
+	background-color: #fff !important;
+}
+
+.btn.square {
+	margin-right: -2px;
+}
+
+i.fa.fa-heart {
+	animation: heartbeat 1.15s infinite;
+}
+
+/*************** animation ***************/
+@keyframes heartbeat {
+	0% { transform: scale(1); }
+	25% { transform: scale(1.25); }
+	35% { transform: scale(0.9); }
+	50% { transform: scale(1.15); }
+	70% { transform: scale(0.95); }
+	100% { transform: scale(1); }
 }
