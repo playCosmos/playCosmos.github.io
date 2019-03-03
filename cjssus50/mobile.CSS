@@ -133,16 +133,26 @@ header {
 	margin-right: -2px;
 }
 
-i.fa.fa-heart {
-	animation: heartbeat 1.15s infinite;
+small.favo i.fa.fa-heart {
+	animation: heartbeat 1s infinite;
+}
+
+span.a-badge i.fa.fa-star {
+    animation: shiningstar 2s infinite;
+    animation-timing-function: linear;
 }
 
 /*************** animation ***************/
 @keyframes heartbeat {
 	0% { transform: scale(1); }
-	25% { transform: scale(1.25); }
-	35% { transform: scale(0.9); }
-	50% { transform: scale(1.15); }
-	70% { transform: scale(0.95); }
+	30% { transform: scale(1.25); }
+	42% { transform: scale(0.9); }
+	60% { transform: scale(1.15); }
+	85% { transform: scale(0.95); }
 	100% { transform: scale(1); }
+}
+
+@keyframes shiningstar {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
