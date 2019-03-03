@@ -13,7 +13,7 @@
 *:focus { outline: none !important; }
 
 header {
-    border-bottom: 3px solid var(--mainColor);
+    border-bottom: 4px solid var(--mainColor);
 }
 	
 #header-top-notice,
@@ -25,14 +25,14 @@ header {
 /* 공지 숨기기 버튼 높이 맞춤 */
 #article-list #article-option-area,
 #article-list #article-option-area>#article-option-area-toggle-btn {
-	height: 38px;
-	width: 38px;
+	height: 34px;
+	width: 34px;
 }
 
 #article-list #article-list-category {
     background: white;
-    border-top: 2px solid var(--mainColor);
-    border-bottom: 2px solid var(--mainColor);
+    /*border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);*/
 }
 
 #article-list #article-list-category>a {
