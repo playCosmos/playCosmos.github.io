@@ -11,9 +11,9 @@
 }
 
 /* 공지 문구 표시 제거 */
-#article-list>.notice>.item>.list-header {
+/*#article-list>.notice>.item>.list-header {
   display: none;
-} 
+} */
 /* 아이콘 위치 맞춤 */
 /*#article-list>.notice>.item>a.list-title>span.a-badge {
   width: 35px;
