@@ -26,7 +26,9 @@
 }
 
 #article-list #article-list-category {
-	background: white;
+    background: white;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
 #article-list #article-list-category>a {
@@ -48,6 +50,7 @@
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor3);
+	border-bottom: 1px solid var(--mainColor);
 }
 
 #article-list>.article-list-row.notice:hover,
