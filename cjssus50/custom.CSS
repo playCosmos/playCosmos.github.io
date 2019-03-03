@@ -7,8 +7,8 @@
 	--mainColor5: #c3a7cc55; /* 공지, 인기글 hover */
 	--logoURL: url([여기에 로고 주소 입력]);
 	--logoWidth: 200px;	 /* 로고 너비 */
-	--before: ""; /* 접속자 수 앞 */
-	--after: ""; /* 접속자 수 뒤 */
+	--before: "";		 /* 접속자 수 앞 */
+	--after: "";		 /* 접속자 수 뒤 */
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
