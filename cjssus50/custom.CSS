@@ -227,28 +227,29 @@ header #header-bar>.row {
 
 #article-list #article-list-category>a::before {
 	top: 0;
+	left: 0;
+	transform: translateX(-100%) scaleX(0);
 }
 
 #article-list #article-list-category>a::after {
 	bottom: 0;
+	right: 0;
+	transform: translateX(100%) scaleX(0);
 }
 
 #article-list #article-list-category>a::before,
 #article-list #article-list-category>a::after {
 	height: 2px;
 	width: 100%;
-	/*background: var(--mainColor);*/
 	background: currentColor;
 	content: "";
 	position: absolute;
-	left: 0px;
-	transform: scaleX(0);
-	transition: 0.3s;
+	transition: cubic-bezier(0.15, 0, 1, 0) 0.3s;
 }
 
 #article-list #article-list-category>a:hover::before,
 #article-list #article-list-category>a:hover::after {
-	transform: scaleX(1);
+	transform: translateX(0) scaleX(1);
 }
 
 /* 게시글 */
