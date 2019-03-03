@@ -350,7 +350,7 @@ header #header-bar>.row {
 
 #article-neighbor-list>div:hover,
 #article-neighbor-list>div:focus {
-	background: linear-gradient(to right, white, var(--mainColor2), white);
+	background: linear-gradient(to right, white, var(--mainColor2), var(--mainColor2), white);
 }
 
 #article-neighbor-list>div>span.indicator,
