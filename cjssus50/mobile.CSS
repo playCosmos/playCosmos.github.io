@@ -18,6 +18,11 @@
 	display: none;
 }
 
+/* 공지 숨기기 버튼 높이 맞춤 */
+#article-list #article-option-area {
+	height: 34px;
+}
+
 /* 공지 작성자, 댓글 수 표시 제거 */
 #article-list>.notice>.item>a.list-title>.list-writer,
 #article-list>.notice>.item>a.list-title>small.comment-count {
