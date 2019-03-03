@@ -23,8 +23,6 @@ header {
 }
 
 /* 공지 숨기기 버튼 높이 맞춤 */
-#article-list #article-option-area{}
-
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	height: 34px;
 	width: 34px;
@@ -33,11 +31,9 @@ header {
 	line-height: inherit;
 	opacity: 0.7;
 }
-/*#article-list #article-option-area>#article-option-area-toggle-btn*/
+
 #article-list #article-list-category {
     background: white;
-    /*border-top: 2px solid var(--mainColor);
-    border-bottom: 2px solid var(--mainColor);*/
 }
 
 #article-list #article-list-category>a {
@@ -60,6 +56,7 @@ header {
 #article-list>.article-list-row>.item>.list-header>span {
 	background-color: var(--mainColor);
 }
+
 /* 게시글 댓글 수 */
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
 	color: var(--mainColor);
@@ -69,34 +66,29 @@ header {
 #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
 	color: var(--mainColor);
 }
-#article-list>.article-list-row.hot,
-#article-list>.article-list-row.notice {
-	background-color: var(--mainColor3);
-	border-bottom: 1px solid var(--mainColor);
-}
 
-#article-list>.article-list-row.notice:hover,
-#article-list>.article-list-row.notice:focus,
-#article-list>.article-list-row.hot:hover,
-#article-list>.article-list-row.hot:focus {
-	background-color: var(--mainColor5);
-}
-
+/* 게시글 배경 */
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
 	background-color: var(--mainColor1);
+}
+
+#article-list>.article-list-row.hot,
+#article-list>.article-list-row.notice {
+	background-color: var(--mainColor3);
+}
+
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus,
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus {
+	background-color: var(--mainColor5);
 }
 
 /* 방문 했던 공지글 색 진하게  */
 #article-list>.article-list-row>.item>a.list-title:visited {
     color: #555 !important;
 }
-
-nav#nav {
-    animation: slide .5s cubic-bezier(.28,1.54,.55,.9);
-    /*transform: translateZ(999px);*/
-}
-
 
 /* 트게더 페이지 */
 .pagination>.active>a,
