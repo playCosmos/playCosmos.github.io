@@ -220,9 +220,7 @@ header #header-bar>.row {
 
 #article-list #article-list-category>a {
 	background: transparent;
-	color: var(--mainColor);
 	position: relative;
-	transition: ease-out 0.3s 0.1s;
 }
 
 #article-list #article-list-category>a::before {
@@ -244,7 +242,7 @@ header #header-bar>.row {
 	background: currentColor;
 	content: "";
 	position: absolute;
-	transition: cubic-bezier(0.15, 0, 1, 0) 0.3s;
+	transition: cubic-bezier(0.4, 0, 1, 0) 0.2s;
 }
 
 #article-list #article-list-category>a:hover::before,
