@@ -1,12 +1,12 @@
 /* 컬러, 로고 설정 부분 */
 :root {
-  --bgColor: #f3edf5;	 /* 배경 색 */
-  --mainColor: #c3a7cc;	 /* 메인 컬러 */
-  --mainColor2: #c3a7cc22; /* 트게더 메뉴, 게시글 hover */
-  --mainColor3: #c3a7cc33; /* 공지, 인기글 */
-  --mainColor5: #c3a7cc55; /* 공지, 인기글 hover */
-  --logoURL: url([여기에 로고 주소 입력]);
-  --logoWidth: 200px;	 /* 로고 너비 */
+	--bgColor: #f3edf5;	 /* 배경 색 */
+	--mainColor: #c3a7cc;	 /* 메인 컬러 */
+	--mainColor2: #c3a7cc22; /* 트게더 메뉴, 게시글 hover */
+	--mainColor3: #c3a7cc33; /* 공지, 인기글 */
+	--mainColor5: #c3a7cc55; /* 공지, 인기글 hover */
+	--logoURL: url([여기에 로고 주소 입력]);
+	--logoWidth: 200px;	 /* 로고 너비 */
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -15,17 +15,16 @@
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
 #board-info>a.board-right-menu[href="/clips?streamer_id=214655362"] {
-  display: none;
+	display: none;
 }
 
 /* 공지 작성자, 댓글 수 표시 제거 */
 #article-list>.notice>.item>a.list-title>.list-writer,
 #article-list>.notice>.item>a.list-title>small.comment-count {
-  display: none;
+	display: none;
 }
 
 /* 공지 i 아이콘 제거 */
 #article-list>.notice>.item>a.list-title>span.a-badge {
-  display: none;
+	display: none;
 }
-
