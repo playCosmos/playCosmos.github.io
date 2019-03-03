@@ -69,6 +69,11 @@ header {
 	background-color: var(--mainColor2);
 }
 
+/* 방문 했던 공지글 색 그대로  */
+#article-list>.article-list-row>.item>a.list-title:visited {
+    color: currentColor;
+}
+
 nav#nav {
     animation: slide .5s cubic-bezier(.28,1.54,.55,.9);
     /*transform: translateZ(999px);*/
