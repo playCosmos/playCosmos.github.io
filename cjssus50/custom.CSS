@@ -137,7 +137,6 @@ header #header-bar>.row {
 	cursor: text;
 }
 
-
 #board-info #viewers-area #viewers:after {
 	content: var(--after);
 	cursor: text;
