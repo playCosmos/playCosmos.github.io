@@ -15,7 +15,11 @@
 header {
     border-bottom: 4px solid var(--mainColor);
 }
-	
+
+nav#nav>.nav-header {
+	background: var(--mainColor);
+}
+
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
 #board-info>a.board-right-menu[href="/clips?streamer_id=214655362"] {
