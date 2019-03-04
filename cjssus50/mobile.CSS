@@ -20,6 +20,10 @@ header {
 	border-bottom: 4px solid var(--mainColor);
 }
 
+header>#header-area>a>h1 {
+	filter: hue-rotate(2deg) saturate(1.9) brightness(1.8) contrast(0.3);
+}
+
 header>#header-area>#header-search-link {
 	color: var(--mainColor);
 }
