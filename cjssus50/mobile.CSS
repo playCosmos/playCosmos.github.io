@@ -20,13 +20,14 @@ nav#nav>.nav-header {
 	background: var(--mainColor);
 }
 
+/* 걸리적 거리는거 삭제 */
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
 #board-info>a.board-right-menu[href="/clips?streamer_id=214655362"] {
 	display: none;
 }
 
-/* 공지 숨기기 버튼 높이 맞춤 */
+/* 공지 숨기기 버튼 */
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	height: 34px;
 	width: 34px;
