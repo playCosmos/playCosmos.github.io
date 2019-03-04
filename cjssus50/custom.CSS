@@ -264,27 +264,23 @@ header #header-bar>.row {
 	transition: 0.2s;
 }
 
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:focus {
+	background-color: var(--mainColor2);
+	transform: scale(1.01);
+	transition: 0.2s;
+}
+
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor3);
 }
 
-#article-list>.article-list-row.notice:hover,
-#article-list>.article-list-row.notice:focus,
 #article-list>.article-list-row.hot:hover,
-#article-list>.article-list-row.hot:focus {
+#article-list>.article-list-row.hot:focus,
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus {
 	background-color: var(--mainColor5);
-}
-
-#article-list>.article-list-row:hover,
-#article-list>.article-list-row:focus {
-	background-color: var(--mainColor2);
-}
-
-#article-list .article-list-row:hover,
-#article-list div.article-list-row.notice:hover {
-	transform: scale(1.01);
-	transition: 0.2s;
 }
 
 #article-list>.article-list-row>.item>.list-header {
