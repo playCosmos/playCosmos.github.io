@@ -3,8 +3,8 @@
 	--bgColor: #f3edf5;	 /* 배경 색 */
 	--mainColor: #c3a7cc;	 /* 메인 컬러 */
 	--mainColor1: #c3a7cc11; /* 게시글 hover */
-	--mainColor3: #c3a7cc33; /* 공지, 인기글 */
-	--mainColor5: #c3a7cc55; /* 공지, 인기글 hover */
+	--mainColor2: #c3a7cc22; /* 공지, 인기글 */
+	--mainColor3: #c3a7cc33; /* 공지, 인기글 hover */
 	--logoURL: url(여기에 로고 주소 입력);
 	--logoWidth: 200px;	 /* 로고 너비 */
 }
@@ -84,14 +84,20 @@ nav#nav>.nav-header {
 
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
-	background-color: var(--mainColor3);
+	background-color: var(--mainColor2);
+}
+
+#article-list>.article-list-row.hot {
+	border: 2px solid var(--mainColor);
+	animation: glowborder 2s infinite;
+	animation-timing-function:  cubic-bezier(0, 0.75, 1, 1);
 }
 
 #article-list>.article-list-row.hot:hover,
 #article-list>.article-list-row.hot:focus,
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus {
-	background-color: var(--mainColor5);
+	background-color: var(--mainColor3);
 }
 
 /* 방문 했던 공지글 색 진하게  */
@@ -167,6 +173,12 @@ span.a-badge i.fa.fa-star {
 }
 
 /*************** animation ***************/
+@keyframes glowborder {
+	0% { box-shadow: inset 0 0 0px var(--mainColor); }
+	50% { box-shadow: inset 0 0 20px var(--mainColor); }
+	100% { box-shadow: inset 0 0 0px var(--mainColor); }
+}
+
 @keyframes heartbeat {
 	0% { transform: scale(1); }
 	30% { transform: scale(1.25); }
