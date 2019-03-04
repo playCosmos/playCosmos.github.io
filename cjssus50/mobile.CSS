@@ -36,6 +36,12 @@ nav#nav>.nav-header {
 	background: var(--mainColor);
 }
 
+nav#nav>#nav-upper-shortcut {
+    border-top: 4px solid var(--mainColor);
+    padding-top: 6px;
+    height: 33px;
+}
+
 /* 걸리적 거리는거 삭제 */
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
