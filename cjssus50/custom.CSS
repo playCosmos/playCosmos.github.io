@@ -250,7 +250,7 @@ header #header-bar>.row {
 	background: currentColor;
 	content: "";
 	position: absolute;
-	transition: cubic-bezier(0.4, 0, 1, 0) 0.28s;
+	transition: cubic-bezier(0.25, 0, 1, 0) 0.28s;
 }
 
 #article-list #article-list-category>a:hover::before,
