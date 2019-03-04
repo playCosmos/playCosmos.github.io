@@ -12,6 +12,10 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+a {
+    color: var(--mainColor);
+}
+
 header {
     border-bottom: 4px solid var(--mainColor);
 }
@@ -93,6 +97,21 @@ nav#nav>.nav-header {
 /* 방문 했던 공지글 색 진하게  */
 #article-list>.article-list-row>.item>a.list-title:visited {
     color: #555 !important;
+}
+
+#article-reply-area > .header h5,
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+	color: var(--mainColor);
+}
+
+.fr-toolbar {
+	border-top: 4px solid var(--mainColor);
+}
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+	color: var(--mainColor);
 }
 
 /* 트게더 페이지 */
