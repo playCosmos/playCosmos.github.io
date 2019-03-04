@@ -13,11 +13,11 @@
 *:focus { outline: none !important; }
 
 a {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 header {
-    border-bottom: 4px solid var(--mainColor);
+	border-bottom: 4px solid var(--mainColor);
 }
 
 nav#nav>.nav-header {
@@ -42,7 +42,7 @@ nav#nav>.nav-header {
 }
 
 #article-list #article-list-category {
-    background: white;
+	background: white;
 }
 
 #article-list #article-list-category>a {
@@ -89,8 +89,6 @@ nav#nav>.nav-header {
 
 #article-list>.article-list-row.hot {
 	border: 2px solid var(--mainColor);
-	animation: glowborder 2s infinite;
-	animation-timing-function:  cubic-bezier(0, 0.75, 1, 1);
 }
 
 #article-list>.article-list-row.hot:hover,
@@ -102,7 +100,7 @@ nav#nav>.nav-header {
 
 /* 방문 했던 공지글 색 진하게  */
 #article-list>.article-list-row>.item>a.list-title:visited {
-    color: #555 !important;
+	color: #555 !important;
 }
 
 #article-reply-area > .header h5,
@@ -168,17 +166,11 @@ small.favo i.fa.fa-heart {
 }
 
 span.a-badge i.fa.fa-star {
-    animation: shiningstar 2s infinite;
-    animation-timing-function: linear;
+	animation: shiningstar 2s infinite;
+	animation-timing-function: linear;
 }
 
 /*************** animation ***************/
-@keyframes glowborder {
-	0% { box-shadow: inset 0 0 0px var(--mainColor); }
-	50% { box-shadow: inset 0 0 20px var(--mainColor); }
-	100% { box-shadow: inset 0 0 0px var(--mainColor); }
-}
-
 @keyframes heartbeat {
 	0% { transform: scale(1); }
 	30% { transform: scale(1.25); }
