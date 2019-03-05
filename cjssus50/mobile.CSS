@@ -2,9 +2,9 @@
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
 	--mainColor: #c3a7cc;	 /* 메인 컬러 */
-	--mainColor1: #c3a7cc11; /* 게시글 hover */
-	--mainColor2: #c3a7cc22; /* 공지, 인기글 */
-	--mainColor3: #c3a7cc33; /* 공지, 인기글 hover */
+	--mainColor1: #fbf9fc; /* 게시글 hover */
+	--mainColor2: #f7f3f8; /* 공지, 인기글 */
+	--mainColor3: #f3edf5; /* 공지, 인기글 hover */
 	--logoURL: url(여기에 로고 주소 입력);
 	--logoWidth: 200px;	 /* 로고 너비 */
 }
