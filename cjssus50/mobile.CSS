@@ -38,14 +38,15 @@ nav#nav>#nav-upper-shortcut {
 }
 
 nav#nav>.nav-header {
-    background: var(--mainColor);
-    margin-top: 1px;
-    height: 35px;
-    font-size: 14px;
-    padding: 8px 15px;
+	background: var(--mainColor);
+	margin-top: 1px;
+	height: 35px;
+	font-size: 14px;
+	padding: 8px 15px;
 }
 
 nav#nav>.nav-menu-area a {
+	padding: 5px 0;
 	text-align: center;
 }
 
