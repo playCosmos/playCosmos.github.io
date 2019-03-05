@@ -12,6 +12,13 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+html,
+body,
+header,
+nav#nav {
+    background: white;
+}
+
 a {
 	color: var(--mainColor);
 }
@@ -24,6 +31,8 @@ header>#header-area>a>h1 {
 	filter: hue-rotate(2deg) saturate(1.9) brightness(1.8) contrast(0.3);
 }
 
+header>#header-search-bar #header-close-search-btn,
+header>#header-search-bar #header-search-btn,
 header>#header-area>#header-search-link {
 	color: var(--mainColor);
 }
@@ -32,9 +41,17 @@ header > #header-search-bar #header-search-input {
 	border: 2px solid var(--mainColor);
 }
 
+header>#header-area>#header-bar-link,
+nav#nav>#nav-upper>#header-close-bar-link {
+	color: var(--mainColor);
+}
+
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
+}
+nav#nav > #nav-upper #userDropdown #notification-badge {
+	background: var(--mainColor);
 }
 
 nav#nav>.nav-header {
@@ -191,6 +208,61 @@ nav#nav>.nav-menu-area>.right{
 	background: transparent;
 }
 
+/* 드롭다운 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--mainColor);
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+	transition: 0.1s;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: 0.1s;
+}
+
+.dropdown-backdrop {
+	animation: dimming 0.2s;
+	animation-fill-mode: forwards;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--mainColor);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--mainColor);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--mainColor);
+	height: 2px;
+	margin: 3px 0;
+}
+
 /* 버튼 */
 .btn {
 	color: #fff !important;
@@ -210,6 +282,12 @@ nav#nav>.nav-menu-area>.right{
 	margin-right: -2px;
 }
 
+footer {
+	border-top: 2px solid var(--mainColor);
+	background: var(--mainColor1);
+}
+
+
 small.favo i.fa.fa-heart {
 	animation: heartbeat 1s infinite;
 }
@@ -220,6 +298,11 @@ span.a-badge i.fa.fa-star {
 }
 
 /*************** animation ***************/
+@keyframes dimming {
+	0% { background: #0000 }
+	100% { background: #000a; }
+}
+
 @keyframes heartbeat {
 	0% { transform: scale(1); }
 	30% { transform: scale(1.25); }
