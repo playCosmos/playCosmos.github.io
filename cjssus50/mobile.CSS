@@ -37,6 +37,10 @@ header>#header-area>#header-search-link {
 	color: var(--mainColor);
 }
 
+header > #header-search-bar #header-search-btn {
+	margin-top: -5px;
+}
+
 header > #header-search-bar #header-search-input {
 	border: 2px solid var(--mainColor);
 }
