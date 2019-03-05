@@ -50,14 +50,19 @@ nav#nav>#nav-upper>#header-close-bar-link {
 	color: var(--mainColor);
 }
 
+#nav-overlay {
+	animation: dimming 0.2s;
+	animation-fill-mode: forwards;
+}
+
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
 }
+
 nav#nav > #nav-upper #userDropdown #notification-badge {
 	background: var(--mainColor);
 }
-
 nav#nav>.nav-header {
 	background: var(--mainColor);
 	margin-top: 1px;
@@ -304,7 +309,7 @@ span.a-badge i.fa.fa-star {
 /*************** animation ***************/
 @keyframes dimming {
 	0% { background: #0000 }
-	100% { background: #000a; }
+	100% { background: #0007; }
 }
 
 @keyframes heartbeat {
