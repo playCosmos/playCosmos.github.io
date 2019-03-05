@@ -34,7 +34,7 @@ header > #header-search-bar #header-search-input {
 
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
-	padding: 6px;
+	padding: 6px 10px;
 }
 
 nav#nav>.nav-header {
@@ -52,8 +52,16 @@ nav#nav>.nav-menu-area hr {
 
 nav#nav>.nav-menu-area>.left,
 nav#nav>.nav-menu-area>.right {
-	padding: 16px 4px;
-	margin: 5px;
+	padding: 16px 10px;
+	margin: 3px;
+}
+
+nav#nav>.nav-menu-area>.left {
+	padding-right: 0;
+}
+
+nav#nav>.nav-menu-area>.right{
+	padding-left: 0;
 }
 
 /* 걸리적 거리는거 삭제 */
