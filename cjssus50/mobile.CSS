@@ -52,7 +52,8 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 header.nav-down,
 header.nav-up {
-    transition: 0.2s;
+	transition: 1s;
+	animation-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 
 #nav-overlay {
