@@ -55,12 +55,12 @@ header.nav-up {
 	transition: 1s;
 	animation-timing-function: cubic-bezier(1, 0, 1, 1);
 }
-
+/*
 #nav-overlay {
 	animation: dimming 0.2s;
 	animation-fill-mode: forwards;
 }
-
+*/
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
@@ -158,8 +158,7 @@ nav#nav>.nav-menu-area>.right{
 }
 
 /* 게시글 배경 */
-#article-list>.article-list-row:hover,
-#article-list>.article-list-row:focus {
+#article-list>.article-list-row:hover {
 	background-color: var(--mainColor1);
 }
 
@@ -173,9 +172,7 @@ nav#nav>.nav-menu-area>.right{
 }
 
 #article-list>.article-list-row.hot:hover,
-#article-list>.article-list-row.hot:focus,
-#article-list>.article-list-row.notice:hover,
-#article-list>.article-list-row.notice:focus {
+#article-list>.article-list-row.notice:hover {
 	background-color: var(--mainColor3);
 }
 
@@ -205,26 +202,27 @@ nav#nav>.nav-menu-area>.right{
 
 /* 트게더 페이지 */
 .pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>span,
-.pagination>.active>span:focus {
-	background-color: var(--mainColor);
+.pagination>.active>span {
+	background: var(--mainColor);
 	border-color: var(--mainColor);
 }
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>li>a:hover,
-.pagination>li>span:hover {
-	background-color: white;
-	border-color: var(--mainColor);
-	color: var(--mainColor);
-}
+
 .pagination>li>a,
-.pagination>li>a:focus,
-.pagination>li>span
-.pagination>li>span:focus {
+.pagination>li>span {
 	color: var(--mainColor);
-	background: transparent;
+}
+
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus
+.pagination>li>span:hover {
+	background: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 드롭다운 */
