@@ -424,6 +424,7 @@ header #header-bar>.row {
 	color: var(--mainColor);
 }
 
+.fr-popup,
 .fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
 .fr-popup .fr-command.fr-btn.fr-dropdown::after {
 	border-top: 4px solid var(--mainColor);
