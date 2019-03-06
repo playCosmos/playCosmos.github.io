@@ -176,9 +176,10 @@ nav#nav>.nav-menu-area>.right{
 	background-color: var(--mainColor3);
 }
 
+/* 게시글 */
 #article-list>.article-list-row>.item>a.list-title {
 	text-align: justify;
-	padding: 6px 0;
+	padding: 7px 0;
 }
 
 /* 방문 했던 공지글 색 진하게  */
