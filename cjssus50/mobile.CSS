@@ -190,7 +190,7 @@ nav#nav>.nav-menu-area>.right{
 
 /* 게시글 긴 제목 최대 길이 조정 (말 줄임표) */
 #article-list>.article-list-row>.item>a.list-title>.title-value {
-	max-width: 205px;
+	max-width: 210px;
 }
 #article-list>.article-list-row>.item>a.list-title>small.favo {
 	margin: 0;
