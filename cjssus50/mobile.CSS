@@ -23,3 +23,36 @@ a {
 	color: var(--mainColor);
 }
 
+
+
+footer {
+	border-top: 2px solid var(--mainColor);
+	background: var(--mainColor1);
+}
+
+
+small.favo i.fa.fa-heart {
+	animation: heartbeat 1s infinite;
+}
+
+span.a-badge i.fa.fa-star {
+	animation: shiningstar 2s infinite;
+	animation-timing-function: linear;
+}
+
+/*************** animation ***************/
+
+
+@keyframes heartbeat {
+	0% { transform: scale(1); }
+	30% { transform: scale(1.25); }
+	42% { transform: scale(0.9); }
+	60% { transform: scale(1.15); }
+	85% { transform: scale(0.95); }
+	100% { transform: scale(1); }
+}
+
+@keyframes shiningstar {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
