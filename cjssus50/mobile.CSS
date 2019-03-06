@@ -185,6 +185,9 @@ nav#nav>.nav-menu-area>.right{
 #article-list>.article-list-row>.item>a.list-title>.title-value {
 	max-width: 210px;
 }
+#article-list>.article-list-row>.item>a.list-title>small.favo {
+	margin: 0;
+}
 
 #article-content-wrapper>.header {
 	background: var(--mainColor1);
