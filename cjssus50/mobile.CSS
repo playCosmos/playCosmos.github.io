@@ -52,7 +52,7 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 header.nav-down,
 header.nav-up {
-	transition: 1s;
+	transition: 0.7s;
 	animation-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 /*
@@ -69,6 +69,7 @@ nav#nav>#nav-upper-shortcut {
 nav#nav > #nav-upper #userDropdown #notification-badge {
 	background: var(--mainColor);
 }
+
 nav#nav>.nav-header {
 	background: var(--mainColor);
 	margin-top: 1px;
