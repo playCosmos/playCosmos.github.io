@@ -166,10 +166,10 @@ nav#nav>.nav-menu-area>.right{
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor2);
 }
-
+/*
 #article-list>.article-list-row.hot {
 	border: 2px solid var(--mainColor);
-}
+}*/
 
 #article-list>.article-list-row.hot:hover,
 #article-list>.article-list-row.notice:hover {
