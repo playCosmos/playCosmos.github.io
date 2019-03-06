@@ -181,6 +181,11 @@ nav#nav>.nav-menu-area>.right{
 	color: #555 !important;
 }
 
+/* 게시글 긴 제목 최대 길이 조정 (말 줄임표) */
+#article-list>.article-list-row>.item>a.list-title>.title-value {
+	max-width: 215px;
+}
+
 #article-content-wrapper>.header {
 	background: var(--mainColor1);
 }
