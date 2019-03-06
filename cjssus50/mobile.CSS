@@ -52,7 +52,7 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 header.nav-down,
 header.nav-up {
-	transition: 0.7s;
+	transition: 0.5s;
 	animation-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 /*
