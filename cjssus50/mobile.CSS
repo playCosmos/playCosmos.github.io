@@ -213,6 +213,36 @@ nav#nav>.nav-menu-area>.right{
 #article-list>.article-list-row>.item>a.list-title>.title-value {
 	max-width: 210px;
 }
+@media (min-width: 378px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 215px;
+	}
+}
+@media (min-width: 385px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 220px;
+	}
+}
+@media (min-width: 400px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 250px;
+	}
+}
+@media (min-width: 420px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 270px;
+	}
+}
+@media (min-width: 480px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 330px;
+	}
+}
+@media (min-width: 640px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 490px;
+	}
+}
 #article-list>.article-list-row>.item>a.list-title>small.favo {
 	margin: 0;
 }
