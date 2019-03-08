@@ -53,17 +53,22 @@ nav#nav>#nav-upper>#header-close-bar-link {
 header.nav-down,
 header.nav-up {
 	transition: 0.5s;
-	animation-timing-function: cubic-bezier(1, 0, 1, 1);
+	animation-timing-function: cubic-bezier(0.25, 1, 1, 1);
 }
 
-nav#nav>* {
-  width: 300px;
+#nav>* {
+	width: 300px;
+	transition: 0.3s;
+}
+#nav {
+    transition: all .3s cubic-bezier(0.25, 1, 1, 1);
 }
 
+/*
 nav#nav {
     animation: slider .3s cubic-bezier(0.25, 1, 1, 1);
 }
-
+*/
 #nav.hide {
 	overflow: visible;
 	display: block !important;
@@ -76,7 +81,7 @@ nav#nav.hide>* {
 
 #nav-overlay {
     opacity: 1;
-    transition: opacity 150ms ease-in-out;
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 1, 1);
 }
 
 #nav-overlay.hide {
