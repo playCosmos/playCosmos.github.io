@@ -60,6 +60,10 @@ nav#nav {
     animation: slider .3s cubic-bezier(0.25, 1, 1, 1);
 }
 
+#nav-overlay {
+    animation: sliderbg .3s cubic-bezier(0.25, 1, 1, 1);
+}
+
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
@@ -310,4 +314,9 @@ footer {
 @keyframes slider {
 	0% { transform: translateX(-300px); }
 	100% { transform: translateX(0px); }
+}
+
+@keyframes sliderbg {
+	0% { background: transparent; }
+	100% { background: #0008; }
 }
