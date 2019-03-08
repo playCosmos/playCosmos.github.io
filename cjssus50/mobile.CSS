@@ -59,12 +59,12 @@ header.nav-up {
 #nav {
 	transition: all .3s cubic-bezier(0.25, 1, 1, 1);
 }
-
+/*
 #nav>* {
 	width: 300px;
 	transition: 0.3s;
 }
-
+*/
 #nav.hide {
 	overflow: visible;
 	display: block !important;
