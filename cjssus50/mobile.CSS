@@ -86,16 +86,16 @@ header.nav-up {
     opacity: 0;
 }
 
-#nav>#nav-upper-shortcut {
+#nav.hide>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
 }
 
-#nav > #nav-upper #userDropdown #notification-badge {
+#nav.hide > #nav-upper #userDropdown #notification-badge {
 	background: var(--mainColor);
 }
 
-#nav>.nav-header {
+#nav.hide>.nav-header {
 	background: var(--mainColor);
 	margin-top: 1px;
 	height: 35px;
@@ -103,26 +103,26 @@ header.nav-up {
 	padding: 8px 15px;
 }
 
-#nav>.nav-menu-area a {
+#nav.hide>.nav-menu-area a {
 	padding: 5px 0;
 	text-align: center;
 }
 
-#nav>.nav-menu-area hr {
+#nav.hide>.nav-menu-area hr {
 	margin: 4px 0;
 }
 
-#nav>.nav-menu-area>.left,
-#nav>.nav-menu-area>.right {
+#nav.hide>.nav-menu-area>.left,
+#nav.hide>.nav-menu-area>.right {
 	padding: 6px 10px;
 	margin: 3px;
 }
 
-#nav>.nav-menu-area>.left {
+#nav.hide>.nav-menu-area>.left {
 	padding-right: 0;
 }
 
-#nav>.nav-menu-area>.right{
+#nav.hide>.nav-menu-area>.right{
 	padding-left: 0;
 }
 
