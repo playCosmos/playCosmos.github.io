@@ -16,7 +16,7 @@ html,
 body,
 header,
 nav#nav {
-    background: white;
+	background: white;
 }
 
 a {
@@ -56,26 +56,22 @@ header.nav-up {
 	animation-timing-function: cubic-bezier(0.25, 1, 1, 1);
 }
 
+#nav {
+	transition: all .3s cubic-bezier(0.25, 1, 1, 1);
+}
+
 #nav>* {
 	width: 300px;
 	transition: 0.3s;
 }
-#nav {
-    transition: all .3s cubic-bezier(0.25, 1, 1, 1);
-}
 
-/*
-nav#nav {
-    animation: slider .3s cubic-bezier(0.25, 1, 1, 1);
-}
-*/
 #nav.hide {
 	overflow: visible;
 	display: block !important;
 	width: 0 !important;
 }
 
-nav#nav.hide>* {
+#nav.hide>* {
 	display: none !important;
 }
 
@@ -90,16 +86,16 @@ nav#nav.hide>* {
     opacity: 0;
 }
 
-nav#nav>#nav-upper-shortcut {
+#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
 	padding: 6px 10px;
 }
 
-nav#nav > #nav-upper #userDropdown #notification-badge {
+#nav > #nav-upper #userDropdown #notification-badge {
 	background: var(--mainColor);
 }
 
-nav#nav>.nav-header {
+#nav>.nav-header {
 	background: var(--mainColor);
 	margin-top: 1px;
 	height: 35px;
@@ -107,26 +103,26 @@ nav#nav>.nav-header {
 	padding: 8px 15px;
 }
 
-nav#nav>.nav-menu-area a {
+#nav>.nav-menu-area a {
 	padding: 5px 0;
 	text-align: center;
 }
 
-nav#nav>.nav-menu-area hr {
+#nav>.nav-menu-area hr {
 	margin: 4px 0;
 }
 
-nav#nav>.nav-menu-area>.left,
-nav#nav>.nav-menu-area>.right {
+#nav>.nav-menu-area>.left,
+#nav>.nav-menu-area>.right {
 	padding: 6px 10px;
 	margin: 3px;
 }
 
-nav#nav>.nav-menu-area>.left {
+#nav>.nav-menu-area>.left {
 	padding-right: 0;
 }
 
-nav#nav>.nav-menu-area>.right{
+#nav>.nav-menu-area>.right{
 	padding-left: 0;
 }
 
