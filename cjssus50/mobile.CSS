@@ -56,13 +56,34 @@ header.nav-up {
 	animation-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 
+nav#nav>* {
+  width: 300px;
+}
+
 nav#nav {
     animation: slider .3s cubic-bezier(0.25, 1, 1, 1);
 }
-/*
+
+#nav.hide {
+	overflow: visible;
+	display: block !important;
+	width: 0 !important;
+}
+
+nav#nav.hide>* {
+	display: none !important;
+}
+
 #nav-overlay {
-    animation: sliderbg .3s cubic-bezier(0.25, 1, 1, 1);
-}*/
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+
+#nav-overlay.hide {
+    display: block !important;
+    width: 0;
+    opacity: 0;
+}
 
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
