@@ -59,10 +59,10 @@ header.nav-up {
 nav#nav {
     animation: slider .3s cubic-bezier(0.25, 1, 1, 1);
 }
-
+/*
 #nav-overlay {
     animation: sliderbg .3s cubic-bezier(0.25, 1, 1, 1);
-}
+}*/
 
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor);
@@ -170,10 +170,6 @@ nav#nav>.nav-menu-area>.right{
 #article-list>.article-list-row.notice {
 	background-color: var(--mainColor2);
 }
-/*
-#article-list>.article-list-row.hot {
-	border: 2px solid var(--mainColor);
-}*/
 
 #article-list>.article-list-row.hot:hover,
 #article-list>.article-list-row.notice:hover {
@@ -316,7 +312,7 @@ footer {
 	100% { transform: translateX(0px); }
 }
 
-@keyframes sliderbg {
+/*@keyframes sliderbg {
 	0% { background: transparent; }
 	100% { background: #0008; }
-}
+}*/
