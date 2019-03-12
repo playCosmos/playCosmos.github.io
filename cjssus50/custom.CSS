@@ -548,17 +548,17 @@ span.a-badge i.fa.fa-star {
 
 /*스크롤*/
 #movetotop img {
-	/*display:none*/
+	display:none;
 }
 
 #movetotop {
-	/*display: inline-block;
+	display: inline-block;
 	opacity:1;
-	background:url();
-	width: 80px;
-	height: 80px;
+	background:url(./logo/toTop.png);
+	width: 120px;
+	height: 100px;
 	border-radius: 40px;
-	background-size: contain;*/
+	background-size: contain;
 }
 
 /*************** animation ***************/
