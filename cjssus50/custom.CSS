@@ -564,7 +564,8 @@ span.a-badge i.fa.fa-star {
 /*************** animation ***************/
 @keyframes waterdrop {
 	0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
-	100% {border-radius: 40% 60%;}
+	100% {border-radius: 40% 60%;
+	transform: rotate(1turn);}
 }
 
 @keyframes heartbeat {
@@ -574,6 +575,12 @@ span.a-badge i.fa.fa-star {
 	60% { transform: scale(1.15); }
 	85% { transform: scale(0.95); }
 	100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+	0% { box-shadow: 0 0 0 0 rgba(255,141,141, 0.4); }
+	70% { box-shadow: 0 0 0 10px rgba(255,141,141, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(255,141,141, 0); }
 }
 
 @keyframes shiningstar {
