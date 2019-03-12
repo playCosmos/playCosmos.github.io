@@ -173,6 +173,7 @@ header #header-bar>.row {
 	width: 80px;
 	margin-right: 15px;
 	border-radius: 10px;
+	/*animation: waterdrop 3s ease-in-out infinite both alternate;*/
 	border: 2px solid var(--mainColor);
 	transition: 0.2s;
 }
@@ -561,6 +562,11 @@ span.a-badge i.fa.fa-star {
 }
 
 /*************** animation ***************/
+@keyframes waterdrop {
+	0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
+	100% {border-radius: 40% 60%;}
+}
+
 @keyframes heartbeat {
 	0% { transform: scale(1); }
 	30% { transform: scale(1.25); }
