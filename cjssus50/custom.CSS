@@ -5,8 +5,8 @@
 	--mainColor2: #f7f3f8; /* 트게더 메뉴, 게시글 hover */
 	--mainColor3: #f3edf5; /* 공지, 인기글 */
 	--mainColor5: #ebe2ee; /* 공지, 인기글 hover */
-	--logoURL: url(여기에 로고 주소 입력);
-	--logoWidth: 200px;	 /* 로고 너비 */
+	--logoURL: url(./logo/logo.png);
+	--logoWidth: 160px;	 /* 로고 너비 */
 	--before: "꼬냉을 향해 뛰는 ";		 /* 접속자 수 앞 */
 	--after: "개의 심장";		 /* 접속자 수 뒤 */
 }
@@ -31,16 +31,16 @@ header {
 
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a {
-	/*display: block;
+	display: block;
 	width: var(--logoWidth);
 	height: 50px;
 	background: var(--logoURL) no-repeat;
-	background-size: auto 50px;*/
+	background-size: auto 58px;
 }
 
 header .row>div:nth-child(1) > a > img {
-	filter: hue-rotate(2deg) saturate(1.9) brightness(1.8) contrast(0.3);	
-	/*display: none;*/
+	/*filter: hue-rotate(2deg) saturate(1.9) brightness(1.8) contrast(0.3);*/
+	display: none;
 }
 
 /* 검색 창 */
