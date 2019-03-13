@@ -14,9 +14,14 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-html,
+html{
+	background: url(./logo/bottombg1.png) no-repeat, linear-gradient(var(--bgColor),var(--bgColor));
+	background-position: left bottom;
+	background-attachment: fixed;
+}
+
 body {
-	background: var(--bgColor);
+	background: transparent;
 }
 
 a {
