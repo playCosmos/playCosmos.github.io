@@ -15,7 +15,7 @@
 *:focus { outline: none !important; }
 
 html{
-	background: url(./logo/bottombg1.png) no-repeat, linear-gradient(var(--bgColor),var(--bgColor));
+	background: url(./logo/bottombg2.png) no-repeat, linear-gradient(var(--bgColor),var(--bgColor));
 	background-position: left bottom;
 	background-attachment: fixed;
 }
