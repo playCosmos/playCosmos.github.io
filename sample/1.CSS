@@ -1,0 +1,497 @@
+:root {
+  --bg: url("https://www.toptal.com/designers/subtlepatterns/patterns/sun-pattern.png");
+  --color: #0009;
+  --logoURL: url(여기에 로고 주소 입력);
+  --logoWidth: 200px;  /* 로고 너비 */
+  --before: "";  /* 접속자 수 앞 문구 */
+  --after: "";  /* 접속자 수 뒤 문구 */
+}
+
+*:focus {
+  outline: none !important;
+}
+
+html {
+  background: var(--bg);
+  height: auto;
+}
+
+body {
+  background: transparent;
+}
+
+a,
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/* 트게더 로고 ( 없으면 주석처리 하세요 ) */
+header .row>div:nth-child(1)>a {
+  display: block;
+  width: var(--logoWidth);
+  height: 50px;
+  background: var(--logoURL) no-repeat;
+  background-size: auto 50px;
+}
+
+/* 기본 트게더 로고 제거 ( 없으면 주석처리 하세요 ) */
+header .row>div:nth-child(1)>a>img {
+  display: none;
+}
+
+header #right-search-form>input[type=text],
+header #right-search-form>input[type=text]::placeholder {
+  color: white !important;
+  text-shadow: 0px 0px 2px #555;
+}
+
+header #right-search-form>#right-search-btn {
+  padding-top: 4px;
+  color: white;
+  text-shadow: 0px 0px 5px #555;
+}
+
+header #header-bar a.dropdown-toggle,
+header #header-bar #header-top-notice a {
+  color: white;
+  text-shadow: 0px 0px 2px #555;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+  background: var(--color);
+  color: #fff;
+  border-radius: 9px;
+  line-height: inherit;
+}
+
+header #right-search-form>input[type=text],
+header #header-bar>.row,
+header #header-bar #header-menu-right #userDropdown #notification-badge,
+#main .menu-wrapper,
+#board-info,
+#article-info,
+#article-content-wrapper,
+#article-reply-area,
+#article-neighbor-list,
+#article-list,
+div.frame>div.frame {
+  background: var(--color);
+}
+
+header #right-search-form>input[type=text],
+header #header-bar>.row,
+#main .menu-wrapper,
+#board-info,
+#article-neighbor-list,
+#article-list,
+#article-info,
+#article-content-wrapper,
+#article-reply-area,
+div.frame>div.frame {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5), inset 0 0px 0px 1px rgba(255, 255, 255, 0.5), inset 0 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+#main .menu-wrapper>a {
+  background: transparent;
+  letter-spacing: -0.05em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  color: white;
+  text-shadow: 0px 0px 2px #555;
+  border-bottom: none;
+}
+
+#main .menu-wrapper>a:hover,
+#article-list>.article-list-row:hover {
+  background: #fff1;
+}
+
+#main .menu-wrapper>a>em,
+#main .menu-wrapper>a>i.fa.fa-square,
+#main .menu-wrapper>a.more {
+  color: white;
+}
+
+#board-info {
+  height: 80px;
+}
+
+#board-info h1>a {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#board-info h1>span.badge.badge-success,
+#board-info h1>span.badge.badge-default {
+  background: var(--color);
+}
+
+#board-info #viewers-area #viewers:before {
+  content: var(--before);
+  cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+  content: var(--after);
+  cursor: text;
+}
+
+#board-info #viewers-area,
+#board-info #board-info-bottom a {
+  color: white;
+}
+
+#article-info {
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid white;
+}
+
+#article-info>h2,
+#article-info #article-info-writer {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-content-wrapper {
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid white;
+}
+
+#article-content-wrapper>.header {
+  background: transparent;
+  color: white;
+  border-top: none;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-content-wrapper #article-content,
+#article-content-wrapper>.vote-area {
+  border: none;
+}
+
+#article-content-wrapper #article-content.fr-view>* {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-content-wrapper>.footer {
+  background: transparent;
+}
+
+#article-reply-area {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#article-reply-area>.header h5 {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-reply-area #reply-real-area .reply,
+#article-reply-area #reply-best-area .reply {
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5), inset 0 0px 0px 1px rgba(255, 255, 255, 0.5), inset 0 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header,
+#article-reply-area #reply-best-area .reply>.reply-header {
+  background: transparent;
+  border-bottom: none;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-menu>span.time,
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-real-area .reply>.reply-content>p {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off {
+  background: transparent;
+  border-top: 3px solid white;
+}
+
+.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off>button:hover,
+.fr-toolbar .fr-btn-wrap>button:hover {
+  background: #fff1;
+}
+
+.fr-toolbar .fr-command.fr-btn i,
+.fr-popup .fr-command.fr-btn i,
+.fr-toolbar .fr-command.fr-btn svg,
+.fr-popup .fr-command.fr-btn svg {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+.fr-command.fr-btn.fr-options {
+  display: none;
+}
+
+.fr-box.fr-basic.fr-top .fr-wrapper {
+  background: transparent;
+}
+
+.fr-box.fr-basic .fr-element {
+  color: #fff;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-neighbor-list,
+#article-neighbor-list>div>a,
+#article-neighbor-list>div>span.author {
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+}
+
+#article-neighbor-list>div:hover {
+  background: linear-gradient(to right, transparent, #fff1, #fff1, transparent);
+}
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area>#article-option-area-toggle-btn {
+  margin-top: calc(1em - 2px);
+  margin-right: calc(1em - 2px);
+  width: 34px;
+  height: 34px;
+  line-height: inherit;
+  box-shadow: 0 0 2px 0 white, inset 0 0 2px 0 white;
+  background: transparent;
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+  transition: 0.2s;
+  border: none;
+  border-radius: 5px;
+}
+
+#article-list #article-option-area>#article-option-area-toggle-btn:hover {
+  box-shadow: 0 0 0 0 #0007, inset 8em 0em 0 0 #0007;
+  background: #0007;
+  color: white;
+}
+
+#article-list #article-list-category,
+#article-list #article-list-category>a,
+#article-list #article-list-category>a.active,
+#article-list #article-list-category>a:hover {
+  background: transparent;
+}
+
+#article-list #article-list-category {
+  border-top: none;
+}
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#article-list>.article-list-row.active,
+#article-list>.article-list-row.notice {
+  background: #fff2;
+}
+
+#article-list>.article-list-row.active:hover,
+#article-list>.article-list-row.notice:hover {
+  background: #fff3;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: var(--color);
+}
+
+#article-list>.article-list-row>.item>.list-title>a,
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: white;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+  color: #777;
+}
+
+#article-list>.article-list-row>.item>.list-title>a:visited {
+  color: #aaa !important;
+}
+
+#article-list>.article-list-row.hot>.item>.list-title>a:visited,
+#article-list>.article-list-row.notice>.item>.list-title>a:visited,
+#article-list>.article-list-row.active>.item>.list-title>a:visited {
+  color: white !important;
+}
+
+#article-list>.article-list-row.hot {
+  background: linear-gradient(-60deg, #fff2, #fff2, #fff2, #55ffffaa, #99ff55aa, #ffee55aa, #ff5555aa, #fff2, #fff2, #fff2);
+  background-size: 500% 120%;
+  animation: loop-gradient 5s linear infinite;
+}
+
+@keyframes loop-gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#article-list>.article-list-row>.item>.list-header {
+  border-left: none;
+}
+
+#article-list>.article-list-row>.item>.list-header.v0>span,
+#article-list>.article-list-row:hover>.item>.list-header.v0>span {
+  background: transparent;
+  color: transparent;
+}
+
+#article-list>.article-list-row>.item>.list-time {
+  color: white;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox,
+#article-list>.article-list-row>.item>.list-header,
+#article-list>.article-list-row>.item>.list-category,
+#article-list>.article-list-row>.item>.list-title,
+#article-list>.article-list-row>.item>.list-blocked,
+#article-list>.article-list-row>.item>.list-time {
+  border-bottom: none;
+}
+
+#main .menu-wrapper .spacer {
+  background: white;
+  height: 2px;
+}
+
+#main #main-content>div.frame {
+  background: transparent;
+  border: none;
+}
+
+#main .menu-wrapper>.header {
+  text-shadow: 0px 0px 2px #555;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(to top, transparent, #0007);
+}
+
+#main .menu-wrapper a:nth-last-child(1) {
+  border-radius: 0px 0px 6px 6px;
+}
+
+#article-list {
+  padding: 1em 1em 2em;
+}
+
+footer>div.container>span>a {
+  text-shadow: 0px 0px 2px #555;
+}
+
+div.frame>div.frame {
+  color: white;
+}
+
+/* 버튼, 검색 */
+.btn,
+.input-group .form-control {
+  box-shadow: 0 0 2px 0 var(--btcolor), inset 0 0 2px 0 var(--btcolor) !important;
+  color: var(--btcolor) !important;
+  height: var(--btheight) !important;
+  background: transparent !important;
+  text-shadow: 0px 0px 5px #222 !important;
+  transition: 0.2s !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+.btn:hover,
+.btn:focus,
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+  box-shadow: var(--transform) !important;
+  background: var(--btbackground) !important;
+  color: white !important;
+}
+
+.btn-outline-success {
+  --btcolor: #88ff88;
+  --btheight: 32px;
+  --transform: 0 0 0 0 #5cb85c, inset 8em 0em 0 0 #5cb85c;
+  --btbackground: #5cb85c;
+}
+
+.btn-outline-primary {
+  --btcolor: #44aaff;
+  --btheight: 32px;
+  --transform: 0 0 0 0 #0275d8, inset 8em 0em 0 0 #0275d8;
+  --btbackground: #0275d8;
+}
+
+.btn-default.best {
+  --btcolor: #efc839;
+  --btheight: 28px;
+  --transform: 0 0 0 0 #efc839, inset 8em 0em 0 0 #efc839;
+  --btbackground: #efc839;
+}
+
+.input-group .form-control {
+  --btcolor: white;
+  --btheight: 28px;
+  --transform: 0 0 0 0 #0007, inset 25em 0em 0 0 #0007;
+  --btbackground: #0007;
+}
+
+.btn-primary,
+.btn-default,
+.btn.write {
+  --btcolor: white;
+  --btheight: 28px;
+  --transform: 0 0 0 0 #0007, inset 8em 0em 0 0 #0007;
+  --btbackground: #0007;
+}
+
+#deleteAllBtn {
+  --btcolor: #ff6e6e;
+  --btheight: 28px;
+  --transform: 0 0 0 0 #ff6e6e, inset 25em 0em 0 0 #ff6e6e;
+  --btbackground: #ff6e6e;
+}
+
+/* 페이지 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+  box-shadow: 0 0 2px 0 white, inset 0 0 2px 0 white;
+  background: white;
+  color: black;
+  text-shadow: 0px 0px 2px #555;
+  transition: 0.2s;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+  box-shadow: 0 0 0 0 #0007, inset 8em 0em 0 0 #0007;
+  background: #0007;
+  color: white;
+}
+
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span .pagination>li>span:focus {
+  box-shadow: 0 0 2px 0 white, inset 0 0 2px 0 white;
+  background: transparent;
+  color: white;
+  text-shadow: 0px 0px 5px #222;
+  transition: 0.2s;
+  border: none;
+  border-radius: 5px;
+  margin-left: 3px;
+}
