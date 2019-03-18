@@ -326,11 +326,6 @@ header #header-bar>.row {
 	color: var(--mainColor);
 }
 
-/* 게시글 검색 창 */
-#article-list #boardSearchForm .form-control {
-	border-color: var(--mainColor);
-}
-
 /* 게시글 본문 */
 #article-info {
 	background: white;
@@ -438,32 +433,6 @@ header #header-bar>.row {
 	border-top: 4px solid var(--mainColor);
 }
 
-/* 트게더 페이지 */
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>span,
-.pagination>.active>span:focus {
-	background-color: var(--mainColor);
-	border-color: var(--mainColor);
-	transition: 0.2s;
-}
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>li>a:hover,
-.pagination>li>span:hover {
-	background-color: white;
-	border-color: var(--mainColor);
-	color: var(--mainColor);
-	transition: 0.2s;
-}
-.pagination>li>a,
-.pagination>li>a:focus,
-.pagination>li>span
-.pagination>li>span:focus {
-	color: var(--mainColor);
-	background: transparent;
-	transition: 0.2s;
-}
 
 /* 드롭다운 */
 .dropdown.open .dropdown-menu,
@@ -515,20 +484,6 @@ header #header-bar>.row {
 	margin: 3px 0;
 }
 
-/* 버튼 */
-.btn {
-	color: #fff !important;
-	background-color: var(--mainColor) !important;
-	border-color: var(--mainColor) !important;
-	border-radius: 0;
-	transition: 0.2s;
-}
-
-.btn:hover,
-.btn:focus {
-	color: var(--mainColor) !important;
-	background-color: #fff !important;
-}
 
 .btn.square {
 	margin-right: -2px;
@@ -591,4 +546,95 @@ span.a-badge i.fa.fa-star {
 @keyframes shiningstar {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+/* 버튼, 검색 */
+.btn,
+.input-group .form-control {
+  box-shadow: inset 0 0 0 0 var(--btcolor) !important;
+  border-color: var(--btcolor) !important;
+  border-radius: 8px !important;
+  color: var(--btcolor) !important;
+  height: 30px !important;
+  background: transparent !important;
+  transition: 0.2s !important;
+}
+
+.btn:hover,
+.btn:focus,
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+  box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;
+  background: var(--btcolor) !important;
+  color: white !important;
+}
+
+.btn-outline-success {
+  --btcolor: #5cb85c;
+
+  height: 34px !important;
+}
+
+.btn-outline-primary {
+  --btcolor: #0275d8;
+
+  height: 34px !important;
+}
+
+.btn-default.best {
+  --btcolor: #efc839;
+}
+
+.btn-danger {
+  --btcolor: #ff6e6e;
+}
+
+.btn-primary,
+.btn-default,
+.input-group .form-control {
+  --btcolor: var(--mainColor);
+}
+
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+  box-shadow: inset 25em 0em 0 0 var(--btcolor) !important;
+}
+
+.input-group .form-control::placeholder {
+  color: var(--btcolor) !important;
+}
+
+.input-group .form-control:hover::placeholder,
+.input-group .form-control:focus::placeholder {
+  color: white !important;
+}
+
+/* 트게더 페이지 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+	background-color: var(--mainColor);
+	border-color: var(--mainColor);
+	transition: 0.2s;
+}
+
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
+	transition: 0.2s;
+}
+
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--mainColor);
+	background: transparent;
+	border-radius: 8px !important;
+	transition: 0.2s;
 }
