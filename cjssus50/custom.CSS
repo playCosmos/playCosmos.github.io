@@ -24,8 +24,11 @@ body {
 	background: transparent;
 }
 
-a {
+a,
+a:hover,
+a:focus {
 	color: var(--mainColor);
+	text-decoration: none;
 }
 
 
