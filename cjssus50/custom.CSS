@@ -592,6 +592,12 @@ span.a-badge i.fa.fa-star {
 	--btcolor: #ff6e6e;
 }
 
+.btn-info {
+  --btcolor: #5bc0de;
+  --transform: 0 0 0 0 #5bc0de, inset 25em 0em 0 0 #5bc0de;
+  --btbackground: #5bc0de;
+}
+
 .btn-primary,
 .btn-default,
 .input-group .form-control {
