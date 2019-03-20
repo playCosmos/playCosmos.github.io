@@ -211,41 +211,41 @@ nav#nav>.nav-menu-area>.right{
 
 /* 게시글 긴 제목 최대 길이 조정 (말 줄임표) */
 #article-list>.article-list-row>.item>a.list-title>.title-value {
-	max-width: 205px;
+	max-width: 200px;
 }
 @media (min-width: 378px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 210px;
+		max-width: 205px;
 	}
 }
 @media (min-width: 385px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 215px;
+		max-width: 210px;
 	}
 }
 @media (min-width: 400px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 245px;
+		max-width: 240px;
 	}
 }
 @media (min-width: 420px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 265px;
+		max-width: 260px;
 	}
 }
 @media (min-width: 480px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 325px;
+		max-width: 320px;
 	}
 }
 @media (min-width: 640px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 485px;
+		max-width: 480px;
 	}
 }
 @media (min-width: 700px) {
 	#article-list>.article-list-row>.item>a.list-title>.title-value {
-		max-width: 545px;
+		max-width: 540px;
 	}
 }
 #article-list>.article-list-row>.item>a.list-title>small.favo {
