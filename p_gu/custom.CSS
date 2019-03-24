@@ -13,10 +13,7 @@ body {
 html,
 body,
 .fr-popup.emoticons,
-/*.fr-desktop,*/
-.fr-active,
-.fr-tooltip,
-.fr-sticky-off,
+.fr-top,
 select.form-control,
 input[type=checkbox],
 input[type=radio],
@@ -43,8 +40,8 @@ a {
 /* 마우스 커서 텍스트 */
 span#viewers,
 #article-list #boardSearchForm .form-control,
-.fr-box.fr-basic.fr-element,
 .fr-view,
+.fr-box.fr-basic.fr-element,
 input[type='text'] {
 	cursor: url(./cur/text.png) 4 5, auto !important;
 }
