@@ -291,7 +291,7 @@ nav#nav>.nav-menu-area>.right{
 	color: var(--mainColor);
 }
 
-.fr-popup.fr-ltr.emoticons {
+.fr-popup.emoticons {
     border: 2px solid #c3a7cc;
     border-radius: 10px;
 }
