@@ -292,9 +292,8 @@ nav#nav>.nav-menu-area>.right{
 }
 
 .fr-popup.fr-mobile.fr-ltr.emoticons {
-    /* border-top: 3px solid #c3a7cc; */
     border: 2px solid #c3a7cc;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 /* 트게더 페이지 */
