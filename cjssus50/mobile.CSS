@@ -56,10 +56,20 @@ header.nav-up {
 	animation-timing-function: cubic-bezier(0.25, 1, 1, 1);
 }
 
-#nav {
-	transition: all .3s cubic-bezier(0.25, 1, 1, 1);
+nav#nav {
+	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
 }
 
+@keyframes slider {
+	0% { transform: translateX(-300px); }
+	100% { transform: translateX(0px); }
+}
+
+/*
+#nav {
+	transition: all 0.3s cubic-bezier(0.25, 1, 1, 1);
+}
+	
 #nav>* {
 	width: 300px;
 }
@@ -84,6 +94,7 @@ header.nav-up {
     width: 0;
     opacity: 0;
 }
+*/
 
 nav#nav>#nav-upper-shortcut {
 	border-top: 4px solid var(--mainColor) !important;
@@ -361,11 +372,6 @@ nav#nav>.nav-menu-area>.right{
 footer {
 	border-top: 2px solid var(--mainColor);
 	background: var(--mainColor1);
-}
-
-@keyframes slider {
-	0% { transform: translateX(-300px); }
-	100% { transform: translateX(0px); }
 }
 
 /*@keyframes sliderbg {
