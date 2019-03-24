@@ -423,7 +423,7 @@ header #header-bar>.row {
 
 .fr-popup,
 .fr-toolbar.fr-top {
-	border-top: 3px solid var(--mainColor);
+	border-top: 2px solid var(--mainColor);
 }
 
 .fr-toolbar .fr-command.fr-btn,
