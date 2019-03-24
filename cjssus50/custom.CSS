@@ -203,6 +203,7 @@ header #header-bar>.row {
 
 
 /*************** article ***************/
+.frame>.frame,
 #article-list {
 	background: white;
 	border: 2px solid var(--mainColor);
