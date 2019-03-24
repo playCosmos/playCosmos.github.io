@@ -44,6 +44,7 @@ a {
 span#viewers,
 #article-list #boardSearchForm .form-control,
 .fr-box.fr-basic.fr-element,
+.fr-view,
 input[type='text'] {
 	cursor: url(./cur/text.png) 4 5, auto !important;
 }
