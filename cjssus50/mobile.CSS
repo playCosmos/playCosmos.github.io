@@ -63,6 +63,7 @@ nav#nav>#nav-upper>#header-close-bar-link {
 header.nav-up>#header-area>a[href="/"],
 header.nav-up>#header-area>#header-search-link {
 	display: none;
+	opacity: 0;
 }
 
 header.nav-down,
