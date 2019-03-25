@@ -73,7 +73,7 @@ header.nav-up {
 }
 
 header.nav-down {
-	transform: translateX(0%);
+	/*transform: translateX(0%);*/
 }
 
 header.nav-up {
@@ -86,13 +86,7 @@ header.nav-up {
 	0% { transform: rotate(0deg) }
 	50% { transform: rotate(-45deg) }
 	100% { transform: rotate(-90deg) }
-}
-
-@keyframes rotatorCCW {
-	0% { transform: rotate(-90deg) }
-	50% { transform: rotate(-45deg) }
-	100% { transform: rotate(0deg) }
-}
+}			
 
 nav#nav {
 	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
