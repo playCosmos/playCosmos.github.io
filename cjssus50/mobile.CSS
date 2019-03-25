@@ -146,6 +146,7 @@ nav#nav>.nav-menu-area>.right{
 }
 
 /* 걸리적 거리는거 삭제 */
+span.badge.badge-default,
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
 #board-info>a.board-right-menu[href="/clips?streamer_id=214655362"] {
