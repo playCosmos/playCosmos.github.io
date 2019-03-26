@@ -163,15 +163,15 @@ nav#nav>.nav-menu-area>.right{
 	padding-left: 0;
 }
 
+#main-content>div.frame>div:nth-child(1) {
+    height: 10px;
+}
+
 /* 걸리적 거리는거 삭제 */
 span.badge.badge-default,
 #header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"] {
 	display: none;
-}
-
-#board-info {
-	margin-top: 10px;
 }
 
 /* 공지 숨기기 버튼 */
