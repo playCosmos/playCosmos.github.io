@@ -32,7 +32,6 @@ header {
 	left: 5px;
 	top: 5px;
 }
-
 header>#header-area>a>h1 {
 	filter: hue-rotate(2deg) saturate(1.9) brightness(1.8) contrast(0.3);
 }
@@ -52,10 +51,6 @@ header > #header-search-bar #header-search-input {
 	padding: 3px 8px;
 }
 
-header.nav-up>#header-area>#header-bar-link {
-	/*padding: 0 10px;*/
-}
-
 header>#header-area>#header-bar-link,
 nav#nav>#nav-upper>#header-close-bar-link {
 	color: var(--mainColor);
@@ -64,12 +59,6 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 nav#nav>#nav-upper>#header-close-bar-link {
 	padding: 0 16px 4px;
-}
-
-header.nav-up>#header-area>a[href="/"],
-header.nav-up>#header-area>#header-search-link {
-	/*display: none;
-	opacity: 0;*/
 }
 
 header.nav-down,
@@ -83,17 +72,11 @@ header.nav-down {
 header.nav-up {
 	transform: rotate(-90deg);
 	/*top: 5px;*/
-}
-
-@keyframes rotator {
-	0% { transform: rotate(0deg) }
-	50% { transform: rotate(-45deg) }
-	100% { transform: rotate(-90deg) }
-}			
+}		
 
 nav#nav {
 	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
-	border-top: 4px solid var(--mainColor);
+	/*border-top: 4px solid var(--mainColor);*/
 }
 
 @keyframes slider {
@@ -132,8 +115,11 @@ opacity: 0;
 }
 */
 
+nav#nav>#nav-upper {
+    padding: 8px 0;
+}
+
 nav#nav>#nav-upper-shortcut {
-	border-top: 4px solid var(--mainColor) !important;
 	padding: 6px 10px !important;
 }
 
