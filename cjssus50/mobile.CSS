@@ -23,6 +23,10 @@ a {
 	color: var(--mainColor);
 }
 
+img[alt=Moderator] {
+    display: none;
+}
+
 header {
 	border: 4px solid var(--mainColor);
 	border-radius: 12px;
