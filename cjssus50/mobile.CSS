@@ -19,8 +19,11 @@ nav#nav {
 	background: white;
 }
 
-a {
+a,
+a:hover,
+a:focus {
 	color: var(--mainColor);
+	text-decoration: none;
 }
 
 .alert {
