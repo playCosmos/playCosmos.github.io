@@ -86,8 +86,10 @@ header.nav-down {
 }
 
 header.nav-up {
-	transform: rotate(-90deg);
-	/*top: 5px;*/
+	opacity: 0;
+	pointer-events: none;
+	/*transform: rotate(-90deg);*/
+	top: 5px;
 }		
 
 nav#nav {
