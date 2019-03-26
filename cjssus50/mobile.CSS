@@ -23,6 +23,10 @@ a {
 	color: var(--mainColor);
 }
 
+.alert {
+    margin-top: 10px !important;
+}
+
 img[alt=Moderator] {
     display: none;
 }
@@ -164,7 +168,11 @@ nav#nav>.nav-menu-area>.right{
 }
 
 #main-content>div.frame>div:nth-child(1) {
-    height: 10px;
+	height: 5px;
+}
+
+#board-info {
+	margin-top: 5px;
 }
 
 /* 걸리적 거리는거 삭제 */
