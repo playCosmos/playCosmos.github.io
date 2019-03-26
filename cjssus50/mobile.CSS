@@ -49,7 +49,7 @@ header > #header-search-bar #header-search-btn {
 
 header > #header-search-bar #header-search-input {
 	border: 2px solid var(--mainColor);
-	padding-top: 3px;
+	padding: 3px 8px;
 }
 
 header.nav-up>#header-area>#header-bar-link {
