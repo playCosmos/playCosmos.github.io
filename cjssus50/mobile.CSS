@@ -44,11 +44,12 @@ header>#header-area>#header-search-link {
 }
 
 header > #header-search-bar #header-search-btn {
-	margin-top: -5px;
+	margin-top: -2px;
 }
 
 header > #header-search-bar #header-search-input {
 	border: 2px solid var(--mainColor);
+	padding-top: 3px;
 }
 
 header.nav-up>#header-area>#header-bar-link {
