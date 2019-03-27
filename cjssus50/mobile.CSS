@@ -29,8 +29,7 @@ a:focus {
 .alert {
     margin-left: 3px !important;
     margin-top: 10px !important;
-    margin-bottom: -5px !important;
-    display: inline-block;
+    margin-bottom: 5px !important;
     width: calc(100% - 4px);
 }
 
@@ -176,8 +175,12 @@ nav#nav>.nav-menu-area>.right{
 	padding-left: 0;
 }
 
+div#main-content {
+	margin-top: 5px;
+}
+
 #main-content>div.frame>div:nth-child(1) {
-	height: 5px;
+	background: transparent !important;
 }
 
 #board-info {
