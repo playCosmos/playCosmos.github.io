@@ -426,10 +426,6 @@ span.badge.badge-default,
 	background: transparent;
 }
 
-#favoriteDropdownMenu>li>a>span.label.label-default {
-	background-color: var(--mainColor);
-}
-
 .dropdown-menu .divider {
 	background-color: var(--mainColor);
 	height: 2px;
