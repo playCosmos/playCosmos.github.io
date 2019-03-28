@@ -194,11 +194,8 @@ div#main-content {
 /* 걸리적 거리는거 삭제 */
 span.badge.badge-default,
 #header-top-notice,
-#board-info>a.board-right-menu[href="/cjssus50/profile"] {
-	display: none;
-}
-
-a#addFavoriteBtn>small {
+#board-info>a.board-right-menu[href="/cjssus50/profile"],
+#addFavoriteBtn>small {
     display: none;
 }
 
