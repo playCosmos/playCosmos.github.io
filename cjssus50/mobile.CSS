@@ -198,6 +198,10 @@ span.badge.badge-default,
 	display: none;
 }
 
+a#addFavoriteBtn>small {
+    display: none;
+}
+
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	height: 34px;
