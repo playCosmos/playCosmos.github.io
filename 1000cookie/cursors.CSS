@@ -8,7 +8,7 @@ input[type=checkbox],
 input[type=radio],
 .opt
 {
-	cursor: url() 0 0, auto !important;
+	animation: infinite normal 3s;
 }
 
 
@@ -25,7 +25,7 @@ input[type=radio],
 .fr-view img,
 .pull-left,
 a {
-	cursor: url() 0 0, auto !important;
+	animation: infinite link 3s;
 }
 
 
@@ -37,5 +37,59 @@ span#viewers,
 .fr-box.fr-basic.fr-element,
 input[type='text']
 {
-	cursor: url() 0 0, auto !important;
+	animation: infinite text 3s;
+}
+
+@keyframes normal {
+	0% {
+		cursor: url(./cursors/normal_purple.png) 8 9, auto !important;
+	}
+	20% {
+		cursor: url(./cursors/normal_red.png) 8 9, auto !important;
+	}
+	40% {
+		cursor: url(./cursors/normal_gold.png) 8 9, auto !important;
+	}
+	60% {
+		cursor: url(./cursors/normal_blue.png) 8 9, auto !important;
+	}
+	80% {
+		cursor: url(./cursors/normal_green.png) 8 9, auto !important;
+	}
+}
+
+@keyframes link {
+	0% {
+		cursor: url(./cursors/link_purple.png) 8 9, auto !important;
+	}
+	20% {
+		cursor: url(./cursors/link_red.png) 8 9, auto !important;
+	}
+	40% {
+		cursor: url(./cursors/link_gold.png) 8 9, auto !important;
+	}
+	60% {
+		cursor: url(./cursors/link_blue.png) 8 9, auto !important;
+	}
+	80% {
+		cursor: url(./cursors/link_green.png) 8 9, auto !important;
+	}
+}
+
+@keyframes text {
+	0% {
+		cursor: url(./cursors/text_purple.png) 8 9, auto !important;
+	}
+	20% {
+		cursor: url(./cursors/text_red.png) 8 9, auto !important;
+	}
+	40% {
+		cursor: url(./cursors/text_gold.png) 8 9, auto !important;
+	}
+	60% {
+		cursor: url(./cursors/text_blue.png) 8 9, auto !important;
+	}
+	80% {
+		cursor: url(./cursors/text_green.png) 8 9, auto !important;
+	}
 }
