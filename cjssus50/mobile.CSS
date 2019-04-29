@@ -193,10 +193,18 @@ div#main-content {
 
 /* 걸리적 거리는거 삭제 */
 span.badge.badge-default,
-#header-top-notice,
 #board-info>a.board-right-menu[href="/cjssus50/profile"],
 #addFavoriteBtn>small {
-    display: none;
+	display: none;
+}
+
+#header-top-notice {
+	margin-top: 5px;
+}
+
+#header-top-notice strong.notice-badge {
+	background: var(--mainColor);
+	border-radius: 5px;
 }
 
 /* 공지 숨기기 버튼 */
