@@ -380,7 +380,7 @@ header #header-bar>.row {
 	border: 2px solid var(--mainColor);
 	border-radius: 12px;
 	background: white;
-	margin-bottom: 25px;
+	margin-bottom: calc(1em + 20px);
 }
 
 #article-neighbor-list>div:hover,
