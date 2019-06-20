@@ -373,7 +373,9 @@ header #header-bar>.row {
 
 #article-content-wrapper>.footer {
 	border-top: 2px solid var(--mainColor);
+	border-bottom: 2px solid var(--mainColor);
 	background: white;
+	margin-bottom: 1em;
 }
 
 #article-neighbor-list {
@@ -400,6 +402,7 @@ header #header-bar>.row {
 	background: white;
 	border: 2px solid var(--mainColor);
 	border-radius: 0 0 12px 12px;
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
