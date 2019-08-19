@@ -395,6 +395,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/heart.png);
      background-size: 100%; 
 }
+   /* zrd */
+.fr-emoticon.fr-deletable > img[alt=zzangaZRD]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/zrd.png);
+     background-size: 100%; 
+}
   /* 인사 */
 .fr-emoticon.fr-deletable > img[alt=zzangaHI]{ 
      width: 56px !important; 
