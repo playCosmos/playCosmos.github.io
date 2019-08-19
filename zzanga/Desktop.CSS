@@ -396,7 +396,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%; 
 }
   /* 인사 */
-
 .fr-emoticon.fr-deletable > img[alt=zzangaHI]{ 
      width: 56px !important; 
      height: 56px !important; 
@@ -405,7 +404,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%; 
 }
   /* 상어비블썸프 */
-
 .fr-emoticon.fr-deletable > img[alt=zzangaSharkThump]{ 
      width: 56px !important; 
      height: 56px !important; 
@@ -414,7 +412,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%; 
 }
   /* 물음표 */
-
 .fr-emoticon.fr-deletable > img[alt=zzangaQ]{ 
      width: 56px !important; 
      height: 56px !important; 
