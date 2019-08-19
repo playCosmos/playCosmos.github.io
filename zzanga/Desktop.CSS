@@ -437,9 +437,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
    /* 응원봉 */
 .fr-command.fr-emoticon[data-param1=JKanStyle] > img {
-     width: 28px !important;
-     height: 28px !important;
-     padding-left: 28px;
+     width: 26px !important;
+     height: 26px !important;
+     padding-left: 26px;
      background-image: url(./emoji/cheer.png);
      background-size: 100%;
 } 
