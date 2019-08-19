@@ -384,3 +384,25 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/* 이모티콘 영역 */
+ /* 구독티콘 */
+/** 이모티콘창에서 보이는 이모티콘 이미지 수정 **/ 
+
+.fr-command.fr-emoticon[data-param1=zzangaHeart] > img {
+     width: 30px !important;
+     height: 30px !important;
+     padding-left: 30px;
+     background-image: url(./emoji/heart.png);
+     background-size: 100%;
+} 
+
+
+/** 글작성 후 보이는 이미지 수정**/ 
+.fr-emoticon.fr-deletable > img[alt=zzangaHeart]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/heart.png);
+     background-size: 100%; 
+}
