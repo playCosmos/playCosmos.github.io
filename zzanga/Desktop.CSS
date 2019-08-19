@@ -387,22 +387,78 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 이모티콘 영역 */
  /* 구독티콘 */
-/** 이모티콘창에서 보이는 이모티콘 이미지 수정 **/ 
-
+  /* 하트 */
 .fr-command.fr-emoticon[data-param1=zzangaHeart] > img {
-     width: 30px !important;
-     height: 30px !important;
-     padding-left: 30px;
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
      background-image: url(./emoji/heart.png);
      background-size: 100%;
 } 
-
-
-/** 글작성 후 보이는 이미지 수정**/ 
 .fr-emoticon.fr-deletable > img[alt=zzangaHeart]{ 
      width: 56px !important; 
      height: 56px !important; 
      padding-left: 56px;
      background-image: url(./emoji/heart.png);
+     background-size: 100%; 
+}
+  /* 인사 */
+.fr-command.fr-emoticon[data-param1=zzangaHI] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/hi.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=zzangaHI]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/hi.png);
+     background-size: 100%; 
+}
+  /* 상어비블썸프 */
+.fr-command.fr-emoticon[data-param1=zzangaSharkThump] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/cry.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=zzangaSharkThump]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/cry.png);
+     background-size: 100%; 
+}
+  /* 물음표 */
+.fr-command.fr-emoticon[data-param1=zzangaQ] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/curious.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=zzangaQ]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/curious.png);
+     background-size: 100%; 
+}
+  /* 팝콘 */
+.fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/pop.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=zzangaPopcorn]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/pop.png);
      background-size: 100%; 
 }
