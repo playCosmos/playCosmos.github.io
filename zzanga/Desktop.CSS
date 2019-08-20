@@ -527,14 +527,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
-     background-image: url(./emoji/pepe.png);
+     background-image: url(./emoji/pepe.jpg);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=RedCoat]{ 
      width: 56px !important; 
      height: 56px !important;
      padding-left: 56px;
-     background-image: url(./emoji/pepe.png);
+     background-image: url(./emoji/pepe.jpg);
      background-size: 100%; 
 }
    /* 짱아 확대 */
@@ -557,14 +557,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      width: 28px !important;
      height: 28px !important;*/
      padding-left: 28px;
-     background-image: url(./emoji/frog.png);
+     background-image: url(./emoji/frog.jpg);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=JonCarnage]{ 
      width: 56px !important; 
      height: 56px !important; 
      padding-left: 56px;
-     background-image: url(./emoji/frog.png);
+     background-image: url(./emoji/frog.jpg);
      background-size: 100%; 
 }
 
