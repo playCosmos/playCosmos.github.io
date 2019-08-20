@@ -412,12 +412,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/heart.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaHeart]{ 
+.fr-emoticon.fr-deletable > img[alt=zzangaHeart],
+#article-content-wrapper #article-content img[alt="zzangaHeart"] { 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/heart.png);
-     background-size: 100%; 
+     background-size:  40px 40px; 
 }
    /* zrd */
 .fr-command.fr-emoticon[data-param1=zzangaZRD] > img {
@@ -427,12 +428,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/zrd.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaZRD]{ 
+.fr-emoticon.fr-deletable > img[alt=zzangaZRD],
+#article-content-wrapper #article-content img[alt="zzangaZRD"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/zrd.png);
-     background-size: 100%; 
+     background-size:  40px 40px; 
 }
   /* 인사 */
 .fr-command.fr-emoticon[data-param1=zzangaHI] > img {
@@ -442,12 +444,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/hi.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaHI]{ 
+.fr-emoticon.fr-deletable > img[alt=zzangaHI],
+#article-content-wrapper #article-content img[alt="zzangaHI"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/hi.png);
-     background-size: 100%; 
+     background-size:  40px 40px; 
 }
   /* 상어비블썸프 */
 .fr-command.fr-emoticon[data-param1=zzangaSharkThump] > img {
@@ -457,12 +460,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/cry.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaSharkThump]{ 
-     width: 56px !important; 
-     height: 56px !important; 
-     padding-left: 56px;
+.fr-emoticon.fr-deletable > img[alt=zzangaSharkThump],
+#article-content-wrapper #article-content img[alt="zzangaSharkThump"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
      background-image: url(./emoji/cry.png);
-     background-size: 100%; 
+     background-size:  40px 40px%; 
 }
   /* 물음표 */
 .fr-command.fr-emoticon[data-param1=zzangaQ] > img {
@@ -472,12 +476,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/curious.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaQ]{ 
+.fr-emoticon.fr-deletable > img[alt=zzangaQ],
+#article-content-wrapper #article-content img[alt="zzangaQ"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/curious.png);
-     background-size: 100%; 
+     background-size:  40px 40px; 
 }
   /* 팝콘 */
 .fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
@@ -487,12 +492,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/pop.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaPopcorn]{ 
+.fr-emoticon.fr-deletable > img[alt=zzangaPopcorn],
+#article-content-wrapper #article-content img[alt="zzangaPopcorn"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/pop.png);
-     background-size: 100%; 
+     background-size:  40px 40px; 
 }
    /* 응원봉 */
 .fr-command.fr-emoticon[data-param1=JKanStyle] > img {
@@ -500,17 +506,16 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/cheer.png);
-     background-size: 100%;
+     background-size:  40px 40px;
 } 
-.fr-emoticon.fr-deletable > img[alt=JKanStyle]{ 
+.fr-emoticon.fr-deletable > img[alt=JKanStyle],
+#article-content-wrapper #article-content img[alt="JKanStyle"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/cheer.png);
-     background-size: 100%; 
+     background-size: 40px 40px; 
 }
-
-
 
   /* 저장용 */
 /*.fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
