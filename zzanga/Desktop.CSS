@@ -495,14 +495,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
    /* 피카츄 진지 */
 .fr-command.fr-emoticon[data-param1=StoneLightning] > img {
      width: 28px !important;
-     /*height: auto !important;*/
+     height: 22.6px !important;
      padding-left: 28px;
      background-image: url(./emoji/serious.png);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=StoneLightning]{ 
      width: 56px !important; 
-     /*height: auto !important; */
+     height: 45.3px !important;
      padding-left: 56px;
      background-image: url(./emoji/serious.png);
      background-size: 100%; 
@@ -510,14 +510,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
    /* 피카츄 통곡 */
 .fr-command.fr-emoticon[data-param1=TheRinger] > img {
      width: 28px !important;
-     /*height: auto !important;*/
+     height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/teary.png);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=TheRinger]{ 
      width: 56px !important; 
-    /* height: auto !important; */
+     height: 56px !important; 
      padding-left: 56px;
      background-image: url(./emoji/teary.png);
      background-size: 100%; 
@@ -525,14 +525,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
    /* 페페 슬픔 */
 .fr-command.fr-emoticon[data-param1=RedCoat] > img {
      width: 28px !important;
-    /* height: auto !important;*/
+     height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/pepe.png);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=RedCoat]{ 
      width: 56px !important; 
-     /*height: auto !important; */
+     height: 56px !important;
      padding-left: 56px;
      background-image: url(./emoji/pepe.png);
      background-size: 100%; 
@@ -540,14 +540,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
    /* 짱아 확대 */
 .fr-command.fr-emoticon[data-param1=Kappa] > img {
      width: 28px !important;
-    /* height: auto !important;*/
+     height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/closeup.png);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=Kappa]{ 
      width: 56px !important; 
-   /*  height: auto !important; */
+     height: 56px !important; 
      padding-left: 56px;
      background-image: url(./emoji/closeup.png);
      background-size: 100%; 
@@ -555,14 +555,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
    /* 개구리 아련 */
 .fr-command.fr-emoticon[data-param1=JonCarnage] > img {
      width: 28px !important;
-   /* height: auto !important;*/
+     height: 28px !important;*/
      padding-left: 28px;
      background-image: url(./emoji/frog.png);
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=JonCarnage]{ 
      width: 56px !important; 
-   /*  height: auto !important; */
+     height: 56px !important; 
      padding-left: 56px;
      background-image: url(./emoji/frog.png);
      background-size: 100%; 
