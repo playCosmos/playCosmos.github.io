@@ -41,7 +41,7 @@ body {
     height: auto !important;
     background: #8996a6;
     font-family: NanumSquareRoundR;
-    cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;
+    cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
 /* 로고 */
@@ -49,10 +49,10 @@ header .row>div:nth-child(1)>a {
     display: block;
     width: 145px;
     height: 50px;
-    background: url(//upload.tgd.kr/20190118/d68ef1f2e2dd61c363b5d4a9ba605f7a.png) no-repeat;
+    background: url(./image/logo.png) no-repeat;
     background-size: auto 50px;
     animation: HeartBeat 1s 3 linear;
-    cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+    cursor: url(./cursor/cur.png) 15 0, auto;
 }
 
 header .row>div:nth-child(1)>a>img {
@@ -257,13 +257,13 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 작성자 (스트리머) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(//upload.tgd.kr/20190118/e217b2660ebae2ab4606891f01a02a7a.png?raw=true);
+    content: url(./badge/streamer.png);
     width: 18px;
 }
 
 /* 작성자 (트게더 관리자) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(//upload.tgd.kr/20190118/bb59c94862ac63b1d1d8253de3b64f29.png?raw=true);
+    content: url(./badge/mod.png);
     width: 18px;
 }
 
