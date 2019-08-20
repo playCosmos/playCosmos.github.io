@@ -418,7 +418,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/heart.png);
-     background-size:  40px 40px; 
+     background-size: 100%; 
 }
    /* zrd */
 .fr-command.fr-emoticon[data-param1=zzangaZRD] > img {
@@ -434,7 +434,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/zrd.png);
-     background-size:  40px 40px; 
+     background-size: 100%; 
 }
   /* 인사 */
 .fr-command.fr-emoticon[data-param1=zzangaHI] > img {
@@ -450,7 +450,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/hi.png);
-     background-size:  40px 40px; 
+     background-size: 100%; 
 }
   /* 상어비블썸프 */
 .fr-command.fr-emoticon[data-param1=zzangaSharkThump] > img {
@@ -466,7 +466,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/cry.png);
-     background-size:  40px 40px%; 
+     background-size: 100%; 
 }
   /* 물음표 */
 .fr-command.fr-emoticon[data-param1=zzangaQ] > img {
@@ -482,7 +482,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/curious.png);
-     background-size:  40px 40px; 
+     background-size: 100%; 
 }
   /* 팝콘 */
 .fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
@@ -498,7 +498,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/pop.png);
-     background-size:  40px 40px; 
+     background-size: 100%; 
 }
    /* 응원봉 */
 .fr-command.fr-emoticon[data-param1=JKanStyle] > img {
@@ -506,7 +506,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/cheer.png);
-     background-size:  40px 40px;
+     background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=JKanStyle],
 #article-content-wrapper #article-content img[alt="JKanStyle"]{ 
@@ -514,7 +514,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      height: 40px !important; 
      padding-left: 40px;
      background-image: url(./emoji/cheer.png);
-     background-size: 40px 40px; 
+     background-size: 100%; 
 }
 
   /* 저장용 */
