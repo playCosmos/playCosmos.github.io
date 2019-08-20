@@ -493,7 +493,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%; 
 }
    /* 피카츄 진지 */
-.fr-command.fr-emoticon[data-param1=StoneLightning] > img {
+/*.fr-command.fr-emoticon[data-param1=StoneLightning] > img {
      width: 28px !important;
      height: 22.6px !important;
      padding-left: 28px;
@@ -506,9 +506,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      padding-left: 56px;
      background-image: url(./emoji/serious.png);
      background-size: 100%; 
-}
+}*/
    /* 피카츄 통곡 */
-.fr-command.fr-emoticon[data-param1=TheRinger] > img {
+/*.fr-command.fr-emoticon[data-param1=TheRinger] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
@@ -521,9 +521,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      padding-left: 56px;
      background-image: url(./emoji/teary.png);
      background-size: 100%; 
-}
+}*/
    /* 페페 슬픔 */
-.fr-command.fr-emoticon[data-param1=RedCoat] > img {
+/*.fr-command.fr-emoticon[data-param1=RedCoat] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
@@ -536,9 +536,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      padding-left: 56px;
      background-image: url(./emoji/pepe.jpg);
      background-size: 100%; 
-}
+}*/
    /* 짱아 확대 */
-.fr-command.fr-emoticon[data-param1=Kappa] > img {
+/*.fr-command.fr-emoticon[data-param1=Kappa] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
@@ -551,9 +551,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      padding-left: 56px;
      background-image: url(./emoji/closeup.png);
      background-size: 100%; 
-}
+}*/
    /* 개구리 아련 */
-.fr-command.fr-emoticon[data-param1=JonCarnage] > img {
+/*.fr-command.fr-emoticon[data-param1=JonCarnage] > img {
      width: 28px !important;
      height: 28px !important;*/
      padding-left: 28px;
@@ -566,7 +566,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      padding-left: 56px;
      background-image: url(./emoji/frog.jpg);
      background-size: 100%; 
-}
+}*/
 
   /* 저장용 */
 /*.fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
