@@ -23,34 +23,35 @@
 
 /* 배경 */
 body {
-    font-family: NanumSquareRoundR;
-    background: none;
+	font-family: NanumSquareRoundR;
+	background: none;
 }
 
 /* 하단 배경 색 */
 footer {
-    background: #a0afc2
+	background: #a0afc2
 }
 
 /* 로고 */
 header>#header-area>a>h1 {
-    background: url(./image/logo.png) no-repeat;
-    background-size: auto 32px;
+	background: url(./image/logo.png) no-repeat;
+	background-size: auto 32px;
 }
 
 /* 검색 창 */
 header > #header-search-bar #header-search-input {
-    border: 2px solid #556c86;
-    border-radius: 10px;
+	border: 2px solid #556c86;
+	border-radius: 10px;
 }
 
 /* 검색 버튼 */
 header>#header-area>#header-search-link {
-    color: #556c86;
+	color: #556c86;
 }
 
 header > #header-search-bar #header-search-btn {
-    color: #556c86;
+	color: #556c86;
+	margin-top: -2px;
 }
 
 /* 헤더 */
@@ -67,6 +68,66 @@ header>#header-area>#header-bar-link {
 /* 상단 배너 광고 뱃지 */
 #header-top-notice strong.notice-badge {
     background: #556c86;
+}
+
+/* 트게더 메뉴 */
+header.nav-up {
+	opacity: 0;
+	pointer-events: none;
+	/*transform: rotate(-90deg);*/
+	top: 5px;
+}		
+
+nav#nav {
+	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
+}
+
+@keyframes slider {
+	0% { transform: translateX(-300px); }
+	100% { transform: translateX(0px); }
+}
+
+nav#nav>#nav-upper {
+	padding: 8px 0;
+}
+
+nav#nav>#nav-upper-shortcut {
+	padding: 6px 10px !important;
+}
+
+nav#nav > #nav-upper #userDropdown #notification-badge {
+	background: #556c86 !important;
+}
+
+nav#nav>.nav-header {
+	background: #556c86;
+	margin-top: 1px;
+	height: 35px;
+	font-size: 14px;
+	padding: 8px 15px;
+}
+
+nav#nav>.nav-menu-area a {
+	padding: 5px 0;
+	text-align: center;
+}
+
+nav#nav>.nav-menu-area hr {
+	margin: 4px 0;
+}
+
+nav#nav>.nav-menu-area>.left,
+nav#nav>.nav-menu-area>.right {
+	padding: 5px 10px;
+	margin: 3px;
+}
+
+nav#nav>.nav-menu-area>.left {
+	padding-right: 0;
+}
+
+nav#nav>.nav-menu-area>.right{
+	padding-left: 0;
 }
 
 /* 메인 배너 스트리머 닉네임 */
