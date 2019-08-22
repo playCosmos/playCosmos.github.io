@@ -61,6 +61,7 @@ header {
     border-top: 4px solid #556c86;
     border-radius: 0;
     background: #a0afc2;
+    margin: 0px 1px;
 }
 header>#header-area>#header-bar-link {
     color: #556c86;
