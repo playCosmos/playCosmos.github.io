@@ -43,7 +43,6 @@ header > #header-search-bar #header-search-input {
 	border: 2px solid #556c86;
 	border-radius: 10px;
 	padding: 5px 8px;
-	    width: calc(100% + 1px);
 }
 
 /* 검색 버튼 */
