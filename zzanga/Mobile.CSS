@@ -589,9 +589,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%;
 } 
 .fr-emoticon.fr-deletable > img[alt=OptimizePrime]{ 
-     width: 40px !important; 
-     height: 40px !important; 
-     padding-left: 40px;
+     width: 70px !important; 
+     height: 70px !important; 
+     padding-left: 70px;
      background-image: url(./emoji/kumch.gif);
      background-size: 100%; 
 }
