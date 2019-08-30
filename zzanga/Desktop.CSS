@@ -478,22 +478,22 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-size: 100%; 
 }
    /* 응원봉 */
-.fr-command.fr-emoticon[data-param1=zzangaShake] > img {
-     width: 28px !important;
+.fr-command.fr-emoticon[data-param1=JKanStyle] > img {
+     /*width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/cheer.png);
-     background-size: 100%;
+     background-size: 100%; */
+  display: none;
 } 
 .fr-emoticon.fr-deletable > img[alt=JKanStyle]{ 
-     /*width: 56px !important; 
+     width: 56px !important; 
      height: 56px !important; 
      padding-left: 56px;
      background-image: url(./emoji/cheer.png);
-     background-size: 100%; */
-  display: none;
+     background-size: 100%;
 }
-.fr-command.fr-emoticon[data-param1=JKanStyle] > img {
+.fr-command.fr-emoticon[data-param1=zzangaShake] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
