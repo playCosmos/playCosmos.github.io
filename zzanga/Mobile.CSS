@@ -271,19 +271,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     width: 18px;
 }
 
-/* 인기글 버튼 */
+/* 인기글, 설정, 글쓰기 버튼 */
 #article-list-menu>.btn.best {
-    border-radius: 15px;
-}
-
-/* 설정 버튼 */
-#article-list-menu>.btn.cog {
-    border-radius: 15px;
-}
-
-/* 글 쓰기 버튼 */
-#article-list-menu>.btn.write {
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 
 /* 게시글 검색 */
