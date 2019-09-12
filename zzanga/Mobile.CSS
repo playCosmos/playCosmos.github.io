@@ -288,12 +288,12 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 게시글 검색 */
 .btn.square {
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px !imortant;
 }
 
 .input-group-btn:last-child>.btn,
 .input-group-btn:last-child>.btn-group {
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0 !important;
 }
 
 /* 카테고리 홈 버튼 */
@@ -325,10 +325,10 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     font-family: GodoM;
 }
 
-/* 목록 버튼 */
+/* 버튼 */
 .btn,
 .btn-sm  {
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 
 /* 게시글 추천 */
