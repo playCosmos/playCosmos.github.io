@@ -184,16 +184,12 @@ nav#nav>.nav-menu-area>.right{
 }
 
 /* 메인 배너 글 공지 */
-#article-list>.article-list-row.notice {
+#article-list>.notice {
     background-color: #bed0e6;
 }
-span.a-badge i.fa.fa-info-circle {
-  color: #3c4a5d;
-}
 
-/* 공지 작성자, 작성시간, 댓글 수 표시, i 아이콘 제거 */
+/* 공지 작성자, 댓글 수 표시, i 아이콘 제거 */
 #article-list>.notice>.item>a.list-title>.list-writer,
-#article-list>.notice>.item>a.list-title>.list-time,
 #article-list>.notice>.item>a.list-title>small.comment-count,
 #article-list>.notice>.item>a.list-title>span.a-badge {
 	display: none;
