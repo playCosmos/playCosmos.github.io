@@ -395,18 +395,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
   color: #556c86 !important;
 }
 
-/* 댓글 작성자 */
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
-    color: #9966CC;
-}
-
-/* 댓글 헤더 우측 */
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
-    color: #3399CC;
-}
-
 /* 선택된 트게더 페이지 */
 .pagination>.active>a,
 .pagination>.active>a:focus,
@@ -453,6 +441,11 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
   color: #556c86;
+}
+
+button#writeCommentBtn {
+    width: 100%;
+    border-radius: 5px;
 }
 
 #movetotop img{display:none}
