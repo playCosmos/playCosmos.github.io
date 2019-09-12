@@ -21,6 +21,9 @@
   src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
 /* 배경 */
 body {
 	font-family: NanumSquareRoundR;
@@ -54,6 +57,11 @@ header>#header-area>#header-search-link {
 header > #header-search-bar #header-search-btn {
 	color: #556c86;
 	margin-top: -2px;
+}
+
+/* 검색 뒤로가기 버튼 */
+.fa-arrow-left:before {
+    color: #556c86;
 }
 
 /* 헤더 */
