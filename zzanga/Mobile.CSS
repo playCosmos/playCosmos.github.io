@@ -155,17 +155,7 @@ nav#nav {
 #viewers-area {
     color: #556c86;
 }
-/*
-#board-info #viewers-area #viewers:before {
-    content: "땅오단 ";
-    cursor: text;
-}
 
-#board-info #viewers-area #viewers:after {
-    content: "명 헤엄치는 중";
-    cursor: text;
-}
-*/
 /* 메인 배너 우측 아이콘 색 */
 #board-info>a.board-right-menu {
     color: #556c86;
@@ -259,7 +249,6 @@ nav#nav {
 	}
 }
 
-
 /* 글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
     background-color: #556c86;
@@ -339,7 +328,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 목록 버튼 */
 .btn,
 .btn-sm  {
-    border-radius: 15px !important;
+    border-radius: 15px;
 }
 
 /* 게시글 추천 */
