@@ -183,13 +183,10 @@ span.a-badge i.fa.fa-info-circle {
   color: #3c4a5d;
 }
 
-/* 공지 작성자, 댓글 수 표시 제거 */
+/* 공지 작성자, 작성시간, 댓글 수 표시, i 아이콘 제거 */
 #article-list>.notice>.item>a.list-title>.list-writer,
-#article-list>.notice>.item>a.list-title>small.comment-count {
-	display: none;
-}
-
-/* 공지 i 아이콘 제거 */
+#article-list>.notice>.item>a.list-title>.list-time,
+#article-list>.notice>.item>a.list-title>small.comment-count,
 #article-list>.notice>.item>a.list-title>span.a-badge {
 	display: none;
 }
