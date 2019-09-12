@@ -82,7 +82,7 @@ header>#header-area>#header-bar-link {
 }
 
 /* 트게더 메뉴 */
-.nav-up {
+header.nav-up {
 	opacity: 0;
 	pointer-events: none;
 	/*transform: rotate(-90deg);*/
@@ -98,19 +98,19 @@ nav#nav {
 	100% { transform: translateX(0px); }
 }
 
-#nav-upper {
+nav#nav>#nav-upper {
 	padding: 8px 0;
 }
 
-#nav-upper-shortcut {
+nav#nav>#nav-upper-shortcut {
 	padding: 6px 10px !important;
 }
 
-#nav-upper #userDropdown #notification-badge {
+nav#nav>#nav-upper #userDropdown #notification-badge {
 	background: #556c86 !important;
 }
 
-.nav-header {
+nav#nav>.nav-header {
 	background: #556c86;
 	margin-top: 1px;
 	height: 35px;
@@ -118,25 +118,25 @@ nav#nav {
 	padding: 8px 15px;
 }
 
-.nav-menu-area a {
+nav#nav>.nav-menu-area a {
 	padding: 5px 0;
 	text-align: center;
 }
 
-.nav-menu-area hr {
+nav#nav>.nav-menu-area hr {
 	margin: 4px 0;
 }
 
-.nav-menu-area>.left,
-.nav-menu-area>.right {
+nav#nav>.nav-menu-area>.left,
+nav#nav>.nav-menu-area>.right {
 	padding: 5px 10px;
 	margin: 3px;
 }
-.nav-menu-area>.left {
+nav#nav>.nav-menu-area>.left {
 	padding-right: 0;
 }
 
-.nav-menu-area>.right{
+nav#nav>.nav-menu-area>.right{
 	padding-left: 0;
 }
 
