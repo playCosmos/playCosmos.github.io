@@ -359,7 +359,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 /* 방문한 게시글 */
-.list-title:visited {
+#article-list>.article-list-row>.item>a.list-title:visited {
   color: #556c86 !important;
 }
 
