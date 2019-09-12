@@ -272,7 +272,9 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 /* 인기글, 설정, 글쓰기 버튼 */
-#article-list-menu>.btn.best {
+#article-list-menu>.btn.best,
+#article-list-menu>.btn.cog,
+#article-list-menu>.btn.write {
     border-radius: 15px !important;
 }
 
@@ -413,7 +415,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 #writeCommentBtn {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 #movetotop img{display:none}
