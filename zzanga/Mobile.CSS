@@ -288,7 +288,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 게시글 검색 */
 .btn.square {
-    border-radius: 15px 0 0 15px !imortant;
+    border-radius: 15px 0 0 15px !important;
 }
 
 .input-group-btn:last-child>.btn,
