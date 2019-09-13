@@ -35,9 +35,39 @@ body {
 	background: none;
 }
 
+/* 링크 색 */
+a {
+    color: #556c86;
+}
+
 /* 하단 배경 색 */
 footer {
 	background: #c1cbd7;
+}
+
+/* 헤더 */
+header {
+	border-bottom: 4px solid #556c86;
+	border-top: 4px solid #556c86;
+	border-radius: 0;
+	transition: 0.2s;
+	background: #c1cbd7;
+	margin: 0px;
+}
+
+header.nav-up {
+	opacity: 0;
+	pointer-events: none;
+	top: 5px;
+}
+
+header>#header-area>#header-bar-link {
+    color: #556c86;
+}
+
+/* 상단 배너 광고 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: #556c86;
 }
 
 /* 로고 */
@@ -67,31 +97,6 @@ header > #header-search-bar #header-search-btn {
 /* 검색 뒤로가기 버튼 */
 .fa-arrow-left:before {
     color: #556c86;
-}
-
-/* 헤더 */
-header {
-	border-bottom: 4px solid #556c86;
-	border-top: 4px solid #556c86;
-	border-radius: 0;
-	transition: 0.2s;
-	background: #c1cbd7;
-	margin: 0px;
-}
-
-header.nav-up {
-	opacity: 0;
-	pointer-events: none;
-	top: 5px;
-}
-
-header>#header-area>#header-bar-link {
-    color: #556c86;
-}
-
-/* 상단 배너 광고 뱃지 */
-#header-top-notice strong.notice-badge {
-    background: #556c86;
 }
 
 /* 트게더 메뉴 */
