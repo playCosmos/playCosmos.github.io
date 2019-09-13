@@ -42,7 +42,7 @@ a {
 
 /* 하단 배경 색 */
 footer {
-	background: #c1cbd7;
+	background: #a8b6c7;
 }
 
 /* 헤더 */
@@ -51,7 +51,7 @@ header {
 	border-top: 4px solid #556c86;
 	border-radius: 0;
 	transition: 0.2s;
-	background: #c1cbd7;
+	background: #a8b6c7;
 	margin: 0px;
 }
 
@@ -185,7 +185,7 @@ nav#nav>.nav-menu-area>.right{
 
 /* 메인 배너 글 공지 */
 #article-list>.notice {
-    background-color: #c1cbd7 !important;
+    background-color: #a8b6c7 !important;
 }
 
 /* 공지 작성자, 댓글 수 표시, i 아이콘 제거 */
