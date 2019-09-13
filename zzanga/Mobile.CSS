@@ -37,7 +37,7 @@ body {
 
 /* 하단 배경 색 */
 footer {
-	background: #a0afc2
+	background: #c1cbd7;
 }
 
 /* 로고 */
@@ -72,11 +72,11 @@ header > #header-search-bar #header-search-btn {
 /* 헤더 */
 header {
 	border-bottom: 4px solid #556c86;
-    border-top: 4px solid #556c86;
-    border-radius: 0;
+	border-top: 4px solid #556c86;
+	border-radius: 0;
 	transition: 0.2s;
-    background: #a0afc2;
-    margin: 0px;
+	background: #c1cbd7;
+	margin: 0px;
 }
 
 header.nav-up {
@@ -180,7 +180,7 @@ nav#nav>.nav-menu-area>.right{
 
 /* 메인 배너 글 공지 */
 #article-list>.notice {
-    background-color: #b1bdcd !important;
+    background-color: #c1cbd7 !important;
 }
 
 /* 공지 작성자, 댓글 수 표시, i 아이콘 제거 */
