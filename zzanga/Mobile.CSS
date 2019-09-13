@@ -74,10 +74,17 @@ header {
 	border-bottom: 4px solid #556c86;
     border-top: 4px solid #556c86;
     border-radius: 0;
-	transition: 0.3s;
+	transition: 0.2s;
     background: #a0afc2;
     margin: 0px;
 }
+
+header.nav-up {
+	opacity: 0;
+	pointer-events: none;
+	top: 5px;
+}
+
 header>#header-area>#header-bar-link {
     color: #556c86;
 }
@@ -88,13 +95,6 @@ header>#header-area>#header-bar-link {
 }
 
 /* 트게더 메뉴 */
-header.nav-up {
-	opacity: 0;
-	pointer-events: none;
-	/*transform: rotate(-90deg);*/
-	top: 5px;
-}		
-
 nav#nav {
 	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
 }
@@ -175,7 +175,7 @@ nav#nav>.nav-menu-area>.right{
 	border: 2px solid;
 	line-height: inherit;
 	opacity: 0.7;
-        margin-top: 3px;
+	margin-top: 3px;
 }
 
 /* 메인 배너 글 공지 */
