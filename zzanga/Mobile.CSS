@@ -71,9 +71,10 @@ header > #header-search-bar #header-search-btn {
 
 /* 헤더 */
 header {
-    border-bottom: 4px solid #556c86;
+	border-bottom: 4px solid #556c86;
     border-top: 4px solid #556c86;
     border-radius: 0;
+	transition: 0.3s;
     background: #a0afc2;
     margin: 0px;
 }
@@ -429,7 +430,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     opacity: 1;
     background: url(./image/toTop.png);
     width: 100px;
-    height: 100px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
 }
