@@ -30,16 +30,6 @@ body {
 	background: none;
 }
 
-/* 링크 색 */
-a {
-    color: #556c86;
-}
-
-/* 하단 배경 색 */
-footer {
-	background: #a8b6c7;
-}
-
 /* 알림 */
 .alert {
     padding: 10px 15px;
@@ -442,6 +432,16 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* 하단 배경 색 */
+footer {
+	background: #a8b6c7;
+}
+
+/* 링크 색 */
+.container > a {
+    color: #556c86;
 }
 
 /* 이모티콘 영역 */
