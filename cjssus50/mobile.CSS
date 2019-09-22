@@ -460,6 +460,10 @@ span.badge.badge-default,
 	margin-right: -2px;
 }
 
+#writeCommentBtn {
+	width: 100%;
+}
+
 footer {
 	border-top: 2px solid var(--mainColor);
 	background: var(--mainColor1);
