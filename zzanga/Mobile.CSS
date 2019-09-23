@@ -328,7 +328,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 버튼 */
 .btn,
 .btn-sm  {
-    border-radius: 15px !important;
+    border-radius: 5px !important;
 }
 
 /* 게시글 추천 */
@@ -418,8 +418,17 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
   color: #556c86;
 }
 
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+}
+
+#btnRereplyCancelBtn {
+    margin-right: 3px;
+}
+
 #writeCommentBtn {
-    width: 100%;
+    flex: 1;
     border-radius: 5px !important;
 }
 
