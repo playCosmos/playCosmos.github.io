@@ -460,8 +460,17 @@ span.badge.badge-default,
 	margin-right: -2px;
 }
 
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+}
+
+#btnRereplyCancelBtn {
+    margin-right: 3px;
+}
+
 #writeCommentBtn {
-	width: 100%;
+    flex: 1;    
 }
 
 footer {
