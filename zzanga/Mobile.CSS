@@ -457,15 +457,15 @@ footer {
 /* 이모티콘 영역 */
  /* 구독티콘 */
   /* 하트 */
-.fr-command.fr-emoticon[data-param1=zzangaHeart] > img {
+.fr-command.fr-emoticon[data-param1=lah2Heart] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/heart.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaHeart],
-#article-content-wrapper #article-content img[alt="zzangaHeart"] { 
+.fr-emoticon.fr-deletable > img[alt=lah2Heart],
+#article-content-wrapper #article-content img[alt="lah2Heart"] { 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -473,15 +473,15 @@ footer {
      background-size: 100%; 
 }
    /* zrd */
-.fr-command.fr-emoticon[data-param1=zzangaZRD] > img {
+.fr-command.fr-emoticon[data-param1=lah2ZRD] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/zrd.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaZRD],
-#article-content-wrapper #article-content img[alt="zzangaZRD"]{ 
+.fr-emoticon.fr-deletable > img[alt=lah2ZRD],
+#article-content-wrapper #article-content img[alt="lah2ZRD"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -489,15 +489,15 @@ footer {
      background-size: 100%; 
 }
   /* 인사 */
-.fr-command.fr-emoticon[data-param1=zzangaHI] > img {
+.fr-command.fr-emoticon[data-param1=lah2HI] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/hi.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaHI],
-#article-content-wrapper #article-content img[alt="zzangaHI"]{ 
+.fr-emoticon.fr-deletable > img[alt=lah2HI],
+#article-content-wrapper #article-content img[alt="lah2HI"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -505,15 +505,15 @@ footer {
      background-size: 100%; 
 }
   /* 상어비블썸프 */
-.fr-command.fr-emoticon[data-param1=zzangaSharkThump] > img {
+.fr-command.fr-emoticon[data-param1=lah2SharkThump] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/cry.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaSharkThump],
-#article-content-wrapper #article-content img[alt="zzangaSharkThump"]{ 
+.fr-emoticon.fr-deletable > img[alt=lah2SharkThump],
+#article-content-wrapper #article-content img[alt="lah2SharkThump"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -521,15 +521,15 @@ footer {
      background-size: 100%; 
 }
   /* 물음표 */
-.fr-command.fr-emoticon[data-param1=zzangaQ] > img {
+.fr-command.fr-emoticon[data-param1=lah2Q] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/curious.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaQ],
-#article-content-wrapper #article-content img[alt="zzangaQ"]{ 
+.fr-emoticon.fr-deletable > img[alt=lah2Q],
+#article-content-wrapper #article-content img[alt="lah2Q"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -537,15 +537,15 @@ footer {
      background-size: 100%; 
 }
   /* 팝콘 */
-.fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
+.fr-command.fr-emoticon[data-param1=lah2Popcorn] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/pop.png);
      background-size: 100%;
 }
-.fr-emoticon.fr-deletable > img[alt=zzangaPopcorn],
-#article-content-wrapper #article-content img[alt="zzangaPopcorn"]{ 
+.fr-emoticon.fr-deletable > img[alt=lah2Popcorn],
+#article-content-wrapper #article-content img[alt="lah2Popcorn"]{ 
      width: 40px !important; 
      height: 40px !important; 
      padding-left: 40px;
@@ -553,14 +553,14 @@ footer {
      background-size: 100%; 
 }
    /* 응원봉 */
-.fr-command.fr-emoticon[data-param1=zzangaShake] > img {
+.fr-command.fr-emoticon[data-param1=lah2Shake] > img {
      width: 28px !important;
      height: 28px !important;
      padding-left: 28px;
      background-image: url(./emoji/cheer.png);
      background-size: 100%;
 } 
-.fr-emoticon.fr-deletable > img[alt=zzangaShake],
+.fr-emoticon.fr-deletable > img[alt=lah2Shake],
 #article-content-wrapper #article-content img[alt="JKanStyle"]{ 
      width: 40px !important; 
      height: 40px !important; 
