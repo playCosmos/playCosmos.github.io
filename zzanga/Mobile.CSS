@@ -67,6 +67,7 @@ header>#header-area>#header-bar-link {
 /* 로고 */
 header>#header-area>a>h1 {
 	background: url(./image/logo2.png) no-repeat;
+	width:75px;
 	background-size: auto 32px;
 }
 
