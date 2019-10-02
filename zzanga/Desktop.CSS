@@ -70,7 +70,7 @@ header #right-search-form>#right-search-btn {
     color: #556c86;
 }
 
-/* 배너 */
+/* 트게더 메뉴 */
 header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
     border-radius: 10px;
     border-right: 1px solid #556c86;
@@ -110,7 +110,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 좌측 배너 헤더 */
 #main .menu-wrapper>.header {
     background: #556c86;
-    border-radius: 10px 10px 0 0;
+    border-radius: 9px 9px 0 0;
     border-top: none;
 }
 
