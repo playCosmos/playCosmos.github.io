@@ -158,7 +158,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 메인 배너 헤더 가운데 줄 */
 #board-info h1 {
-    border-bottom: 1px solid #556c86;
+    /*border-bottom: 1px solid #556c86;*/
+    border-image: linear-gradient( to right, #0000, #556c86) 0 0 100%;
 }
 
 /* 메인 배너 순위 */
