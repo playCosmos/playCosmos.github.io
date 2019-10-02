@@ -172,7 +172,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 /* 메인 배너 게시판 접속자 수 */
-
+/*
 #viewers-area .fa-user {
     width: 20px;
     height: 20px;
@@ -181,7 +181,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     background-repeat: no-repeat;
     text-indent: -9999px;
 }
-
+*/
 #board-info #viewers-area {
     color: #556c86;
 }
