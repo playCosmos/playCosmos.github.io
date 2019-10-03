@@ -185,7 +185,8 @@ header #header-bar #header-top-notice strong.notice-badge {
     text-indent: -9999px;
 }
 */
-#board-info #viewers-area {
+#score-area,
+#viewers-area {
     color: #556c86;
 }
 
