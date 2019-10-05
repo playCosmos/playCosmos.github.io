@@ -78,6 +78,7 @@ header #right-search-form>#right-search-btn:focus {
 
 /* 상단바 */
 header #header-bar {
+	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
 
