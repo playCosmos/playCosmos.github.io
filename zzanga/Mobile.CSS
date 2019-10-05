@@ -424,6 +424,10 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     display: flex;
 }
 
+.pull-left {
+    margin-right: 3px;
+}
+
 #btnRereplyCancelBtn {
     margin-right: 3px;
 }
