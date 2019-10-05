@@ -465,6 +465,10 @@ span.badge.badge-default,
     display: flex;
 }
 
+.pull-left {
+    margin-right: 3px;
+}
+
 #btnRereplyCancelBtn {
     margin-right: 3px;
 }
