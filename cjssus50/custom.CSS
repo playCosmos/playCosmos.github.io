@@ -41,9 +41,10 @@ header {
 header .row>div:nth-child(1)>a {
 	display: block;
 	width: var(--logoWidth);
-	height: 50px;
+	height: 58px;
 	background: var(--logoURL) no-repeat;
 	background-size: auto 58px;
+	margin-bottom: -8px;
 }
 
 header .row>div:nth-child(1) > a > img {
