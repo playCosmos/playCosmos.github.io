@@ -1,3 +1,5 @@
+/* CSS */
+
 /* 컬러, 로고 설정 부분 */
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
@@ -5,7 +7,7 @@
 	--mainColor2: #f7f3f8; /* 트게더 메뉴, 게시글 hover */
 	--mainColor3: #f3edf5; /* 공지, 인기글 */
 	--mainColor5: #ebe2ee; /* 공지, 인기글 hover */
-	--logoURL: url(./logo/logo1.png);
+	--logoURL: url(./logo/logo1.png); /* 로고이미지 주소 */
 	--logoWidth: 160px;	 /* 로고 너비 */
 	--before: "꼬냉을 향해 뛰는 ";		 /* 접속자 수 앞 */
 	--after: "개의 심장";		 /* 접속자 수 뒤 */
