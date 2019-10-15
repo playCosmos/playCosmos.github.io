@@ -7,8 +7,11 @@
 	--mainColor2: #f7f3f8; /* 트게더 메뉴, 게시글 hover */
 	--mainColor3: #f3edf5; /* 공지, 인기글 */
 	--mainColor5: #ebe2ee; /* 공지, 인기글 hover */
-	--logoURL: url(./logo/logo1.png); /* 로고이미지 주소 */
+	--logoURL: url(./logo/logo1.png); /* 로고 이미지 주소 */
 	--logoWidth: 160px;	 /* 로고 너비 */
+	--toTopURL: url(./logo/toTop.png); /* 위로 이미지 주소*/
+	--toTopHeight: 100px; /* 위로 이미지 높이 */
+	--toTopWidth: 113px; /* 위로 이미지 너비 */
 	--before: "꼬냉을 향해 뛰는 ";		 /* 접속자 수 앞 */
 	--after: "개의 심장";		 /* 접속자 수 뒤 */
 }
@@ -499,9 +502,6 @@ header #header-bar>.row {
 }
 /* 드롭다운 끝 */
 
-.btn.square {
-	margin-right: -2px;
-}
 
 .fa-user:before {
 	content: "\f004";	
@@ -521,16 +521,16 @@ span.a-badge i.fa.fa-star {
 	animation-timing-function: linear;
 }
 
-/*스크롤*/
+/* 스크롤 */
 #movetotop img {
 	display:none;
 }
 
 #movetotop {
 	opacity:1;
-	background:url(./logo/toTop.png);
-	width: 113px;
-	height: 100px;
+	background: var(--toTopURL);
+	width: var(--toTopWidth);
+	height: var(--toTopHeight);
 	border-radius: 0;
 	background-size: contain;
 }
@@ -549,6 +549,7 @@ span.a-badge i.fa.fa-star {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
+
 /* 안씀 */
 @keyframes waterdrop {
 	0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
@@ -562,10 +563,13 @@ span.a-badge i.fa.fa-star {
 	70% { box-shadow: 0 0 0 10px rgba(255,141,141, 0); }
 	100% { box-shadow: 0 0 0 0 rgba(255,141,141, 0); }
 }
-/* end of animation */
 
 
 /* 버튼, 하단 검색 */
+.btn.square {
+	margin-right: -2px;
+}
+
 .btn,
 .input-group .form-control {
 	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
