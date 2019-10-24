@@ -29,6 +29,20 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'NanumBarunpen';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KHNPHU';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* 컬러, 로고 설정 부분 */
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
