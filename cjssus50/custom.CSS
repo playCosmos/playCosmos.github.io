@@ -2,20 +2,6 @@
 /* https://twitch.tv/million_air */
 
 @font-face {
-	font-family: 'NanumBarunpen';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'KHNPHU';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'NanumBarunGothic';
 	font-style: normal;
 	font-weight: 400;
@@ -71,7 +57,7 @@ html{
 
 body {
 	background: transparent;
-	/*font-family: '777Balsamtint';*/
+	font-family: 'NanumBarunGothic';
 }
 
 a,
