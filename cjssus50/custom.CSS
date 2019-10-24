@@ -8,6 +8,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: '777Kidbutterfly';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Kidbutterfly.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* 컬러, 로고 설정 부분 */
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
