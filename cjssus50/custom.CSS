@@ -1,6 +1,13 @@
 /* Designed by Million_Air */
 /* https://twitch.tv/million_air */
 
+@font-face {
+	font-family: '777Balsamtint';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* 컬러, 로고 설정 부분 */
 :root {
 	--bgColor: #f3edf5;	 /* 배경 색 */
@@ -28,6 +35,7 @@ html{
 
 body {
 	background: transparent;
+	font-family: '777Balsamtint';
 }
 
 a,
