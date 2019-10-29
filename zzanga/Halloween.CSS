@@ -19,9 +19,8 @@
 *:focus { outline: none !important; }
 
 html {
-    background: url(./logo/bottombg2.png) no-repeat, #111213;
+    background: url(./images/bottombg2.png) no-repeat, #111213;
     background-position: right top;
-    background-attachment: fixed;
 }
 
 /* 배경 */
