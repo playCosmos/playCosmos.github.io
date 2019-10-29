@@ -15,31 +15,18 @@
   src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
 
-@keyframes HeartBeat {
-  0% {
-    transform: scale(1, 1)
-  }
-  25% {
-    transform: scale(1.2, 1.2)
-  }
-  50% {
-    transform: scale(0.8, 0.8)
-  }
-  75% {
-    transform: scale(1.1, 1.1)
-  }
-  100% {
-    transform: scale(1, 1)
-  }
-}
-
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+html {
+    background: url(./logo/bottombg2.png) no-repeat, #111213;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
 /* 배경 */
 body {
-    height: auto !important;
-    background: #111213;
+    background: transparent;
     font-family: NanumSquareRoundR;
     cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
