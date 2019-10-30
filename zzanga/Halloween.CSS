@@ -27,7 +27,7 @@ span {
 }
 
 html {
-    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #111213;
+    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #505070;
     background-size: 380px;
 }
 
@@ -71,43 +71,43 @@ header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
     border-radius: 10px;
-    border-right: 1px solid #556c86;
-    border-left: 1px solid #556c86;
-    border-bottom: 1px solid #556c86;
+    border-right: 1px solid #111213;
+    border-left: 1px solid #111213;
+    border-bottom: 1px solid #111213;
 }
 
 /* 상단 배너 */
 header #header-bar>.row {
-    border-top: 5px solid #556c86;
+    border-top: 5px solid #111213;
 }
 
 /* 상단 배너 드롭다운 */
 header #header-bar a.dropdown-toggle,
 #latestDropdownMenu>li>a,
 #latestDropdownMenu>li>a>span.delrow {
-  color: #556c86;
+  color: #111213;
   cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 #favoriteDropdownMenu>li>a>span.label.label-default {
-    background-color: #556c86;
+    background-color: #111213;
     cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 #favoriteDropdownMenu>li>a,
 #favoriteDropdownMenu>li>a>span.delrow,
 #playgroundDropdownMenu>li>a{
-  color: #556c86;
+  color: #111213;
   cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 /* 상단 배너 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge {
-    background: #556c86;
+    background: #111213;
 }
 
 /* 좌측 배너 헤더 */
 #main .menu-wrapper>.header {
-    background: #556c86;
+    background: #111213;
     border-radius: 9px 9px 0 0;
     border-top: none;
 }
@@ -119,7 +119,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 좌측 배너 이니셜 */
 #main .menu-wrapper>a>em {
-    color: #556c86;
+    color: #111213;
 }
 
 /* 좌측 배너 빈 공간 */
@@ -135,12 +135,12 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 좌측 배너 점 */
 .fa-square:before {
-    color: #556c86;
+    color: #111213;
 }
 
 /* 메인 배너 */
 #main #main-content>div.frame {
-    border-top: 5px solid #556c86;
+    border-top: 5px solid #111213;
 }
 
 /* 메인 배너 스트리머 이미지*/
@@ -151,19 +151,19 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 메인 배너 스트리머 닉네임 */
 #board-info h1>a {
-    color: #556c86;
+    color: #111213;
     font-family: NanumSquareRoundEB;
 }
 
 /* 메인 배너 헤더 가운데 줄 */
 #board-info h1 {
-    /*border-bottom: 1px solid #556c86;*/
-    border-image: linear-gradient( to right, #0000, #556c86) 0 0 100%;
+    /*border-bottom: 1px solid #111213;*/
+    border-image: linear-gradient( to right, #0000, #111213) 0 0 100%;
 }
 
 /* 메인 배너 순위 */
 .badge {
-    background-color: #556c86;
+    background-color: #111213;
 }
 
 /* 생방송 알림 멘트 */
@@ -184,7 +184,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 */
 #board-info #score-area,
 #board-info #viewers-area {
-    color: #556c86;
+    color: #111213;
 }
 
 #board-info #viewers-area #viewers:before {
@@ -200,7 +200,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 메인 배너 헤더 즐찾.. */
 #board-info #board-info-bottom a {
-    color: #556c86;
+    color: #111213;
 }
 #board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn {
@@ -210,8 +210,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 카테고리 */
 #article-list #article-list-category {
     background: #a0afc2;
-    border-top: 2px solid #556c86;
-    border-bottom: 2px solid #556c86;
+    border-top: 2px solid #111213;
+    border-bottom: 2px solid #111213;
     line-height: 1.1;
 }
 
@@ -248,12 +248,12 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
-    background-color: #556c86;
+    background-color: #111213;
 }
 
 /* 댓글 수 */
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-    color: #556c86;
+    color: #111213;
 } 
 
 /* 작성자 (스트리머) */
@@ -270,12 +270,12 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 로그인한 게시글 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #556c86;
+  color: #111213;
 }
 
 /* 방문한 게시글 */
 #article-list>.article-list-row>.item>.list-title>a:visited {
-  color: #556c86 !important;
+  color: #111213 !important;
 }
 
 
@@ -303,7 +303,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 .pagination>li>a,
 .pagination>li>span {
     border: none;
-    color: #556c86;  
+    color: #111213;  
 }
 
 /* 현재 페이지 */
@@ -314,13 +314,13 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
     border-radius: 10px;
-    background-color: #556c86;
-    border-color: #556c86;
+    background-color: #111213;
+    border-color: #111213;
 }
 
 /* 글쓰기 버튼 배경색 */
 .btn-primary {
-  background-color: #556c86;  
+  background-color: #111213;  
 }
 
 /* 게시글 검색 */
@@ -334,36 +334,36 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 게시글 상단 바 */
 #article-content-wrapper>.header {
-      border-top: 2px solid #556c86
+      border-top: 2px solid #111213
 }
 
 #article-reply-area > .header h5 {
-  color: #556c86;
+  color: #111213;
 }
 
 /* 댓글 작성자 이름 색 */
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
-  color: #556c86;
+  color: #111213;
 }
 
 /* 댓글 편집 메뉴 */
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
-  color: #556c86;
+  color: #111213;
 }
 
 /* 게시글, 댓글 쓰기 상단바 */
 .fr-toolbar {
-  border-top: 5px solid #556c86;
+  border-top: 5px solid #111213;
 }
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-  color: #556c86;
+  color: #111213;
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
 .fr-popup .fr-command.fr-btn.fr-dropdown::after {
-  border-top: 4px solid #556c86;
+  border-top: 4px solid #111213;
 }
 
 /* 목록 버튼 */
