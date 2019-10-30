@@ -19,7 +19,7 @@
 *:focus { outline: none !important; }
 
 html {
-    background: url(./images/bottombg2.png) no-repeat, #111213;
+    background: url(./image/web.png) no-repeat, #111213;
     background-position: right top;
 }
 
