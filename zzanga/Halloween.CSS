@@ -19,7 +19,7 @@
 *:focus { outline: none !important; }
 
 html {
-    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) left bottom no-repeat fixed, #111213;
+    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #111213;
     background-size: 380px;
 }
 
