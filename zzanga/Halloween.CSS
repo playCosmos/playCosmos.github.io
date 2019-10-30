@@ -20,7 +20,8 @@
 
 html {
     background: url(./Halloween/web.png) no-repeat, #111213;
-    background-position: right top;
+    background-position: calc(50% + 500px) top;
+    background-size: 380px;
 }
 
 /* 배경 */
