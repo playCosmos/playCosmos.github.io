@@ -39,6 +39,13 @@ body {
     padding-right: 35px;
 }
 
+/* 걸리적 거리는거 삭제 */
+span.badge.badge-default,
+#board-info>a.board-right-menu[href="/cjssus50/profile"],
+#addFavoriteBtn>small {
+	display: none;
+}
+
 /* 헤더 */
 header {
 	border-bottom: 4px solid #556c86;
