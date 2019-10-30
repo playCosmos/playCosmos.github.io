@@ -26,7 +26,8 @@ html {
 
 /* 배경 */
 body {
-    background: transparent;
+    background: url(./Halloween/leftBottom.png) no-repeat, transparent;
+    background-position: left bottom;
     font-family: NanumSquareRoundR;
     cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
@@ -115,7 +116,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 좌측 배너 빈 공간 */
 #main .menu-wrapper .spacer {
-    background: none;
+    background: #eeeeee;
+    height: 0.15em;
 }
 
 /* 좌측 배너 하단 */
