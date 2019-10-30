@@ -28,6 +28,7 @@ html {
 body {
     background: url(./Halloween/leftBottom.png) no-repeat, transparent;
     background-position: left bottom;
+    background-attachment: fixed;
     font-family: NanumSquareRoundR;
     cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
