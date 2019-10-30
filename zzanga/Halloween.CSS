@@ -18,6 +18,14 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+a {
+    color: white;
+}
+
+span {
+    color: #707070;
+}
+
 html {
     background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #111213;
     background-size: 380px;
@@ -33,7 +41,7 @@ body {
 /* 로고 */
 header .row>div:nth-child(1)>a {
     display: block;
-    width: 120px;
+    width: 180px;
     height: 50px;
     background: url(./Halloween/logo.png) no-repeat;
     background-size: auto 50px;
