@@ -152,6 +152,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #board-info #board-info-profile-img {
     float: left !important;
     margin-right: 5px;
+    content: url(./Halloween/profile.png);
 }
 
 /* 메인 배너 스트리머 닉네임 */
