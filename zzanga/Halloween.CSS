@@ -223,7 +223,8 @@ header #header-bar #header-top-notice strong.notice-badge {
     
 /* 카테고리 홈 버튼 */
 #article-list #article-list-category>a {
-    background: white;
+    background: #505070 !important;
+    color: white !important;
     text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
 }
 
