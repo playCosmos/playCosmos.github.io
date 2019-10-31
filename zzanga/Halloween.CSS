@@ -250,7 +250,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     background-color: #eeeef3;
 }
 span.a-badge i.fa.fa-info-circle {
-  color: #3c4a5d;
+  color: var(--mainColor);
 }
 
 /* 글 추천 수 */
