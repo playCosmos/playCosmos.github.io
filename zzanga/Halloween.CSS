@@ -61,7 +61,7 @@ header .row>div:nth-child(1)>a>img {
 /* 검색창 */
 header #right-search-form>input[type=text] {
     border: 3px solid white;;
-    background: var(--mainColor)aa;
+    background: background: hsla(280, 5%, 20%, 0.75);
     color: white;
     border-radius: 10px;
 }
