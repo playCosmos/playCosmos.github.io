@@ -41,7 +41,7 @@ body {
 
 /* 걸리적 거리는거 삭제 */
 span.badge.badge-default,
-#board-info>a.board-right-menu[href="/cjssus50/profile"],
+#board-info>a.board-right-menu[href="/lah2/profile"],
 #addFavoriteBtn>small {
 	display: none;
 }
