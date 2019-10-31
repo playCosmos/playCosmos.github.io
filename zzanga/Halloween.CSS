@@ -27,7 +27,7 @@ span {
 }
 
 html {
-    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #505070;
+    background: url(./Halloween/web.png) calc(50% + 500px) top no-repeat, url(./Halloween/leftBottom.png) calc(50% - 350px) bottom no-repeat fixed, #242433;
     background-size: 380px;
 }
 
@@ -209,21 +209,21 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 카테고리 */
 #article-list #article-list-category {
-    background: #505070;
+    background: #242433;
     border-top: 2px solid #111213;
     border-bottom: 2px solid #111213;
     line-height: 1.1;
 }
 
 #article-list #article-list-category > a.active {
-  background: #505070;  
+  background: #242433;  
   color: #3c4a5d;
 }
 
     
 /* 카테고리 홈 버튼 */
 #article-list #article-list-category>a {
-    background: #505070 !important;
+    background: #242433 !important;
     color: white !important;
     text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
 }
