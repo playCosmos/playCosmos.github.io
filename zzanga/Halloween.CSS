@@ -22,7 +22,7 @@ a {
     color: white;
 }
 
-span {
+.container> span {
     color: #707070;
 }
 
