@@ -383,15 +383,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     border-radius: 10px;
 }
 
-#movetotop img{display:none}
-#movetotop {
-    display: inline-block;
-    opacity: 1;
-    background: url(./Halloween/toTop.png);
+#movetotop img {
+    content: url(./Halloween/toTop.png);
     width: 88px;
     height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+#movetotop {
+    opacity: 1;
 }
 
 /* 이모티콘 영역 */
