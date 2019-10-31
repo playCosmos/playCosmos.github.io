@@ -56,7 +56,7 @@ header .row>div:nth-child(1)>a>img {
 /* 검색창 */
 header #right-search-form>input[type=text] {
     border: 3px solid white;;
-    background: #000a;
+    background: #111213aa;
     color: white;
     border-radius: 10px;
 }
