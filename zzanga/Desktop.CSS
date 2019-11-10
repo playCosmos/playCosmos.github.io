@@ -406,7 +406,22 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
      background-image: url(./emoji/heart.png);
      background-size: 100%; 
 }
-   /* zrd */
+    /* 쉨 */
+.fr-command.fr-emoticon[data-param1=lah2Tnpz] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/tnpz.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2Tnpz]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/tnpz.png);
+     background-size: 100%; 
+}
+   /* 지려따 */
 .fr-command.fr-emoticon[data-param1=lah2ZRD] > img {
      width: 28px !important;
      height: 28px !important;
