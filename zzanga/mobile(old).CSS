@@ -1,0 +1,635 @@
+/* 모듈 */
+@font-face {
+  font-family: 'NanumSquareRoundR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundEB';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), 
+  url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'GodoM';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
+/* 배경 */
+body {
+	font-family: NanumSquareRoundR;
+	background: none;
+}
+
+/* 알림 */
+.alert {
+    padding: 10px 15px;
+}
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 35px;
+}
+
+/* 걸리적 거리는거 삭제 */
+span.badge.badge-default,
+#board-info>a.board-right-menu[href="/lah2/profile"],
+#addFavoriteBtn>small {
+	display: none;
+}
+
+/* 헤더 */
+header {
+	border-bottom: 4px solid #556c86;
+	border-top: 4px solid #556c86;
+	border-radius: 0;
+	transition: 0.2s;
+	background: #a8b6c7;
+	margin: 0px;
+}
+
+header.nav-up {
+	opacity: 0;
+	pointer-events: none;
+	top: 5px;
+}
+
+header>#header-area>#header-bar-link {
+    color: #556c86;
+}
+
+/* 상단 배너 광고 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: #556c86;
+}
+
+/* 로고 */
+header>#header-area>a>h1 {
+	background: url(./image/logo2.png) no-repeat;
+	width:75px;
+	background-size: auto 32px;
+}
+
+/* 검색 창 */
+header > #header-search-bar #header-search-input {
+	border: 2px solid #556c86;
+	border-radius: 10px;
+	padding: 5px 8px;
+	width: calc(100%);
+}
+
+/* 검색 버튼 */
+header>#header-area>#header-search-link {
+	color: #556c86;
+}
+
+header > #header-search-bar #header-search-btn {
+	color: #556c86;
+	margin-top: -2px;
+}
+
+/* 검색 뒤로가기 버튼 */
+.fa-arrow-left:before {
+    color: #556c86;
+}
+
+/* 트게더 메뉴 */
+nav#nav {
+	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
+}
+
+@keyframes slider {
+	0% { transform: translateX(-300px); }
+	100% { transform: translateX(0px); }
+}
+
+nav#nav>#nav-upper {
+	padding: 8px 0;
+}
+
+nav#nav>#nav-upper-shortcut {
+	padding: 6px 10px !important;
+}
+
+nav#nav>#nav-upper #userDropdown #notification-badge {
+	background: #556c86 !important;
+}
+
+nav#nav>.nav-header {
+	background: #556c86;
+	margin-top: 1px;
+	height: 35px;
+	font-size: 14px;
+	padding: 8px 15px;
+}
+
+nav#nav>.nav-menu-area a {
+	padding: 5px 0;
+	text-align: center;
+}
+
+nav#nav>.nav-menu-area hr {
+	margin: 4px 0;
+}
+
+nav#nav>.nav-menu-area>.left,
+nav#nav>.nav-menu-area>.right {
+	padding: 5px 10px;
+	margin: 3px;
+}
+nav#nav>.nav-menu-area>.left {
+	padding-right: 0;
+}
+
+nav#nav>.nav-menu-area>.right{
+	padding-left: 0;
+}
+
+/* 메인 배너 스트리머 닉네임 */
+#board-info>h1>a {
+    color: #556c86;
+    font-family: NanumSquareRoundEB;
+}
+
+/* 메인 배너 순위 */
+.badge {
+    background-color: #556c86;
+}
+
+/* 접속자 수 */
+#viewers-area {
+    color: #556c86;
+}
+
+/* 메인 배너 우측 아이콘 색 */
+#board-info>a.board-right-menu {
+    color: #556c86;
+}
+
+/* 공지 숨기기 버튼 */
+#article-option-area-toggle-btn {
+	height: 33px;
+	width: 33px;
+	border-radius: 8px;
+	border: 2px solid;
+	line-height: inherit;
+	opacity: 0.7;
+	margin-top: 3px;
+}
+
+/* 메인 배너 글 공지 */
+#article-list>.notice {
+    background-color: #a8b6c7 !important;
+}
+
+/* 공지 작성자, 댓글 수 표시, i 아이콘 제거 */
+#article-list>.notice>.item>a.list-title>.list-writer,
+#article-list>.notice>.item>a.list-title>small.comment-count,
+#article-list>.notice>.item>a.list-title>span.a-badge {
+	display: none;
+}
+
+/* 게시글 긴 제목 최대 길이 조정 (말 줄임표) */
+#article-list>.article-list-row>.item>a.list-title>.title-value {
+	max-width: 200px;
+}
+#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+	max-width: 250px;
+}
+
+@media (min-width: 378px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 205px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 255px;
+	}
+}
+@media (min-width: 385px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 210px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 260px;
+	}
+}
+@media (min-width: 400px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 240px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 290px;
+	}
+}
+@media (min-width: 420px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 260px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 310px;
+	}
+}
+@media (min-width: 480px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 320px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 370px;
+	}
+}
+@media (min-width: 640px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 480px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 530px;
+	}
+}
+@media (min-width: 700px) {
+	#article-list>.article-list-row>.item>a.list-title>.title-value {
+		max-width: 540px;
+	}
+	#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+		max-width: 590px;
+	}
+}
+
+/* 글 추천 수 */
+.list-header>span {
+    background-color: #556c86 !important;
+}
+
+/* 댓글 수 */
+small.comment-count {
+    color: #556c86 !important;
+}
+
+/* 작성자 (스트리머) */
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(./badge/streamer.png);
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(./badge/mod.png);
+    width: 18px;
+}
+
+/* 인기글, 설정, 글쓰기 버튼 */
+#article-list-menu>.btn.best,
+#article-list-menu>.btn.cog,
+#article-list-menu>.btn.write {
+    border-radius: 15px !important;
+}
+
+/* 게시글 검색 */
+.btn.square {
+    border-radius: 15px 0 0 15px !important;
+}
+
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+    border-radius: 0 15px 15px 0 !important;
+}
+
+/* 카테고리 홈 버튼 */
+#article-list-category>a {
+    background: #fff !important;
+}
+.fa-home:before {
+    color: #556c86;
+}
+
+#article-list-category>a:hover {
+  background: #bed0e6 !important;
+}
+
+/* 카테고리 */
+#article-list-category {
+    background: #fff !important;
+    border-top: 2px solid #556c86;
+    border-bottom: 2px solid #556c86;
+}
+
+#article-list-category > a.active {
+  background: #fff;  
+  color: #3c4a5d;
+}
+#article-list-category > a:hover {
+  background: #bed0e6;
+}
+
+/* 게시글 카테고리 */
+#article-info>h2>span.category {
+    font-family: GodoM;
+}
+
+/* 버튼 */
+.btn,
+.btn-sm  {
+    border-radius: 5px !important;
+}
+
+/* 게시글 추천 */
+.btn-outline-success {
+    color: #66CC99;
+    border-color: #66CC99;
+}
+
+/* 게시글 비추천 */
+.btn-primary {
+    background-color: #3399CC;
+    border-color: #3399CC;
+}
+
+.btn-outline-primary {
+    color: #3399CC;
+    border-color: #3399CC;
+}
+
+/* 게시글 내 댓글 수 */
+#article-reply-area > .header h5 {
+    color: #9966CC;
+}
+
+/* 로그인한 글 작성자 */
+.list-writer.logged>span {
+  color: #556c86 !important
+}
+
+/* 방문한 게시글 */
+#article-list>.article-list-row>.item>a.list-title:visited {
+  color: #556c86 !important;
+}
+
+/* 트게더 페이지 */
+.pagination>li>a,
+.pagination>li>span {
+    color: #556c86 !important;
+    border: none !important;
+    border-radius: 15px !important;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+    color: #556c86;
+}
+
+/* 현재 트게더 페이지 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	color: white !important;
+	background-color: #556c86 !important;
+}
+
+/* 버튼색 */
+.btn-primary {
+    background-color: #556c86;
+    border-color: #556c86;
+}
+
+/* 댓글 */
+#article-reply-area > .header h5 {
+    color: #556c86;
+}
+
+/* 댓글 작성자 */
+.reply-writer.logged {
+    color: #556c86 !important;
+}
+
+/* 댓글 편집 */
+.reply-menu a {
+    color: #556c86;
+}
+
+/* 댓글 작성 상단바 */
+.fr-toolbar {
+  border-top: 5px solid #556c86;
+}
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+  color: #556c86;
+}
+
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left {
+    margin-bottom: 5px;
+}
+
+.pull-left {
+    margin-right: calc(100% - 100px);
+}
+
+#btnRereplyCancelBtn {
+    margin-right: 3px;
+}
+
+#writeCommentBtn {
+    flex: 1;
+    border-radius: 5px !important;
+}
+
+#movetotop img{display:none}
+#movetotop {
+    display: inline-block;
+    opacity: 1;
+    background: url(./image/toTop.png);
+    width: 100px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 하단 배경 색 */
+footer {
+	background: #a8b6c7;
+}
+
+/* 링크 색 */
+.container > a {
+    color: #556c86;
+}
+
+/* 이모티콘 영역 */
+ /* 구독티콘 */
+  /* 하트 */
+.fr-command.fr-emoticon[data-param1=lah2Heart] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/heart.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2Heart],
+#article-content-wrapper #article-content img[alt="lah2Heart"] { 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/heart.png);
+     background-size: 100%; 
+}
+   /* 쉨 */
+.fr-command.fr-emoticon[data-param1=lah2Tnpz] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/tnpz.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2Tnpz],
+#article-content-wrapper #article-content img[alt="lah2Tnpz"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/tnpz.png);
+     background-size: 100%; 
+}
+   /* 지려따 */
+.fr-command.fr-emoticon[data-param1=lah2ZRD] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/zrd.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2ZRD],
+#article-content-wrapper #article-content img[alt="lah2ZRD"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/zrd.png);
+     background-size: 100%; 
+}
+  /* 인사 */
+.fr-command.fr-emoticon[data-param1=lah2HI] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/hi.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2HI],
+#article-content-wrapper #article-content img[alt="lah2HI"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/hi.png);
+     background-size: 100%; 
+}
+  /* 상어비블썸프 */
+.fr-command.fr-emoticon[data-param1=lah2SharkThump] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/cry.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2SharkThump],
+#article-content-wrapper #article-content img[alt="lah2SharkThump"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/cry.png);
+     background-size: 100%; 
+}
+  /* 물음표 */
+.fr-command.fr-emoticon[data-param1=lah2Q] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/curious.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2Q],
+#article-content-wrapper #article-content img[alt="lah2Q"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/curious.png);
+     background-size: 100%; 
+}
+  /* 팝콘 */
+.fr-command.fr-emoticon[data-param1=lah2Popcorn] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/pop.png);
+     background-size: 100%;
+}
+.fr-emoticon.fr-deletable > img[alt=lah2Popcorn],
+#article-content-wrapper #article-content img[alt="lah2Popcorn"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/pop.png);
+     background-size: 100%; 
+}
+   /* 응원봉 */
+.fr-command.fr-emoticon[data-param1=lah2Shake] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/cheer.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=lah2Shake],
+#article-content-wrapper #article-content img[alt="JKanStyle"]{ 
+     width: 40px !important; 
+     height: 40px !important; 
+     padding-left: 40px;
+     background-image: url(./emoji/cheer.png);
+     background-size: 100%; 
+}
+
+   /* 쿰척이 */
+.fr-command.fr-emoticon[data-param1=OptimizePrime] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/kumch.gif);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=OptimizePrime]{ 
+     width: 70px !important; 
+     height: 70px !important; 
+     padding-left: 70px;
+     background-image: url(./emoji/kumch.gif);
+     background-size: 100%; 
+}
+
+  /* 저장용 */
+/*.fr-command.fr-emoticon[data-param1=zzangaPopcorn] > img {
+     width: 28px !important;
+     height: 28px !important;
+     padding-left: 28px;
+     background-image: url(./emoji/pop.png);
+     background-size: 100%;
+} 
+.fr-emoticon.fr-deletable > img[alt=zzangaPopcorn]{ 
+     width: 56px !important; 
+     height: 56px !important; 
+     padding-left: 56px;
+     background-image: url(./emoji/pop.png);
+     background-size: 100%; 
+}
+*/
