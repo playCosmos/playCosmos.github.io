@@ -362,6 +362,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 목록 버튼 */
 .btn {
     border-radius: 10px;
+    border-color: var(--maincolor);
     transition: 0.3s;
 }
 
