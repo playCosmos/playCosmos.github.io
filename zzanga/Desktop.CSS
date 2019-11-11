@@ -198,26 +198,28 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 카테고리 */
 #article-list #article-list-category {
-    background: #a0afc2;
+    background: #f2f2f4;
     border-top: 2px solid var(--mainColor);
     border-bottom: 2px solid var(--mainColor);
     line-height: 1.1;
 }
 
 #article-list #article-list-category > a.active {
-  background: #a0afc2;  
+  background: var(--mainColor);  
   color: #3c4a5d;
 }
 
     
 /* 카테고리 홈 버튼 */
 #article-list #article-list-category>a {
-    background: #b0b1c3 !important;
+    background: #f2f2f4 !important;
+	color: var(--mainColor);
     text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
+	transition: 0.3s;
 }
 
 #article-list #article-list-category>a:hover {
-    background: #454859 !important;
+    background: var(--mainColor) !important;
     color: white !important;
 }
 
