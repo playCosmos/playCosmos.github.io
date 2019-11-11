@@ -429,10 +429,15 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 #comment-write-form #comment-write-button-area {
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left {
+    margin-bottom: 5px;
 }
 
 .pull-left {
-    margin-right: 3px;
+    margin-right: calc(100% - 100px);
 }
 
 #btnRereplyCancelBtn {
