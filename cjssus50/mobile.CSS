@@ -466,10 +466,15 @@ span.badge.badge-default,
 #comment-write-form #comment-write-button-area {
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left {
+    margin-bottom: 5px;
 }
 
 .pull-left {
-    margin-right: 3px;
+    margin-right: calc(100% - 100px);
 }
 
 #btnRereplyCancelBtn {
@@ -477,7 +482,7 @@ span.badge.badge-default,
 }
 
 #writeCommentBtn {
-    flex: 1;    
+    flex: 1;
 }
 
 footer {
