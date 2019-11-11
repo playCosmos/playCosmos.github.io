@@ -39,6 +39,7 @@ header .row>div:nth-child(1)>a {
     background-size: auto 50px;
     animation: HeartBeat 1s 3 linear;
     cursor: url(./cursor/cur.png) 15 0, auto;
+	filter: grayscale(0.4) hue-rotate(14deg) brightness(0.8);
 }
 
 header .row>div:nth-child(1)>a>img {
