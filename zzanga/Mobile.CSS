@@ -21,6 +21,10 @@
   src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
+:root {
+	--mainColor: #454859;	 /* 메인 컬러 */
+}
+
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
@@ -48,11 +52,11 @@ span.badge.badge-default,
 
 /* 헤더 */
 header {
-	border-bottom: 4px solid #556c86;
-	border-top: 4px solid #556c86;
+	border-bottom: 4px solid var(--mainColor);
+	border-top: 4px solid var(--mainColor);
 	border-radius: 0;
 	transition: 0.2s;
-	background: #a8b6c7;
+	background: #f2f2f4;
 	margin: 0px;
 }
 
@@ -63,12 +67,12 @@ header.nav-up {
 }
 
 header>#header-area>#header-bar-link {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 상단 배너 광고 뱃지 */
 #header-top-notice strong.notice-badge {
-    background: #556c86;
+    background: var(--mainColor);
 }
 
 /* 로고 */
@@ -76,11 +80,13 @@ header>#header-area>a>h1 {
 	background: url(./image/logo2.png) no-repeat;
 	width:75px;
 	background-size: auto 32px;
+	cursor: url(./cursor/cur.png) 15 0, auto;
+	filter: grayscale(0.4) hue-rotate(14deg) brightness(0.8);
 }
 
 /* 검색 창 */
 header > #header-search-bar #header-search-input {
-	border: 2px solid #556c86;
+	border: 2px solid var(--mainColor);
 	border-radius: 10px;
 	padding: 5px 8px;
 	width: calc(100%);
@@ -88,17 +94,17 @@ header > #header-search-bar #header-search-input {
 
 /* 검색 버튼 */
 header>#header-area>#header-search-link {
-	color: #556c86;
+	color: var(--mainColor);
 }
 
 header > #header-search-bar #header-search-btn {
-	color: #556c86;
+	color: var(--mainColor);
 	margin-top: -2px;
 }
 
 /* 검색 뒤로가기 버튼 */
 .fa-arrow-left:before {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 트게더 메뉴 */
@@ -120,11 +126,11 @@ nav#nav>#nav-upper-shortcut {
 }
 
 nav#nav>#nav-upper #userDropdown #notification-badge {
-	background: #556c86 !important;
+	background: var(--mainColor) !important;
 }
 
 nav#nav>.nav-header {
-	background: #556c86;
+	background: var(--mainColor);
 	margin-top: 1px;
 	height: 35px;
 	font-size: 14px;
@@ -155,23 +161,23 @@ nav#nav>.nav-menu-area>.right{
 
 /* 메인 배너 스트리머 닉네임 */
 #board-info>h1>a {
-    color: #556c86;
+    color: var(--mainColor);
     font-family: NanumSquareRoundEB;
 }
 
 /* 메인 배너 순위 */
 .badge {
-    background-color: #556c86;
+    background-color: var(--mainColor);
 }
 
 /* 접속자 수 */
 #viewers-area {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 메인 배너 우측 아이콘 색 */
 #board-info>a.board-right-menu {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 공지 숨기기 버튼 */
@@ -187,7 +193,7 @@ nav#nav>.nav-menu-area>.right{
 
 /* 메인 배너 글 공지 */
 #article-list>.notice {
-    background-color: #a8b6c7 !important;
+    background-color: #dedede !important;
 }
 
 /* 공지 작성자, 댓글 수 표시, i 아이콘 제거 */
@@ -264,12 +270,12 @@ nav#nav>.nav-menu-area>.right{
 
 /* 글 추천 수 */
 .list-header>span {
-    background-color: #556c86 !important;
+    background-color: var(--mainColor) !important;
 }
 
 /* 댓글 수 */
 small.comment-count {
-    color: #556c86 !important;
+    color: var(--mainColor) !important;
 }
 
 /* 작성자 (스트리머) */
@@ -306,7 +312,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     background: #fff !important;
 }
 .fa-home:before {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 #article-list-category>a:hover {
@@ -316,8 +322,8 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 카테고리 */
 #article-list-category {
     background: #fff !important;
-    border-top: 2px solid #556c86;
-    border-bottom: 2px solid #556c86;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
 #article-list-category > a.active {
@@ -363,25 +369,25 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 로그인한 글 작성자 */
 .list-writer.logged>span {
-  color: #556c86 !important
+  color: var(--mainColor) !important
 }
 
 /* 방문한 게시글 */
 #article-list>.article-list-row>.item>a.list-title:visited {
-  color: #556c86 !important;
+  color: var(--mainColor) !important;
 }
 
 /* 트게더 페이지 */
 .pagination>li>a,
 .pagination>li>span {
-    color: #556c86 !important;
+    color: var(--mainColor) !important;
     border: none !important;
     border-radius: 15px !important;
 }
 
 .pagination>li>a:hover,
 .pagination>li>span:hover {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 현재 트게더 페이지 */
@@ -392,38 +398,38 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
 	color: white !important;
-	background-color: #556c86 !important;
+	background-color: var(--mainColor) !important;
 }
 
 /* 버튼색 */
 .btn-primary {
-    background-color: #556c86;
-    border-color: #556c86;
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
 }
 
 /* 댓글 */
 #article-reply-area > .header h5 {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 댓글 작성자 */
 .reply-writer.logged {
-    color: #556c86 !important;
+    color: var(--mainColor) !important;
 }
 
 /* 댓글 편집 */
 .reply-menu a {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 댓글 작성 상단바 */
 .fr-toolbar {
-  border-top: 5px solid #556c86;
+  border-top: 5px solid var(--mainColor);
 }
 
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-  color: #556c86;
+  color: var(--mainColor);
 }
 
 #comment-write-form #comment-write-button-area {
@@ -467,7 +473,7 @@ footer {
 
 /* 링크 색 */
 .container > a {
-    color: #556c86;
+    color: var(--mainColor);
 }
 
 /* 이모티콘 영역 */
