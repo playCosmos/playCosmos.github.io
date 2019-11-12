@@ -328,8 +328,8 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #article-list-category>a:hover {
-	background: #bed0e6 !important;
-	color: var(--mainColor) !important;
+	background: var(--mainColor) !important;
+	color: white !important;
 }
 
 /* 게시글 카테고리 */
