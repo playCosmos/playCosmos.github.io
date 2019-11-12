@@ -318,23 +318,18 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     color: var(--mainColor);
 }
 
-#article-list-category>a:hover {
-  background: #bed0e6 !important;
-}
-
 /* 카테고리 */
 #article-list-category {
     background: #fff !important;
+    display: inline-flex;
     border-top: 2px solid var(--mainColor);
     border-bottom: 2px solid var(--mainColor);
+	transition: 0.2s;
 }
 
-#article-list-category > a.active {
-  background: #fff;  
-  color: #3c4a5d;
-}
-#article-list-category > a:hover {
-  background: #bed0e6;
+#article-list-category>a:hover {
+	background: #bed0e6 !important;
+	color: var(--mainColor) !important;
 }
 
 /* 게시글 카테고리 */
