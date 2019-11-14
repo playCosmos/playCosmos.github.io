@@ -1,18 +1,18 @@
-/*짱아*/
+/**/
 
 /* 모듈 */
 @font-face {
-  font-family: 'NanumSquareRoundR';
-  font-style: normal;
-  font-weight: 400;
-  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
+	font-family: 'NanumSquareRoundR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
 }
 
 @font-face {
-  font-family: 'NanumSquareRoundEB';
-  font-style: normal;
-  font-weight: 700;
-  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
+	font-family: 'NanumSquareRoundEB';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
 
 :root {
@@ -23,284 +23,294 @@
 *:focus { outline: none !important; }
 
 a {
-    color: var(--maincolor);
+	color: var(--maincolor);
 }
 
 /* 배경 */
 body {
-    height: auto !important;
-    background: #f2f2f4;
-    font-family: NanumSquareRoundR;
-    cursor: url(./cursor/cur.png) 15 0, auto !important;
+	height: auto !important;
+	background: #f2f2f4;
+	font-family: NanumSquareRoundR;
+	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
 /* 로고 */
 header .row>div:nth-child(1)>a {
-    display: block;
-    width: 120px;
-    height: 50px;
-    background: url(./image/logo2.png) no-repeat;
-    background-size: auto 50px;
-    animation: HeartBeat 1s 3 linear;
-    cursor: url(./cursor/cur.png) 15 0, auto;
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: url(./image/logo2.png) no-repeat;
+	background-size: auto 50px;
+	animation: HeartBeat 1s 3 linear;
+	cursor: url(./cursor/cur.png) 15 0, auto;
 	filter: grayscale(0.4) hue-rotate(14deg) brightness(0.8);
 }
 
 header .row>div:nth-child(1)>a>img {
-  display: none;
+	display: none;
 }
 
 /* 검색창 */
 header #right-search-form>input[type=text] {
-    border: 3px solid var(--mainColor);
-    border-radius: 10px;
+	border: 3px solid var(--mainColor);
+	border-radius: 10px;
 }
 
 /* 검색 버튼 */
 header #right-search-form>#right-search-btn {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 배너 등 */
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
-    border-radius: 10px;
-    border-right: 1px solid var(--mainColor);
-    border-left: 1px solid var(--mainColor);
-    border-bottom: 1px solid var(--mainColor);
+	border-radius: 10px;
+	border-right: 1px solid var(--mainColor);
+	border-left: 1px solid var(--mainColor);
+	border-bottom: 1px solid var(--mainColor);
 }
 
 /* 상단 배너 */
 header #header-bar>.row {
-    border-top: 5px solid var(--mainColor);
+	border-top: 5px solid var(--mainColor);
 }
 
 /* 상단 배너 드롭다운 */
 header #header-bar a.dropdown-toggle,
 #latestDropdownMenu>li>a,
 #latestDropdownMenu>li>a>span.delrow {
-  color: var(--mainColor);
-  cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	color: var(--mainColor);
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 #favoriteDropdownMenu>li>a>span.label.label-default {
-    background-color: var(--mainColor);
-    cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	background-color: var(--mainColor);
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 #favoriteDropdownMenu>li>a,
 #favoriteDropdownMenu>li>a>span.delrow,
 #playgroundDropdownMenu>li>a{
-  color: var(--mainColor);
-  cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	color: var(--mainColor);
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 /* 상단 배너 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge {
-    background: var(--mainColor);
+	background: var(--mainColor);
 }
 
 /* 좌측 배너 헤더 */
 #main .menu-wrapper>.header {
-    background: var(--mainColor);
-    border-radius: 9px 9px 0 0;
-    border-top: none;
+	background: var(--mainColor);
+	border-radius: 9px 9px 0 0;
+	border-top: none;
 }
 
 #main .menu-wrapper>a,
 #main .menu-wrapper a:nth-last-child(1) {
-  cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 /* 좌측 배너 이니셜 */
 #main .menu-wrapper>a>em {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 좌측 배너 빈 공간 */
 #main .menu-wrapper .spacer {
-    background: none;
+	background: none;
 }
 
 /* 좌측 배너 하단 */
 #main .menu-wrapper a:nth-last-child(1) {
-    border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 /* 좌측 배너 점 */
 .fa-square:before {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 메인 배너 */
 #main #main-content>div.frame {
-    border-top: 5px solid var(--mainColor);
+	border-top: 5px solid var(--mainColor);
 }
 
 /* 메인 배너 스트리머 이미지*/
 #board-info #board-info-profile-img {
-    float: left !important;
-    margin-right: 5px;
+	float: left !important;
+	margin-right: 5px;
 }
 
 /* 메인 배너 스트리머 닉네임 */
 #board-info h1>a {
-    color: var(--mainColor);
-    font-family: NanumSquareRoundEB;
+	color: var(--mainColor);
+	font-family: NanumSquareRoundEB;
 }
 
 /* 메인 배너 헤더 가운데 줄 */
 #board-info h1 {
     /*border-bottom: 1px solid var(--mainColor);*/
-    border-image: linear-gradient( to right, #0000, var(--mainColor)) 0 0 100%;
+	border-image: linear-gradient( to right, #0000, var(--mainColor)) 0 0 100%;
 }
 
 /* 메인 배너 순위 */
 .badge {
-    background-color: var(--mainColor);
+	background-color: var(--mainColor);
 }
 
 /* 생방송 알림 멘트 */
 #board-info h1 > a.badge.badge-live:after {
-    content: " 생방 습격"
+	content: " 생방 습격"
 }
 
 /* 메인 배너 게시판 접속자 수 */
 /*
 #viewers-area .fa-user {
-    width: 20px;
-    height: 20px;
-    background-image: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	background-image: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
 }
 */
 #board-info #score-area,
 #board-info #viewers-area {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "땅오단 ";
+	content: "땅오단 ";
 }
 
 #board-info #viewers-area #viewers:after {
-    content: "명 헤엄치는 중";
+	content: "명 헤엄치는 중";
 }
 #board-info h1>a {
-  cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;
 }
 
 /* 메인 배너 헤더 즐찾.. */
 #board-info #board-info-bottom a {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 #board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn {
-  cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
 }
 
 /* 카테고리 */
 #article-list #article-list-category {
-    background: #f2f2f4;
-    border-top: 2px solid var(--mainColor);
-    border-bottom: 2px solid var(--mainColor);
-    line-height: 1.1;
+	background: #f2f2f4;
+	border-top: 2px solid var(--mainColor);
+	border-bottom: 2px solid var(--mainColor);
+	line-height: 1.1;
+	border-radius: 0 10px 10px 0;
 }
 
 #article-list #article-list-category > a.active {
-  background: var(--mainColor);  
-  color: #3c4a5d;
+	background: var(--mainColor);  
+	color: #3c4a5d;
 }
 
     
 /* 카테고리 홈 버튼 */
 #article-list #article-list-category>a {
-    background: #f2f2f4 !important;
+	background: #f2f2f4 !important;
 	color: var(--mainColor);
-    text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
+	text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
 	transition: 0.3s;
 }
 
 #article-list #article-list-category>a:hover {
-    background: var(--mainColor) !important;
-    color: white !important;
+	background: var(--mainColor) !important;
+	color: white !important;
 }
 
 /* 공지 숨기기 버튼*/
-#article-list #article-option-area>#article-option-area-toggle-btn{
-  width: 38px;
-  height: 38px;
-  border-radius: 20px;
+#article-list #article-option-area>#article-option-area-toggle-btn {
+	width: 39px;
+	height: 39px;
+	border-radius: 10px;
+	border: 2px solid var(--mainColor);
+	margin-right: 13px;
+	opacity: 1;
+}
+
+#article-list #article-option-area > #article-option-area-toggle-btn:hover,
+#article-list #article-option-area > #article-option-area-toggle-btn:active {
+	background: var(--mainColor) !important;
+	color: white;
 }
 
 /* 메인 배너 글 공지 */
 #article-list>.article-list-row.notice {
-    background-color: #eeeef3;
+	background-color: #eeeef3;
 }
 span.a-badge i.fa.fa-info-circle {
-  color: #3c4a5d;
+	color: #3c4a5d;
 }
 
 /* 글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
-    background-color: var(--mainColor);
+	background-color: var(--mainColor);
 }
 
 /* 댓글 수 */
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-    color: var(--mainColor);
+	color: var(--mainColor);
 } 
 
 /* 작성자 (스트리머) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(./badge/streamer.png);
-    width: 18px;
+	content: url(./badge/streamer.png);
+	width: 18px;
 }
 
 /* 작성자 (트게더 관리자) */
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(./badge/mod.png);
-    width: 18px;
+	content: url(./badge/mod.png);
+	width: 18px;
 }
 
 /* 로그인한 게시글 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 방문한 게시글 */
 #article-list>.article-list-row>.item>.list-title>a:visited {
-  color: var(--mainColor) !important;
+	color: var(--mainColor) !important;
 }
 
 
 /* 인기글 버튼 */
 #article-list #article-list-menu>.btn.best {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* 설정 버튼 */
 #article-list #article-list-menu>.btn.cog {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* 삭제 버튼 */
 #article-list #article-list-menu>.btn.del {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* 글 쓰기 버튼 */
 #article-list #article-list-menu>.btn.write {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* 페이지 */
 .pagination>li>a,
 .pagination>li>span {
-    border: none;
-    color: var(--mainColor);  
+	border: none;
+	color: var(--mainColor);  
 }
 
 /* 현재 페이지 */
@@ -310,118 +320,118 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    border-radius: 10px;
-    background-color: var(--mainColor);
-    border-color: var(--mainColor);
+	border-radius: 10px;
+	background-color: var(--mainColor);
+	border-color: var(--mainColor);
 }
 
 /* 글쓰기 버튼 배경색 */
 .btn-primary {
-  background-color: var(--mainColor);  
+	background-color: var(--mainColor);  
 }
 
 /* 게시글 검색 */
 .btn.square {
-    border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
 }
 
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
-    border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
 }
 
 /* 게시글 상단 바 */
 #article-content-wrapper>.header {
-      border-top: 2px solid var(--mainColor)
+	border-top: 2px solid var(--mainColor)
 }
 
 #article-reply-area > .header h5 {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 댓글 작성자 이름 색 */
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 댓글 편집 메뉴 */
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 게시글, 댓글 쓰기 상단바 */
 .fr-toolbar {
-  border-top: 5px solid var(--mainColor);
+	border-top: 5px solid var(--mainColor);
 }
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
 .fr-popup .fr-command.fr-btn.fr-dropdown::after {
-  border-top: 4px solid var(--mainColor);
+	border-top: 4px solid var(--mainColor);
 }
 
 /* 목록 버튼 */
 .btn {
-    border-radius: 10px;
-    border-color: var(--maincolor);
-    transition: 0.3s;
+	border-radius: 10px;
+	border-color: var(--maincolor);
+	transition: 0.3s;
 }
 
 .btn:hover {
-    background: var(--mainColor) !important;
-    border-color:  var(--mainColor) !important;
-    color: white !important;
+	background: var(--mainColor) !important;
+	border-color:  var(--mainColor) !important;
+	color: white !important;
 }
 
 .btn-group-sm>.btn, .btn-sm {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 #movetotop img{display:none}
 #movetotop {
-    display: inline-block;
-    opacity: 1;
-    background: url(./image/toTop.png);
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
+	display: inline-block;
+	opacity: 1;
+	background: url(./image/toTop.png);
+	width: 120px;
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /* 이모티콘 영역 */
  /* 구독티콘 */
   /* 하트 */
 .fr-command.fr-emoticon[data-param1=lah2Heart] > img {
-     width: 28px !important;
-     height: 28px !important;
-     padding-left: 28px;
-     background-image: url(./emoji/heart.png);
-     background-size: 100%;
+	width: 28px !important;
+	height: 28px !important;
+	padding-left: 28px;
+	background-image: url(./emoji/heart.png);
+	background-size: 100%;
 }
 .fr-emoticon.fr-deletable > img[alt=lah2Heart]{ 
-     width: 56px !important; 
-     height: 56px !important; 
-     padding-left: 56px;
-     background-image: url(./emoji/heart.png);
-     background-size: 100%; 
+	width: 56px !important; 
+	height: 56px !important; 
+	padding-left: 56px;
+	background-image: url(./emoji/heart.png);
+	background-size: 100%; 
 }
     /* 쉨 */
 .fr-command.fr-emoticon[data-param1=lah2Tnpz] > img {
-     width: 28px !important;
-     height: 28px !important;
-     padding-left: 28px;
-     background-image: url(./emoji/tnpz.png);
-     background-size: 100%;
+	width: 28px !important;
+	height: 28px !important;
+	padding-left: 28px;
+	background-image: url(./emoji/tnpz.png);
+	background-size: 100%;
 }
 .fr-emoticon.fr-deletable > img[alt=lah2Tnpz]{ 
-     width: 56px !important; 
-     height: 56px !important; 
-     padding-left: 56px;
-     background-image: url(./emoji/tnpz.png);
-     background-size: 100%; 
+	width: 56px !important; 
+	height: 56px !important; 
+	padding-left: 56px;
+	background-image: url(./emoji/tnpz.png);
+	background-size: 100%; 
 }
    /* 지려따 */
 .fr-command.fr-emoticon[data-param1=lah2ZRD] > img {
