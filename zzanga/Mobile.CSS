@@ -310,14 +310,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     border-radius: 0 15px 15px 0 !important;
 }
 
-/* 카테고리 홈 버튼 */
-#article-list-category>a {
-    background: #fff !important;
-}
-.fa-home:before {
-    color: var(--mainColor);
-}
-
 /* 카테고리 */
 #article-list-category {
     background: #fff !important;
@@ -325,6 +317,15 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     border-top: 2px solid var(--mainColor);
     border-bottom: 2px solid var(--mainColor);
 	transition: 0.2s;
+}
+
+/* 카테고리 홈 버튼 */
+#article-list-category>a {
+    background: white !important;
+}
+
+.fa-home:before {
+    /*color: var(--mainColor);*/
 }
 
 #article-list-category>a:hover {
