@@ -316,16 +316,19 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     display: inline-flex;
     border-top: 2px solid var(--mainColor);
     border-bottom: 2px solid var(--mainColor);
+}
+
+#article-list-category>a {
+	background: white !important;
 	transition: 0.2s;
 }
 
-/* 카테고리 홈 버튼 */
-#article-list-category>a {
-    background: white !important;
+.fa-home:before {
+    color: var(--mainColor);
 }
 
-.fa-home:before {
-    /*color: var(--mainColor);*/
+.fa-home:before:hover {
+    color: white;
 }
 
 #article-list-category>a:hover {
