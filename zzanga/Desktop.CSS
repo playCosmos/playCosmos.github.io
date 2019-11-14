@@ -1,4 +1,4 @@
-/**/
+/*라희*/
 
 /* 모듈 */
 @font-face {
@@ -237,6 +237,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 	border: 2px solid var(--mainColor);
 	margin-right: 13px;
 	opacity: 1;
+	transition: 0.3s;
 }
 
 #article-list #article-option-area > #article-option-area-toggle-btn:hover,
