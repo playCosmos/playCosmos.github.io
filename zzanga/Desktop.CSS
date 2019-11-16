@@ -120,6 +120,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 좌측 배너 빈 공간 */
 #main .menu-wrapper .spacer {
 	background: none;
+	height: 0.2em;
 }
 
 /* 좌측 배너 하단 */
