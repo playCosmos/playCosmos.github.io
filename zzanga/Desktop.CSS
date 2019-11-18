@@ -283,6 +283,16 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	width: 18px;
 }
 
+#article-list>.article-list-row>.item>.list-title>.list-category 
+    padding: 0 10px 0 10px;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+    text-overflow: clip;
+    white-space: unset;
+    width: 13px;
+}
+
 /* 로그인한 게시글 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
 	color: var(--mainColor);
