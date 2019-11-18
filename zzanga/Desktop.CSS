@@ -212,13 +212,6 @@ header #header-bar #header-top-notice strong.notice-badge {
 	border-radius: 0 10px 10px 0;
 }
 
-#article-list #article-list-category > a.active {
-	background: var(--mainColor);  
-	color: #3c4a5d;
-}
-
-    
-/* 카테고리 홈 버튼 */
 #article-list #article-list-category>a {
 	background: var(--bgColor) !important;
 	color: var(--mainColor);
@@ -226,9 +219,18 @@ header #header-bar #header-top-notice strong.notice-badge {
 	transition: 0.3s;
 }
 
+#article-list #article-list-category > a.active {
+	background: var(--mainColor);  
+	color: #3c4a5d;
+}
+
 #article-list #article-list-category>a:hover {
 	background: var(--mainColor) !important;
 	color: white !important;
+}
+
+a.nav-link {
+    font-family: fontawesome;
 }
 
 /* 공지 숨기기 버튼*/
