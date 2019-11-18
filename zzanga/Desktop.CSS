@@ -101,6 +101,11 @@ header #header-bar #header-top-notice strong.notice-badge {
 	background: var(--mainColor);
 }
 
+header #header-bar #header-menu-right #userDropdown #notification-badge {
+    padding: 5px 6px 3px 6px;
+    background: var(--mainColor);
+}
+
 /* 좌측 배너 헤더 */
 #main .menu-wrapper>.header {
 	background: var(--mainColor);
