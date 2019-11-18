@@ -404,6 +404,18 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	background-repeat: no-repeat;
 }
 
+small.favo i.fa.fa-heart {
+	animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+	0% { transform: scale(1); }
+	30% { transform: scale(1.25); }
+	42% { transform: scale(0.9); }
+	60% { transform: scale(1.15); }
+	85% { transform: scale(0.95); }
+	100% { transform: scale(1); }
+}
+
 /* 이모티콘 영역 */
  /* 구독티콘 */
   /* 하트 */
