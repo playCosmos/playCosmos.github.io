@@ -289,7 +289,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
-    /*color: var(--mainColor) !important;*/
+    color: var(--mainColor) !important;
     text-overflow: clip;
     white-space: unset;
     width: 13px;
