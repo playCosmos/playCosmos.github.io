@@ -266,7 +266,10 @@ span.category {
 	background-color: var(--mainColor);
 	padding: 4px 4px 2px 4px;
 }
-/*#article-list>.article-list-row>.item>.list-header>span:before { content: "♥" };*/
+
+/*
+#article-list>.article-list-row>.item>.list-header>span:before { content: "♥" };
+*/
 
 /* 댓글 수 */
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
