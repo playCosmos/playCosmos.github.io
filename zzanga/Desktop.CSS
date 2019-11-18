@@ -164,7 +164,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 생방송 알림 멘트 */
 #board-info h1 > a.badge.badge-live:after {
-	content: " 생방 습격"
+	content: ""
 }
 
 /* 메인 배너 게시판 접속자 수 */
