@@ -213,7 +213,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-list #article-list-category>a {
-	background: var(--bgColor) !important;
+	background: transparent !important;
 	color: var(--mainColor);
 	/*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);*/
 	transition: 0.3s;
