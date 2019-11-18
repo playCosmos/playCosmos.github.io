@@ -323,6 +323,10 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	transition: 0.2s;
 }
 
+a.nav-link {
+    font-family: fontawesome;
+}
+
 .fa-home:before {
     color: var(--mainColor);
 }
@@ -336,9 +340,8 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	color: white !important;
 }
 
-/* 게시글 카테고리 */
-#article-info>h2>span.category {
-    font-family: GodoM;
+span.category {
+    font-family: fontawesome;
 }
 
 /* 버튼 */
