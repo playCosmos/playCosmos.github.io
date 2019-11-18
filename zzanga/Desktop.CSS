@@ -283,7 +283,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	width: 18px;
 }
 
-#article-list>.article-list-row>.item>.list-title>.list-category 
+#article-list>.article-list-row>.item>.list-title>.list-category {
     padding: 0 10px 0 10px;
 }
 
