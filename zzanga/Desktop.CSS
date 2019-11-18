@@ -222,7 +222,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #article-list #article-list-category>a {
 	background: var(--bgColor) !important;
 	color: var(--mainColor);
-	text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);
+	/*text-shadow: 4px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.2);*/
 	transition: 0.3s;
 }
 
