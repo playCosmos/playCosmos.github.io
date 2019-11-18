@@ -220,7 +220,6 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #article-list #article-list-category > a.active {
-	background: var(--mainColor);  
 	color: #3c4a5d;
 }
 
