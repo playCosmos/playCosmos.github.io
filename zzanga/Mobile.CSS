@@ -471,6 +471,10 @@ label.pull-left {
     background-repeat: no-repeat;
 }
 
+select.form-control {
+	font-family: fontawesome;
+}
+
 /* 하단 배경 색 */
 footer {
 	background: #f2f2f4;
