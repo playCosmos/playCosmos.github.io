@@ -441,6 +441,10 @@ small.favo i.fa.fa-heart {
 	100% { transform: scale(1); }
 }
 
+select.form-control {
+	font-family: fontawesome;
+}
+
 /* 이모티콘 영역 */
  /* 구독티콘 */
   /* 하트 */
