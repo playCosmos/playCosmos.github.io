@@ -327,11 +327,11 @@ a.nav-link {
     font-family: fontawesome;
 }
 
-.fa-home:before {
+.fa-home {
     color: var(--mainColor);
 }
 
-.fa-home:before:hover {
+.fa-home:hover {
     color: white;
 }
 
