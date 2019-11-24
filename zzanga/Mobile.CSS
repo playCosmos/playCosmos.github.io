@@ -331,7 +331,8 @@ a.nav-link {
     color: var(--mainColor);
 }
 
-.fa-home:hover {
+.fa-home:hover,
+.fa-home:focus {
     color: white;
 }
 
