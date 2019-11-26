@@ -1,1 +1,19 @@
+/* 기본 설정 */
+:root {
+	--mainColor: #000;	/* 메인색 */
+	--bgColor: #fff;	/* 배경색 */
+}
 
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
+/* 링크 기본 색상 */
+a {
+	color: var(--maincolor);
+}
+
+a.nav-link,
+span.category,
+select.form-control {
+	font-family: fontawesome;
+}
