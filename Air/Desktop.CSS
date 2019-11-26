@@ -12,6 +12,7 @@ a {
 	color: var(--maincolor);
 }
 
+/* fontawesome 사용 */
 a.nav-link,
 span.category,
 select.form-control {
