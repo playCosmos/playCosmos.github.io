@@ -12,6 +12,11 @@ a {
 	color: var(--maincolor);
 }
 
+a:hover.
+a:focus {
+	color: var(--maincolor) !important;
+}
+
 /* fontawesome 사용 */
 a.nav-link,
 span.category,
