@@ -10,7 +10,7 @@
 /* 링크 기본 색상 */
 a { color: var(--maincolor); }
 
-a:hover.
+a:hover,
 a:focus {
 	color: var(--maincolor) !important;
 }
