@@ -18,3 +18,8 @@ span.category,
 select.form-control {
 	font-family: fontawesome;
 }
+
+/* 트게더 로고 */
+header .row>div:nth-child(1)>a>img {
+    display: none;
+}
