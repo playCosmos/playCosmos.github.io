@@ -35,7 +35,7 @@ header .row>div:nth-child(1)>a>img {
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	background: #ab8dd8;
 	border-radius: 10px;
-	margin: 0 15px 0 0;
+	margin: 0 20px 0 0;
 	opacity: 1;
 	display: inline-grid;
 	transition: 0.2s;
