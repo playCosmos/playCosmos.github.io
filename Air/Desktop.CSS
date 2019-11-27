@@ -42,6 +42,12 @@ header #right-search-form>#right-search-btn { color: var(--maincolor); }
 header #header-bar>.row { border-top: 4px solid var(--maincolor); }
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
 
+header #header-bar a.dropdown-toggle { color: var(--mainColor); }
+
+span.delrow { color: var(--mainColor) !important;} 
+span.label.label-default { background: var(--mainColor) !important; }
+
+
 #main .menu-wrapper>.header {
 	background: var(--maincolor);
 }
