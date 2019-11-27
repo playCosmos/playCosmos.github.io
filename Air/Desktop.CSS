@@ -1,7 +1,7 @@
 /* 기본 설정 */
 :root {
-	--mainColor: #31405a;	/* 메인색 */
-	--bgColor: #fff;	/* 배경색 */
+	--maincolor: #31405a;	/* 메인색 */
+	--bgcolor: #fff;	/* 배경색 */
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -25,9 +25,18 @@ select.form-control {
 /* 알림 */
 .alert { padding: 10px 15px; }
 
+html { background: var(--bgcolor); }
+body { background: transparent; }
+
+/************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
-    display: none;
+	display: none;
+}
+
+header #right-search-form>input[type=text]
+{
+	
 }
 
 /* 공지 숨기기 버튼 */
@@ -42,9 +51,5 @@ header .row>div:nth-child(1)>a>img {
 	transition: 0.2s;
 }
 
-.fa-eye:before {
-    content: "\f205";
-}
-.fa-eye-slash:before {
-    content: "\f204";
-}
+.fa-eye:before { content: "\f205"; }
+.fa-eye-slash:before { content: "\f204"; }
