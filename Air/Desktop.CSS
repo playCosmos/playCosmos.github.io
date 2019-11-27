@@ -53,3 +53,6 @@ header #right-search-form>input[type=text]
 
 .fa-eye:before { content: "\f205"; }
 .fa-eye-slash:before { content: "\f204"; }
+
+#article-list #article-list-category { background: transparent; }
+#article-list #article-list-category>a.nav-link { background: transparent; }
