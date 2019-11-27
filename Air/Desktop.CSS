@@ -46,10 +46,10 @@ header #header-bar #header-top-notice strong.notice-badge { background: var(--ma
 
 header #header-bar a.dropdown-toggle { color: var(--maincolor); }
 
-span.delrow { color: var(--maincolor) !important;} 
+span.delrow { color: var(--maincolor) !important; } 
 span.label.label-default { background: var(--maincolor) !important; }
 
-#main .menu-wrapper>.header { background: var(--maincolor) }
+#main .menu-wrapper>.header { background: var(--maincolor); }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
 
 
