@@ -38,9 +38,9 @@ header .row>div:nth-child(1)>a>img {
 header #right-search-form>input[type=text] { border: 3px solid var(--maincolor); }
 header #right-search-form>#right-search-btn { color: var(--maincolor); }
 
-header #header-bar>.row {
-	border-top: 4px solid var(--maincolor);
-}
+/* 상단 메뉴 */
+header #header-bar>.row { border-top: 4px solid var(--maincolor); }
+header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
 
 #main .menu-wrapper>.header {
 	background: var(--maincolor);
