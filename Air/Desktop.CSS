@@ -76,3 +76,4 @@ span.label.label-default { background: var(--maincolor) !important; }
 
 #article-list #article-list-category>a.nav-link { background: transparent; }
 
+#board-info #board-info-bottom a { color: var(--maincolor); }
