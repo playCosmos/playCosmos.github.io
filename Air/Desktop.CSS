@@ -44,10 +44,10 @@ header #header-bar>.row { border-top: 4px solid var(--maincolor); }
 /* 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
 
-header #header-bar a.dropdown-toggle { color: var(--mainColor); }
+header #header-bar a.dropdown-toggle { color: var(--maincolor); }
 
-span.delrow { color: var(--mainColor) !important;} 
-span.label.label-default { background: var(--mainColor) !important; }
+span.delrow { color: var(--maincolor) !important;} 
+span.label.label-default { background: var(--maincolor) !important; }
 
 
 #main .menu-wrapper>.header,
