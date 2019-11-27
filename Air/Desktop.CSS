@@ -22,6 +22,9 @@ select.form-control {
 	font-family: fontawesome;
 }
 
+/* 알림 */
+.alert { padding: 10px 15px; }
+
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
     display: none;
