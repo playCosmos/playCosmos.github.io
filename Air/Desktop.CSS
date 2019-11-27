@@ -28,7 +28,7 @@ header .row>div:nth-child(1)>a>img {
 }
 
 /* 공지 숨기기 버튼 */
-#article-option-area-toggle-btn {
+button#article-option-area-toggle-btn {
 	background: transparent;
 	margin: 0 15px 0 0;
 	opacity: 1;
