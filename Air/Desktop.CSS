@@ -40,6 +40,8 @@ header #right-search-form>#right-search-btn { color: var(--maincolor); }
 
 /* 상단 메뉴 */
 header #header-bar>.row { border-top: 4px solid var(--maincolor); }
+
+/* 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
 
 header #header-bar a.dropdown-toggle { color: var(--mainColor); }
@@ -48,9 +50,9 @@ span.delrow { color: var(--mainColor) !important;}
 span.label.label-default { background: var(--mainColor) !important; }
 
 
-#main .menu-wrapper>.header {
-	background: var(--maincolor);
-}
+#main .menu-wrapper>.header,
+#main .menu-wrapper>a>em { color: var(--maincolor); }
+
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
