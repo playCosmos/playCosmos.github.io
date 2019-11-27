@@ -50,7 +50,7 @@ span.delrow { color: var(--maincolor) !important;}
 span.label.label-default { background: var(--maincolor) !important; }
 
 
-#main .menu-wrapper>.header,
+#main .menu-wrapper>.header { background: var(--maincolor) }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
 
 
