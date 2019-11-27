@@ -34,10 +34,10 @@ header .row>div:nth-child(1)>a>img {
 	display: none;
 }
 
-header #right-search-form>input[type=text]
-{
-	
-}
+/* 검색창 */
+header #right-search-form>input[type=text] { border: 3px solid var(--maincolor); }
+header #right-search-form>#right-search-btn { color: var(--maincolor); }
+
 header #header-bar>.row {
 	border-top: 4px solid var(--maincolor);
 }
