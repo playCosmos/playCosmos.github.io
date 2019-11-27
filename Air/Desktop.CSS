@@ -35,20 +35,26 @@ header .row>div:nth-child(1)>a>img {
 	display: none;
 }
 
-/* 검색창 */
+/* 헤더 검색창 */
 header #right-search-form>input[type=text] { border: 3px solid var(--maincolor); }
 header #right-search-form>#right-search-btn { color: var(--maincolor); }
 
-/* 상단 메뉴 */
+/* 헤더 상단 메뉴 */
 header #header-bar>.row { border-top: 4px solid var(--maincolor); }
 
-/* 광고 뱃지 */
+/* 헤더 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
 
+/* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor); }
-
 span.delrow { color: var(--maincolor) !important; } 
 span.label.label-default { background: var(--maincolor) !important; }
+
+/* 헤더 알림 뱃지 */
+header #header-bar #header-menu-right #userDropdown #notification-badge {
+    padding: 5px 6px 3px 6px;
+    background: var(--mainColor);
+}
 
 #main .menu-wrapper>.header { background: var(--maincolor); }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
