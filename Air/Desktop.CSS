@@ -1,7 +1,7 @@
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
-	--bgcolor: #fff;	/* 배경색 */
+	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
