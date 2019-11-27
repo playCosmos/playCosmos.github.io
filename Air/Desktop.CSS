@@ -6,7 +6,6 @@
 
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
-* { transition: 0.2s !important; }
 
 /* 링크 기본 색상 */
 a { color: var(--maincolor); }
@@ -33,6 +32,7 @@ header .row>div:nth-child(1)>a>img {
 	background: transparent;
 	margin: 0 15px 0 0;
 	opacity: 1;
+	transition: 0.2s;
 }
 
 .fa-eye:before {
