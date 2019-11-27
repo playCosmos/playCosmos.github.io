@@ -92,7 +92,6 @@ button>.fa-eye-slash:before { content: "\f204"; }
 /* 로그인한 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor); }
 
-#article-content-wrapper>.header {
-	border-top: 2px solid #6441a5;
-}
+#article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
 
+#article-reply-area > .header h5 { color: var(--maincolor); }
