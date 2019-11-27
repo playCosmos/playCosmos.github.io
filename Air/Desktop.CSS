@@ -1,6 +1,7 @@
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
+	--subcolor: #98a8c5;	/* 서브색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
@@ -51,12 +52,15 @@ span.label.label-default { background: var(--maincolor) !important; }
 
 #main .menu-wrapper>.header { background: var(--maincolor); }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
-
+#main .menu-wrapper .spacer {
+    background: var(--subcolor);
+    height: 0.2em;
+}
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
 #article-list #article-option-area>#article-option-area-toggle-btn {
-	background: #ab8dd8;
+	background: var(--subcolor);
 	border-radius: 10px;
 	height: 27px;
 	margin: 0 20px 0 0;
