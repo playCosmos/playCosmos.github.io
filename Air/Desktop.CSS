@@ -92,7 +92,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 /* 게시글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span { background-color: var(--maincolor); }
 /* 게시글 댓글 수 */
-#article-list>.article-list-row>.item>.list-title>small.comment-count
+#article-list>.article-list-row>.item>.list-title>small.comment-count { color: var(--maincolor); }
 /* 로그인한 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor); }
 
