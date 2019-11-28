@@ -105,3 +105,33 @@ button>.fa-eye-slash:before { content: "\f204"; }
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
 	color: var(--maincolor);
 }
+
+/* 게시글 페이지 */
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+	color: var(--maincolor);
+	background: transparent;
+	transition: 0.2s;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	background-color: var(--maincolor);
+	border-color: var(--maincolor);
+	transition: 0.2s;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover {
+	background-color: white;
+	border-color: var(--maincolor);
+	color: var(--maincolor);
+	transition: 0.2s;
+}
+/* 게시글 페이지 끝 */
