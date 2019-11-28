@@ -53,7 +53,7 @@ span.label.label-default { background: var(--maincolor) !important; }
 /* 헤더 알림 뱃지 */
 header #header-bar #header-menu-right #userDropdown #notification-badge {
     padding: 5px 6px 3px 6px;
-    background: var(--mainColor);
+    background: var(--maincolor);
 }
 
 #main .menu-wrapper>.header { background: var(--maincolor); }
