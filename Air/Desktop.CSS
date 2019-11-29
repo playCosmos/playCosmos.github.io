@@ -111,8 +111,8 @@ button>.fa-eye-slash:before { content: "\f204"; }
 .pagination>li>span,
 .pagination>li>a:focus,
 .pagination>li>span:focus {
-	color: var(--maincolor);
-	background: transparent;
+	color: var(--maincolor) !important;
+	background: transparent !important;
 	transition: 0.2s;
 }
 
@@ -120,8 +120,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 .pagination>.active>span,
 .pagination>.active>a:focus,
 .pagination>.active>span:focus {
-	background-color: var(--maincolor);
-	border-color: var(--maincolor);
+	color: white !important;
+	background-color: var(--maincolor) !important;
+	border-color: var(--maincolor) !important;
 	transition: 0.2s;
 }
 
@@ -129,9 +130,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 .pagination>li>span:hover,
 .pagination>.active>a:hover,
 .pagination>.active>span:hover {
-	background-color: white;
-	border-color: var(--maincolor);
-	color: var(--maincolor);
+	color: var(--maincolor) !important;
+	background-color: white !important;
+	border-color: var(--maincolor) !important;
 	transition: 0.2s;
 }
 /* 게시글 페이지 끝 */
