@@ -22,3 +22,7 @@ span.category,
 select.form-control {
 	font-family: fontawesome;
 }
+
+#board-info>a.board-right-menu[href="/million_air/profile"] {
+	display: none;
+}
