@@ -96,6 +96,16 @@ button>.fa-eye-slash:before { content: "\f204"; }
 /* 로그인한 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor); }
 
+#article-list>.article-list-row>.item>.list-title>.list-category {
+    padding: 0 10px;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+    color: var(--maincolor) !important;
+    text-overflow: clip;
+    white-space: unset;
+    width: 13px;
+}
 
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
 
