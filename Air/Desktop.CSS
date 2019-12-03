@@ -52,53 +52,59 @@ span.label.label-default { background: var(--maincolor) !important; }
 
 /* 헤더 알림 뱃지 */
 header #header-bar #header-menu-right #userDropdown #notification-badge {
-    padding: 5px 6px 3px 6px;
-    background: var(--maincolor);
+	padding: 5px 6px 3px 6px;
+	background: var(--maincolor);
 }
 
 #main .menu-wrapper>.header { background: var(--maincolor); }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
 #main .menu-wrapper .spacer {
-    background: var(--bgcolor);
-    height: 0.2em;
+	background: var(--bgcolor);
+	height: 0.2em;
 }
 
 #board-info {
-    height: inherit;
-    margin: 0;
-    padding: 0.5em 1em;
+	height: inherit;
+	margin: 0;
+	padding: 0.5em 1em;
 }
 
 #board-info h1 {
-    border: none;
+	border: none;
 }
 
 /* 스트리머 이름 */
 #board-info h1>a {
-    position: fixed;
-    top: 25px;
-    left: 25px;
+	/*position: fixed;
+	top: 25px;
+	left: 25px;*/
+	position: absolute;
+	top: -110px;
+	left: -170px;
 }
 
 #board-info #viewers-area,
 #board-info #score-area {
-    display: none;
+	display: none;
 }
 
 #board-info #board-info-bottom a { color: var(--maincolor); }
 #board-info #board-info-profile-img {
-    position: fixed;
-    top: 12px;
-    left: 150px;
-    border: 2px solid var(--maincolor);
-    border-radius: 50%;
+	/*position: fixed;
+	top: 12px;
+	left: 150px;*/
+	position: absolute;
+	top: -125px;
+	left: -50px;
+	border: 2px solid var(--maincolor);
+	border-radius: 50%;
 }
-
+/*
 @media (min-width: 1100px) {
 	#board-info h1>a { left: calc(50% - 525px); }
 	#board-info #board-info-profile-img { left: calc(50% - 400px); }
 }
-
+*/
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
 #article-list #article-option-area>#article-option-area-toggle-btn {
