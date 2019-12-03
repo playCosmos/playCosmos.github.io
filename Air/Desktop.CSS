@@ -63,6 +63,16 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     height: 0.2em;
 }
 
+#board-info {
+    height: inherit;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+#board-info h1 {
+    border: none;
+}
+
 /* 스트리머 이름 */
 #board-info h1>a {
     position: fixed;
@@ -70,13 +80,24 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     left: 25px;
 }
 
-@media (min-width: 1100px) {
-	#board-info h1>a {
-		left: calc(50% - 525px);
-	}
+#board-info #viewers-area,
+#board-info #score-area {
+    display: none;
 }
 
 #board-info #board-info-bottom a { color: var(--maincolor); }
+#board-info #board-info-profile-img {
+    position: fixed;
+    top: 12px;
+    left: 150px;
+    border: 2px solid var(--maincolor);
+    border-radius: 50%;
+}
+
+@media (min-width: 1100px) {
+	#board-info h1>a { left: calc(50% - 525px); }
+	#board-info #board-info-profile-img { left: calc(50% - 400px); }
+}
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
