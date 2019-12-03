@@ -63,6 +63,19 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
     height: 0.2em;
 }
 
+/* 스트리머 이름 */
+#board-info h1>a {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
+
+@media (min-width: 1100px) {
+	#board-info h1>a {
+		left: calc(50% - 525px);
+	}
+}
+
 #board-info #board-info-bottom a { color: var(--maincolor); }
 
 /* 공지 숨기기 버튼 */
