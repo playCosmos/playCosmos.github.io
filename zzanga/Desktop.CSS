@@ -28,9 +28,13 @@ a {
 }
 
 /* 배경 */
+html {
+	background: var(--bgColor);	
+}
+
 body {
 	height: auto !important;
-	background: var(--bgColor);
+	background: transparent;
 	font-family: NanumSquareRoundR;
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
