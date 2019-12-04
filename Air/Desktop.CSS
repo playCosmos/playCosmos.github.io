@@ -56,6 +56,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: var(--maincolor);
 }
 
+/******* 좌측 트게더 메뉴 *******/
 #main .menu-wrapper>.header { background: var(--maincolor); }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
 #main .menu-wrapper .spacer {
