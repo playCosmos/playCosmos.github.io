@@ -271,6 +271,14 @@ span.category {
     font-family: fontawesome;
 }
 
+#article-list>.article-list-row {
+	border-right: none;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+	border-left: none;
+}
+
 /* 글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
 	background-color: var(--mainColor);
