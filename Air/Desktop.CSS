@@ -5,6 +5,14 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
+@media (min-width: 1100px) {
+	:root {
+	--maincolor: #31405a;	/* 메인색 */
+	--subcolor: #cad3e2;	/* 서브색 */
+	--bgcolor: #e7eaef;	/* 배경색 */
+	}
+}
+
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
