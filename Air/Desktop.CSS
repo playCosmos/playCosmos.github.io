@@ -5,7 +5,7 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1150px) {
 	:root {
 	--maincolor: #31405a;	/* 메인색 */
 	--subcolor: #cad3e2;	/* 서브색 */
