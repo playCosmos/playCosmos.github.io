@@ -5,7 +5,7 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
-@media (min-width: 1150px) {
+@media (max-width: 1150px) {
 	:root {
 	--maincolor: #31405a;	/* 메인색 */
 	--subcolor: #cad3e2;	/* 서브색 */
@@ -18,11 +18,8 @@
 
 /* 링크 기본 색상 */
 a { color: var(--maincolor); }
-
 a:hover,
-a:focus {
-	color: var(--maincolor) !important;
-}
+a:focus { color: var(--maincolor) !important; }
 
 /* fontawesome 사용 */
 a.nav-link,
