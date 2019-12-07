@@ -23,7 +23,24 @@ select.form-control {
 	font-family: fontawesome;
 }
 
+/* 소개, 스케줄 숨기기 */
 #board-info>a.board-right-menu[href="/million_air/profile"],
 #board-info>a.board-right-menu[href="/million_air/schedule"] {
 	display: none;
 }
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area { top: 3px; }
+#article-list #article-option-area>#article-option-area-toggle-btn {
+	background: var(--bgcolor);
+	border-radius: 10px;
+	height: 27px;
+	margin: 0 5px 0 0;
+	opacity: 1;
+	display: inline-grid;
+	transition: 0.2s;
+}
+
+/* 눈 모양 스위치로 변경 */
+button>.fa-eye:before { content: "\f205"; }
+button>.fa-eye-slash:before { content: "\f204"; }
