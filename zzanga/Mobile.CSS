@@ -369,6 +369,11 @@ span.category {
     border-color: #3399CC;
 }
 
+/* 이전, 다음글 하단 마진 */
+#article-neighbor-list {
+    margin-bottom: 7px;
+}
+
 /* 게시글 내 댓글 수 */
 #article-reply-area > .header h5 {
     color: #9966CC;
