@@ -328,15 +328,6 @@ a.nav-link {
     font-family: fontawesome;
 }
 
-.fa-home {
-    color: var(--mainColor);
-}
-
-.fa-home:hover,
-.fa-home:focus {
-    color: white;
-}
-
 #article-list-category>a:hover {
 	background: var(--mainColor) !important;
 	color: white !important;
