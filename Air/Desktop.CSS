@@ -78,9 +78,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	padding: 0.5em 1em;
 }
 
-#board-info h1 {
-	border: none;
-}
+#board-info h1 { border: none; }
+#board-info #board-info-bottom { padding-top: 7px; }
+#board-info #board-info-bottom a { color: var(--maincolor); }
 
 /* 스트리머 이름 */
 /*
@@ -109,6 +109,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	#board-info #board-info-profile-img { left: calc(50% - 400px); }
 }
 */
+
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
 #article-list #article-option-area>#article-option-area-toggle-btn {
