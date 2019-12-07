@@ -426,56 +426,57 @@ span.category {
 
 /* 댓글 작성자 */
 .reply-writer.logged {
-    color: var(--mainColor) !important;
+	color: var(--mainColor) !important;
 }
 
 /* 댓글 편집 */
 .reply-menu a {
-    color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* 댓글 작성 상단바 */
 .fr-toolbar {
-  border-top: 5px solid var(--mainColor);
+	border-top: 5px solid var(--mainColor);
 }
 
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 
 #comment-write-form #comment-write-button-area {
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 label.pull-left {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .pull-left {
-    margin-right: calc(100% - 100px);
+	margin-right: calc(100% - 100px);
 }
 
 #btnRereplyCancelBtn {
-    margin-right: 3px;
+	margin-right: 3px;
 }
 
 #writeCommentBtn {
-    flex: 1;
-    border-radius: 5px !important;
+	flex: 1;
+	border-radius: 5px !important;
 }
 
 #movetotop img{display:none}
 #movetotop {
-    display: inline-block;
-    opacity: 1;
-    background: url(./image/toTop2.png);
-    width: 80px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
+	display: inline-block;
+	bottom: 5px;
+	opacity: 1;
+	background: url(./image/toTop2.png);
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 select.form-control {
