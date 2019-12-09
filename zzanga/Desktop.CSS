@@ -1,9 +1,12 @@
 /*라희*/
 
 /* 모듈 */
-@font-face { font-family: 'KOMACON';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
-	font-weight: normal; font-style: normal; }
+@font-face {
+	font-family: 'Goyang';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'NanumSquareRoundEB';
@@ -34,7 +37,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: 'KOMACON';
+	font-family: 'Goyang', sans-serif;
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
