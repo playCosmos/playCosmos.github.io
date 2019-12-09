@@ -230,7 +230,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #article-list #article-list-category>a {
 	background: transparent !important;
-	/*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);*/
 	transition: 0.3s;
 }
 
@@ -291,10 +290,6 @@ span.category {
 	background-color: var(--mainColor);
 	padding: 4px 4px 2px 4px;
 }
-
-/*
-#article-list>.article-list-row>.item>.list-header>span:before { content: "♥" };
-*/
 
 /* 댓글 수 */
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
