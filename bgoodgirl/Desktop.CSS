@@ -47,8 +47,6 @@ header .row>div:nth-child(1)>a {
 	height: 50px;
 	/*background: url(./image/logo2.png) no-repeat;*/
 	background-size: auto 50px;
-	animation: HeartBeat 1s 3 linear;
-	cursor: url(./cursor/cur.png) 15 0, auto;
 	filter: grayscale(0) hue-rotate(75deg) brightness(1.8);
 }
 
