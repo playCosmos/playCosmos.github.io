@@ -24,7 +24,8 @@ a:focus { color: var(--maincolor) !important; }
 /* fontawesome 사용 */
 a.nav-link,
 span.category,
-select.form-control {
+select.form-control,
+div#article-content {
 	font-family: fontawesome;
 }
 
