@@ -80,8 +80,8 @@ header>#header-area>#header-bar-link {
 
 /* 로고 */
 header>#header-area>a>h1 {
-	/*background: url(./image/logo2.png) no-repeat;*/
-	width:75px;
+	background: url(./image/logo.png) no-repeat;
+	width: 82px;
 	background-size: auto 32px;
 	cursor: url(./cursor/cur.png) 15 0, auto;
 	filter: grayscale(0.4) hue-rotate(90deg) brightness(0.8);
