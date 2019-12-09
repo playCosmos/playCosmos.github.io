@@ -1,23 +1,9 @@
 /*라희*/
 
 /* 모듈 */
-@font-face {
-	font-family: 'NanumSquareRoundR';
-	font-style: normal;
-	font-weight: 400;
-	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'),
-		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
-}
 @font-face { font-family: 'KOMACON';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
 	font-weight: normal; font-style: normal; }
-
-@font-face {
-	font-family: '777Balsamtint';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
 	font-family: 'NanumSquareRoundEB';
