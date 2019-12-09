@@ -324,6 +324,10 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 	transition: 0.2s;
 }
 
+#article-list #article-list-category > a.active {
+	color: var(--mainColor);
+}
+
 a.nav-link {
     font-family: fontawesome;
 }
