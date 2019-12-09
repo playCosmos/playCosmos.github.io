@@ -8,6 +8,9 @@
 	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'),
 		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
 }
+@font-face { font-family: 'KOMACON';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+	font-weight: normal; font-style: normal; }
 
 @font-face {
 	font-family: '777Balsamtint';
@@ -20,7 +23,8 @@
 	font-family: 'NanumSquareRoundEB';
 	font-style: normal;
 	font-weight: 700;
-	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
+		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
 
 :root {
@@ -44,7 +48,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: '777Balsamtint';
+	font-family: 'KOMACON';
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
