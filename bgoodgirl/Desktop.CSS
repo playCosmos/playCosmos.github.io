@@ -37,7 +37,7 @@ body {
 	height: auto !important;
 	background: transparent;
 	font-family: NanumSquareRoundR;
-	cursor: url(./cursor/cur.png) 15 0, auto !important;
+	/*cursor: url(./cursor/cur.png) 15 0, auto !important;*/
 }
 
 /* 로고 */
@@ -45,7 +45,7 @@ header .row>div:nth-child(1)>a {
 	display: block;
 	width: 120px;
 	height: 50px;
-	background: url(./image/logo2.png) no-repeat;
+	/*background: url(./image/logo2.png) no-repeat;*/
 	background-size: auto 50px;
 	animation: HeartBeat 1s 3 linear;
 	cursor: url(./cursor/cur.png) 15 0, auto;
@@ -87,18 +87,18 @@ header #header-bar a.dropdown-toggle,
 #latestDropdownMenu>li>a,
 #latestDropdownMenu>li>a>span.delrow {
 	color: var(--mainColor);
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 #favoriteDropdownMenu>li>a>span.label.label-default {
 	background-color: var(--mainColor);
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 #favoriteDropdownMenu>li>a,
 #favoriteDropdownMenu>li>a>span.delrow,
 #playgroundDropdownMenu>li>a{
 	color: var(--mainColor);
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 /* 상단 배너 광고 뱃지 */
@@ -120,7 +120,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper>a,
 #main .menu-wrapper a:nth-last-child(1) {
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 /* 좌측 배너 이니셜 */
@@ -201,7 +201,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	content: "명 헤엄치는 중";
 }
 #board-info h1>a {
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;*/
 }
 
 /* 메인 배너 헤더 즐찾.. */
@@ -210,7 +210,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 #board-info #board-info-bottom a,
 #board-info #board-info-bottom #addFavoriteBtn {
-	cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;
+	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 /* 카테고리 */
@@ -451,7 +451,7 @@ display: none;
 #movetotop {
 	display: inline-block;
 	opacity: 1;
-	background: url(./image/toTop2.png);
+	/*background: url(./image/toTop2.png);*/
 	width: 120px;
 	height: 120px;
 	background-size: contain;
