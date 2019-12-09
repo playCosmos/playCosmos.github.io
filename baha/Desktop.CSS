@@ -2,10 +2,10 @@
 
 /* 모듈 */
 @font-face {
-	font-family: 'NanumSquareRoundR';
+	font-family: 'Goyang';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
-	font-weight: 400;
-	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
 }
 
 @font-face {
@@ -43,8 +43,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: NanumSquareRoundR;
-	/*cursor: url(./cursor/cur.png) 15 0, auto !important;*/
+	font-family: 'Goyang', sans-serif;
 }
 
 /* 로고 */
@@ -152,6 +151,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #board-info #board-info-profile-img {
 	float: left !important;
 	margin-right: 5px;
+}
+
+#board-info {
+    height: 68px;
 }
 
 /* 메인 배너 스트리머 닉네임 */
