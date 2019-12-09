@@ -44,7 +44,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: 777Balsamtint;
+	font-family: '777Balsamtint';
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
