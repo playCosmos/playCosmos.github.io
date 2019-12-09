@@ -2,10 +2,10 @@
 
 /* 모듈 */
 @font-face {
-	font-family: 'NanumSquareRoundR';
+	font-family: 'Goyang';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
-	font-weight: 400;
-	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 }
 
 :root {
-	--mainColor: #fc3780	;	/* 메인색 */
+	--mainColor: #fc3780;	/* 메인색 */
 	--subColor: #e6e8f5;	/* 서브색 */
 	--bgColor: #f2f2f4;	/* 배경색 */
 }
@@ -36,8 +36,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: NanumSquareRoundR;
-	/*cursor: url(./cursor/cur.png) 15 0, auto !important;*/
+	font-family: 'Goyang', sans-serif;
 }
 
 /* 로고 */
@@ -87,18 +86,15 @@ header #header-bar a.dropdown-toggle,
 #latestDropdownMenu>li>a,
 #latestDropdownMenu>li>a>span.delrow {
 	color: var(--mainColor);
-	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 #favoriteDropdownMenu>li>a>span.label.label-default {
 	background-color: var(--mainColor);
-	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 #favoriteDropdownMenu>li>a,
 #favoriteDropdownMenu>li>a>span.delrow,
 #playgroundDropdownMenu>li>a{
 	color: var(--mainColor);
-	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 /* 상단 배너 광고 뱃지 */
@@ -120,7 +116,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper>a,
 #main .menu-wrapper a:nth-last-child(1) {
-	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto;*/
 }
 
 /* 좌측 배너 이니셜 */
