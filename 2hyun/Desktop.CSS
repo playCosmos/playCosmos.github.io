@@ -185,13 +185,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	color: var(--mainColor);
 }
 
-/*
+
 #board-info #viewers-area #viewers:before {
-	content: "";
-}*/
+	content: "현재 ";
+}
 
 #board-info #viewers-area #viewers:after {
-	content: " 백성";
+	content: "명 접속 중!";
 }
 
 /* 메인 배너 헤더 즐찾.. */
