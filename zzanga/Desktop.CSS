@@ -17,6 +17,7 @@
 
 :root {
 	--mainColor: #454859;	/* 메인색 */
+	--subColor: #e9ecfb;	/* 서브색 */
 	--bgColor: #f2f2f4;	/* 배경색 */
 }
 
@@ -258,10 +259,11 @@ a.nav-link {
 	color: white;
 }
 
-/* 메인 배너 글 공지 */
-#article-list>.article-list-row.notice {
-	background-color: var(--bgColor);
-}
+/* 공지글 배경 */
+#article-list>.article-list-row.notice { background-color: var(--bgColor); }
+
+/* 인기글 배경 */
+#article-list>.article-list-row.hot { background-color: var(--subColor); }
 
 span.a-badge i.fa.fa-info-circle {
 	color: var(--mainColor);
