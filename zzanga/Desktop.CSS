@@ -350,24 +350,37 @@ display: none;
 	border-radius: 10px;
 }
 
-/* 페이지 */
-.pagination>li>a,
-.pagination>li>span {
-	border: none;
-	color: var(--mainColor);  
-}
-
-/* 현재 페이지 */
+/* 게시글 페이지 */
 .pagination>.active>a,
 .pagination>.active>a:focus,
-.pagination>.active>a:hover,
 .pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-	border-radius: 10px;
+.pagination>.active>span:focus {
 	background-color: var(--mainColor);
 	border-color: var(--mainColor);
+	transition: 0.2s;
 }
+
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
+	transition: 0.2s;
+}
+
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--mainColor);
+	background: transparent;
+	border-radius: 10px !important;
+	transition: 0.2s;
+}
+/* 게시글 페이지 끝 */
+
 
 /* 글쓰기 버튼 배경색 */
 .btn-primary {
