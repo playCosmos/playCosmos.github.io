@@ -266,7 +266,7 @@ a.nav-link {
 #article-list>.article-list-row.hot { background-color: var(--subColor); }
 
 span.a-badge i.fa.fa-info-circle {
-	color: var(--mainColor);
+	display: none;
 }
 
 span.category {
