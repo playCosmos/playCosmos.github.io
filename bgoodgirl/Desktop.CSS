@@ -230,7 +230,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 #article-list #article-list-category > a.active {
-	color: var(--maincolor);
+	color: var(--mainColor);
 }
 
 #article-list #article-list-category>a:hover {
