@@ -446,7 +446,7 @@ display: none;
 #movetotop {
 	display: inline-block;
 	opacity: 1;
-	/*background: url(./image/toTop2.png);*/
+	background: url(./image/toTop.png);
 	width: 120px;
 	height: 120px;
 	background-size: contain;
