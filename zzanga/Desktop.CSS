@@ -10,11 +10,10 @@
 }
 
 @font-face {
-	font-family: 'Dovemayo-Medium';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+	font-family: '777Balsamtint';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
 	font-weight: normal;
-	font-style: normal;
-}
+	font-style: normal; }
 
 @font-face {
 	font-family: 'NanumSquareRoundEB';
@@ -44,7 +43,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: Dovemayo-Medium;
+	font-family: 777Balsamtint;
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
