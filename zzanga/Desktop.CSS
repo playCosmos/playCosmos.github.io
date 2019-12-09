@@ -5,7 +5,15 @@
 	font-family: 'NanumSquareRoundR';
 	font-style: normal;
 	font-weight: 400;
-	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'),
+		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
+}
+
+@font-face {
+	font-family: 'Dovemayo-Medium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -36,7 +44,7 @@ html {
 body {
 	height: auto !important;
 	background: transparent;
-	font-family: NanumSquareRoundR;
+	font-family: Dovemayo-Medium;
 	cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
