@@ -9,11 +9,10 @@
 *:focus { outline: none !important; }
 
 /* 링크 기본 색상 */
-a { color: var(--maincolor); }
-
+a,
 a:hover,
 a:focus {
-	color: var(--maincolor) !important;
+	color: var(--maincolor);
 }
 
 /* fontawesome 사용 */
@@ -21,7 +20,132 @@ a.nav-link,
 span.category,
 select.form-control,
 div#article-content {
-	font-family: fontawesome;
+	font-family: FontAwesome;
+}
+
+/* 알림 */
+.alert {
+	margin-left: 3px !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	width: calc(100% - 4px);
+}
+
+body {
+	padding-top: 55px;
+}
+
+header {
+	border: 4px solid var(--maincolor);
+	border-radius: 12px;
+	background: #fffd;
+	padding: 3px 0;
+	transform-origin: 25px 25px;
+	transition: 0.3s;
+	width: calc(100% - 10px);
+	left: 5px;
+	top: 5px;
+}
+
+header>#header-search-bar #header-close-search-btn,
+header>#header-search-bar #header-search-btn,
+header>#header-area>#header-search-link {
+	color: var(--maincolor);
+}
+
+header > #header-search-bar #header-search-btn {
+	margin-top: -2px;
+}
+
+header > #header-search-bar #header-search-input {
+	border: 2px solid var(--maincolor);
+	padding: 5px 8px;
+}
+
+header>#header-area>#header-bar-link,
+nav#nav>#nav-upper>#header-close-bar-link {
+	color: var(--maincolor);
+	transition: 0.3s;
+}
+
+nav#nav>#nav-upper>#header-close-bar-link {
+	padding: 0 15px;
+}
+
+header.nav-up {
+	opacity: 0;
+	pointer-events: none;
+	top: 5px;
+}		
+
+nav#nav {
+	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
+	height: 450px;
+	top: 7px;
+	left: 7px;
+	border: 3px solid var(--maincolor);
+	border-radius: 10px
+}
+
+@keyframes slider {
+	0% { transform: translateX(-50px); }
+	100% { transform: translateX(0px); }
+}
+
+nav#nav>#nav-upper {
+	padding: 5px 0;
+}
+
+nav#nav>#nav-upper-shortcut {
+	padding: 6px 10px !important;
+	display: flex;
+}
+
+nav#nav>#nav-upper-shortcut>.dropdown {
+	flex: 1;
+}
+
+nav#nav>#nav-upper #userDropdown #notification-badge {
+	background: var(--maincolor) !important;
+}
+
+nav#nav>.nav-header {
+	background: var(--maincolor);
+	margin-top: 1px;
+	height: 35px;
+	font-size: 14px;
+	padding: 8px 15px;
+}
+
+nav#nav>.nav-menu-area a {
+	padding: 5px 0;
+	text-align: center;
+}
+
+nav#nav>.nav-menu-area hr {
+	margin: 4px 0;
+}
+
+nav#nav>.nav-menu-area>.left,
+nav#nav>.nav-menu-area>.right {
+	padding: 5px 10px;
+	margin: 3px;
+}
+
+nav#nav>.nav-menu-area>.left {
+	padding-right: 0;
+}
+
+nav#nav>.nav-menu-area>.right{
+	padding-left: 0;
+}
+
+div#main-content {
+	margin-top: 5px;
+}
+
+#main-content>div.frame>div:nth-child(1) {
+	background: transparent !important;
 }
 
 /* 소개, 스케줄 숨기기 */
