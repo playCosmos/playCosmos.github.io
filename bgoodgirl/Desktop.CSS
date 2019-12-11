@@ -242,6 +242,7 @@ a.nav-link {
 	height: 39px;
 	border-radius: 10px;
 	border: 2px solid var(--mainColor);
+	color: var(--mainColor);
 	margin-right: 15px;
 	opacity: 1;
 	transition: 0.3s;
