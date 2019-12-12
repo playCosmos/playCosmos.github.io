@@ -47,17 +47,18 @@ header {
 	top: 5px;
 }
 
-header>#header-search-bar #header-close-search-btn,
+/* 광고 뱃지 색 */
+#header-top-notice strong.notice-badge {
+    background: var(--mailcolor);
+}
+
 header>#header-search-bar #header-search-btn,
-header>#header-area>#header-search-link {
-	color: var(--maincolor);
-}
+header>#header-search-bar #header-close-search-btn,
+header>#header-area>#header-search-link { color: var(--maincolor); }
 
-header > #header-search-bar #header-search-btn {
-	margin-top: -2px;
-}
+header>#header-search-bar #header-search-btn { margin-top: -2px; }
 
-header > #header-search-bar #header-search-input {
+header>#header-search-bar #header-search-input {
 	border: 2px solid var(--maincolor);
 	padding: 5px 8px;
 }
@@ -65,7 +66,6 @@ header > #header-search-bar #header-search-input {
 header>#header-area>#header-bar-link,
 nav#nav>#nav-upper>#header-close-bar-link {
 	color: var(--maincolor);
-	transition: 0.2s;
 }
 
 nav#nav>#nav-upper>#header-close-bar-link {
@@ -79,12 +79,12 @@ header.nav-up {
 }		
 
 nav#nav {
-	animation: slider 0.2s cubic-bezier(0.25, 1, 1, 1);
 	height: 450px;
 	top: 7px;
 	left: 7px;
 	border: 3px solid var(--maincolor);
 	border-radius: 10px
+	animation: slider 0.2s cubic-bezier(0.25, 1, 1, 1);
 }
 
 @keyframes slider {
@@ -92,18 +92,12 @@ nav#nav {
 	100% { transform: translateX(0px); }
 }
 
-nav#nav>#nav-upper {
-	padding: 5px 0;
-}
-
+nav#nav>#nav-upper { padding: 5px 0; }
 nav#nav>#nav-upper-shortcut {
 	padding: 6px 10px !important;
 	display: flex;
 }
-
-nav#nav>#nav-upper-shortcut>.dropdown {
-	flex: 1;
-}
+nav#nav>#nav-upper-shortcut>.dropdown { flex: 1; }
 
 nav#nav>#nav-upper #userDropdown #notification-badge {
 	background: var(--maincolor) !important;
@@ -117,32 +111,20 @@ nav#nav>.nav-header {
 	padding: 8px 15px;
 }
 
-nav#nav>.nav-menu-area a {
-	padding: 5px 0;
-	text-align: center;
-}
+nav#nav>.nav-menu-area a { text-align: center; }
+nav#nav>.nav-menu-area hr { margin: 4px 0; }
 
-nav#nav>.nav-menu-area hr {
-	margin: 4px 0;
-}
-
-nav#nav>.nav-menu-area>.left,
-nav#nav>.nav-menu-area>.right {
-	padding: 5px 10px;
+nav#nav>.nav-menu-area>.left {
+	padding: 5px 0 5px 10px;
 	margin: 3px;
 }
 
-nav#nav>.nav-menu-area>.left {
-	padding-right: 0;
+nav#nav>.nav-menu-area>.right {
+	padding: 5px 10px 5px 0;
+	margin: 3px;
 }
 
-nav#nav>.nav-menu-area>.right{
-	padding-left: 0;
-}
-
-div#main-content {
-	margin-top: 5px;
-}
+div#main-content { margin-top: 5px; }
 
 #main-content>div.frame>div:nth-child(1) {
 	background: transparent !important;
