@@ -41,7 +41,7 @@ header {
 	background: #fffd;
 	padding: 3px 0;
 	transform-origin: 25px 25px;
-	transition: 0.3s;
+	transition: 0.2s;
 	width: calc(100% - 10px);
 	left: 5px;
 	top: 5px;
@@ -65,7 +65,7 @@ header > #header-search-bar #header-search-input {
 header>#header-area>#header-bar-link,
 nav#nav>#nav-upper>#header-close-bar-link {
 	color: var(--maincolor);
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 nav#nav>#nav-upper>#header-close-bar-link {
@@ -79,7 +79,7 @@ header.nav-up {
 }		
 
 nav#nav {
-	animation: slider 0.3s cubic-bezier(0.25, 1, 1, 1);
+	animation: slider 0.2s cubic-bezier(0.25, 1, 1, 1);
 	height: 450px;
 	top: 7px;
 	left: 7px;
