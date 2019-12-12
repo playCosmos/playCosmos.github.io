@@ -49,7 +49,7 @@ header {
 
 /* 광고 뱃지 색 */
 #header-top-notice strong.notice-badge {
-    background: var(--mailcolor);
+    background: var(--maincolor);
 }
 
 header>#header-search-bar #header-search-btn,
