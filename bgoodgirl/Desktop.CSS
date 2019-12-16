@@ -188,11 +188,11 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 #board-info #viewers-area #viewers:before {
-	content: "땅오단 ";
+	/*content: "땅오단 ";*/
 }
 
 #board-info #viewers-area #viewers:after {
-	content: "명 헤엄치는 중";
+	/*content: "명 헤엄치는 중";*/
 }
 #board-info h1>a {
 	/*cursor: url(https://upload.tgd.kr/20190123/4b184b9c7bd3c1aa2774474052cda049.png) 15 0, auto !important;*/
