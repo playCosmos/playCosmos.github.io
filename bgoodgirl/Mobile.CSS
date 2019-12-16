@@ -48,7 +48,7 @@ body {
 
 /* 걸리적 거리는거 삭제 */
 span.badge.badge-default,
-#board-info>a.board-right-menu[href="/leehyunnim/profile"],
+#board-info>a.board-right-menu[href="/bgoodgirl/profile"],
 #addFavoriteBtn>small {
 	display: none;
 }
