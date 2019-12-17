@@ -38,7 +38,8 @@ body { background: transparent; }
 /************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
-	display: none;
+	content: url(./image/logo.svg);
+	height: 50px;
 }
 
 /* 헤더 검색창 */
