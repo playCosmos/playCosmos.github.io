@@ -31,7 +31,7 @@ div#article-content {
 
 /* 알림 */
 .alert {
-	margin-bottom: 0.5em;
+	margin-bottom: 10px;
 	padding: 10px 35px 10px 15px;
 }
 
@@ -81,7 +81,7 @@ header #right-search-form>input::placeholder,
 header #right-search-form>#right-search-btn { color: var(--maincolor) !important; }
 
 /* 헤더 하단 여백 */
-header #header-bar { margin-bottom: 0.5em; }
+header #header-bar { margin-bottom: 10px; }
 
 /* 헤더 상단 메뉴 */
 header #header-bar>.row { border-top: 4px solid var(--maincolor); }
