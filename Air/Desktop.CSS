@@ -35,6 +35,8 @@ div#article-content {
 html { background: var(--bgcolor); }
 body { background: transparent; }
 
+
+
 /* 크리스마스 이벤트 */
 
 header:before {
@@ -42,6 +44,7 @@ header:before {
 	position: relative;
 	animation: snowY 5s linear infinite, snowX 55s linear infinite;
 	padding: 0;
+	content: " ";
 	background: url(./Christmas/snow.svg) 0 0,url(./Christmas/mountains.svg) bottom right no-repeat,
 		linear-gradient(to right, #c7ebff, #92cdfa);
 	background-size: 1560px auto, 1832px auto, auto auto;
