@@ -69,7 +69,12 @@ header .row>div:nth-child(1)>a>img {
 }
 
 /* 헤더 검색창 */
-header #right-search-form>input[type=text] { border: 3px solid var(--maincolor); }
+header #right-search-form>input[type=text] {
+	border: 3px solid var(--maincolor);
+	background: transparent;
+	color: var(--maincolor);
+}
+header #right-search-form>input::placeholder,
 header #right-search-form>#right-search-btn { color: var(--maincolor); }
 
 /* 헤더 상단 메뉴 */
