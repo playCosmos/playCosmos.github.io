@@ -75,7 +75,7 @@ header #right-search-form>input[type=text] {
 	color: var(--maincolor);
 }
 header #right-search-form>input::placeholder,
-header #right-search-form>#right-search-btn { color: var(--maincolor); }
+header #right-search-form>#right-search-btn { color: var(--maincolor) !important; }
 
 /* 헤더 상단 메뉴 */
 header #header-bar>.row { border-top: 4px solid var(--maincolor); }
