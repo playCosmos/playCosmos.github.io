@@ -35,6 +35,39 @@ div#article-content {
 html { background: var(--bgcolor); }
 body { background: transparent; }
 
+/* 크리스마스 이벤트 */
+
+header:before {
+	overflow: hidden;
+	position: relative;
+	animation: snowY 5s linear infinite, snowX 55s linear infinite;
+	padding: 0;
+	background: url(./Christmas/snow.svg) 0 0,url(./Christmas/mountains.svg) bottom right no-repeat,
+		linear-gradient(to right, #c7ebff, #92cdfa);
+	background-size: 1560px auto, 1832px auto, auto auto;
+	height: 70px;
+}
+
+@media screen and (min-width: 768px)
+header:before::after {
+	top: 0;
+	right: 50px;
+	width: 320px;
+	height: 100%;
+	background: url(./Christmas/house.svg) bottom right no-repeat;
+	background-size: 320px auto;
+}
+
+@keyframes snowY {
+	0% { background-position-y: 0, bottom, 0; }
+	100% { background-position-y: 210px, bottom, 0; }
+}
+
+@keyframes snowX {
+	0% { background-position-x: 0, right, 0; }
+	100% { background-position-x: 3120px, right, 0; }
+}
+
 /************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
