@@ -51,7 +51,7 @@ header:before {
 	height: 70px;
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px){
 header:before::after {
 	top: 0;
 	right: 50px;
@@ -59,6 +59,7 @@ header:before::after {
 	height: 100%;
 	background: url(./Christmas/house.svg) bottom right no-repeat;
 	background-size: 320px auto;
+	}
 }
 
 @keyframes snowY {
