@@ -30,7 +30,7 @@ div#article-content {
 }
 
 /* 알림 */
-.alert { padding: 10px 15px; }
+.alert { padding: 10px 35px 10px 15px; }
 
 html { background: var(--bgcolor); }
 body { background: transparent; }
