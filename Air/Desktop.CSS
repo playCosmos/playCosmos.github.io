@@ -42,10 +42,11 @@ body { background: transparent; }
 header:before {
 	overflow: hidden;
 	position: relative;
-	animation: snowY 5s linear infinite, snowX 55s linear infinite;
+	animation: snowY 10s linear infinite, snowX 100s linear infinite;
 	padding: 0;
 	content: " ";
-	background: url(./Christmas/snow.svg) 0 0,url(./Christmas/mountains.svg) bottom right no-repeat,
+	background: url(./Christmas/snow.svg) 0 0,
+		url(./Christmas/mountains.svg) bottom right no-repeat,
 		linear-gradient(to right, #c7ebff, #92cdfa);
 	background-size: 1560px auto, 1832px auto, auto auto;
 	display: block;
@@ -54,7 +55,7 @@ header:before {
 }
 
 @media screen and (min-width: 768px){
-header:before::after {
+header:after {
 	top: 0;
 	right: 50px;
 	width: 320px;
