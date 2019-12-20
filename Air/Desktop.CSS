@@ -40,7 +40,7 @@ body { background: transparent; }
 /* 크리스마스 이벤트 */
 header { padding-top: 1em; }
 header:before {
-	position: fixed;
+	position: absolute;
 	animation: snowY 10s linear infinite, snowX 150s linear infinite;
 	content: " ";
 	background: url(./Christmas/snow.svg) 0 0,
@@ -48,7 +48,7 @@ header:before {
 	background-size: 1560px auto, auto auto;
 	top: -1em;
 	width: 100%;
-	height: 150px;
+	height: 92px;
 }
 
 @keyframes snowY {
