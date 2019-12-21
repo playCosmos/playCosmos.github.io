@@ -80,7 +80,7 @@ header .row>div:nth-child(1)>a {
 
 @keyframes falling {
 	0% { background-position: 0 0, right bottom, 0; }
-	100% { background-position: 3120px 210px, right bottom, 0; }
+	100% { background-position: 30px 150px, right bottom, 0; }
 }
 
 header .row>div:nth-child(1)>a>img {
