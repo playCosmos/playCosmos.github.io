@@ -19,6 +19,7 @@
 :root {
 	--mainColor: #454859;	/* 메인색 */
 	--subColor: #e6e8f5;	/* 서브색 */
+	--bg2Color: #98a0b0;
 	--bgColor: #f2f2f4;	/* 배경색 */
 }
 
@@ -31,7 +32,12 @@ a {
 
 /* 배경 */
 html {
-	background: var(--bgColor);	
+	background: var(--bgColor);
+	transition: 0.3s;
+}
+
+@media (max-width: 1150px) {
+	html { background: var(--bg2Color); }
 }
 
 body {
