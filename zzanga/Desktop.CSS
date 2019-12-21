@@ -59,8 +59,10 @@ header .row>div:nth-child(1)>a {
 @media (max-width: 1350px) {
 	html {
 		animation: snowY 10s linear infinite, snowX 150s linear infinite;
-		background: url(./Christmas/snow.svg) 0 0, var(--bg2Color);
-		ackground-size: 1560px auto, auto auto;
+		background: url(./Christmas/snow0.png) contain,
+			url(./Christmas/snow1.png) contain,
+			url(./Christmas/snow2.png) contain, var(--bg2Color);
+		background-size: 1560px auto, auto auto;
 	}
 	
 	header .row>div:nth-child(1)>a {
