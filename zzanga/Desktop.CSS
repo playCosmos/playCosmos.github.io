@@ -57,7 +57,10 @@ header .row>div:nth-child(1)>a {
 
 @media (max-width: 1200px) {
 	html { background: var(--bg2Color); }
-	header .row>div:nth-child(1)>a { background: url(./image/logo2.png) no-repeat; }
+	header .row>div:nth-child(1)>a {
+		background: url(./image/logo3.png) no-repeat;
+		background-size: auto 50px;
+	}
 }
 
 header .row>div:nth-child(1)>a>img {
