@@ -58,7 +58,7 @@ header .row>div:nth-child(1)>a {
 
 @media (max-width: 1350px) {
 	html {
-		animation: falling snowX 150s linear infinite;
+		animation: falling 10s, falling 20s, falling 30s;
 		background: url(./Christmas/snow0.png),
 			url(./Christmas/snow1.png),
 			url(./Christmas/snow2.png), var(--bg2Color);
