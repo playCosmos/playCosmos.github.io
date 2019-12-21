@@ -63,14 +63,19 @@ header .row>div:nth-child(1)>a {
 		background-size: 500px 500px, auto auto;
 	}
 	
-	body {
+	body::before {
 		animation: falling 2000s linear infinite;
 		background:
 			url(./Christmas/snow1.png);
-			/*url(./Christmas/snow2.png);*/
 		background-size: 400px 400px;
 	}
 	
+	body {
+		animation: falling 3000s linear infinite;
+		background:
+			url(./Christmas/snow2.png);
+		background-size: 300px 300px;
+	}
 	header .row>div:nth-child(1)>a {
 		background: url(./image/logo3.png) no-repeat;
 		background-size: auto 50px;
