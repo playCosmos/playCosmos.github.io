@@ -58,13 +58,13 @@ header .row>div:nth-child(1)>a {
 
 @media (max-width: 1350px) {
 	html {
-		animation: falling 10s linear infinite;
+		animation: falling 100s linear infinite;
 		background: url(./Christmas/snow0.png), var(--bg2Color);
 		background-size: 500px 500px, auto auto;
 	}
 	
 	body {
-		animation: falling 20s linear infinite;
+		animation: falling 200s linear infinite;
 		background:
 			url(./Christmas/snow1.png);
 			/*url(./Christmas/snow2.png);*/
@@ -80,7 +80,7 @@ header .row>div:nth-child(1)>a {
 
 @keyframes falling {
 	0% { background-position: 0 0, right bottom, 0; }
-	100% { background-position: 30px 150px, right bottom, 0; }
+	100% { background-position: 6000px 30000px, right bottom, 0; }
 }
 
 header .row>div:nth-child(1)>a>img {
