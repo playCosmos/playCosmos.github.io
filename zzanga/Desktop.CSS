@@ -73,14 +73,8 @@ header .row>div:nth-child(1)>a {
 }
 
 @keyframes falling {
-  0% {
-    -webkit-transform: translate3D(-7.5%, -100%, 0);
-            transform: translate3D(-7.5%, -100%, 0);
-  }
-  100% {
-    -webkit-transform: translate3D(7.5%, 100%, 0);
-            transform: translate3D(7.5%, 100%, 0);
-  }
+	0% { background-position: 0 0, right bottom, 0; }
+	100% { background-position: 3120px 210px, right bottom, 0; }
 }
 
 header .row>div:nth-child(1)>a>img {
