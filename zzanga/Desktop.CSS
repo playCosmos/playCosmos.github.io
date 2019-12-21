@@ -36,10 +36,6 @@ html {
 	transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
-	html { background: var(--bg2Color); }
-}
-
 body {
 	height: auto !important;
 	background: transparent;
@@ -57,6 +53,11 @@ header .row>div:nth-child(1)>a {
 	animation: HeartBeat 1s 3 linear;
 	cursor: url(./cursor/cur.png) 15 0, auto;
 	filter: grayscale(0.4) hue-rotate(14deg) brightness(0.8);
+}
+
+@media (max-width: 1200px) {
+	html { background: var(--bg2Color); }
+	header .row>div:nth-child(1)>a { background: url(./image/logo2.png) no-repeat; }
 }
 
 header .row>div:nth-child(1)>a>img {
