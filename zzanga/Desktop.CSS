@@ -57,12 +57,27 @@ header .row>div:nth-child(1)>a {
 }
 
 @media (max-width: 1350px) {
-	html { background: var(--bg2Color); }
+	html {
+		animation: snowY 10s linear infinite, snowX 150s linear infinite;
+		background: url(./Christmas/snow.svg) 0 0, var(--bg2Color);
+		ackground-size: 1560px auto, auto auto;
+	}
+	
 	header .row>div:nth-child(1)>a {
 		background: url(./image/logo3.png) no-repeat;
 		background-size: auto 50px;
 		filter: inherit;
 	}
+}
+
+@keyframes snowY {
+	0% { background-position-y: 0, bottom, 0; }
+	100% { background-position-y: 210px, bottom, 0; }
+}
+
+@keyframes snowX {
+	0% { background-position-x: 0, right, 0; }
+	100% { background-position-x: 3120px, right, 0; }
 }
 
 header .row>div:nth-child(1)>a>img {
