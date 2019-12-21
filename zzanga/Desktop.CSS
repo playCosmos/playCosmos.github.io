@@ -71,7 +71,9 @@ header .row>div:nth-child(1)>a {
 	}
 	
 	header:before {
+		position: absolute;
 		animation: falling 3000s linear infinite;
+		content: " ";
 		background:
 			url(./Christmas/snow2.png);
 		background-size: 300px 300px;
