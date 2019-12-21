@@ -58,7 +58,7 @@ header .row>div:nth-child(1)>a {
 
 @media (max-width: 1350px) {
 	html {
-		animation: falling 10s, falling 20s, falling 30s;
+		animation: alling 10s, alling 20s, alling 30s;
 		background: url(./Christmas/snow0.png),
 			url(./Christmas/snow1.png),
 			url(./Christmas/snow2.png), var(--bg2Color);
