@@ -62,7 +62,7 @@ header .row>div:nth-child(1)>a {
 		background: url(./Christmas/snow0.png) contain,
 			url(./Christmas/snow1.png) contain,
 			url(./Christmas/snow2.png) contain, var(--bg2Color);
-		background-size: 1560px auto, auto auto;
+		background-size: contain, contain, contain, auto auto;
 	}
 	
 	header .row>div:nth-child(1)>a {
