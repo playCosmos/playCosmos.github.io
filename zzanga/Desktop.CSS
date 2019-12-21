@@ -57,13 +57,13 @@ header .row>div:nth-child(1)>a {
 }
 
 @media (max-width: 1350px) {
-	body:before {
+	html {
 		animation: falling 10s linear infinite;
 		background: url(./Christmas/snow0.png), var(--bg2Color);
 		background-size: 500px 500px, auto auto;
 	}
 	
-	html {
+	body:before {
 		animation: falling 20s linear infinite;
 		background:
 			url(./Christmas/snow1.png);
