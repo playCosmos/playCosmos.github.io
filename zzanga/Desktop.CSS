@@ -63,7 +63,7 @@ header .row>div:nth-child(1)>a {
 		background-size: 500px 500px, auto auto;
 	}
 	
-	body:before {
+	body {
 		animation: falling 20s linear infinite;
 		background:
 			url(./Christmas/snow1.png);
