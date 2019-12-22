@@ -77,6 +77,8 @@ header .row>div:nth-child(1)>a {
 		background:
 			url(./Christmas/snow2.png);
 		background-size: 300px 300px;
+		height: 100%;
+		width: 100%;
 	}
 	
 	header .row>div:nth-child(1)>a {
