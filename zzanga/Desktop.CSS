@@ -59,10 +59,12 @@ header .row>div:nth-child(1)>a {
 @media (max-width: 1350px) {
 	html {
 		animation: falling 1000s linear infinite;
-		background: url(./Christmas/snow0.png), var(--bg2Color);
-		background-size: 500px 500px, auto auto;
+		background: url(./Christmas/snow0.png) 500px 500px,
+			url(./Christmas/snow1.png) 400px 400px,
+			url(./Christmas/snow2.png) 300px 300px,
+			var(--bg2Color) auto auto;
 	}
-	
+	/*
 	body {
 		animation: falling 2000s linear infinite;
 		background: url(./Christmas/snow1.png);
@@ -78,7 +80,7 @@ header .row>div:nth-child(1)>a {
 		height: 100%;
 		width: 100%;
 	}
-	
+	*/
 	header .row>div:nth-child(1)>a {
 		background: url(./image/logo3.png) no-repeat;
 		background-size: auto 50px;
@@ -87,8 +89,8 @@ header .row>div:nth-child(1)>a {
 }
 
 @keyframes falling {
-	0% { background-position: 0 0, right bottom, 0; }
-	100% { background-position: 6000px 30000px, right bottom, 0; }
+	0% { background-position: 0 0, 0 0, 0 0; }
+	100% { background-position: 6000px 30000px, 3000px 15000px, 2000px 10000px; }
 }
 
 header .row>div:nth-child(1)>a>img {
