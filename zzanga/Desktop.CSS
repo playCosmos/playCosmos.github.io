@@ -71,15 +71,6 @@ header .row>div:nth-child(1)>a {
 		background-size: 400px 400px;
 	}
 	
-	header:before {
-		animation: falling 3000s linear infinite;
-		background: url(./Christmas/snow2.png);
-		background-size: 300px 300px;
-		position: absolute;
-		content: " ";
-		height: 100%;
-		width: 100%;
-	}
 	*/
 	header .row>div:nth-child(1)>a {
 		background: url(./image/logo3.png) no-repeat;
@@ -91,6 +82,15 @@ header .row>div:nth-child(1)>a {
 @keyframes falling {
 	0% { background-position: 0 0, 0 0, 0 0; }
 	100% { background-position: 6000px 30000px, 3000px 15000px, 2000px 10000px; }
+}
+
+header:before {
+	background: url(./image/to.png);
+	background-size: 300px 300px;
+	position: absolute;
+	content: " ";
+	height: 100%;
+	width: 100%;
 }
 
 header .row>div:nth-child(1)>a>img {
