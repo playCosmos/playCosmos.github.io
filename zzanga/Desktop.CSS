@@ -91,7 +91,7 @@ header:before {
 	content: " ";
 	background: url(./image/top.svg) no-repeat center center;
 	background-size: auto 70px;
-	height: 70px;
+	height: 60px;
 	width: 100%;
 	margin-bottom: 15px;
 }
