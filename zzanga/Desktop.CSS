@@ -44,6 +44,7 @@ body {
 }
 
 /* 로고 */
+header .row>div:nth-child(1)>a>img { display: none; }
 header .row>div:nth-child(1)>a {
 	display: block;
 	width: 120px;
@@ -84,17 +85,17 @@ header .row>div:nth-child(1)>a {
 	100% { background-position: 6000px 30000px, 3000px 15000px, 2000px 10000px; }
 }
 
+header { padding: 0 0 0.4em 0; }
 header:before {
-	background: url(./image/to.png);
-	background-size: 300px 300px;
-	position: absolute;
+	display: block;
+	position: relative;
+	top: 0;
 	content: " ";
-	height: 100%;
+	background: url(./image/top.svg) no-repeat center center;
+	background-size: auto 70px;
+	height: 70px;
 	width: 100%;
-}
-
-header .row>div:nth-child(1)>a>img {
-	display: none;
+	margin-bottom: 15px;
 }
 
 /* 검색창 */
