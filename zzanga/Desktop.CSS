@@ -82,7 +82,7 @@ header .row>div:nth-child(1)>a {
 	0% { background-position: 0 0, 0 0, 0 0; }
 	100% { background-position: 6000px 30000px, 3000px 15000px, 2000px 10000px; }
 }
-
+/*
 header { padding: 0 0 0.4em 0; }
 header:before {
 	display: block;
@@ -95,6 +95,7 @@ header:before {
 	width: 100%;
 	margin-bottom: 15px;
 }
+*/
 
 /* 검색창 */
 header #right-search-form>input[type=text] {
