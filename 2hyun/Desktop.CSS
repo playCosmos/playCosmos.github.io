@@ -1,7 +1,7 @@
 /* 이현 */
 
 /* 모듈 */
-@font-face {
+/*@font-face {
 	font-family: 'Goyang';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
 	font-weight: normal;
@@ -14,6 +14,7 @@
 	font-weight: 700;
 	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
+*/
 
 :root {
 	--mainColor: black;	/* 메인색 */
