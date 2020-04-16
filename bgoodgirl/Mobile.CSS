@@ -22,7 +22,7 @@
 }
 
 :root {
-	--mainColor: #fc3780;	 /* 메인 컬러 */
+	--mainColor: #f84f92;	 /* 메인 컬러 */
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -84,7 +84,7 @@ header>#header-area>a>h1 {
 	width:75px;
 	background-size: auto 32px;
 	cursor: url(./cursor/cur.png) 15 0, auto;
-	filter: grayscale(0) hue-rotate(75deg) brightness(1.8);
+	filter: grayscale(0) hue-rotate(65deg) brightness(1.5);
 }
 
 /* 검색 창 */
