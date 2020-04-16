@@ -17,7 +17,7 @@
 }
 
 :root {
-	--mainColor: #fc3780;	/* 메인색 */
+	--mainColor: #f84f92;	/* 메인색 */
 	--subColor: #e6e8f5;	/* 서브색 */
 	--bgColor: #f2f2f4;	/* 배경색 */
 }
@@ -47,7 +47,7 @@ header .row>div:nth-child(1)>a {
 	height: 50px;
 	/*background: url(./image/logo2.png) no-repeat;*/
 	background-size: auto 50px;
-	filter: grayscale(0) hue-rotate(75deg) brightness(1.8);
+	filter: grayscale(0) hue-rotate(65deg) brightness(1.5);
 }
 /*
 header .row>div:nth-child(1)>a>img {
