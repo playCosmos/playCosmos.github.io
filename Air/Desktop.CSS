@@ -111,6 +111,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	height: 0.2em;
 }
 
+
+/* 메뉴 밑 흰색 제거 */
+#main-menu div:nth-last-child(1) {
+	display: none;
+}
+
+
 #board-info {
 	height: inherit;
 	margin: 0;
