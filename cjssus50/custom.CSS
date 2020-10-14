@@ -110,6 +110,11 @@ header #header-bar>.row {
 	width: 180px;
 }
 
+/* 메뉴 밑 흰색 제거 */
+div#main-menu div:nth-last-child(1) {
+	display: none;
+}
+
 #main .menu-wrapper > a {
 	padding: 0.35em 0.5em 0.35em 0.5em;
 	letter-spacing: -0.05em;
