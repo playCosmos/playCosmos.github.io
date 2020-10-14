@@ -21,7 +21,8 @@
 *:focus { outline: none !important; }
 
 html{
-	background: url(./logo/bottombg2.png) no-repeat, linear-gradient(var(--bgColor),var(--bgColor));
+	/*background: url(./logo/bottombg2.png) no-repeat, linear-gradient(var(--bgColor),var(--bgColor));*/
+	background: linear-gradient(var(--bgColor),var(--bgColor));
 	background-position: left bottom;
 	background-attachment: fixed;
 }
@@ -523,6 +524,7 @@ span.a-badge i.fa.fa-star {
 }
 
 /* 스크롤 */
+/*
 #movetotop img {
 	display:none;
 }
@@ -535,7 +537,7 @@ span.a-badge i.fa.fa-star {
 	border-radius: 0;
 	background-size: contain;
 }
-
+*/
 /*************** animation **************/
 @keyframes heartbeat {
 	0% { transform: scale(1); }
