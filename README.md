@@ -10,4 +10,4 @@ Millionair9087@gmail.com ( 잘 안들어감 ㅎㅎ)
 ## Discord
 Million_Air#9087
 
-## [TGD](https://tgd.kr/million_air)`
+## [TGD](https://tgd.kr/million_air)
