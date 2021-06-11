@@ -1,3 +1,15 @@
+/**** Designed by Million_Air in Twitch ****/
+/******* Discord me Million_Air#9087 *******/
+
+/* 모듈 */
+@font-face {
+	font-family: 'NanumSquareRoundEB';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
+		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
+}
+
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
@@ -36,9 +48,12 @@ div#article-content {
 }
 
 html { background: var(--bgcolor); }
-body { background: transparent; }
+body {
+	background: transparent;
+	font-family: 'NanumSquareRoundEB', sans-serif;
+}
 
-/* 크리스마스 이벤트 *//*
+/* 눈 이펙트 *//*
 header { padding-top: 1em; }
 header:before {
 	position: absolute;
@@ -111,17 +126,16 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	height: 0.2em;
 }
 
-/* 메뉴 밑 흰색 제거 */
-#main-menu div:nth-last-child(1) {
-	# display: none;
-}
+/* 메뉴 밑 흰색 제거 (광고였음ㅎㅎ) */
+/*#main-menu div:nth-last-child(1) {
+	/display: none; 
+}*/
 
 #board-info {
 	height: inherit;
 	margin: 0;
 	padding: 0.5em 1em;
 }
-
 #board-info h1 { border: none; }
 #board-info #board-info-bottom { padding-top: 7px; }
 #board-info #board-info-bottom a { color: var(--maincolor); }
@@ -139,7 +153,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transition: 0.2s;
 }
 
-/* 눈 모양 스위치로 변경 */
+/* 눈 모양 아이콘을 스위치 모양으로 변경 */
 button>.fa-eye:before { content: "\f205"; }
 button>.fa-eye-slash:before { content: "\f204"; }
 
@@ -212,6 +226,19 @@ span.a-badge i.fa.fa-info-circle {
 	transition: 0.2s;
 }
 /* 게시글 페이지 끝 */
+
+
+/* 상단으로 이동 */
+/*#movetotop img{display:none}
+#movetotop {
+	display: inline-block;
+	opacity: 1;
+	background: url();
+	width: 120px;
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}*/
 
 
 /******* 애니메이션 *******/
