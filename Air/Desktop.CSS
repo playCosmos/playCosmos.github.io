@@ -39,8 +39,7 @@ html { background: var(--bgcolor); }
 body { background: transparent; }
 
 
-
-/* 크리스마스 이벤트 */
+/* 크리스마스 이벤트 *//*
 header { padding-top: 1em; }
 header:before {
 	position: absolute;
@@ -63,7 +62,7 @@ header:before {
 	0% { background-position-x: 0, right, 0; }
 	100% { background-position-x: 3120px, right, 0; }
 }
-
+*/
 /************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
@@ -150,6 +149,11 @@ button>.fa-eye-slash:before { content: "\f204"; }
 }
 
 #article-list #article-list-category>a.nav-link { background: transparent; }
+
+/* 공지 i 아이콘 색 */
+span.a-badge i.fa.fa-info-circle {
+	color: var(--maincolor);
+}
 
 /* 공지 작성자 가리기 */
 #article-list>.article-list-row.notice>.item>.list-title>.list-writer { display: none; }
