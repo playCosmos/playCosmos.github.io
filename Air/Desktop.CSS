@@ -113,7 +113,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* 메뉴 밑 흰색 제거 */
 #main-menu div:nth-last-child(1) {
-	display: none;
+	# display: none;
 }
 
 #board-info {
