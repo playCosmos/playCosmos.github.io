@@ -194,6 +194,8 @@ span.a-badge i.fa.fa-info-circle {
 #article-list>.article-list-row>.item>.list-title>small.comment-count,
 /* 게시글 로그인한 작성자 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor); }
+/* 게시글 작성 시간 */
+#article-list>.article-list-row>.item>.list-time { Width: 50px; }
 
 #article-list>.article-list-row>.item>.list-title>.list-category { padding: 0 10px; }
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
@@ -202,7 +204,6 @@ span.a-badge i.fa.fa-info-circle {
     white-space: unset;
     width: 13px;
 }
-
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
 
 #article-reply-area > .header h5 { color: var(--maincolor); }
@@ -210,6 +211,7 @@ span.a-badge i.fa.fa-info-circle {
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
 	color: var(--maincolor);
 }
+
 
 /* 게시글 페이지 */
 .pagination>li>a,
@@ -241,6 +243,87 @@ span.a-badge i.fa.fa-info-circle {
 	transition: 0.2s;
 }
 /* 게시글 페이지 끝 */
+
+
+/* 버튼 */
+/*
+.btn {
+	color: #fff !important;
+	background-color: var(--maincolor) !important;
+	border-color: var(--maincolor) !important;
+  border-radius: 0;
+	transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--maincolor) !important;
+	background-color: #fff !important;
+}
+*/
+/* 버튼 끝 */
+/* 버튼, 하단 검색 */
+.btn.square {
+	margin-right: -1px;
+}
+
+.btn,
+.input-group .form-control {
+	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
+	color: var(--btcolor) !important;
+	height: 30px !important;
+	background: transparent !important;
+	transition: 0.2s !important;
+}
+
+.btn:hover,
+.btn:focus,
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+	box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;
+	background: var(--maincolor) !important;
+	color: white !important;
+}
+
+.btn-outline-success {
+	--btcolor: #5cb85c;	
+	height: 34px !important;
+}
+
+.btn-outline-primary {
+	--btcolor: #0275d8;	
+	height: 34px !important;
+}
+
+.btn-default.best { --btcolor: #efc839; }
+.btn-outline-danger { --btcolor: #ff6e6e; }
+.btn-info { --btcolor: #5bc0de; }
+
+.btn-primary,
+.btn-default,
+.input-group .form-control {
+	--btcolor: var(--mainColor);
+}
+
+.input-group .form-control {
+	transition: 0.4s !important;
+}
+
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+	box-shadow: inset 25em 0em 0 0 var(--btcolor) !important;
+}
+
+.input-group .form-control::placeholder {
+	color: var(--btcolor) !important;
+}
+
+.input-group .form-control:hover::placeholder,
+.input-group .form-control:focus::placeholder {
+	color: white !important;
+}
+/* 버튼, 하단 검색 끝 */
 
 
 /* 상단으로 이동 */
