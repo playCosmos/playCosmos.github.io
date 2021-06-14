@@ -298,7 +298,7 @@ span.a-badge i.fa.fa-info-circle {
 
 .btn-default.best { --btcolor: #efc839; }
 .btn-outline-danger { --btcolor: #d9534f; }
-.btn-danger, { --btcolor: #ff6e6e; }
+.btn-danger { --btcolor: #ff6e6e; }
 .btn-info { --btcolor: #5bc0de; }
 
 .btn-primary,
