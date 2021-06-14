@@ -50,7 +50,7 @@ div#article-content {
 html { background: var(--bgcolor); }
 body {
 	background: transparent;
-	font-family: 'NanumSquareRoundEB', sans-serif;
+	/*font-family: 'NanumSquareRoundEB', sans-serif;*/
 }
 
 /* 눈 이펙트 *//*
@@ -126,7 +126,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	height: 0.2em;
 }
 
-/* 메뉴 밑 흰색 제거 (광고였음ㅎㅎ) */
+/* 메뉴 밑 흰색 제거 (지우면 가이드라인 위반) */
 /*#main-menu div:nth-last-child(1) {
 	/display: none; 
 }*/
@@ -144,9 +144,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #article-list #article-option-area { top: 5px; }
 #article-list #article-option-area>#article-option-area-toggle-btn {
 	background: var(--bgcolor);
-	border-radius: 10px;
-	height: 27px;
-	margin: 0 20px 0 0;
+	border-radius: 8px;
+	height: 26px;
+	margin: 0 18px 0 0;
 	padding: 5px 3px 5px 3px;
 	opacity: 1;
 	display: inline-grid;
@@ -158,11 +158,26 @@ button>.fa-eye:before { content: "\f205"; }
 button>.fa-eye-slash:before { content: "\f204"; }
 
 /* 카테고리 */
+
 #article-list #article-list-category {
 	background: transparent;
 	border-top: 2px solid var(--maincolor);
+	border-bottom: 2px solid var(--maincolor);
+}
+#article-list #article-list-category>a {
+	background: transparent !important;
+	padding: 10px 15px;
+	transition: 0.3s;
 }
 
+#article-list #article-list-category > a.active {
+	color: var(--maincolor);
+}
+
+#article-list #article-list-category>a:hover {
+	background: var(--maincolor) !important;
+	color: white !important;
+}
 #article-list #article-list-category>a.nav-link { background: transparent; }
 
 /* 공지 i 아이콘 색 */
