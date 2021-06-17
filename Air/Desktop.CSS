@@ -220,7 +220,7 @@ span.a-badge i.fa.fa-info-circle {
 .pagination>li>span:focus {
 	color: var(--maincolor) !important;
 	background: transparent !important;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 
 .pagination>.active>a,
@@ -230,7 +230,7 @@ span.a-badge i.fa.fa-info-circle {
 	color: white !important;
 	background-color: var(--maincolor) !important;
 	border-color: var(--maincolor) !important;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 
 .pagination>li>a:hover,
@@ -240,7 +240,7 @@ span.a-badge i.fa.fa-info-circle {
 	color: var(--maincolor) !important;
 	background-color: white !important;
 	border-color: var(--maincolor) !important;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 /* 게시글 페이지 끝 */
 
@@ -279,7 +279,7 @@ button.btn.square.btn-default.dropdown-toggle {
 	color: var(--btcolor) !important;
 	height: 30px !important;
 	background: transparent !important;
-	transition: 0.2s !important;
+	transition: 0.3s !important;
 }
 
 
