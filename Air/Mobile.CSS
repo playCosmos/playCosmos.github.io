@@ -52,6 +52,8 @@ header {
     background: var(--maincolor);
 }
 
+#header-top-notice { padding: 8px 5px; }
+
 header>#header-search-bar #header-search-btn,
 header>#header-search-bar #header-close-search-btn,
 header>#header-area>#header-search-link { color: var(--maincolor); }
