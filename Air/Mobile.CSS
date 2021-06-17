@@ -72,6 +72,7 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 nav#nav>#nav-upper>#header-close-bar-link {
 	padding: 0 15px;
+	margin: -3px 0 0 0;
 }
 
 header.nav-up {
