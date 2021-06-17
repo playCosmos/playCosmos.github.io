@@ -360,3 +360,13 @@ small.favo i.fa.fa-heart {
 	85% { transform: scale(0.95); }
 	100% { transform: scale(1); }
 }
+
+span.a-badge i.fa.fa-star {
+	animation: shiningstar 2s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes shiningstar {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
