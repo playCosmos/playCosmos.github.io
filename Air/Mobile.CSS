@@ -64,7 +64,9 @@ header>#header-search-bar #header-search-input {
 	border: 2px solid var(--maincolor);
 	padding: 5px 8px;
 }
-
+header>#header-area>#header-bar-link {
+    padding: 1px 16px 0px;
+}
 header>#header-area>#header-bar-link,
 nav#nav>#nav-upper>#header-close-bar-link {
 	color: var(--maincolor);
@@ -72,7 +74,7 @@ nav#nav>#nav-upper>#header-close-bar-link {
 
 nav#nav>#nav-upper>#header-close-bar-link {
 	padding: 0 15px;
-	margin: -3px 0 0 0;
+	margin: -2px 0 0 0;
 }
 
 header.nav-up {
