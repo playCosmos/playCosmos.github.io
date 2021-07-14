@@ -92,7 +92,7 @@ header #right-search-form>input[type=text] {
 	color: var(--maincolor);
 }
 header #right-search-form>input::placeholder,
-header #right-search-form>#right-search-btn { 
+header #right-search-form>#right-search-' { 
 	color: var(--maincolor) !important;
 	font-weight: bold;
 }
