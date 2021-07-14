@@ -101,7 +101,7 @@ header #right-search-form>#right-search-btn {
 header #header-bar { margin-bottom: 10px; }
 
 /* 헤더 상단 메뉴 */
-header #header-bar>.row { border-top: 4px solid var(--maincolor); }
+header #header-bar>.row { border: 0; border-top: 4px solid var(--maincolor); }
 
 /* 헤더 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
@@ -125,6 +125,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: var(--bgcolor);
 	height: 0.2em;
 }
+#main #main-content>div.frame { border: 0; }
 
 /* 메뉴 밑 흰색 제거 (지우면 가이드라인 위반) */
 /*#main-menu div:nth-last-child(1) {
@@ -158,7 +159,6 @@ button>.fa-eye:before { content: "\f205"; }
 button>.fa-eye-slash:before { content: "\f204"; }
 
 /* 카테고리 */
-
 #article-list #article-list-category {
 	background: transparent;
 	border-top: 2px solid var(--maincolor);
