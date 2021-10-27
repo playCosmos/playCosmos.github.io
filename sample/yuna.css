@@ -223,7 +223,7 @@ button.btn.square.btn-default.dropdown-toggle {
 .input-group .form-control:hover,
 .input-group .form-control:focus {
 	box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;
-	background: var(--maincolor) !important;
+	background: black !important;
 	color: white !important;
 }
 
