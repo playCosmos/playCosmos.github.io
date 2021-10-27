@@ -162,3 +162,106 @@ header #header-bar #header-top-notice strong.notice-badge {
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
 	color: black !important;
 }
+
+/* 게시글 페이지 */
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+	color: black !important;
+	background: transparent !important;
+	transition: 0.3s;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	color: white !important;
+	background-color: black !important;
+	border-color: black !important;
+	transition: 0.3s;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover {
+	color: black !important;
+	background-color: white !important;
+	border-color: black !important;
+	transition: 0.3s;
+}
+/* 게시글 페이지 끝 */
+
+
+/* 버튼 */
+
+/* 버튼, 하단 검색 */
+.btn.square {
+	margin-right: -1px;
+	border-radius: 3px;
+}
+
+button.btn.square.btn-default.dropdown-toggle {
+    border-radius: 3px 0 0 3px;
+}
+
+.btn,
+.input-group .form-control {
+	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
+	color: var(--btcolor) !important;
+	height: 30px !important;
+	background: transparent !important;
+	transition: 0.3s !important;
+}
+
+
+.btn:hover,
+.btn:focus,
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+	box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;
+	background: var(--maincolor) !important;
+	color: white !important;
+}
+
+.btn-outline-success {
+	--btcolor: #5cb85c;	
+	height: 34px !important;
+}
+
+.btn-outline-primary {
+	--btcolor: #0275d8;	
+	height: 34px !important;
+}
+
+.btn-default.best { --btcolor: #efc839; }
+.btn-outline-danger { --btcolor: #d9534f; }
+.btn-danger { --btcolor: #ff6e6e; }
+.btn-info { --btcolor: #5bc0de; }
+
+.btn-primary,
+.btn-default,
+.input-group .form-control {
+	--btcolor: black;
+}
+
+.input-group .form-control {
+	transition: 0.4s !important;
+}
+
+.input-group .form-control:hover,
+.input-group .form-control:focus {
+	box-shadow: inset 25em 0em 0 0 var(--btcolor) !important;
+}
+
+.input-group .form-control::placeholder {
+	color: var(--btcolor) !important;
+}
+
+.input-group .form-control:hover::placeholder,
+.input-group .form-control:focus::placeholder {
+	color: white !important;
+}
