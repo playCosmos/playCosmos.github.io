@@ -53,7 +53,7 @@ body {
 
 #board-info-profile-img { width:1000px; height:1000px; }
 
- #board-info #board-info-profile-img {
+#board-info #board-info-profile-img {
 	width: 75px ;
 	border-radius: 100px;
 	position: absolute;
