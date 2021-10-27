@@ -96,6 +96,9 @@ header #right-search-form>#right-search-' {
 	color: var(--maincolor) !important;
 	font-weight: bold;
 }
+.fa-search:before {
+	color: var(--maincolor);
+}
 
 /* 헤더 하단 여백 */
 header #header-bar { margin-bottom: 10px; }
