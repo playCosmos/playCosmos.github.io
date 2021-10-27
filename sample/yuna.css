@@ -142,7 +142,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 /* 닉네임 영역 프로필 이미지쪽으로 당기기 */
-#border-info h1 {
+#board-info h1 {
     /*
         흰색 영역의 왼쪽 끝에서 몇 px만큼 떨어진 위치에 둘 것인지 입력
         기본값 110px, 프로필 이미지 영역 만큼만 여백을 두고 싶은 경우 90px 입력
