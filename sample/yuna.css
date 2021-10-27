@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	letter-spacing: -0.05em !important;
+	background: transparent;
+	font-family: 'Cafe24SsurroundAir', sans-serif;
+}
+	
+#board-info h1>a {
+	color: #030003;
+	font-weight: bolder;
+}
+
+#board-info #viewers-area {
+	color: #000000;
+}
+
+#board-info #viewers-area #viewers:before {
+	content: "존버하는 ";
+	color: #000000;
+	cursor: text;
+	font-weight:normal;
+}
+
+#board-info #viewers-area #viewers:after {
+	content: "명의 트수 ";
+	color: #000000;
+	cursor: text;
+	font-weight:normal;
+}
+
+#board-info-bottom {
+	position: absolute;
+	top: 45px; /* 하늘색 부분 여기 조절 */
+	left: 20px;
+}
+
+#board-info {
+    overflow: visible;
+}
+
+#board-info #board-info-profile-img{
+    float: left !important;
+    margin-right: 5px;
+    border-radius: 100px;
+    border: solid 1px #000000;
+}
+
+#board-info-profile-img { width:1000px; height:1000px; }
+
+ #board-info #board-info-profile-img {
+	width: 75px ;
+	border-radius: 100px;
+	position: absolute;
+	top: 2px ;
+	z-index: 1;
+}
+
+#board-info h1 {
+	margin-left: 110px;
+}
+
+#board-info #board-info-bottom {
+	margin-left: 95px;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+#board-info h1 { border-bottom:0; }
+
+header .row>div:nth-child(1)>a {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: url(https://cdn.discordapp.com/attachments/902187175939018766/902211164111519816/0080555d97634ed6.png) no-repeat;
+	background-size: auto 51px;
+}
+
+header .row>div:nth-child(1)>a>img {
+	display: none;
+}
+
+header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
+    border-radius: 15px;
+}
+
+#main .menu-wrapper>.header {
+    border-radius: 15px 15px 0 0;
+}
+
+#board-info #board-info-profile-img{
+   margin-left: 10px;
+}
+
+.fa.fa-trophy, #board-info #score-area {color: #000000}
+
+/* 검색 상자 테두리 색상 변경 */
+header #right-search-form>input[type=text] {
+    border-color: #000;
+}
+
+/* 검색 버튼 아이콘 색상 변경 */
+header #right-search-form>#right-search-btn {
+    color: #000;
+}
+
+/* 상단바 상단 테두리 색상 변경 */
+header #header-bar>.row {
+    border-top: 5px solid #000;
+}
+
+/* 광고 배지 색 변경 */
+header #header-bar #header-top-notice strong.notice-badge {
+    background-color: #000;
+}
+
+/* 트게더 전체 메뉴 타이틀 배경 색상 변경 */
+#main .menu-wrapper>.header {
+    background-color: #000;
+}
+/* 트게더 전체 메뉴 인덱스 색상 변경 */
+#main .menu-wrapper>a>em {
+    color: black;
+}
+
+/* 카테고리 리스트 상단 테두리 색상 변경 */
+#article-list #article-list-category {
+	background: transparent; /* 카테고리 색상 투명으로 설정 */
+    border-color: #000;
+}
+
+/* 카테고리 리스트 항목 배경 색상 투명 */
+#article-list #article-list-category>a {
+	background: transparent;	
+}
+
+/* 닉네임 영역 프로필 이미지쪽으로 당기기 */
+#border-info h1 {
+    /*
+        흰색 영역의 왼쪽 끝에서 몇 px만큼 떨어진 위치에 둘 것인지 입력
+        기본값 110px, 프로필 이미지 영역 만큼만 여백을 두고 싶은 경우 90px 입력
+    */
+    margin-left: 95px; /* 하늘색 부분 여기 조절 */
+}
+
+/* 게시글 배지 색상 변경 */
+#article-list>.article-list-row>.item>.list-header>span {
+	background-color: black;
+}
+/* 게시글 댓글 갯수 색상 변경 */
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+	color: black;
+}
+/* 게시글 작성자 색상 변경 */
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+	color: black !important;
+}
