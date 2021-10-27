@@ -211,10 +211,26 @@ span.a-badge i.fa.fa-info-circle {
 
 #article-reply-area > .header h5 { color: var(--maincolor); }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a  {
 	color: var(--maincolor);
 }
 
+/* 게시글, 댓글 쓰기 상단바 */
+.fr-toolbar { border-top: 5px solid var(--maincolor); }
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn { color: var(--maincolor); }
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top: 4px solid var(--maincolor);
+}
+
+.fr-popup,
+.fr-toolbar.fr-top {
+	border-top: 2px solid var(--maincolor);
+}
 
 /* 게시글 페이지 */
 .pagination>li>a,
@@ -247,24 +263,6 @@ span.a-badge i.fa.fa-info-circle {
 }
 /* 게시글 페이지 끝 */
 
-
-/* 버튼 */
-/*
-.btn {
-	color: #fff !important;
-	background-color: var(--maincolor) !important;
-	border-color: var(--maincolor) !important;
-  border-radius: 0;
-	transition: 0.2s;
-}
-
-.btn:hover,
-.btn:focus {
-	color: var(--maincolor) !important;
-	background-color: #fff !important;
-}
-*/
-/* 버튼 끝 */
 /* 버튼, 하단 검색 */
 .btn.square {
 	margin-right: -1px;
@@ -284,7 +282,6 @@ button.btn.square.btn-default.dropdown-toggle {
 	background: transparent !important;
 	transition: 0.3s !important;
 }
-
 
 .btn:hover,
 .btn:focus,
@@ -350,7 +347,6 @@ button.btn.square.btn-default.dropdown-toggle {
 
 
 /******* 애니메이션 *******/
-
 small.favo i.fa.fa-heart {
 	animation: heartbeat 1s infinite;
 }
