@@ -200,7 +200,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 버튼, 하단 검색 */
 .btn.square {
 	margin-right: -1px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 button.btn.square.btn-default.dropdown-toggle {
