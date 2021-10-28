@@ -148,6 +148,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	display: none; 
 }*/
 
+#main #main-content>div.frame {	border: none; }
+
 #board-info {
 	height: inherit;
 	margin: 0;
