@@ -88,6 +88,7 @@ header .row>div:nth-child(1)>a>img {
 /* 헤더 검색창 */
 header #right-search-form>input[type=text] {
 	border: 3px solid var(--maincolor);
+	border-radius: 5px;
 	background: transparent;
 	color: var(--maincolor);
 }
@@ -199,7 +200,7 @@ span.a-badge i.fa.fa-info-circle {
 
 #article-list>.article-list-row>.item>.list-title>.list-category { padding: 0 10px; }
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
-    color: var(--maincolor) !important;
+    /* color: var(--maincolor) !important; */
     text-overflow: clip;
     white-space: unset;
     width: 13px;
