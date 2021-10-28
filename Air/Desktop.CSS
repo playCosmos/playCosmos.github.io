@@ -133,13 +133,17 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper .spacer {
 	background: var(--bgcolor);
 	height: 0.2em;
-	border: 2px solid var(--maincolor) 0;
 }
-#main #main-content>div.frame { border: 0; }
+#main .menu-wrapper .spacer,
+#main #main-content>div.frame { 
+	border: 2px solid var(--maincolor);
+	border-top: none;
+	border-bottom: none;
+}
 
 /* 메뉴 밑 흰색 제거 (지우면 가이드라인 위반) */
 /*#main-menu div:nth-last-child(1) {
-	/display: none; 
+	display: none; 
 }*/
 
 #board-info {
