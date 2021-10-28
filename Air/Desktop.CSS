@@ -134,8 +134,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: var(--bgcolor);
 	height: 0.2em;
 }
-#main .menu-wrapper .spacer,
-#main #main-content>div.frame { 
+#main .menu-wrapper .spacer { 
 	border: 2px solid var(--maincolor);
 	border-top: none;
 	border-bottom: none;
