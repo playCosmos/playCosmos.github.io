@@ -1,7 +1,7 @@
 /**** Designed by Million_Air in Twitch ****/
 /******* Discord me Million_Air#9087 *******/
 
-/* 모듈 */
+/*  */
 @font-face {
 	font-family: 'NanumSquareRoundEB';
 	font-style: normal;
@@ -92,12 +92,9 @@ header #right-search-form>input[type=text] {
 	color: var(--maincolor);
 }
 header #right-search-form>input::placeholder,
-header #right-search-form>#right-search-' { 
+header #right-search-form>#right-search-btn { 
 	color: var(--maincolor) !important;
 	font-weight: bold;
-}
-.fa-search:before {
-	color: var(--maincolor);
 }
 
 /* 헤더 하단 여백 */
