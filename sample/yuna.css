@@ -163,6 +163,37 @@ header #header-bar #header-top-notice strong.notice-badge {
 	color: black !important;
 }
 
+#article-content-wrapper>.header { border-top: 2px solid black; }
+
+#article-reply-area > .header h5 { color: var(--maincolor); }
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a  {
+	color: black;
+}
+
+a[href="#lastc"] { color: black; }
+
+/* 게시글, 댓글 쓰기 상단바 */
+.fr-toolbar { border-top: 5px solid black; }
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn { color: black; }
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top: 4px solid black;
+}
+
+.fr-popup,
+.fr-toolbar.fr-top {
+	border-top: 2px solid black;
+}
+
+/* 모바일로 전환 사이즈 조정 */
+a#switch-platform-link { font-size: 24px; }
+
+
 /* 게시글 페이지 */
 .pagination>li>a,
 .pagination>li>span,
@@ -170,7 +201,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 .pagination>li>span:focus {
 	color: black !important;
 	background: transparent !important;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 .pagination>.active>a,
@@ -180,7 +211,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 	color: white !important;
 	background-color: black !important;
 	border-color: black !important;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 .pagination>li>a:hover,
@@ -190,17 +221,15 @@ header #header-bar #header-top-notice strong.notice-badge {
 	color: black !important;
 	background-color: white !important;
 	border-color: black !important;
-	transition: 0.3s;
+	transition: 0.2s;
 }
 /* 게시글 페이지 끝 */
 
 
-/* 버튼 */
-
 /* 버튼, 하단 검색 */
 .btn.square {
 	margin-right: -1px;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 button.btn.square.btn-default.dropdown-toggle {
@@ -208,35 +237,32 @@ button.btn.square.btn-default.dropdown-toggle {
 }
 
 .btn,
-.input-group .form-control {
+select.form-control,
+input.form-control {
 	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
 	border-color: var(--btcolor) !important;
 	color: var(--btcolor) !important;
-	height: 30px !important;
+	padding: 5px 12px;
+	height: 28px !important;
 	background: transparent !important;
-	transition: 0.3s !important;
+	transition: 0.2s !important;
 }
 
+.vote-btn { height: 32px !important; } 
 
 .btn:hover,
 .btn:focus,
-.input-group .form-control:hover,
-.input-group .form-control:focus {
-	box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;
-	background: black !important;
+select.form-control:hover,
+select.form-control:focus,
+input.form-control:hover,
+input.form-control:focus {
+	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
+	background: var(--btcolor) !important;
 	color: white !important;
 }
 
-.btn-outline-success {
-	--btcolor: #5cb85c;	
-	height: 34px !important;
-}
-
-.btn-outline-primary {
-	--btcolor: #0275d8;	
-	height: 34px !important;
-}
-
+.btn[data-type="up"] { --btcolor: #5cb85c; }
+.btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
 .btn-outline-danger { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
@@ -244,24 +270,35 @@ button.btn.square.btn-default.dropdown-toggle {
 
 .btn-primary,
 .btn-default,
-.input-group .form-control {
+input.form-control {
 	--btcolor: black;
 }
 
-.input-group .form-control {
-	transition: 0.4s !important;
+select.form-control,
+input#title,
+.input-group-btn>button#addPollBtn {
+    --btcolor: black;
+    height: 30px !important;
+    transition: 0.2s;
 }
 
-.input-group .form-control:hover,
-.input-group .form-control:focus {
-	box-shadow: inset 25em 0em 0 0 var(--btcolor) !important;
+div#title_color>input { height: 30px !important; }
+
+input.form-control {
+	transition: 0.2s !important;
 }
 
-.input-group .form-control::placeholder {
+input.form-control:hover,
+input.form-control:focus {
+	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
+}
+
+input.form-control::placeholder {
 	color: var(--btcolor) !important;
 }
 
-.input-group .form-control:hover::placeholder,
-.input-group .form-control:focus::placeholder {
+input.form-control:hover::placeholder,
+input.form-control:focus::placeholder {
 	color: white !important;
 }
+/* 버튼, 하단 검색 끝 */
