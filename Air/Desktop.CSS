@@ -148,14 +148,23 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	display: none; 
 }*/
 
-#main #main-content>div.frame {	border: none; }
+#main #main-content>div.frame {	
+	border: none;
+	border-radius: 5px;
+}
 
 #board-info {
 	height: inherit;
 	margin: 0;
 	padding: 0.5em 1em;
 }
-#board-info h1 { border: none; }
+#board-info h1 {
+	border: none;
+	margin-top: 3px;
+}
+
+h3 { margin-bottom: 0.5em; }
+
 #board-info #board-info-bottom { padding-top: 7px; }
 #board-info #board-info-bottom a { color: var(--maincolor); }
 
@@ -249,8 +258,6 @@ span.a-badge i.fa.fa-info-circle {
 	border-top: 2px solid var(--maincolor);
 }
 
-/* 게시글 작성 간격 조정 */
-h3 { margin-bottom: 0.5em; }
 
 
 
