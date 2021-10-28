@@ -237,6 +237,7 @@ span.a-badge i.fa.fa-info-circle {
     white-space: unset;
     width: 13px;
 }
+/* 게시글 내부 상단 테두리 */
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
 
 #article-reply-area > .header h5 { color: var(--maincolor); }
