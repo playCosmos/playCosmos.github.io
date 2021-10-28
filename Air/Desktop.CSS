@@ -127,20 +127,20 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	background: var(--maincolor);
 	border-radius: 5px 5px 0 0;
 }
-#main .menu-wrapper>a {	border: 2px solid var(--maincolor) 0; }
+#main .menu-wrapper>a,
+#main .menu-wrapper .spacer { 
+	border: 2px solid var(--maincolor);
+	border-top: none;
+	border-bottom: none;
+}
 #main .menu-wrapper>a:last-child {
-    border-bottom: 2px solid var(--maincolor);
-    border-radius: 0 0 5px 5px;
+	border-bottom: 2px solid var(--maincolor);
+	border-radius: 0 0 5px 5px;
 }
 #main .menu-wrapper>a>em { color: var(--maincolor); }
 #main .menu-wrapper .spacer {
 	background: var(--bgcolor);
 	height: 0.2em;
-}
-#main .menu-wrapper .spacer { 
-	border: 2px solid var(--maincolor);
-	border-top: none;
-	border-bottom: none;
 }
 
 /* 메뉴 밑 흰색 제거 (지우면 가이드라인 위반) */
