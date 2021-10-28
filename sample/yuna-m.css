@@ -1,0 +1,264 @@
+/**** Designed by Million_Air in Twitch ****/
+/******* Discord me Million_Air#9087 *******/
+
+/* 폰트 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 설정 */
+:root {
+	--maincolor: black;	/* 메인색 */
+	--bgcolor: white;	/* 배경색 */
+}
+
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
+/* 링크 기본 색상 */
+a { color: var(--maincolor); }
+a:hover,
+a:focus { color: var(--maincolor) !important; }
+
+/* fontawesome 사용 */
+a.nav-link,
+span.category,
+select.form-control,
+div#article-content {
+	font-family: FontAwesome;
+}
+
+html { background: var(--bgcolor); }
+body {
+	background: transparent;
+	/*font-family: 'NanumSquareRoundEB', sans-serif;*/
+}
+
+/************ 헤더 ************/
+/* 트게더 로고 */
+header>#header-area>a>h1 {
+	background: url(https://cdn.discordapp.com/attachments/902187175939018766/902211164111519816/0080555d97634ed6.png) no-repeat;
+	background-size: 90px 32px;
+}
+header>#header-area>#header-search-link {
+	color: var(--maincolor);
+}
+
+nav#nav>.nav-header {
+	background: var(--maincolor);
+}
+
+#board-info #viewers-area {
+	color: black;
+}
+#board-info #viewers-area #viewers:before {
+	content: "존버하는 ";
+	color: #000000;
+	cursor: text;
+	font-weight:normal;
+}
+
+#board-info #viewers-area #viewers:after {
+	content: "명의 트수 ";
+	color: #000000;
+	cursor: text;
+	font-weight:normal;
+}
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area { top: 5px; }
+#article-list #article-option-area>#article-option-area-toggle-btn {
+	background: var(--bgcolor);
+	border-radius: 8px;
+	height: 26px;
+	margin: 0 18px 0 0;
+	padding: 5px 3px 5px 3px;
+	opacity: 1;
+	display: inline-grid;
+	transition: 0.2s;
+}
+
+/* 카테고리 */
+#article-list #article-list-category {
+	background: transparent;
+	border-top: 2px solid var(--maincolor);
+	border-bottom: 2px solid var(--maincolor);
+}
+#article-list #article-list-category>a {
+	background: transparent !important;
+	padding: 10px 15px;
+	transition: 0.2s;
+}
+
+#article-list #article-list-category > a.active {
+	color: var(--maincolor);
+}
+
+#article-list #article-list-category>a:hover {
+	background: var(--maincolor) !important;
+	color: white !important;
+}
+#article-list #article-list-category>a.nav-link { background: transparent; }
+
+
+/* 공지 i 아이콘 색 */
+span.a-badge i.fa.fa-info-circle {
+	color: var(--maincolor);
+}
+
+/* 공지 작성자 가리기 */
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer { display: none; }
+
+/* 게시글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span { background-color: var(--maincolor) }
+/* 게시글 댓글 수 */
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+/* 게시글 로그인한 작성자 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor) !important; }
+/* 게시글 작성 시간 */
+#article-list>.article-list-row>.item>.list-time { Width: 50px; }
+
+#article-list>.article-list-row>.item>.list-title>.list-category { padding: 0 10px; }
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+    /* color: var(--maincolor) !important; */
+    text-overflow: clip;
+    white-space: unset;
+    width: 13px;
+}
+#article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
+
+#article-reply-area > .header h5 { color: var(--maincolor); }
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a  {
+	color: var(--maincolor);
+}
+
+/* 게시글, 댓글 쓰기 상단바 */
+.fr-toolbar { border-top: 5px solid var(--maincolor); }
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn { color: var(--maincolor); }
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top: 4px solid var(--maincolor);
+}
+
+.fr-popup,
+.fr-toolbar.fr-top {
+	border-top: 2px solid var(--maincolor);
+}
+
+/* 게시글 페이지 */
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+	color: var(--maincolor) !important;
+	background: transparent !important;
+	transition: 0.2s;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	color: white !important;
+	background-color: var(--maincolor) !important;
+	border-color: var(--maincolor) !important;
+	transition: 0.2s;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover {
+	color: var(--maincolor) !important;
+	background-color: white !important;
+	border-color: var(--maincolor) !important;
+	transition: 0.2s;
+}
+/* 게시글 페이지 끝 */
+
+
+
+/* 버튼, 하단 검색 */
+.btn.square {
+	margin-right: -1px;
+	border-radius: 3px;
+}
+
+button.btn.square.btn-default.dropdown-toggle {
+    border-radius: 3px 0 0 3px;
+}
+
+.btn,
+select.form-control,
+input.form-control {
+	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
+	color: var(--btcolor) !important;
+	padding: 5px 12px;
+	height: 28px !important;
+	background: transparent !important;
+	transition: 0.2s !important;
+}
+
+.vote-btn { height: 32px !important; } 
+
+.btn:hover,
+.btn:focus,
+select.form-control:hover,
+select.form-control:focus,
+input.form-control:hover,
+input.form-control:focus {
+	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
+	background: var(--btcolor) !important;
+	color: white !important;
+}
+
+.btn[data-type="up"] { --btcolor: #5cb85c; }
+.btn[data-type="down"] { --btcolor: #0275d8; }
+.btn-default.best { --btcolor: #efc839; }
+.btn-outline-danger { --btcolor: #d9534f; }
+.btn-danger { --btcolor: #ff6e6e; }
+.btn-info { --btcolor: #5bc0de; }
+
+.btn-primary,
+.btn-default,
+input.form-control {
+	--btcolor: var(--maincolor);
+}
+
+select.form-control,
+input#title,
+.input-group-btn>button#addPollBtn {
+    --btcolor: var(--maincolor);
+    height: 30px !important;
+    transition: 0.2s;
+}
+
+div#title_color>input { height: 30px !important; }
+
+input.form-control {
+	transition: 0.2s !important;
+}
+
+input.form-control::placeholder {
+	color: var(--btcolor) !important;
+}
+
+input.form-control:hover::placeholder,
+input.form-control:focus::placeholder {
+	color: white !important;
+}
+/* 버튼, 하단 검색 끝 */
+
+
+/* 모바일로 전환 사이즈 조정 */
+a#switch-platform-link { font-size: 24px; }
+
