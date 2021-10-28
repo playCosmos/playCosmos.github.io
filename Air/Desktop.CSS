@@ -159,6 +159,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 button>.fa-eye:before { content: "\f205"; }
 button>.fa-eye-slash:before { content: "\f204"; }
 
+
 /* 카테고리 */
 #article-list #article-list-category {
 	background: transparent;
@@ -180,6 +181,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	color: white !important;
 }
 #article-list #article-list-category>a.nav-link { background: transparent; }
+
 
 /* 공지 i 아이콘 색 */
 span.a-badge i.fa.fa-info-circle {
@@ -230,6 +232,11 @@ span.a-badge i.fa.fa-info-circle {
 	border-top: 2px solid var(--maincolor);
 }
 
+/* 게시글 작성 간격 조정 */
+h3 { margin-bottom: 0.5em; }
+
+
+
 /* 게시글 페이지 */
 .pagination>li>a,
 .pagination>li>span,
@@ -261,6 +268,8 @@ span.a-badge i.fa.fa-info-circle {
 }
 /* 게시글 페이지 끝 */
 
+
+
 /* 버튼, 하단 검색 */
 .btn.square {
 	margin-right: -1px;
@@ -272,28 +281,29 @@ button.btn.square.btn-default.dropdown-toggle {
 }
 
 .btn,
-#article-list #boardSearchForm .form-control {
+select.form-control,
+input.form-control {
 	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
 	border-color: var(--btcolor) !important;
 	color: var(--btcolor) !important;
 	padding: 4px 12px;
-	height: 30px !important;
+	height: 28px !important;
 	background: transparent !important;
 	transition: 0.2s !important;
 }
 
+.vote-btn { height: 32px !important; } 
+
 .btn:hover,
 .btn:focus,
-#article-list #boardSearchForm .form-control:hover,
-#article-list #boardSearchForm .form-control:focus {
+select.form-control:hover,
+select.form-control:focus,
+input.form-control:hover,
+input.form-control:focus {
 	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
 	background: var(--btcolor) !important;
 	color: white !important;
 }
-
-.vote-btn { /* 투표 버튼 */
-	height: 32px !important;
- } 
 
 .btn[data-type="up"] { --btcolor: #5cb85c; }
 .btn[data-type="down"] { --btcolor: #0275d8; }
@@ -304,28 +314,44 @@ button.btn.square.btn-default.dropdown-toggle {
 
 .btn-primary,
 .btn-default,
-#article-list #boardSearchForm .form-control {
+input.form-control {
 	--btcolor: var(--maincolor);
 }
 
-#article-list #boardSearchForm .form-control {
+select.form-control,
+input#title,
+.input-group-btn>button#addPollBtn {
+    --btcolor: var(--maincolor);
+    height: 30px !important;
+    transition: 0.2s;
+}
+
+div#title_color>input { height: 30px !important; }
+
+input.form-control {
 	transition: 0.2s !important;
 }
 
-#article-list #boardSearchForm .form-control:hover,
-#article-list #boardSearchForm .form-control:focus {
+input.form-control:hover,
+input.form-control:focus {
 	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
 }
 
-#article-list #boardSearchForm .form-control::placeholder {
+input.form-control::placeholder {
 	color: var(--btcolor) !important;
 }
 
-#article-list #boardSearchForm .form-control:hover::placeholder,
-#article-list #boardSearchForm .form-control:focus::placeholder {
+input.form-control:hover::placeholder,
+input.form-control:focus::placeholder {
 	color: white !important;
 }
 /* 버튼, 하단 검색 끝 */
+
+
+
+/* 모바일로 전환 사이즈 조정 */
+a#switch-platform-link { font-size: 24px; }
+
 
 
 /* 상단으로 이동 */
