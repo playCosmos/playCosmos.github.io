@@ -151,6 +151,10 @@ nav#nav>.nav-menu-area>.right {
 #board-info>a.board-right-menu[href="/million_air/schedule"] {
 	display: none;
 }
+#board-info>a.board-right-menu,
+#board-info>div.dropdown>a {
+	color: var(--maincolor) !important;
+}
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
