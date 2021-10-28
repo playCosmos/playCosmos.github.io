@@ -105,7 +105,11 @@ header #right-search-form>#right-search-btn {
 header #header-bar { margin-bottom: 10px; }
 
 /* 헤더 상단 메뉴 */
-header #header-bar>.row { border: 0; border-top: 4px solid var(--maincolor); }
+header #header-bar>.row {
+    border: none;
+    border-top: 4px solid var(--maincolor);
+    border-radius: 0 0 5px 5px;
+}
 
 /* 헤더 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor); }
