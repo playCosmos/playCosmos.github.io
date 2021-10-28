@@ -32,7 +32,7 @@ div#article-content {
 	width: calc(100% - 4px);
 }
 
-html { background: var(--bgcolor);}
+html { background: transparent; }
 body {
 	background: transparent;
 	padding-top: 55px;
@@ -353,6 +353,7 @@ input.form-control:focus::placeholder {
 /* 버튼, 하단 검색 끝 */
 
 footer {
+	background: var(--bgcolor);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
