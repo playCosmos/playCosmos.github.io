@@ -292,6 +292,10 @@ input.form-control {
 	transition: 0.2s !important;
 }
 
+.btn[tabindex="-1"], .btn[type="submit"] {
+    padding: 4px 12px !important;
+}
+
 .vote-btn { height: 32px !important; } 
 
 .btn:hover,
