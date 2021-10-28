@@ -95,7 +95,7 @@ header #right-search-form>input[type=text] {
 header #right-search-form>input::placeholder,
 header #right-search-form>#right-search-btn { 
 	color: var(--maincolor) !important;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 /* 헤더 하단 여백 */
@@ -272,7 +272,7 @@ button.btn.square.btn-default.dropdown-toggle {
 }
 
 .btn,
-.input-group .form-control {
+#article-list #boardSearchForm .form-control {
 	box-shadow: inset 0 0 0 0 var(--btcolor) !important;
 	border-color: var(--btcolor) !important;
 	color: var(--btcolor) !important;
@@ -283,23 +283,20 @@ button.btn.square.btn-default.dropdown-toggle {
 
 .btn:hover,
 .btn:focus,
-.input-group .form-control:hover,
-.input-group .form-control:focus {
+#article-list #boardSearchForm .form-control:hover,
+#article-list #boardSearchForm .form-control:focus {
 	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
 	background: var(--btcolor) !important;
 	color: white !important;
 }
 
-.btn-outline-success {
-	--btcolor: #5cb85c;	
-	height: 34px !important;
-}
+.vote-btn { /* 투표 버튼 */
+	height: 32px !important;
+	padding: 4px 12px;
+ } 
 
-.btn-outline-primary {
-	--btcolor: #0275d8;	
-	height: 34px !important;
-}
-
+.btn[data-type="up"] { --btcolor: #5cb85c; }
+.btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
 .btn-outline-danger { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
@@ -307,25 +304,25 @@ button.btn.square.btn-default.dropdown-toggle {
 
 .btn-primary,
 .btn-default,
-.input-group .form-control {
+#article-list #boardSearchForm .form-control {
 	--btcolor: var(--maincolor);
 }
 
-.input-group .form-control {
+#article-list #boardSearchForm .form-control {
 	transition: 0.2s !important;
 }
 
-.input-group .form-control:hover,
-.input-group .form-control:focus {
+#article-list #boardSearchForm .form-control:hover,
+#article-list #boardSearchForm .form-control:focus {
 	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
 }
 
-.input-group .form-control::placeholder {
+#article-list #boardSearchForm .form-control::placeholder {
 	color: var(--btcolor) !important;
 }
 
-.input-group .form-control:hover::placeholder,
-.input-group .form-control:focus::placeholder {
+#article-list #boardSearchForm .form-control:hover::placeholder,
+#article-list #boardSearchForm .form-control:focus::placeholder {
 	color: white !important;
 }
 /* 버튼, 하단 검색 끝 */
@@ -367,10 +364,3 @@ span.a-badge i.fa.fa-star {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
-
-i.fa.fa-search:hover,
-i.fa.fa-search:focus {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
