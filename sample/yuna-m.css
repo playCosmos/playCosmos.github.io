@@ -62,8 +62,8 @@ nav#nav>.nav-header {
 	background: var(--maincolor);
 }
 
-#board-info #viewers-area {
-	color: black;
+#board-info #viewers-area, #board-info #score-area {
+	color: var(--maincolor);
 }
 #board-info #viewers-area #viewers:before {
 	content: "존버하는 ";
