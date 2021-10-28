@@ -354,8 +354,8 @@ input.form-control:focus::placeholder {
 
 footer {
 	background: var(--bgcolor);
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;
+	bottom: 0;*/
 	width: 100%;
 	padding: 16px 0;
 }
