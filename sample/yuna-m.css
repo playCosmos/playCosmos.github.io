@@ -34,7 +34,7 @@ div#article-content {
 html { background: var(--bgcolor); }
 body {
 	background: transparent;
-	/*font-family: 'NanumSquareRoundEB', sans-serif;*/
+	font-family: 'Cafe24SsurroundAir', sans-serif;
 }
 
 /************ 헤더 ************/
@@ -42,7 +42,18 @@ body {
 header>#header-area>a>h1 {
 	background: url(https://cdn.discordapp.com/attachments/902187175939018766/902211164111519816/0080555d97634ed6.png) no-repeat;
 	background-size: 90px 32px;
+	margin-top: 2px;
 }
+header {
+    width: 100%;
+    border-bottom: 4px solid var(--maincolor);
+}
+	
+/* 광고 배지 색 변경 */
+#header-top-notice strong.notice-badge {
+    background: var(--maincolor);
+}
+
 header>#header-area>#header-search-link {
 	color: var(--maincolor);
 }
