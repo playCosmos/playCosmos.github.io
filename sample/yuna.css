@@ -83,6 +83,10 @@ header .row>div:nth-child(1)>a {
 	background-size: auto 51px;
 }
 
+#main .menu-wrapper .spacer {
+    background: transparent;
+}
+
 header .row>div:nth-child(1)>a>img {
 	display: none;
 }
