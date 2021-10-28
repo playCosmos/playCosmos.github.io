@@ -17,12 +17,15 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
 	:root {
 	--maincolor: #31405a;	/* 메인색 */
 	--subcolor: #cad3e2;	/* 서브색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
 	}
+	
+	/* 모바일로 전환 사이즈 조정 */
+	a#switch-platform-link { font-size: 24px; }
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -363,10 +366,6 @@ input.form-control:focus::placeholder {
 }
 /* 버튼, 하단 검색 끝 */
 
-
-
-/* 모바일로 전환 사이즈 조정 */
-a#switch-platform-link { font-size: 24px; }
 
 
 
