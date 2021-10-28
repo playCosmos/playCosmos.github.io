@@ -352,6 +352,12 @@ input.form-control:focus::placeholder {
 }
 /* 버튼, 하단 검색 끝 */
 
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 16px 0;
+}
 
 /* 상단으로 이동 */
 /*#movetotop img{display:none}
