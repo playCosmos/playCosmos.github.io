@@ -26,16 +26,14 @@ div#article-content {
 
 /* 알림 */
 .alert {
-	margin-left: 3px !important;
-	margin-top: 5px !important;
-	margin-bottom: 5px !important;
-	width: calc(100% - 4px);
+	margin: 0 5px 5px 5px !important;
+	width: calc(100% - 10px);
 }
 
 html { background: transparent; }
 body {
 	background: transparent;
-	padding-top: 55px;
+	padding-top: 60px;
 }
 
 /* 헤더 */
