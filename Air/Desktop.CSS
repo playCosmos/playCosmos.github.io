@@ -31,8 +31,11 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-/* 링크 기본 색상 */
-a { color: var(--maincolor); }
+/* 링크 기본 */
+a {
+	color: var(--maincolor);
+	transition: all 0.2s ease 0s;
+}
 a:hover,
 a:focus { color: var(--maincolor) !important; }
 
@@ -225,7 +228,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	-webkit-transition: 0.2s;
 }
 
-#article-list #article-list-category > a.active { color: var(--maincolor); }
+#article-list #article-list-category > a.active {
+	color: var(--maincolor);
+}
 
 #article-list #article-list-category>a:hover {
 	background: var(--maincolor) !important;
@@ -235,7 +240,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 
 
 /* 공지 i 아이콘 색 */
-span.a-badge i.fa.fa-info-circle { color: var(--maincolor); }
+span.a-badge i.fa.fa-info-circle {
+	color: var(--maincolor);
+}
 
 /* 공지 작성자 가리기 */
 #article-list>.article-list-row.notice>.item>.list-title>.list-writer { display: none; }
@@ -256,7 +263,6 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor); }
     white-space: unset;
     width: 13px;
 }
-
 /* 게시글 내부 상단 테두리 */
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor); }
 
@@ -282,6 +288,7 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor); }
 .fr-toolbar.fr-top {
 	border-top: 2px solid var(--maincolor);
 }
+
 
 
 
@@ -343,8 +350,9 @@ input.form-control {
 	transition: 0.2s !important;
 }
 
-.btn[tabindex="-1"],
-.btn[type="submit"] { padding: 4px 12px !important; }
+.btn[tabindex="-1"], .btn[type="submit"] {
+    padding: 4px 12px !important;
+}
 
 .vote-btn { height: 32px !important; } 
 
@@ -375,9 +383,9 @@ input.form-control {
 select.form-control,
 input#title,
 .input-group-btn>button#addPollBtn {
-	--btcolor: var(--maincolor);
-	height: 30px !important;
-	transition: 0.2s;
+    --btcolor: var(--maincolor);
+    height: 30px !important;
+    transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
 
