@@ -8,17 +8,17 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
-@media (max-width: 900px) { :root { --width: 876px; }}
-@media (max-width: 900px) { :root { --width: 776px; }}
-@media (max-width: 800px) { :root { --width: 676px; }}
-@media (max-width: 700px) { :root { --width: 576px; }}
-@media (max-width: 600px) { :root { --width: 476px; }}
-@media (max-width: 500px) { :root { --width: 376px; }}
-@media (max-width: 464px) { :root { --width: 340px; }}
-@media (max-width: 448px) { :root { --width: 324px; }}
-@media (max-width: 432px) { :root { --width: 308px; }}
-@media (max-width: 416px) { :root { --width: 292px; }}
-@media (max-width: 400px) { :root { --width: 276px; }}
+@media (max-width: 900px) { :root { --width: 874px; }}
+@media (max-width: 900px) { :root { --width: 774px; }}
+@media (max-width: 800px) { :root { --width: 674px; }}
+@media (max-width: 700px) { :root { --width: 574px; }}
+@media (max-width: 600px) { :root { --width: 474px; }}
+@media (max-width: 500px) { :root { --width: 374px; }}
+@media (max-width: 464px) { :root { --width: 338px; }}
+@media (max-width: 448px) { :root { --width: 322px; }}
+@media (max-width: 432px) { :root { --width: 306px; }}
+@media (max-width: 416px) { :root { --width: 290px; }}
+@media (max-width: 400px) { :root { --width: 274px; }}
 @media (max-width: 384px) { :root { --width: 260px; }}
 
 /* 모든 항목 focus시 아웃라인 제거 */
