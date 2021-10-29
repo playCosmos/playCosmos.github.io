@@ -41,7 +41,7 @@ a.nav-link,
 span.category,
 select.form-control,
 div#article-content {
-	font-family: FontAwesome;
+	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* 알림 */
