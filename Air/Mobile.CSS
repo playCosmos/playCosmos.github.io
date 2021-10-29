@@ -8,12 +8,13 @@
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
-@media (max-width: 900px) { :root { --width: 874px; }}
-@media (max-width: 900px) { :root { --width: 774px; }}
-@media (max-width: 800px) { :root { --width: 674px; }}
-@media (max-width: 700px) { :root { --width: 574px; }}
-@media (max-width: 600px) { :root { --width: 474px; }}
-@media (max-width: 500px) { :root { --width: 374px; }}
+@media (max-width: 1000px) { :root { --width: 860px; }}
+@media (max-width: 900px) { :root { --width: 760px; }}
+@media (max-width: 800px) { :root { --width: 660px; }}
+@media (max-width: 700px) { :root { --width: 560px; }}
+@media (max-width: 600px) { :root { --width: 460px; }}
+@media (max-width: 500px) { :root { --width: 360px; }}
+@media (max-width: 480px) { :root { --width: 354px; }}
 @media (max-width: 464px) { :root { --width: 338px; }}
 @media (max-width: 448px) { :root { --width: 322px; }}
 @media (max-width: 432px) { :root { --width: 306px; }}
