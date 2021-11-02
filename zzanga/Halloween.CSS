@@ -43,6 +43,15 @@ body {
     cursor: url(./cursor/cur.png) 15 0, auto !important;
 }
 
+/* fontawesome 사용 */
+a.nav-link,
+span.category,
+select.form-control,
+div#article-content {
+	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 /* 로고 */
 header .row>div:nth-child(1)>a {
     display: block;
