@@ -135,7 +135,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	border-radius: 5px 5px 0 0;
 }
 #main .menu-wrapper>a,
-#main .menu-wrapper>div>a,
+#main .menu-wrapper #fav-shortcut-area>a,
 #main .menu-wrapper .spacer { 
 	border: 2px solid var(--maincolor);
 	border-top: none;
