@@ -145,7 +145,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	border-bottom: 2px solid var(--maincolor);
 	border-radius: 0 0 5px 5px;
 }
-#main .menu-wrapper>a>em { color: var(--maincolor); }
+#main .menu-wrapper>a>em,
+#main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor); }
 #main .menu-wrapper .spacer {
 	background: var(--bgcolor);
 	height: 0.2em;
