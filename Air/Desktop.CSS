@@ -214,7 +214,10 @@ h3 { margin-bottom: 0.5em; }
 }
 
 /* 눈 모양 아이콘을 스위치 모양으로 변경 */
-button>.fa-eye:before { content: "\f205"; }
+button>.fa-eye:before {
+	content: "\f205";
+	color: var(--maincolor);
+}
 button>.fa-eye-slash:before { content: "\f204"; }
 
 
