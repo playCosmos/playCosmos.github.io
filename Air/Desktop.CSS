@@ -130,6 +130,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
+#main .menu-wrapper { border: none; }
 #main .menu-wrapper>.header { 
 	background: var(--maincolor);
 	border-radius: 5px 5px 0 0;
