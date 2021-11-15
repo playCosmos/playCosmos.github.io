@@ -35,7 +35,7 @@ a.nav-link,
 span.category,
 select.form-control,
 div#article-content {
-	font-family: FontAwesome;
+	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* 알림 */
@@ -146,12 +146,12 @@ nav#nav>.nav-menu-area hr { margin: 4px 0; }
 
 nav#nav>.nav-menu-area>.left {
 	padding: 5px 0 5px 10px;
-	margin: 3px;
+	margin: 2px;
 }
 
 nav#nav>.nav-menu-area>.right {
 	padding: 5px 10px 5px 0;
-	margin: 3px;
+	margin: 2px;
 }
 /* 트게더 전체메뉴 끝 */
 
