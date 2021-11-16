@@ -257,6 +257,16 @@ span.a-badge i.fa.fa-info-circle {
 	border-top: 3px solid var(--maincolor);
 }
 
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+label.pull-left { margin-bottom: 5px; }
+.pull-left { margin-right: calc(100% - 100px); }
+#btnRereplyCancelBtn { margin-right: 3px; }
+#writeCommentBtn { flex: 1; }
+
 
 /* 게시글 페이지 */
 .pagination>li>a,
