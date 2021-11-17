@@ -48,7 +48,7 @@ div#article-content {
 html { background: transparent; }
 body {
 	background: transparent;
-	padding-top: 60px;
+	padding-top: 55px;
 }
 
 /* 헤더 */
@@ -57,7 +57,6 @@ header {
 	border-radius: 12px;
 	background: #fffd;
 	padding: 3px 0;
-	transform-origin: 25px 25px;
 	transition: 0.2s;
 	width: calc(100% - 10px);
 	left: 5px;
@@ -71,8 +70,26 @@ header>#header-area>a>h1 {
 	margin-top: 2px;
 }
 /* 헤더 광고 */
-#header-top-notice strong.notice-badge { background: var(--maincolor); }
-#header-top-notice { padding: 8px 5px; }
+#header-top-notice {
+	padding: 3px 0px;
+	margin: 0 5px;
+	text-overflow: initial;
+	overflow-y: hidden;
+}
+#header-top-notice strong.notice-badge {
+	background: var(--maincolor);
+	display: inline-block;
+	position: relative;
+}
+#header-top-notice a {
+	max-width: max-content;
+	/*animation: autoscroll 5s infinite;*/
+}
+@keyframes autoscroll {
+	0% { margin: 0 0 0 0; }
+	100% { margin: 0 100px 0 -100px; }
+}
+
 
 /* 헤더 검색 */
 header>#header-search-bar #header-search-btn,
@@ -408,7 +425,7 @@ small.favo i.fa.fa-heart {
 }
 
 @keyframes heartbeat{
-	0% { ransform: scale(1); }
+	0% { transform: scale(1); }
 	30% { transform: scale(1.25); }
 	42% { transform: scale(0.9); }
 	60% { transform: scale(1.15); }
