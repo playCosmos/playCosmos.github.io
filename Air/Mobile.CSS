@@ -35,9 +35,8 @@ a { color: var(--maincolor); }
 a.nav-link,
 span.category,
 select.form-control,
-div#article-content {
-	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+div#article-content { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 
 /* 알림 */
 .alert {
@@ -173,6 +172,7 @@ nav#nav>.nav-menu-area>.right {
 	padding: 5px 10px 5px 0;
 	margin: 2px;
 }
+.open>.dropdown-menu { border: 1px solid var(--maincolor); }
 /* 트게더 전체메뉴 끝 */
 
 #main-content>div.frame>div:nth-child(1) {
