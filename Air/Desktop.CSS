@@ -247,15 +247,12 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	-webkit-transition: 0.2s !important;
 }
 
-#article-list #article-list-category > a.active {
-	color: var(--maincolor) !important;
-}
-
-#article-list #article-list-category>a:hover {
+#article-list #article-list-category > a.nav-link { background: transparent !important; }
+#article-list #article-list-category > a.active { color: var(--maincolor) !important; }
+#article-list #article-list-category > a:hover {
 	background: var(--maincolor) !important;
 	color: white !important;
 }
-#article-list #article-list-category>a.nav-link { background: transparent !important; }
 
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
@@ -353,9 +350,10 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 	border-radius: 3px !important;
 }
 
-button.btn.square.btn-default.dropdown-toggle {
-    border-radius: 3px 0 0 3px !important;
-}
+button.btn.square.btn-default.dropdown-toggle { border-radius: 3px 0 0 3px !important; }
+.input-group-btn:last-child>.btn { border-radius: 0 3px 3px 0 !important; }
+.input-group-btn i.fa-search { color: var(--btcolor) !important; }
+
 
 .btn,
 select.form-control,
@@ -383,6 +381,7 @@ input.form-control:hover,
 input.form-control:focus {
 	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
 	background: var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
 	color: white !important;
 }
 
@@ -420,16 +419,10 @@ input.form-control:focus {
 	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
 }
 
-input.form-control::placeholder {
-	color: var(--btcolor) !important;
-}
-
+input.form-control::placeholder { color: var(--btcolor) !important; }
 input.form-control:hover::placeholder,
 input.form-control:focus::placeholder {
 	color: white !important;
-}
-.input-group-btn i.fa-search {
-	color: var(--btcolor) !important;
 }
 /* 버튼, 하단 검색 끝 */
 
