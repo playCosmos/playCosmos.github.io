@@ -13,20 +13,21 @@
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
-	--subcolor: #cad3e2;	/* 서브색 */
+	--highlight: #cad3e2;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
 html.darkmode:root {
 	--maincolor: #bdc8db;	/* 메인색 */
-	--subcolor: #cad3e2;	/* 서브색 */
+	--highlight: #414958;	/* 강조색 */
 	--bgcolor: black;	/* 배경색 */
 }
 
 @media (max-width: 1100px) {	
 	/* 모바일로 전환 사이즈 조정 */
 	a#switch-platform-link { font-size: 36px; }
-		
+	
+	.theme_btn_box { }
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -125,26 +126,33 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
 #main .menu-wrapper .spacer { }
 
-/*
-#main .menu-wrapper>a {
+#main .menu-wrapper>a,
+#main .menu-wrapper #fav-shortcut-area>a {
 	position: relative; 
 	z-index: 1;
 }
 
-#main .menu-wrapper>a:after{
+#main .menu-wrapper>a:hover,
+#main .menu-wrapper #fav-shortcut-area>a:hover{
+	background-color: var(--bgcolor) !important;
+}
+	
+#main .menu-wrapper>a:after,
+#main .menu-wrapper #fav-shortcut-area>a:after{
 	content: "";
 	position: absolute;
-	left: 0; 
-	top: 0; 
-	height: 100%; 
+	left: 0;
+	top: 0;
+	height: 100%;
 	width: 0;
-	transition: all 0.3s ease 0s; 
-	-webkit-transition: all 0.3s ease 0s; 
+	transition: all 0.2s ease 0s;
 	z-index: -1;
-	background-color: var(--subcolor);
+	background-color: var(--highlight) !important;
 }
- #main .menu-wrapper>a:hover:after{ width: 100%; }
- */
+
+#main .menu-wrapper>a:hover:after,
+#main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
+
  
 #main #main-content>div.frame {	
 	border: none !important;
