@@ -338,6 +338,7 @@ input.form-control:focus {
 	color: white !important;
 }
 
+.btn[data-target="#scheduleModal"],
 .btn[data-type="up"] { --btcolor: #5cb85c; }
 .btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
@@ -350,8 +351,7 @@ input.form-control:focus {
 input.form-control { --btcolor: var(--maincolor); }
 
 select.form-control,
-input#title,
-.input-group-btn>button#addPollBtn {
+input#title {
 	--btcolor: var(--maincolor);
 	height: 30px !important;
 	transition: 0.2s;
