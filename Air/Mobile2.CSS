@@ -295,12 +295,13 @@ label.pull-left { margin-bottom: 5px !important; }
 
 /* 버튼, 하단 검색 */
 .btn.square {
+	border-radius: 4px;
 	border: 1px solid !important;
 	margin-right: -1px !important;
 }
 
-button.btn.square.btn-default.dropdown-toggle {
-}
+button.btn.square.btn-default.dropdown-toggle { border-radius: 5px 0px 0px 5px; }
+.input-group-btn i.fa-search { color: var(--btcolor) !important; }
 
 .btn,
 select.form-control,
@@ -357,8 +358,6 @@ input.form-control { transition: 0.2s !important; }
 input.form-control::placeholder { color: var(--btcolor) !important; }
 input.form-control:hover::placeholder,
 input.form-control:focus::placeholder { color: white !important; }
-
-.input-group-btn i.fa-search { color: var(--btcolor) !important; }
 /* 버튼, 하단 검색 끝 */
 
 footer {
