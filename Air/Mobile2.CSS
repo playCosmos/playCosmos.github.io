@@ -4,14 +4,14 @@
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
-	--highlight: #cad3e2;	/* 강조색 */
+	--highlight: #f1f5fe;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
 }
 
 html.darkmode:root {
 	--maincolor: #bdc8db;	/* 메인색 */
 	--highlight: #414958;	/* 강조색 */
-	--bgcolor: #242424;	/* 배경색 */
+	--bgcolor: #262626;	/* 배경색 */
 }
 
 /* 게시글 제목 길이 조정 */
