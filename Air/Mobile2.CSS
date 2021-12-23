@@ -11,7 +11,7 @@
 html.darkmode:root {
 	--maincolor: #bdc8db;	/* 메인색 */
 	--highlight: #414958;	/* 강조색 */
-	--bgcolor: black;	/* 배경색 */
+	--bgcolor: #242424;	/* 배경색 */
 }
 
 /* 게시글 제목 길이 조정 */
@@ -19,7 +19,11 @@ html.darkmode:root {
 @media (max-width: 900px) { :root { --width: 750px; }}
 @media (max-width: 800px) { :root { --width: 650px; }}
 @media (max-width: 700px) { :root { --width: 550px; }}
+@media (max-width: 650px) { :root { --width: 492px; }}
 @media (max-width: 600px) { :root { --width: 450px; }}
+@media (max-width: 575px) { :root { --width: 420px; }}
+@media (max-width: 550px) { :root { --width: 400px; }}
+@media (max-width: 530px) { :root { --width: 380px; }}
 @media (max-width: 500px) { :root { --width: 350px; }}
 @media (max-width: 480px) { :root { --width: 338px; }}
 @media (max-width: 464px) { :root { --width: 322px; }}
@@ -46,19 +50,7 @@ div#article-content { font-family: FontAwesome, "Helvetica Neue", Helvetica, Ari
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
 
 html { background: transparent; }
-body { background: transparent !important; padding-top: 55px !important; }
-
-/* 헤더 */
-header {
-	border: 4px solid var(--maincolor) !important;
-	border-radius: 12px !important;
-	background: transparent !important;
-	padding: 3px 0 !important;
-	transition: 0.2s !important;
-	width: calc(100% - 10px) !important;
-	left: 5px !important;
-	top: 5px !important;
-}
+body { background: transparent !important; padding-top: 55px; }
 
 /* 트게더 로고 */
 header>#header-area>a>h1 {
@@ -66,71 +58,69 @@ header>#header-area>a>h1 {
 	background-size: 90px 32px;
 	margin-top: 2px;
 }
+
+/* 헤더 */
+header {
+	border: 4px solid var(--maincolor) !important;
+	border-radius: 12px !important;
+	background: var(--bgcolor) !important;
+	padding: 3px 0 !important;
+	transition: 0.2s !important;
+	width: calc(100% - 10px) !important;
+	left: 5px !important;
+	top: 5px !important;
+}
+
 /* 헤더 광고 */
+#header-top-notice strong.notice-badge { background: var(--maincolor) !important; }
+#header-top-notice a { max-width: max-content; }
 #header-top-notice {
-	padding: 3px 0px !important;
 	margin: 0 5px !important;
 	text-overflow: initial !important;
 	overflow-y: hidden !important;
-}
-#header-top-notice strong.notice-badge {
-	background: var(--maincolor) !important;
-	display: inline-block !important;
-	position: relative !important;
-}
-#header-top-notice a {
-	max-width: max-content;
-	/*animation: autoscroll 5s infinite;*/
-}
-@keyframes autoscroll {
-	0% { margin: 0 0 0 0; }
-	100% { margin: 0 100px 0 -100px; }
 }
 
 
 /* 헤더 검색 */
 header>#header-search-bar #header-search-btn,
 header>#header-search-bar #header-close-search-btn,
-header>#header-area>#header-search-link { color: var(--maincolor) !important; }
+header>#header-area>#header-search-link { color: var(--maincolor); }
 header>#header-search-bar #header-search-btn { margin-top: -2px; }
 header>#header-search-bar #header-search-input {
 	border: 2px solid var(--maincolor) !important;
-	padding: 5px 8px !important;
+	padding: 5px 8px;
 }
 
 /* 트게더 전체메뉴 보이기/숨기기 */
-}header>#header-area>#header-bar-link {
-    padding: 1px 8px 0px !important;
-    margin: 0px 8px !important;
+header>#header-area>#header-bar-link {
+	padding: 1px 8px 0px !important;
+	margin: 0px 8px !important;
 }
 header>#header-area>#header-bar-link,
-nav#nav>#nav-upper>#header-close-bar-link {
-	color: var(--maincolor) !important;
-}
+nav#nav>#nav-upper>#header-close-bar-link { color: var(--maincolor) !important; }
 nav#nav>#nav-upper>#header-close-bar-link {
 	padding: 0 7px !important;
 	margin: -2px 8px 0 !important;
 }
-	
+
 /* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor) !important; }
-span.delrow { color: var(--maincolor) !important; } 
-
+span.delrow { color: var(--maincolor) !important; }
 
 header.nav-up {
 	opacity: 0 !important;
 	pointer-events: none !important;
-	top: 5px !important;
+	top: -50px !important;
 }		
 
 nav#nav {
-	height: auto !important;
-	padding-bottom: 5px !important;
-	top: 7px !important;
-	left: 7px !important;
-	bottom: 7px !important;
-	border: 3px solid var(--maincolor) !important;
-	border-radius: 10px !important;
+	height: auto;
+	padding-bottom: 5px;
+	top: 6px;
+	left: 7px;
+	bottom: 6px;
+	border: 3px solid var(--maincolor);
+	border-radius: 10px;
 	animation: slider 0.2s cubic-bezier(0.25, 1, 1, 1);
 }
 
@@ -139,27 +129,23 @@ nav#nav {
 	100% { transform: translateX(0px); }
 }
 
-nav#nav>#nav-upper { padding: 5px 0 !important; }
-nav#nav>#nav-upper-shortcut {
-	padding: 6px 10px !important;
-	display: flex !important;
-}
+nav#nav>#nav-upper { padding: 5px 0; }
+nav#nav>#nav-upper-shortcut { padding: 6px 10px; display: flex; }
 nav#nav>#nav-upper-shortcut>.dropdown { flex: 1 !important; }
-
-nav#nav>#nav-upper #userDropdown #notification-badge {
+nav#nav>#nav-upper #userDropdown #notification-badge { 
 	background: var(--maincolor) !important;
 }
 
 nav#nav>.nav-header {
 	background: var(--maincolor) !important;
-	margin-top: 1px !important;
-	height: 35px !important;
-	font-size: 14px !important;
-	padding: 8px 15px !important;
+	margin-top: 1px;
+	height: 35px;
+	font-size: 14px;
+	padding: 8px 15px;
 }
 
-nav#nav>.nav-menu-area a { text-align: center !important; }
-nav#nav>.nav-menu-area hr { margin: 4px 0 !important; }
+nav#nav>.nav-menu-area a { text-align: center; }
+nav#nav>.nav-menu-area hr { margin: 4px 0; }
 
 nav#nav>.nav-menu-area>.left {
 	padding: 5px 0 5px 10px !important;
@@ -173,15 +159,6 @@ nav#nav>.nav-menu-area>.right {
 .open>.dropdown-menu { border: 1px solid var(--maincolor) !important; }
 /* 트게더 전체메뉴 끝 */
 
-#main-content>div.frame>div:nth-child(1) {
-	background: transparent !important;
-}
-
-/* 소개, 스케줄 숨기기 */
-#board-info>a.board-right-menu[href="/million_air/profile"],
-#board-info>a.board-right-menu[href="/million_air/schedule"] {
-	display: none !important;
-}
 #board-info>a.board-right-menu,
 #board-info>div.dropdown>a {
 	color: var(--maincolor) !important;
@@ -190,14 +167,14 @@ nav#nav>.nav-menu-area>.right {
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px; }
 #article-list #article-option-area>#article-option-area-toggle-btn {
-	background: var(--bgcolor) !important;
-	border-radius: 10px !important;
-	height: 25px !important;
-	padding: 5px 0 0 0 !important;
-	margin: 0 5px 0 0 !important;
-	opacity: 1 !important;
-	display: inline-grid !important;
-	transition: 0.2s !important;
+	background: var(--bgcolor);
+	border-radius: 10px;
+	height: 25px;
+	padding: 5px 0 0 0;
+	margin: 0 5px 0 0;
+	opacity: 1;
+	display: inline-grid;
+	transition: 0.2s;
 }
 
 /* 눈 모양 스위치로 변경 */
@@ -220,11 +197,12 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	color: var(--maincolor) !important;
 }
 
-#article-list #article-list-category>a:hover {
+#article-list #article-list-category>a.nav-link { background: transparent; }
+#article-list #article-list-category>a:hover,
+html.darkmode #article-list #article-list-category>a:hover {
 	background: var(--maincolor) !important;
 	color: white !important;
 }
-#article-list #article-list-category>a.nav-link { background: transparent !important; }
 
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
@@ -255,7 +233,7 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a  {
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
 	color: var(--maincolor) !important;
 }
 
@@ -269,8 +247,7 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 	border-top: 4px solid var(--maincolor) !important;
 }
 
-.fr-popup,
-.fr-toolbar.fr-top {
+.fr-popup, .fr-toolbar.fr-top {
 	border-top: 3px solid var(--maincolor) !important;
 }
 
@@ -320,11 +297,9 @@ label.pull-left { margin-bottom: 5px !important; }
 .btn.square {
 	border: 1px solid !important;
 	margin-right: -1px !important;
-	border-radius: 3px !important;
 }
 
 button.btn.square.btn-default.dropdown-toggle {
-    border-radius: 3px 0 0 3px !important;
 }
 
 .btn,
@@ -353,9 +328,11 @@ input.form-control:hover,
 input.form-control:focus {
 	/*box-shadow: inset 8em 0em 0 0 var(--btcolor) !important;*/
 	background: var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
 	color: white !important;
 }
 
+.btn[data-target="#scheduleModal"],
 .btn[data-type="up"] { --btcolor: #5cb85c; }
 .btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
@@ -365,13 +342,10 @@ input.form-control:focus {
 
 .btn-primary,
 .btn-default,
-input.form-control {
-	--btcolor: var(--maincolor);
-}
+input.form-control { --btcolor: var(--maincolor); }
 
 select.form-control,
-input#title,
-.input-group-btn>button#addPollBtn {
+input#title {
 	--btcolor: var(--maincolor);
 	height: 30px !important;
 	transition: 0.2s;
@@ -380,18 +354,9 @@ input#title,
 div#title_color>input { height: 30px !important; }
 
 input.form-control { transition: 0.2s !important; }
-
-input.form-control:hover,
-input.form-control:focus {
-	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
-}
-
 input.form-control::placeholder { color: var(--btcolor) !important; }
-
 input.form-control:hover::placeholder,
-input.form-control:focus::placeholder {
-	color: white !important;
-}
+input.form-control:focus::placeholder { color: white !important; }
 
 .input-group-btn i.fa-search { color: var(--btcolor) !important; }
 /* 버튼, 하단 검색 끝 */
@@ -415,10 +380,8 @@ footer {
 	background-size: contain;
 	background-repeat: no-repeat;
 }*/
-.theme_btn_box {
-	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-}
+
+.theme_btn_box { transition: all 0.2s; }
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart {
