@@ -26,20 +26,14 @@ html.darkmode:root {
 @media (max-width: 1100px) {	
 	/* 모바일로 전환 사이즈 조정 */
 	a#switch-platform-link { font-size: 36px; }
-	
-	.theme_btn_box { }
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
 /* 링크 기본 */
-a {
-	color: var(--maincolor) !important;
-	transition: all 0.2s ease 0s !important;
-}
-a:hover,
-a:focus { color: var(--maincolor) !important; }
+a { color: var(--maincolor); transition: all 0.2s ease 0s; }
+a:hover, a:focus { color: var(--maincolor) !important; }
 
 /* fontawesome 사용 */
 a.nav-link,
@@ -50,22 +44,16 @@ div#article-content {
 }
 
 /* 알림 */
-.alert {
-	margin-bottom: 10px !important;
-	padding: 10px 35px 10px 15px !important;
-}
+.alert { margin-bottom: 10px !important; padding: 10px 35px 10px 15px !important; }
 
 html { background: var(--bgcolor) !important; }
-body {
-	background: transparent !important;
-}
+body { background: transparent !important; }
 
 /************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
 	content: url(./image/logo.svg);
-	height: 50px !important;
-}
+	height: 50px !important; }
 
 /* 헤더 검색창 */
 header #right-search-form>input[type=text] {
@@ -218,6 +206,11 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	color: white !important;
 }
 
+@media (min-width: 1400px) {
+	#article-list #article-list-category.can-float { border: 2px solid var(--maincolor); }
+	#article-list #article-list-category.can-float>a:last-child { border: none; }
+}
+
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
 
@@ -321,11 +314,12 @@ input.form-control {
 	transition: 0.2s !important;
 }
 
+.vote-btn { height: 32px !important; }
+
 .btn[tabindex="-1"], .btn[type="submit"] {
     padding: 4px 12px !important;
 }
-
-.vote-btn { height: 32px !important; } 
+ 
 
 .btn:hover,
 .btn:focus,
@@ -347,9 +341,7 @@ input.form-control:focus {
 
 .btn-primary,
 .btn-default,
-input.form-control {
-	--btcolor: var(--maincolor);
-}
+input.form-control { --btcolor: var(--maincolor); }
 
 select.form-control,
 input#title,
@@ -361,11 +353,7 @@ input#title,
 
 div#title_color>input { height: 30px !important; }
 
-input.form-control {
-	transition: 0.2s !important;
-	-webkit-transition: 0.2s !important;
-}
-
+input.form-control { transition: 0.2s !important; }
 input.form-control:hover,
 input.form-control:focus {
 	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
@@ -378,6 +366,7 @@ input.form-control:focus::placeholder {
 }
 /* 버튼, 하단 검색 끝 */
 
+html.darkmode footer a { color: var(--maincolor); }
 
 
 /* 상단으로 이동 */
