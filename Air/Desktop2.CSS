@@ -302,12 +302,14 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 /* 게시글 페이지 끝 */
 
 
-
 /* 버튼, 하단 검색 */
-.btn.square { border: 1px solid !important;
-	margin-right: -1px !important; }
+.btn.square {
+	border-radius: 5px;
+	border: 1px solid !important;
+	margin-right: -1px !important;
+}
 
-button.btn.square.btn-default.dropdown-toggle { }
+button.btn.square.btn-default.dropdown-toggle { border-radius: 5px 0px 0px 5px; }
 .input-group-btn:last-child>.btn { }
 html.darkmode .input-group-btn i.fa-search { color: var(--maincolor); }
 
