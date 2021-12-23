@@ -122,9 +122,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
-	background-color: var(--bgcolor) !important;
+	background-color: var(--highlight) !important;
 }
-	
+/*
 #main .menu-wrapper>a:after,
 #main .menu-wrapper #fav-shortcut-area>a:after{
 	content: "";
@@ -140,7 +140,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
-
+*/
  
 #main #main-content>div.frame {	
 	border: none !important;
