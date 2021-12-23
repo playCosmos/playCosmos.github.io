@@ -339,7 +339,7 @@ input.form-control:focus {
 .btn-default.best { --btcolor: #efc839; }
 .btn-outline-danger { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
-.btn-info { --btcolor: #5bc0de; }
+.btn-info { --btcolor: #46b8da; }
 
 .btn-primary,
 .btn-default,
