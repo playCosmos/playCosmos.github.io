@@ -332,7 +332,6 @@ input.form-control {
     padding: 4px 12px !important;
 }
  
-
 .btn:hover,
 .btn:focus,
 select.form-control:hover,
@@ -366,15 +365,14 @@ input#title {
 div#title_color>input { height: 30px !important; }
 
 input.form-control { transition: 0.2s !important; }
-input.form-control:hover,
-input.form-control:focus {
-	/*-shadow: inset 25em 0em 0 0 var(--btcolor) !important;*/
-}
-
 input.form-control::placeholder { color: var(--btcolor) !important; }
-input.form-control:hover::placeholder,
-input.form-control:focus::placeholder {
-	color: white !important;
+
+form#boardSearchForm .input-group-btn .btn:hover,
+form#boardSearchForm .input-group-btn .btn:focus,
+form#boardSearchForm > input.form-control:hover,
+form#boardSearchForm > input.form-control:focus {
+	background: var(--highlight) !important;
+	color: var(--btcolor) !important;
 }
 /* 버튼, 하단 검색 끝 */
 
