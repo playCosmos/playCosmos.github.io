@@ -112,7 +112,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>a:last-child { }
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
-#main .menu-wrapper .spacer { }
+#main .menu-wrapper .spacer { 
+	background: transparent !important;
+	height: .2em;
+}
 
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
