@@ -247,6 +247,7 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 
 /* 게시글 내부 상단 테두리 */
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor) !important; }
+#article-content-wrapper>.header * { color: var(--maincolor) !important; }
 
 #article-reply-area > .header h5 { color: var(--maincolor) !important; }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
@@ -295,7 +296,7 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 .pagination>.active>a:hover,
 .pagination>.active>span:hover {
 	color: var(--maincolor) !important;
-	background-color: white !important;
+	background-color: var(--highlight) !important;
 	border-color: var(--maincolor) !important;
 	transition: 0.2s;
 }
@@ -304,12 +305,12 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 
 /* 버튼, 하단 검색 */
 .btn.square {
-	border-radius: 5px;
+	border-radius: 3px;
 	border: 1px solid !important;
 	margin-right: -1px !important;
 }
 
-button.btn.square.btn-default.dropdown-toggle { border-radius: 5px 0px 0px 5px; }
+button.btn.square.btn-default.dropdown-toggle { border-radius: 3px 0px 0px 3px; }
 .input-group-btn:last-child>.btn { }
 html.darkmode .input-group-btn i.fa-search { color: var(--maincolor); }
 
