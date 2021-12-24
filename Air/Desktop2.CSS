@@ -374,6 +374,9 @@ form#boardSearchForm > input.form-control:focus {
 	background: var(--highlight) !important;
 	color: var(--btcolor) !important;
 }
+
+html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; }
+
 /* 버튼, 하단 검색 끝 */
 
 html.darkmode footer a { color: var(--maincolor); }
