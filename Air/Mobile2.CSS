@@ -75,7 +75,6 @@ header {
 #header-top-notice strong.notice-badge { background: var(--maincolor) !important; }
 #header-top-notice a { max-width: max-content; }
 #header-top-notice {
-	margin: 0 5px !important;
 	text-overflow: initial !important;
 	overflow-y: hidden !important;
 }
