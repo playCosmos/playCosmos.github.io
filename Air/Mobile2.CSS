@@ -183,7 +183,9 @@ button>.fa-eye:before {
 }
 button>.fa-eye-slash:before { content: "\f204"; }
 .darkmode button>.fa-eye:before { color: var(--bgcolor) !important; }
-.darkmode button#article-option-area-toggle-btn { background: var(--maincolor) !important; }
+.darkmode #article-list #article-option-area>#article-option-area-toggle-btn {
+	background: var(--maincolor) !important;
+}
 
 /* 카테고리 */
 #article-list #article-list-category {
