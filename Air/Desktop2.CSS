@@ -270,8 +270,7 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 	border-top: 2px solid var(--maincolor) !important;
 }
 
-.darkmode textarea.fr-code { color: white; }
-
+html.darkmode textarea.fr-code { color: white; }
 
 /* 게시글 페이지 */
 .pagination>li>a,
