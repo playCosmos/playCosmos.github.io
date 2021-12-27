@@ -177,8 +177,13 @@ nav#nav>.nav-menu-area>.right {
 }
 
 /* 눈 모양 스위치로 변경 */
-button>.fa-eye:before { content: "\f205"; }
+button>.fa-eye:before {
+	content: "\f205";
+	color: var(--maincolor) !important;
+}
 button>.fa-eye-slash:before { content: "\f204"; }
+.darkmode button>.fa-eye:before { color: var(--bgcolor) !important; }
+.darkmode button#article-option-area-toggle-btn { background: var(--maincolor) !important; }
 
 /* 카테고리 */
 #article-list #article-list-category {
