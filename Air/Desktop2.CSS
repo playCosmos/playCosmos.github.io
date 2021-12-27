@@ -9,6 +9,9 @@
 	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
 		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
+/* 마우스 커서 */
+/* 출처: https://www.deviantart.com/rosea92/art/Material-Design-Cursors-Dark-756850032 */
+
 
 /* 기본 설정 */
 :root {
@@ -186,7 +189,9 @@ button>.fa-eye:before {
 }
 button>.fa-eye-slash:before { content: "\f204"; }
 .darkmode button>.fa-eye:before { color: var(--bgcolor) !important; }
-.darkmode button#article-option-area-toggle-btn { background: var(--maincolor) !important; }
+.darkmode #article-list #article-option-area>#article-option-area-toggle-btn {
+	background: var(--maincolor) !important;
+}
 
 /* 카테고리 */
 #article-list #article-list-category {
