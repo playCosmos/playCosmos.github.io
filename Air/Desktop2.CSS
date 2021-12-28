@@ -129,6 +129,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
 	background-color: var(--highlight) !important;
+}
+html.darkmode #main .menu-wrapper>a:hover,
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 	color: white !important;
 }
 /*
