@@ -129,6 +129,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
 	background-color: var(--highlight) !important;
+	color: white !important;
 }
 /*
 #main .menu-wrapper>a:after,
@@ -365,9 +366,6 @@ input#title {
 
 div#title_color>input { height: 30px !important; }
 
-input.form-control { transition: 0.2s !important; }
-input.form-control::placeholder { color: var(--btcolor) !important; }
-
 form#boardSearchForm .input-group-btn .btn:hover,
 form#boardSearchForm .input-group-btn .btn:focus,
 form#boardSearchForm > input.form-control:hover,
@@ -375,6 +373,8 @@ form#boardSearchForm > input.form-control:focus {
 	background: var(--highlight) !important;
 	color: var(--btcolor) !important;
 }
+
+form#boardSearchForm > input.form-control::placeholder { color: var(--btcolor) !important; }
 
 html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; }
 
