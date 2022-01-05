@@ -1,31 +1,25 @@
-  /* --bgColor: #ff9797;
-    --mainColor: #ff6c6c;
-    --mainColor5: #ff5555;
-    --mainColor3: #01001f;
-    --mainColor2: #ffdede;
-*/
-
-
 /**** Designed by Million_Air in Twitch ****/
 /******* Discord me Million_Air#9087 *******/
 
 /* 기본 설정 */
 :root {
 	--maincolor: #ff6c6c;	/* 메인색 */
-  --mainColor2: #ff6c6c22;
-  --mainColor3: #ff6c6c33;
-  --mainColor5: #ff6c6c55;
+	--maincolor2: #ff6c6c22;
+	--maincolor3: #ff6c6c33;
+	--maincolor5: #ff6c6c55;
 	--bgcolor: #ff9797;	/* 배경색 */
-  --framebgcolor: white; /* 프레임배경색 */
+	--framebgcolor: white; /* 프레임배경색 */
+	--before: "ino를 기다리는 "; /* 앞 문구 */
+	--after: "명♥";  /* 뒤 문구 */
 }
 
 html.darkmode:root {
-	--maincolor: #b8a6d8;	/* 메인색 */
-  --mainColor2: #ff6c6c22;
-  --mainColor3: #ff6c6c33;
-  --mainColor5: #ff6c6c55;
+	--maincolor: #ff6c6c;	/* 메인색 */
+	--maincolor2: #ff6c6c22;
+	--maincolor3: #ff6c6c33;
+	--maincolor5: #ff6c6c55;
 	--bgcolor: #151515; /* 배경색 */
-  --framebgcolor: #242424; /* 프레임배경색 */
+	--framebgcolor: #242424; /* 프레임배경색 */
 }
 
 /* 너비 1100px 이하로 바뀌면 적용되는 설정 */
@@ -81,7 +75,7 @@ body { background: transparent !important; }
 
 /* 헤더 검색창 */
 header #right-search-form>input[type=text] {
-  border: 3px solid var(--maincolor);
+  border: 3px solid var(--maincolor) !important;
   border-radius: 5px;
   background: var(--framebgcolor);
   color: var(--maincolor);
@@ -118,13 +112,21 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main .menu-wrapper { border: none !important; }
+#main .menu-wrapper { 
+    border: none !important;
+    border-radius: 12px;
+    background: var(--framebgcolor); 
+}
+
+#main .menu-wrapper #fav-shortcut-area > a:hover,
+#main .menu-wrapper > a:hover { background-color: var(--maincolor2) !important; }
+
 #main .menu-wrapper>.header { 
 	background: var(--maincolor) !important;
 	border-radius: 10px 10px 0 0 !important;
 }
-#main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a,
+#main .menu-wrapper>a,
 #main .menu-wrapper .spacer {
 	border: 2px solid var(--maincolor) !important;
 	border-top: none !important;
@@ -132,7 +134,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 #main .menu-wrapper .spacer { 
 	background: var(--bgcolor) !important;
-  height: 2px !important;
+	height: 2px !important;
 }
 #main .menu-wrapper>a:last-child {
 	border-bottom: 2px solid var(--maincolor) !important;
@@ -192,6 +194,16 @@ h3 { margin-bottom: 0.5em !important; }
 #board-info>img#board-info-profile-img:hover {
 	transform: scale(1.1);
   border-radius: 5px;
+}
+
+#board-info #viewers-area #viewers:before {
+	content: var(--before);
+	cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+	content: var(--after);
+	cursor: text;
 }
 
 .frame>.frame,
@@ -276,23 +288,29 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
   width: 13px !important; /* 카테고리명 한글자만 표시, 전체를 보여주려면 제거 */
 }
 
+html.darkmode #article-list>.article-list-row:hover,
+html.darkmode #article-list>.article-list-row:focus,
 #article-list>.article-list-row:hover,
 #article-list>.article-list-row:focus {
-	background-color: var(--maincolor2);
+	background-color: var(--maincolor2) !important;
 	transform: scale(1.01);
 	transition: 0.2s;
 }
 
 #article-list>.article-list-row.hot,
 #article-list>.article-list-row.notice {
-	background-color: var(--maincolor3);
+	background-color: var(--maincolor3) !important;
 }
 
+html.darkmode #article-list>.article-list-row.hot:hover,
+html.darkmode #article-list>.article-list-row.hot:focus,
+html.darkmode #article-list>.article-list-row.notice:hover,
+html.darkmode #article-list>.article-list-row.notice:focus,
 #article-list>.article-list-row.hot:hover,
 #article-list>.article-list-row.hot:focus,
 #article-list>.article-list-row.notice:hover,
 #article-list>.article-list-row.notice:focus {
-	background-color: var(--maincolor5);
+	background-color: var(--maincolor5) !important;
 }
 
 /* 게시글 본문 */
