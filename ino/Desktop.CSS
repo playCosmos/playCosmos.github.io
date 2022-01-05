@@ -461,7 +461,7 @@ html.darkmode #article-comment a { color: white; }
 h3 { display: none; }
 
 form#articleWriteForm .row.mt-2:before {
-	content: "이노냥 - 새 글 작성하기";
+	content: "이노냥";
 	margin: 12px 18px;
 	font-family: inherit;
 	line-height: 1.1;
