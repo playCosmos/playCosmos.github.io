@@ -469,6 +469,8 @@ form#articleWriteForm .row.mt-2:before {
 	font-size: 23px;
 }
 */
+html.darkmode textarea.fr-code { color: white; }
+
 form#articleWriteForm {
 	margin: -1em -1em 1em;
 	background: var(--framebgcolor);
