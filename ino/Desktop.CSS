@@ -377,6 +377,7 @@ html.darkmode #article-list>.article-list-row.notice:focus,
 	margin-top: 5px;
 	margin-left: 5px;
 }
+html.darkmode h2 span.category { color: white !important; }
 
 #article-comment a { color: black; }
 html.darkmode #article-comment a { color: white; }
