@@ -99,6 +99,49 @@ header #header-bar a.dropdown-toggle { color: var(--maincolor) !important; }
 span.delrow { color: var(--maincolor) !important; } 
 span.label.label-default { background: var(--maincolor) !important; }
 
+.dropdown-menu>li>a { display: inherit; }
+#latestDropdownMenu>li>a,
+#favoriteDropdownMenu>li>a {
+    padding: 3px 3px 0 10px;
+    height: 27px;
+}
+.dropdown-menu .divider { margin: 3px 0; }
+
+/* 상단바 드롭다운 */
+.dropdown.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--maincolor);
+	border-radius: 10px
+}
+.dropdown .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+}
+.dropdown-menu>li>a {
+	transition: .1s;
+}
+.dropdown-menu>li>a:hover {
+	background: var(--maincolor2);
+	transform: scaleX(1.04);
+	transition: .1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: #98bcff;
+}
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: #98bcff;
+}
+
 /* 헤더 알림 뱃지 */
 header #header-bar #header-menu-right #userDropdown #notification-badge {
 	padding: 5px 6px 3px 6px !important;
