@@ -257,6 +257,12 @@ html.darkmode #article-list #article-list-category{ border-top: none; }
 	}
 	#article-list #article-list-category.can-float>a { border-bottom: 1px solid var(--bgcolor); }
 	#article-list #article-list-category.can-float>a:last-child { border: none; }
+	#article-list #article-option-area>#article-option-area-toggle-btn
+	{
+		position:absolute;
+		left: -44px;
+		top: -45px;
+	}
 }
 
 #article-list #article-list-category > a.nav-link { background: transparent !important; }
@@ -410,14 +416,25 @@ html.darkmode #article-comment a { color: white; }
 }
 
 h3 { display: none; }
+
+form#articleWriteForm .row.mt-2:before {
+	content: "이노냥 - 새 글 작성하기";
+	margin: 12px 18px;
+	font-family: inherit;
+	line-height: 1.1;
+	color: inherit;
+	font-size: 23px;
+}
+
 form#articleWriteForm {
-    margin-top: -14px;
-    background: var(--framebgcolor);
-    padding: 3px 10px 10px;
-    border: 2px solid var(--maincolor);
-    border-radius: 10px;
+	margin: -1em -1em 1em;
+	background: var(--framebgcolor);
+	padding: 3px 10px 10px;
+	border: 2px solid var(--maincolor);
+	border-radius: 10px;
 }
 form#image-upload-form {
+    margin: 1em -1em -1em;
     background: var(--framebgcolor);
     padding: 5px;
     border: 2px solid var(--maincolor);
