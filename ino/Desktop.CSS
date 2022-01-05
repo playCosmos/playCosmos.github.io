@@ -250,11 +250,13 @@ html.darkmode #article-list #article-list-category{ border-top: none; }
 	transition: 0.2s !important;
 	-webkit-transition: 0.2s !important;
 }
-
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
 	#article-list #article-list-category.can-float {
-		border: 2px solid var(--maincolor);
-		max-height: 600px; }
+		background: var(--framebgcolor) !important;
+		border: 2px solid var(--maincolor) !important;
+		max-height: none;
+	}
+	#article-list #article-list-category.can-float>a { border-bottom: 1px solid var(--bgcolor); }
 	#article-list #article-list-category.can-float>a:last-child { border: none; }
 }
 
