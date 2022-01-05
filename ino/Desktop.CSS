@@ -289,7 +289,6 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
   text-overflow: clip !important;
   white-space: unset !important;
-  width: 13px !important; /* 카테고리명 한글자만 표시, 전체를 보여주려면 제거 */
 }
 
 html.darkmode #article-list>.article-list-row:hover,
