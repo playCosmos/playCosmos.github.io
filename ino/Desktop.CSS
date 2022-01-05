@@ -96,8 +96,8 @@ header #header-bar #header-top-notice strong.notice-badge { background: var(--ma
 
 /* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor) !important; }
-span.delrow { color: var(--maincolor) !important; } 
 span.label.label-default { background: var(--maincolor) !important; }
+span.delrow { color: var(--maincolor) !important; } 
 
 .dropdown-menu>li>a { display: inherit; }
 #latestDropdownMenu>li>a,
@@ -107,7 +107,6 @@ span.label.label-default { background: var(--maincolor) !important; }
 }
 .dropdown-menu .divider { margin: 3px 0; }
 
-/* 상단바 드롭다운 */
 .dropdown.open .dropdown-menu {
 	opacity: unset;
 	transform: unset;
@@ -119,7 +118,7 @@ span.label.label-default { background: var(--maincolor) !important; }
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: top;
-	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	transition: all 0.2s cubic-bezier(0.18, 1.5, 0, 1);
 }
 .dropdown-menu>li>a { transition: .1s; }
 .dropdown-menu>li>a:hover {
@@ -169,7 +168,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	border-bottom: 2px solid var(--maincolor) !important;
 	border-radius: 0 0 10px 10px !important;
 }
-#main .menu-wrapper>a>em,
+#main .menu-wrapper>a>em { color: var(--maincolor) !important; }
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
 
 #main #main-content>div.frame {	
