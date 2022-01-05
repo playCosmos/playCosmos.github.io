@@ -302,9 +302,9 @@ html.darkmode #article-list #article-list-category{ border-top: none; }
 	#article-list #article-list-category.can-float>a:last-child { border: none; }
 	#article-list #article-option-area>#article-option-area-toggle-btn
 	{
-		position:absolute;
+		/*position:absolute;
 		left: -44px;
-		top: -45px;
+		top: -45px;*/
 	}
 }
 
