@@ -401,10 +401,11 @@ html.darkmode #article-comment a { color: white; }
 }
 
 #article-content-wrapper>.footer {
-	border-top: 2px solid var(--maincolor);
-	border-bottom: 2px solid var(--maincolor);
-	margin-bottom: 3px;
-	background: var(--framebgcolor);
+	border: none !important;
+	border-top: 2px solid var(--maincolor) !important;
+	border-bottom: 2px solid var(--maincolor) !important;
+	margin-bottom: 5px;
+	background: var(--framebgcolor) !important;
 }
 
 #article-neighbor-list {
