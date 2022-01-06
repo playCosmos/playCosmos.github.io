@@ -13,6 +13,7 @@
 	--after: "명♥";  /* 뒤 문구 */
 }
 
+/* 다크모드 색 */
 html.darkmode:root {
 	--maincolor: #ff6c6c;	/* 메인색 */
 	--maincolor2: #ff6c6c22;
