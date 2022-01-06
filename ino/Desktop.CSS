@@ -465,18 +465,20 @@ form#articleWriteForm .row.mt-2:before {
 html.darkmode textarea.fr-code { color: white; }
 
 form#articleWriteForm {
-	margin: -1em -1em 1em;
+	margin: -1em -1em 0;
 	background: var(--framebgcolor);
 	padding: 3px 10px 10px;
 	border: 2px solid var(--maincolor);
-	border-radius: 10px;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
 }
 form#image-upload-form {
-    margin: 1em -1em -1em;
-    background: var(--framebgcolor);
-    padding: 5px;
-    border: 2px solid var(--maincolor);
-    border-radius: 10px;
+	margin: 0 -1em -1em;
+	background: var(--framebgcolor);
+	padding: 10px;
+	border: 2px solid var(--maincolor);
+	border-top: none;
+	border-radius: 0 0 10px 10px;
 }
 
 /* 게시글 페이지 */
