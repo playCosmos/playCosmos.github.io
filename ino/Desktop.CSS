@@ -8,7 +8,7 @@
 	--maincolor3: #ff6c6c33;
 	--maincolor5: #ff6c6c55;
 	--bgcolor: #ff9797;	/* 배경색 */
-	--framebgcolor: white; /* 프레임배경색 */
+	--bgframe: white; /* 프레임배경색 */
 	--before: "ino를 기다리는 "; /* 앞 문구 */
 	--after: "명♥";  /* 뒤 문구 */
 }
@@ -20,7 +20,7 @@ html.darkmode:root {
 	--maincolor3: #ff6c6c33;
 	--maincolor5: #ff6c6c55;
 	--bgcolor: #151515; /* 배경색 */
-	--framebgcolor: #242424; /* 프레임배경색 */
+	--bgframe: #242424; /* 프레임배경색 */
 }
 
 /* 너비 1100px 이하로 바뀌면 적용되는 설정 */
@@ -73,7 +73,7 @@ body { background: transparent !important; }
 header #right-search-form>input[type=text] {
   border: 3px solid var(--maincolor) !important;
   border-radius: 5px;
-  background: var(--framebgcolor);
+  background: var(--bgframe);
   color: var(--maincolor);
 }
 header #right-search-form>input::placeholder,
@@ -144,7 +144,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper { 
 	border: none !important;
 	border-radius: 12px;
-	background: var(--framebgcolor); 
+	background: var(--bgframe); 
 }
 
 #main .menu-wrapper #fav-shortcut-area > a:hover,
@@ -180,7 +180,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #board-info {
 	height: auto;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	border: 2px solid var(--maincolor);
 	border-radius: 10px;
 	padding: 10px !important;
@@ -236,7 +236,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 .frame>.frame,
 #article-list {
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	border: 2px solid var(--maincolor);
 	border-radius: 10px;
 }
@@ -285,7 +285,7 @@ html.darkmode #article-list #article-list-category{ border-top: none; }
 }
 @media (min-width: 1400px) {
 	#article-list #article-list-category.can-float {
-		background: var(--framebgcolor) !important;
+		background: var(--bgframe) !important;
 		border: 2px solid var(--maincolor) !important;
 		max-height: none;
 	}
@@ -357,7 +357,7 @@ html.darkmode #article-list>.article-list-row.notice:focus,
 
 /* 게시글 본문 */
 #article-info {
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	border: 2px solid var(--maincolor);
 	border-bottom: 1px;
 	border-radius: 10px 10px 0 0;
@@ -384,7 +384,7 @@ html.darkmode #article-comment a { color: white; }
 
 #article-content-wrapper {
 	padding: 0;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	border: 2px solid var(--maincolor);
 	border-bottom: 1px;
 }
@@ -405,13 +405,13 @@ html.darkmode #article-comment a { color: white; }
 	border-top: 2px solid var(--maincolor) !important;
 	border-bottom: 2px solid var(--maincolor) !important;
 	margin-bottom: 5px;
-	background: var(--framebgcolor) !important;
+	background: var(--bgframe) !important;
 }
 
 #article-neighbor-list {
 	border: 2px solid var(--maincolor);
 	border-radius: 10px;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 }
 
 #article-neighbor-list>div>a,
@@ -421,7 +421,7 @@ html.darkmode #article-comment a { color: white; }
 /* 댓글 */
 #article-reply-area {
 	padding: 0;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	border: 2px solid var(--maincolor);
 	border-radius: 0 0 10px 10px;
 	margin-top: 3px;
@@ -466,7 +466,7 @@ html.darkmode textarea.fr-code { color: white; }
 
 form#articleWriteForm {
 	margin: -1em -1em 0;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	padding: 3px 10px 10px;
 	border: 2px solid var(--maincolor);
 	border-bottom: none;
@@ -474,7 +474,7 @@ form#articleWriteForm {
 }
 form#image-upload-form {
 	margin: 0 -1em -1em;
-	background: var(--framebgcolor);
+	background: var(--bgframe);
 	padding: 10px;
 	border: 2px solid var(--maincolor);
 	border-top: none;
