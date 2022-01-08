@@ -174,7 +174,6 @@ nav#nav>.nav-menu-area>.right {
 	margin: 0 5px 0 0;
 	opacity: 1;
 	display: inline-grid;
-	transition: 0.2s;
 }
 
 /* 눈 모양 스위치로 변경 */
@@ -195,10 +194,10 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	border-bottom: 2px solid var(--maincolor) !important;
 }
 #article-list #article-list-category>a {
+	border-radius: 8px;
 	background: transparent !important;
 	padding: 8px 12px !important;
 	margin: 2px;
-	border-radius: 8px;
 }
 
 #article-list #article-list-category>a.nav-link { background: transparent; }
