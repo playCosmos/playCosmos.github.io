@@ -106,7 +106,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { }
+#main #main-menu { position: sticky; top: 15px; }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 #main .menu-wrapper>a,
