@@ -106,6 +106,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
+#main #main-menu { }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 #main .menu-wrapper>a,
@@ -205,13 +206,16 @@ button>.fa-eye-slash:before { content: "\f204"; }
 }
 #article-list #article-list-category>a {
 	background: transparent !important;
+	padding: 9px 14px;
+	margin: 2px;
+	border-radius: 6px;
 }
 
 #article-list #article-list-category > a.nav-link { background: transparent !important; }
-#article-list #article-list-category > a.active { color: var(--maincolor) !important; }
+#article-list #article-list-category > a.active,
 #article-list #article-list-category > a:hover { 
-	background: var(--maincolor) !important;
 	color: white !important;
+	background: var(--maincolor) !important;
 }
 
 @media (min-width: 1400px) {
@@ -219,6 +223,10 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
 		max-height: none;
+	}
+	#article-list #article-list-category.can-float > a {
+		border-radius: 4px;
+		width: auto;
 	}
 }
 
