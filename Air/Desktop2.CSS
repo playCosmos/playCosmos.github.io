@@ -419,12 +419,7 @@ button#theme_btn_box { transition: 0s; }
 		position: absolute;
 		margin: 0 auto;
 		left: calc(50% - 330px);
-		bottom: calc(100% - 770px);
-	}
-	@media (max-width: 1120px) {
-		button#theme_btn_box {
-			bottom: calc(100% - 790px);
-		}
+		bottom: calc(100% - 715px);
 	}
 }
 @media (min-height: 701px) {
