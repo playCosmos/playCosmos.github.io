@@ -340,7 +340,7 @@ input.form-control {
 .vote-btn { height: 32px !important; }
 
 .btn[tabindex="-1"], .btn[type="submit"] {
-    padding: 4px 12px !important;
+	padding: 4px 12px !important; 
 }
  
 .btn:hover,
@@ -394,6 +394,7 @@ footer {
 	padding: 1.5em 0;
 	margin-bottom: 2em;
 }
+@media (min-width: 1400px) { footer { padding: 0 0 1.5em; } }
 footer .container { width: 1080px !important; }
 
 html.darkmode footer a { color: var(--maincolor); }
@@ -412,12 +413,19 @@ html.darkmode footer a { color: var(--maincolor); }
 }*/
 
 /* 다크모드 버튼 위치 조정 */
+button#theme_btn_box { transition: 0s; }
 @media (max-height: 700px) {
 	button#theme_btn_box {
 		display: inline-block;
 		position: absolute;
 		margin: 0 auto;
-		left: 230px;		
+		left: calc(50% - 330px);
+		bottom: calc(100% - 770px);
+	}
+	@media (max-width: 1120px) {
+		button#theme_btn_box {
+			bottom: calc(100% - 790px);
+		}
 	}
 }
 @media (min-height: 700px) {
