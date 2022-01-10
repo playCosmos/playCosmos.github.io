@@ -192,6 +192,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	background: transparent !important;
 	border-top: 2px solid var(--maincolor) !important;
 	border-bottom: 2px solid var(--maincolor) !important;
+	padding: 0 45px 0 2px;
 }
 #article-list #article-list-category>a {
 	border-radius: 8px;
