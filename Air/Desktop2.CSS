@@ -394,7 +394,6 @@ footer {
 	padding: 1.5em 0;
 	margin-bottom: 2em;
 }
-@media (min-width: 1400px) { footer { padding: 0 0 1.5em; } }
 footer .container { width: 1080px !important; }
 
 html.darkmode footer a { color: var(--maincolor); }
