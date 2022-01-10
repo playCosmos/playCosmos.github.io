@@ -427,7 +427,7 @@ button#theme_btn_box { transition: 0s; }
 		}
 	}
 }
-@media (min-height: 700px) {
+@media (min-height: 701px) {
 	button#theme_btn_box {
 		position: fixed;
 		margin-left: 110px;
