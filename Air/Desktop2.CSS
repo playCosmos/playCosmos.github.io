@@ -390,10 +390,11 @@ html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; 
 /* 버튼, 하단 검색 끝 */
 
 footer {
+	text-align: right;
 	padding: 2em 0;
 	margin-bottom: 2em;
-	margin-right: 20px;
 }
+footer .container { width: 1080px !important; }
 
 html.darkmode footer a { color: var(--maincolor); }
 
