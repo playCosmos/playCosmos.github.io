@@ -417,7 +417,7 @@ html.darkmode footer a { color: var(--maincolor); }
 		display: inline-block;
 		position: absolute;
 		margin: 0 auto;
-		left: 220px;		
+		left: 230px;		
 	}
 }
 @media (min-height: 700px) {
