@@ -18,12 +18,14 @@
 	--maincolor: #31405a;	/* 메인색 */
 	--highlight: #f1f5fe;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
+	--bgblur: #ffffff7f;	/* 블러배경 */
 }
 
 html.darkmode:root {
 	--maincolor: #bdc8db;	/* 메인색 */
 	--highlight: #414958;	/* 강조색 */
 	--bgcolor: black;	/* 배경색 */
+	--bgblur: #2424247f;	/* 블러배경 */
 }
 
 @media (max-width: 1100px) {	
@@ -258,12 +260,13 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 
 /* 게시글 제목 */
 #article-info {
-    margin: 0px 15px;
-    width: 846px;
-    position: sticky;
-    top: 10px;
-    z-index: 99;
-    backdrop-filter: blur(5px);	
+	margin: 0px 15px;
+	width: 846px;
+	position: sticky;
+	top: 10px;
+	z-index: 99;
+	backdrop-filter: blur(5px);
+	background: var(--bgblur);
 }
 
 /* 게시글 내부 상단 테두리 */
