@@ -201,7 +201,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	margin: 2px;
 }
 
-#article-list #article-list-category>a.nav-link { background: transparent; }
+#article-list #article-list-category > a.nav-link { background: transparent; }
 #article-list #article-list-category > a.active,
 #article-list #article-list-category > a:hover,
 html.darkmode #article-list #article-list-category>a:hover {
@@ -387,6 +387,8 @@ footer {
 	width: 100%;
 	padding: 16px 0;
 }
+
+html.darkmode footer a { color: var(--maincolor); }
 
 /* 상단으로 이동 */
 /*#movetotop img{display:none}
