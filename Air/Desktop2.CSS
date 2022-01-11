@@ -30,7 +30,7 @@ html.darkmode:root {
 
 @media (max-width: 1200px) {	
 	/* 모바일로 전환 사이즈 조정 */
-	a#switch-platform-link { font-size: 30px; }
+	a#switch-platform-link { font-size: 36px; }
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -468,7 +468,7 @@ button#theme_btn_box { transition: 0s; }
 		display: inline-block;
 		position: absolute;
 		margin: 0 auto;
-		left: calc(50%);
+		left: calc(50% - 27px);
 		/*bottom: calc(100% - 715px);*/
 	}
 	
