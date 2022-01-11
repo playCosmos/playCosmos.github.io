@@ -30,7 +30,7 @@ html.darkmode:root {
 
 @media (max-width: 1200px) {	
 	/* 모바일로 전환 사이즈 조정 */
-	a#switch-platform-link { font-size: 36px; }
+	a#switch-platform-link { font-size: 30px; }
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -449,7 +449,7 @@ html.darkmode footer a { color: var(--maincolor); }
 	margin: 2em 0;	
 	left: calc(50%) !important;
 	right: auto;
-	width: 180px;
+	width: 150px;
 	height: 40px;
 	padding: 8px;
 	opacity: 1;
