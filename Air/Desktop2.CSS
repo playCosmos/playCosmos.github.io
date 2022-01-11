@@ -260,8 +260,8 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 
 /* 게시글 제목 */
 #article-info {
-	margin: 0px 15px;
-	width: 846px;
+	margin: 0px 14px;
+	width: 848px;
 	position: sticky;
 	top: 10px;
 	z-index: 99;
