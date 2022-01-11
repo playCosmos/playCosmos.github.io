@@ -446,7 +446,7 @@ html.darkmode footer a { color: var(--maincolor); }
 	border: 2px solid var(--maincolor);
 	border-radius: 5px;
 	background: #ffffffbf;
-	margin: 2em 0;	
+	margin: 0 0 3.5em 0;	
 	left: calc(50%) !important;
 	right: auto;
 	width: 150px;
