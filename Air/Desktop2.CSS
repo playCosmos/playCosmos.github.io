@@ -57,9 +57,8 @@ body { background: transparent !important; }
 
 /* 스크롤 바 */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--bgcolor); }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--maincolor); }
-* { scrollbar-color: var(--maincolor) white; scrollbar-width:thin; }
 
 /************ 헤더 ************/
 /* 트게더 로고 */
