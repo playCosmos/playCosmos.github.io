@@ -37,7 +37,7 @@ html.darkmode:root {
 *:focus { outline: none !important; }
 
 /* 링크 기본 */
-a { color: var(--maincolor); transition: all 0.2s ease 0s; }
+html.darkmode a, a { color: var(--maincolor); transition: all 0.2s ease 0s; }
 a:hover, a:focus { color: var(--maincolor) !important; }
 
 /* fontawesome 사용 */
