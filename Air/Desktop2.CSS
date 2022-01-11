@@ -268,7 +268,7 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 #article-list>.article-list-row:hover,
 html.darkmode #article-list>.article-list-row:hover { background: var(--highlight) !important; transition: 0.2s; }
 
-img[title="Broadcaster"] { display: none; }
+/*img[title="Broadcaster"] { display: none; }*/
 img[title="Moderator"] { display: none; }
 
 /* 게시글 제목 */
@@ -445,7 +445,7 @@ html.darkmode footer a { color: var(--maincolor); }
 #movetotop {
 	border: 2px solid var(--maincolor);
 	border-radius: 5px;
-	background: white;
+	background: #ffffffbf;
 	margin: 2em 0;	
 	left: calc(50%) !important;
 	right: auto;
@@ -456,7 +456,7 @@ html.darkmode footer a { color: var(--maincolor); }
 	text-align: center;
 	text-decoration: none;
 }
-html.darkmode #movetotop { background: #242424; }
+html.darkmode #movetotop { background: #242424bf; }
 #movetotop:after { content: ""; }
 #movetotop:hover { background: var(--maincolor) !important; }
 #movetotop:hover::after { color: white; }
