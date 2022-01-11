@@ -45,9 +45,7 @@ a.nav-link,
 span.category,
 select.form-control,
 div#article-content,
-#movetotop:after {
-	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
+#movetotop:after { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 /* 알림 */
 .alert { margin-bottom: 10px !important; padding: 10px 35px 10px 15px !important; }
