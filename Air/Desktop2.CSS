@@ -271,7 +271,8 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 
 /* 게시글 내부 상단 테두리 */
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor) !important; }
-#article-content-wrapper>.header * { color: var(--maincolor) !important; }
+html.darkmode #article-comment a { color: white; }
+/*#article-content-wrapper>.header * { color: var(--maincolor) !important; }*/
 
 #article-reply-area > .header h5 { color: var(--maincolor) !important; }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
