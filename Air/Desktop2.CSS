@@ -446,7 +446,7 @@ html.darkmode footer a { color: var(--maincolor); }
 	border: 2px solid var(--maincolor);
 	border-radius: 5px;
 	background: #ffffffbf;
-	margin: 0 0 3.5em 0;	
+	margin: 0 0 25px 0;	
 	left: calc(50%) !important;
 	right: auto;
 	width: 150px;
@@ -462,17 +462,16 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
-button#theme_btn_box { transition: 0s; }
-@media (max-height: 700px) {
+button#theme_btn_box { transition: 0s; position: fixed; margin-left: 110px; bottom: 1em; }
+/*@media (max-height: 700px) {
 	button#theme_btn_box {
 		display: inline-block;
 		position: absolute;
 		margin: 0 auto;
-		left: calc(50% - 27px);
-		/*bottom: calc(100% - 715px);*/
+		left: calc(50% - 320px);
 	}
 	
-	@media (max-width: 1100px) { button#theme_btn_box { left: 540px; } }
+	@media (max-width: 1100px) { button#theme_btn_box { left: 220px; } }
 }
 @media (min-height: 701px) {
 	button#theme_btn_box {
@@ -480,7 +479,7 @@ button#theme_btn_box { transition: 0s; }
 		margin-left: 110px;
 		bottom: 1em;
 	}
-}
+}*/
 
 
 /******* 애니메이션 *******/
