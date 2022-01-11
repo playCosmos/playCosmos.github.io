@@ -44,7 +44,8 @@ a:hover, a:focus { color: var(--maincolor) !important; }
 a.nav-link,
 span.category,
 select.form-control,
-div#article-content {
+div#article-content,
+#movetotop:after {
 	font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
@@ -440,6 +441,25 @@ html.darkmode footer a { color: var(--maincolor); }
 	background-size: contain;
 	background-repeat: no-repeat;
 }*/
+#movetotop img { display: none; }
+#movetotop {
+	border: 2px solid var(--maincolor);
+	border-radius: 5px;
+	background: white;
+	margin: 2em 0;	
+	left: calc(50%) !important;
+	right: auto;
+	width: 100px;
+	height: 32px;
+	padding: 4px;
+	opacity: 1;
+	text-align: center;
+	text-decoration: none;
+}
+html.darkmode #movetotop { background: #242424; }
+#movetotop:after { content: ""; }
+#movetotop:hover { background: var(--maincolor); }
+#movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
 button#theme_btn_box { transition: 0s; }
