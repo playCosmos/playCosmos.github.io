@@ -266,7 +266,7 @@ html.darkmode #article-list>.article-list-row:hover { background: var(--highligh
 	margin: 0px 14px;
 	width: 848px;
 	position: sticky;
-	top: 10px;
+	top: 15px;
 	z-index: 99;
 	backdrop-filter: blur(5px);
 	background: var(--bgblur);
