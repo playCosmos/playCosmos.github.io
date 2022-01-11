@@ -458,7 +458,7 @@ html.darkmode footer a { color: var(--maincolor); }
 }
 html.darkmode #movetotop { background: #242424; }
 #movetotop:after { content: ""; }
-#movetotop:hover { background: var(--maincolor); }
+#movetotop:hover { background: var(--maincolor) !important; }
 #movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
