@@ -222,7 +222,6 @@ button>.fa-eye-slash:before { content: "\f204"; }
 }
 
 @media (min-width: 1400px) {
-	#article-list #article-list-category.can-float>a:last-child { border: none; }
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
 		max-height: none;
