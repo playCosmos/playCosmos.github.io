@@ -449,9 +449,9 @@ html.darkmode footer a { color: var(--maincolor); }
 	margin: 2em 0;	
 	left: calc(50%) !important;
 	right: auto;
-	width: 100px;
-	height: 32px;
-	padding: 4px;
+	width: 180px;
+	height: 40px;
+	padding: 8px;
 	opacity: 1;
 	text-align: center;
 	text-decoration: none;
