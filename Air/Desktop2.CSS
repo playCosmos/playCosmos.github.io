@@ -54,6 +54,12 @@ div#article-content {
 html { background: var(--bgcolor) !important; }
 body { background: transparent !important; }
 
+/* 스크롤 바 */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bgcolor); }
+::-webkit-scrollbar-thumb { background: var(--maincolor); }
+* { scrollbar-color: var(--maincolor) white; scrollbar-width:thin; }
+
 /************ 헤더 ************/
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
@@ -260,6 +266,9 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 }
 #article-list>.article-list-row:hover,
 html.darkmode #article-list>.article-list-row:hover { background: var(--highlight) !important; transition: 0.2s; }
+
+img[title="Broadcaster"] { display: none; }
+img[title="Moderator"] { display: none; }
 
 /* 게시글 제목 */
 #article-info {
