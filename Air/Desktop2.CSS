@@ -173,7 +173,10 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 h3 { margin-bottom: 0.5em !important; }
 
 #board-info #board-info-bottom { padding-top: 7px !important;}
-#board-info #board-info-bottom a { color: var(--maincolor) !important; }
+#board-info #board-info-bottom a { color: black; }
+html.darkmode #board-info #board-info-bottom a { color: white; }
+
+/*#board-info #board-info-bottom a { color: var(--maincolor) !important; }*/
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px !important; }
