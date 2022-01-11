@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+html {
+  background: linear-gradient(to bottom, #282828, #282828);
+  height: auto !important;
+}
+
+body {
+  letter-spacing: -0.05em !important;
+  background: transparent;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 마우스 커서 기본 */
+html,
+body,
+.fr-popup, 
+.fr-active div>*, 
+.fr-btn-wrap,
+span#viewers,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt {
+    cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; 
+}
+
+/* 마우스 커서 링크 */
+#right-search-form>#right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+.btn,
+a {
+    cursor: url(https://upload.tgd.kr/20190220/12c6c1fda96dcab1854eddeaf0b365f4.png) 3 5, auto !important;
+}
+
+/* 마우스 커서 텍스트 */
+.fr-view,
+.fr-box.fr-basic.fr-element,
+#article-list #boardSearchForm .form-control,
+input[type='text'] {
+    cursor: url(https://upload.tgd.kr/20190220/10b7072018d3161b41fc70ef78b54add.png) 3 5, auto !important;
+}
+      
+/* 전체 쉐도우 */
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+       box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 로고밑 NAV bar */
+header #header-bar>.row {
+        border-top: 4px solid #505050;
+        border-right: none;
+        border-bottom: none;
+}
+
+/* 헤더 배너 */
+header .row>div:nth-child(1)>a {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background: url(https://cdn.discordapp.com/attachments/763682781875929088/888684399661576212/2.png) no-repeat;
+  background-size: auto 50px;
+}
+
+header .row>div:nth-child(1)>a>img { display: none; }
+
+/* 검색폼 보더 */
+
+header #right-search-form>input[type='text'] {
+        border: 3px solid #505050;
+        border-radius: 17px;
+}
+
+/* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
+#main .menu-wrapper>.header {
+  background: #505050;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before { color: white; }
+
+.fa-square:before { color: #505050; }
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame { border-radius: 20px; }
+
+#main .menu-wrapper { border: none;}
+
+/* 헤더 검색 버튼 */
+header #right-search-form>#right-search-btn { color: #505050; }
+
+/* 헤더 [광고]배경색 */
+header #header-bar #header-top-notice strong.notice-badge { background: #505050; }
+
+/* fa색상 */
+header #header-bar .fa { color: #505050; }
+
+/* 스트리머 게시판 상단 정보 글씨색상 */
+
+div#board-info {
+    height:auto;
+    margin-bottom:10px;
+    background:#fff;
+    border-radius:20px;
+}
+
+div#board-info>img,
+div#board-info>h1,
+div#board-info>#board-info-bottom {
+    float:left!important;
+}
+
+div#board-info>img#board-info-profile-img {
+    animation:ProfileImageRotate 1s ease 1s;
+    animation-fill-mode:both;
+    width:90px;
+    margin-right:20px;
+    border-radius:50%;
+    border:1px dashed rgba(150, 150, 150, 150);
+}
+
+div#board-info>h1 { margin-top:12px; width:calc(100% - 110px); }
+div#board-info>h1>a { font-size:23px; transition:.2s ease 0s; }
+div#board-info>h1>a:hover { color: #282828; }
+
+div#board-info>#board-info-bottom {
+    margin-top:10px;
+    width:calc(100% - 110px);
+    color: #282828;
+}
+
+/* 좌측메뉴 숏컷링크 글씨 색상 */
+#main .menu-wrapper>a>em { color: #505050; }
+
+/* 좌측메뉴 메뉴사이의 공간 색상 */
+#main .menu-wrapper .spacer {
+        background: #505050;
+        height: 0.15em;
+}
+
+/* 게시글 관련부분 */
+div#article-list {
+    background:#fff;
+    border-radius:20px;
+    padding:0;
+}
+
+div#article-list div#article-list-category {
+    border:0;
+    padding:5px;
+    background:none;
+}
+
+div#article-list div.article-list-row {
+    width:calc(100% - 10px);
+	border:0;
+	background:#fdfdfd;
+	margin:4px 5px 0 5px;
+	border-radius:15px;
+	border:1px solid #eee;
+	transition:.15s ease 0s;
+}
+
+div#article-list div.article-list-row div.item div.list-header { border: 0; }
+div#article-list div.article-list-row .v0 span { background:#ccc!important; }
+div#article-list div.article-list-row>div.item>.list-title { border-bottom:0; }
+div#article-list div.article-list-row>div.item>.list-title>a:visited { color:#999!important; }
+div#article-list div.article-list-row>div.item>.list-time { border-bottom:0; }
+div#article-list div.article-list-row:hover { background:rgba(100, 100, 100, .5); }
+div#article-list div.article-list-row.notice { 
+	border: 1px solid rgba(79, 105, 126, .20);
+	background: rgba(125, 167, 202, .10);
+}
+div#article-list div.article-list-row.notice:hover { background:rgba(79, 105, 126, .2); }
+div#article-list div.article-list-row.hot { border: 1px solid rgba(95, 161, 178, .20); background: rgba(90, 90, 90, .8); }
+div#article-list div.article-list-row.hot:hover { background:rgba(100, 100, 100, .3); }
+div#article-list #article-list-menu>.btn.best { 
+	border-radius:15px;
+	background: #505050;
+    color:#fff;
+}
+div#article-list #article-list-menu>.btn.write {
+    border-radius:15px;
+    background: #505050;
+    color:#fff;
+}
+div#article-list #article-list-menu .pagination>li>a {
+    color: #505050;
+    border-radius:50%;
+    margin-left:5px;
+}
+div#article-list #article-list-menu .pagination>li>a:hover {
+	transition:.3s ease 0s;
+    background:#fafafa;
+}
+div#article-list #article-list-menu .pagination>li.active>a {
+    color:#fff;
+    font-weight:bold;
+}
+div#article-list form.input-group input[type="text"] {
+    padding:6px;
+    height:31px!important;
+    border:1px solid #ccc;
+    border-left:0;
+    border-right:0;
+}
+div#article-list form.input-group .input-group-btn button {
+    border:1px solid #ccc;
+}
+div#article-list form.input-group .input-group-btn button:hover {
+transition:.3s ease 0s;
+}
+div#article-list form.input-group .input-group-btn button.btn.square.btn-default.dropdown-toggle {
+    padding-left:15px;
+    padding-right:10px;
+    border-top-left-radius:17px;
+    border-bottom-left-radius:17px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+div#article-list form.input-group .input-group-btn button.btn.square.btn-default {
+    padding-left:10px;
+    padding-right:15px;
+    border-top-right-radius:17px;
+    border-bottom-right-radius:17px;
+}
+
+
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+    width:120px!important
+}
+#article-list #article-list-category {
+    border-top:2px solid #505050;
+    background:white
+}
+#article-list #article-list-category>a {
+    background:white
+}
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: #505050;
+}
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: #505050;
+}
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #505050;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #505050;
+    border-color:#505050
+}
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color:#505050
+}
+.pagination>li>a, .pagination>li>span {
+    color:#505050
+}
+#article-content-wrapper>.header {
+    border-top:2px solid #505050
+}
+#article-reply-area#reply-real-area.reply>.reply-header>.reply-writer.logged,
+#article-reply-area#reply-best-area.reply>.reply-header>.reply-writer.logged {
+    color:#505050
+}
+#article-info>h2 {
+    font-weight:bold
+}
+#article-info>h2>span.category {
+    color: #505050!important;
+}
+#article-reply-area>.header h5 {
+    color: #505050;
+}
+#main .menu-wrapper>a {
+    padding:.5em 1.4em .5em .7em!important
+}
+a {
+    color: #505050;
+}
+span.a-badge i.fa.fa-info-circle {
+    color: #505050
+}
+#article-list>.article-list-row {
+    border-right:none
+}
+#article-list #article-list-menu {
+    box-sizing:border-box;
+    width:unset;
+    margin:20px
+}
+#article-list #boardSearchForm {
+    padding-bottom:20px;
+    height:unset
+}
+
+#article-list>.article-list-row>.item>.list-checkbox{
+    border-bottom: 0px 
+}
+
+#article-list #article-list-menu>.btn.best {
+     border-color: #505050;
+}
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #505050;
+    border-radius: 10px;
+}
+
+.btn-primary {
+  background: #505050 !important;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+
+/* 새 글 작성 */
+.fr-toolbar {
+ border-top:5px solid #505050
+}
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+ color:#505050
+}
+
+/* 스트리머 게시판 상단 정보 글씨색상 "즐겨찾기 소개 채널 클립" */
+#board-info #board-info-bottom a {
+  color: #505050;
+}
+
+
+/* 게시판 접두 */
+#board-info #viewers-area #viewers:before {
+  content: "캣게더에 ";
+  cursor: text
+}
+
+/* 게시판 접미 */
+#board-info #viewers-area #viewers:after {
+  content: "명의 야메단이 대기중";
+  cursor: text
+}
