@@ -50,7 +50,7 @@ div#article-content,
 /* 알림 */
 .alert { margin-bottom: 10px !important; padding: 10px 35px 10px 15px !important; }
 
-html { background: var(--bgcolor) !important; }
+html { background: var(--bgcolor) !important; scroll-behavior: smooth; }
 body { background: transparent !important; }
 
 /* 스크롤 바 */
