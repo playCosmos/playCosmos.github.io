@@ -28,7 +28,7 @@ html.darkmode:root {
 	--bgblur: #2424247f;	/* 블러배경 */
 }
 
-@media (max-width: 1100px) {	
+@media (max-width: 1200px) {	
 	/* 모바일로 전환 사이즈 조정 */
 	a#switch-platform-link { font-size: 36px; }
 }
