@@ -14,14 +14,16 @@
 :root {
 	--mainColor: #31405a;	/* 메인색 */
 	--subColor: #f1f5fe;	/* 서브색 */
-	--bgColor: #e7eaef;	  /* 배경색 */
+	--bgColor: #e7eaef;	/* 배경색 */
+	--bgFrame: #ffffff;	/* 프레임 */
 	--bgBlur: #ffffff7f;	/* 블러배경 */
 }
 
 html.darkmode:root {
 	--mainColor: #bdc8db;	/* 메인색 */
 	--subColor: #414958;	/* 서브색 */
-	--bgColor: black;	    /* 배경색 */
+	--bgColor: black;	/* 배경색 */
+	--bgFrame: #242424;	/* 프레임 */
 	--bgBlur: #2424247f;	/* 블러배경 */
 }
 
@@ -59,6 +61,15 @@ body { background: transparent !important; }
 	border: 3px solid transparent;
 	border-radius: 8px;
 }
+
+/* 카테고리 */
+html.darkmode #article-list #article-list-category,
+#article-list #article-list-category {
+	background: var(--bgFrame);
+	border-top: none;
+	border-bottom: 2px solid var(--mainColor);
+}
+
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
