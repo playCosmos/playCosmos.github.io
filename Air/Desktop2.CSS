@@ -54,10 +54,14 @@ html { background: var(--bgcolor) !important; scroll-behavior: smooth; }
 body { background: transparent !important; }
 
 /* 스크롤 바 */
-::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar { width: 16px; height: 16px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-corner { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--maincolor); }
+::-webkit-scrollbar-thumb { 
+	background: var(--maincolor) content-box;
+	border: 3px solid transparent;
+	border-radius: 8px;
+}
 
 /************ 헤더 ************/
 /* 트게더 로고 */
