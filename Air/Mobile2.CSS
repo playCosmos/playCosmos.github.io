@@ -44,12 +44,13 @@ a { color: var(--maincolor); transition: all 0.2s ease 0s;  }
 a.nav-link,
 span.category,
 select.form-control,
-div#article-content { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+div#article-content,
+#movetotop:after { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 /* 알림 */
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
 
-html { background: transparent; }
+html { background: transparent; scroll-behavior: smooth; }
 body { background: transparent !important; padding-top: 55px; }
 
 /* 트게더 로고 */
@@ -402,6 +403,25 @@ html.darkmode footer a { color: var(--maincolor); }
 	background-repeat: no-repeat;
 }*/
 
+#movetotop img { display: none; }
+#movetotop {
+	border: 2px solid var(--maincolor);
+	border-radius: 12px;
+	background: #ffffffbf;
+	backdrop-filter: blur(2px);
+	width: 50px;
+	height: 50px;
+	padding: 5px 0;
+	margin: 12px;
+	font-size: 24px;
+	opacity: 1;
+	text-align: center;
+	text-decoration: none;
+}
+html.darkmode #movetotop { background: #242424bf; }
+#movetotop:after { content: ""; }
+#movetotop:hover { background: var(--maincolor) !important; }
+#movetotop:hover::after { color: white; }
 .theme_btn_box { transition: all 0.2s; }
 
 /******* 애니메이션 *******/
