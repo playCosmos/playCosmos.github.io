@@ -69,7 +69,16 @@ html.darkmode #article-list #article-list-category,
 	border-top: none;
 	border-bottom: 2px solid var(--mainColor);
 }
-
+html.darkmode #article-list #article-list-category>a:before,
+#article-list #article-list-category>a:before {
+	right: -12px;
+	transform: skew( 30deg, 0deg );
+}
+html.darkmode #article-list #article-list-category>a:after,
+#article-list #article-list-category>a:after {
+	left: -12px;
+	transform: skew( -30deg, 0deg );
+}
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
