@@ -54,13 +54,13 @@ html { background: var(--bgcolor) !important; scroll-behavior: smooth; }
 body { background: transparent !important; }
 
 /* 스크롤 바 */
-::-webkit-scrollbar { width: 16px; height: 16px; }
+::-webkit-scrollbar { width: 12px; height: 12px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-thumb { 
 	background: var(--maincolor) content-box;
-	border: 3px solid transparent;
-	border-radius: 8px;
+	border: 1px solid transparent;
+	border-radius: 5px;
 }
 
 /************ 헤더 ************/
