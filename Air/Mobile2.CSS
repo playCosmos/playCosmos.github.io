@@ -85,7 +85,7 @@ html.darkmode header { background: var(--bgcolor) !important; }
 /* 헤더 검색 */
 header>#header-search-bar #header-search-btn,
 header>#header-search-bar #header-close-search-btn,
-header>#header-area>#header-search-link { color: var(--maincolor); }
+header>#header-area>#header-search-link { color: var(--maincolor) !important; }
 header>#header-search-bar #header-search-btn { margin-top: -2px; }
 header>#header-search-bar #header-search-input {
 	border: 2px solid var(--maincolor) !important;
