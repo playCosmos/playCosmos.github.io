@@ -45,7 +45,8 @@ a.nav-link,
 span.category,
 select.form-control,
 div#article-content,
-#movetotop:after { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+#movetotop:after,
+a#switch-platform-link:before  { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 /* 알림 */
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
@@ -389,6 +390,7 @@ footer {
 	padding: 16px 0;
 }
 
+a#switch-platform-link:before { content: " "; }
 html.darkmode footer a { color: var(--maincolor); }
 
 /* 상단으로 이동 */
