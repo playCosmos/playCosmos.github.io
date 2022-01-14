@@ -421,7 +421,7 @@ footer .container {
 
 html.darkmode footer a { color: var(--maincolor); }
 
-a#switch-platform-link:before { content: " "; }
+a#switch-platform-link:before { content: " "; }
 
 
 /* 상단으로 이동 */
