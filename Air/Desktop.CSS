@@ -229,6 +229,8 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
 		width: 150px;
+		left: -25px;
+		right: 25px;
 		max-height: none;
 	}
 	#article-list #article-list-category.can-float > a {
