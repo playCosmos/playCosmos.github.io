@@ -126,7 +126,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px; z-index: 999; }
+#main #main-menu { position: sticky; top: 15px; }
+#main #main-menu:hover { z-index: 999; }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 
