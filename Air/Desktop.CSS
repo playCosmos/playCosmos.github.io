@@ -97,7 +97,7 @@ header #header-bar>.row {
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor) !important; }
 
 header #header-bar #header-top-notice > * ,
-header #header-bar #header-top-notice { animation: fadein 0.2s; }
+header #header-bar #header-top-notice { animation: fadein 0.4s; }
 @keyframes fadein {
     0%   { opacity: 0; }
     100% { opacity: 1; }
