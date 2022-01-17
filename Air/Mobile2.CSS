@@ -190,6 +190,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 }
 
 /* 카테고리 */
+#article-list-category::-webkit-scrollbar { height: 0px; }
 #article-list #article-list-category {
 	background: transparent !important;
 	border-top: 2px solid var(--maincolor) !important;
