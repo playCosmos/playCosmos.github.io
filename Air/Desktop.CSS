@@ -126,7 +126,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px; }
+#main #main-menu { position: sticky; top: 15px; z-index: 999; }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 
@@ -135,11 +135,32 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
 #main .menu-wrapper .spacer { background: transparent !important; height: .2em; }
 
+#main .menu-wrapper>a>em,
+#main .menu-wrapper #fav-shortcut-area>a>em,
+#main .menu-wrapper>.header>i.fa.fa-bars {
+	width: 24px;
+	text-align: center;
+	margin: 0 7px;
+}
+
+#main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 3px; }
+
+#main .menu-wrapper>.header,
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
-	position: relative; 
-	z-index: 1;
+	overflow: hidden;
+	width: 40px;
+	white-space: nowrap;
+	padding: 8px 2px;
+	transition: 0.2s; 
 }
+
+#main .menu-wrapper>.header:hover,
+#main .menu-wrapper>a:hover,
+#main .menu-wrapper #fav-shortcut-area>a:hover {
+	width: 100%;
+}
+#main #main-menu>div:last-child {}
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
@@ -166,8 +187,10 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
- 
+#main #main-content { margin-left: -140px; }
+
 #main #main-content>div.frame {	
+	width: calc(100% + 140px);
 	border: none !important;
 	border-radius: 5px !important;
 }
