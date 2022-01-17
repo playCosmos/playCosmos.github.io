@@ -394,6 +394,7 @@ input.form-control:focus {
 
 .btn-primary,
 .btn-default,
+.btn-info,
 input.form-control { --btcolor: var(--maincolor); }
 
 select.form-control,
@@ -482,6 +483,7 @@ small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
 	100% { transform: scale(1); }
 }
 
+/*i.fa.fa-refresh,*/
 span.a-badge i.fa.fa-star {
 	animation: shiningstar 2s infinite;
 	animation-timing-function: linear;
