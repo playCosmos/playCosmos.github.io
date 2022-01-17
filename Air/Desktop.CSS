@@ -96,6 +96,13 @@ header #header-bar>.row {
 /* 헤더 광고 뱃지 */
 header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor) !important; }
 
+header #header-bar #header-top-notice > * ,
+header #header-bar #header-top-notice { animation: fadein 0.2s; }
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 /* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor) !important; }
 span.delrow { color: var(--maincolor) !important; } 
