@@ -424,7 +424,7 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:after { content: ""; }
 #movetotop:hover { background: var(--maincolor) !important; }
 #movetotop:hover::after { color: white; }
-.theme_btn_box { transition: all 0.2s; }
+.theme_btn_box { transition: all 0.2s; margin: 20px auto 0; }
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart {
