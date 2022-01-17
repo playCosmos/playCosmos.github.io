@@ -160,7 +160,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper #fav-shortcut-area>a:hover {
 	width: 100%;
 }
-#main #main-menu>div:last-child {}
+
+#main #main-menu>div:last-child { margin: 0 140px 0 -140px; }
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
