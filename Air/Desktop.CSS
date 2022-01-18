@@ -134,7 +134,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>a:last-child { }
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
-#main .menu-wrapper .spacer { background: transparent !important; height: .2em; }
+#main .menu-wrapper .spacer { background: transparent !important; height: 3px; }
 
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em,
@@ -176,6 +176,21 @@ html.darkmode #main .menu-wrapper>a:hover,
 html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 	color: white !important;
 }
+
+/* div#fav-shortcut-area > a { display: none !important; }
+div#fav-shortcut-area > a:first-child { display: block !important; }
+div#fav-shortcut-area:before {
+	content: "★";
+	padding: 8px;
+	display: block;
+	background: white;
+	height: 37px;
+	width: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+} */
+
 /*
 #main .menu-wrapper>a:after,
 #main .menu-wrapper #fav-shortcut-area>a:after{
@@ -498,7 +513,7 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
-button#theme_btn_box { position: fixed; margin-left: 110px; bottom: 1em; }
+button#theme_btn_box { position: fixed; margin-left: -5px; bottom: 1em; }
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
