@@ -18,6 +18,7 @@
 	--maincolor: #31405a;	/* 메인색 */
 	--highlight: #f1f5fe;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
+	--bgframe: #ffffff;	/* 프레임배경 */
 	--bgblur: #ffffff7f;	/* 블러배경 */
 }
 
@@ -25,6 +26,7 @@ html.darkmode:root {
 	--maincolor: #bdc8db;	/* 메인색 */
 	--highlight: #414958;	/* 강조색 */
 	--bgcolor: black;	/* 배경색 */
+	--bgframe: #242424;	/* 프레임배경 */
 	--bgblur: #2424247f;	/* 블러배경 */
 }
 /*@media (min-width: 1112px) { body{ position: absolute; left: calc(calc(1100px - 100%) / 2); } }*/
@@ -126,22 +128,31 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px; width: 40px; z-index: 1; }
+#main #main-menu {
+	position: sticky;
+	top: 15px;
+	width: 40px;
+	z-index: 1;
+	background: var(--bgframe);
+	border-radius: 10px;
+}
+
 #main #main-menu:hover { z-index: 999; }
-#main .menu-wrapper { border: none !important; }
+#main .menu-wrapper { border: none !important; margin: 0; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 
 #main .menu-wrapper>a:last-child { }
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
-#main .menu-wrapper .spacer { background: transparent !important; height: 3px; }
+/* #main .menu-wrapper .spacer { background: transparent !important; height: 3px; } */
+#main .menu-wrapper .spacer { display: none; }
 
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em,
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
-	margin: 0 5px;
+	margin: 0 6px 0 4px;
 }
 
 #main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 2px; }
@@ -149,10 +160,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header,
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
+	border: none;
+	border-radius: 8px;
 	overflow: hidden;
 	width: 36px;
 	white-space: nowrap;
-	padding: 6px 2px;
+	padding: 8px 2px;
+	margin: 2px;
 	transition: 0.2s; 
 }
 
