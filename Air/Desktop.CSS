@@ -100,10 +100,7 @@ header #header-bar>.row {
 header #header-bar #header-top-notice strong.notice-badge { display: none; }
 header #header-bar #header-top-notice > * ,
 header #header-bar #header-top-notice { animation: fadein 0.4s; }
-@keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-}
+@keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 /* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor) !important; }
@@ -131,7 +128,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main #main-menu {
 	position: sticky;
 	top: 15px;
-	width: 40px;
+	width: 36px;
 	z-index: 1;
 	background: var(--bgframe);
 	border-radius: 10px;
@@ -152,7 +149,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
-	margin: 0 6px 0 4px;
+	margin: 0 6px 0 2px;
 }
 
 #main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 2px; }
@@ -163,9 +160,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	border: none !important;
 	border-radius: 8px;
 	overflow: hidden;
-	width: 36px;
+	width: 32px;
 	white-space: nowrap;
-	padding: 8px 12px 8px 2px;
+	padding: 6px 12px 6px 2px;
 	margin: 2px;
 	transition: 0.2s; 
 }
