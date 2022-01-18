@@ -126,7 +126,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px; width: 40px; }
+#main #main-menu { position: sticky; top: 15px; width: 40px; z-index: 1; }
 #main #main-menu:hover { z-index: 999; }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
@@ -141,18 +141,18 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
-	margin: 0 7px;
+	margin: 0 5px;
 }
 
-#main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 3px; }
+#main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 2px; }
 
 #main .menu-wrapper>.header,
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
 	overflow: hidden;
-	width: 40px;
+	width: 36px;
 	white-space: nowrap;
-	padding: 8px 2px;
+	padding: 6px 2px;
 	transition: 0.2s; 
 }
 
@@ -166,7 +166,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	#main .menu-wrapper #fav-shortcut-area>a:hover { margin-left: -120px; }
 }
 
+/* 광고 패딩 조절 */
 #main #main-menu>div:last-child { margin: 0 0 0 -120px; padding: 0 !important; }
+#article-list>div:nth-child(3) { padding: 0 !important; }
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
@@ -176,20 +178,6 @@ html.darkmode #main .menu-wrapper>a:hover,
 html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 	color: white !important;
 }
-
-/* div#fav-shortcut-area > a { display: none !important; }
-div#fav-shortcut-area > a:first-child { display: block !important; }
-div#fav-shortcut-area:before {
-	content: "★";
-	padding: 8px;
-	display: block;
-	background: white;
-	height: 37px;
-	width: 40px;
-	text-align: center;
-	font-size: 14px;
-	font-weight: bold;
-} */
 
 /*
 #main .menu-wrapper>a:after,
@@ -208,7 +196,6 @@ div#fav-shortcut-area:before {
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
-/* #main #main-content { margin-left: -140px; } */
 
 #main #main-content>div.frame {	
 	width: calc(100% + 140px);
@@ -290,6 +277,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		width: auto;
 	}
 }
+
 
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
@@ -500,7 +488,7 @@ a#switch-platform-link:before { content: " "; }
 	margin: 0 0 25px 0;	
 	left: calc(50%) !important;
 	right: auto;
-	width: 150px;
+	width: 80px;
 	height: 40px;
 	padding: 8px;
 	opacity: 1;
