@@ -126,7 +126,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px; }
+#main #main-menu { position: sticky; top: 15px; width: 40px; }
 #main #main-menu:hover { z-index: 999; }
 #main .menu-wrapper { border: none !important; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
@@ -158,11 +158,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper>.header:hover,
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover {
-	width: 100%;
-}
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: 160px; }
 
-#main #main-menu>div:last-child { margin: 0 140px 0 -140px; }
+#main #main-menu>div:last-child { width: 160px; margin: 0 0 0 -120px; }
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
@@ -189,7 +187,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
-#main #main-content { margin-left: -140px; }
+/* #main #main-content { margin-left: -140px; } */
 
 #main #main-content>div.frame {	
 	width: calc(100% + 140px);
