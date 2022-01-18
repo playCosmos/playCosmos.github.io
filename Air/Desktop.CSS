@@ -168,12 +168,12 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 /* #main .menu-wrapper>.header:hover, */
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: 160px; }
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: 152px; }
 
 @media (min-width: 1400px) {
 /* 	#main .menu-wrapper>.header:hover, */
 	#main .menu-wrapper>a:hover,
-	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-124px); }
+	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
 }
 
 /* 광고 패딩 조절 */
