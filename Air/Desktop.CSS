@@ -170,9 +170,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	transition: 0.2s; 
 }
 
-#main .menu-wrapper>.header:hover,
+/* #main .menu-wrapper>.header:hover, */
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: max-content; }
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: 160px; }
 
 @media (min-width: 1400px) {
 	#main .menu-wrapper>.header:hover,
