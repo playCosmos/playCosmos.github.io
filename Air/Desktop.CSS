@@ -160,19 +160,19 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header,
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
-	border: none;
+	border: none !important;
 	border-radius: 8px;
 	overflow: hidden;
 	width: 36px;
 	white-space: nowrap;
-	padding: 8px 2px;
+	padding: 8px 12px 8px 2px;
 	margin: 2px;
 	transition: 0.2s; 
 }
 
 #main .menu-wrapper>.header:hover,
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: 160px; }
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: max-content; }
 
 @media (min-width: 1400px) {
 	#main .menu-wrapper>.header:hover,
@@ -181,7 +181,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* 광고 패딩 조절 */
-#main #main-menu>div:last-child { margin: 0 0 0 -120px; padding: 0 !important; }
+#main #main-menu>div:last-child { margin: 0 0 0 -120px; padding: 0 !important; border: none; }
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
 #main .menu-wrapper>a:hover,
