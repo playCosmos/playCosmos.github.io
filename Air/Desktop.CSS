@@ -298,6 +298,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	}
 }
 
+#article-list>.article-list-row.notice {} /* 공지글 */
+#article-list>.article-list-row.hot {} /* 인기글 */
+#article-list>.article-list-row {} /* 일반글 */
 
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
