@@ -166,7 +166,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	#main .menu-wrapper #fav-shortcut-area>a:hover { margin-left: -120px; }
 }
 
-#main #main-menu>div:last-child { width: 160px; margin: 0 0 0 -120px; }
+#main #main-menu>div:last-child { margin: 0 0 0 -120px; padding: 0 !important; }
 
 #main .menu-wrapper>a:hover,
 #main .menu-wrapper #fav-shortcut-area>a:hover{
@@ -279,9 +279,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 @media (min-width: 1400px) {
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
-		width: 150px;
-		left: -25px;
-		right: 25px;
+		width: 120px;
+		left: -40px;
+		right: 40px;
 		max-height: none;
 	}
 	#article-list #article-list-category.can-float > a {
