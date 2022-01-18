@@ -133,10 +133,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main #main-menu:hover { z-index: 999; }
 #main .menu-wrapper {
+	background: var(--bgframe);
 	border: none !important;
 	border-radius: 10px;
 	padding: 2px;
-	background: var(--bgframe);
 	margin-bottom: 5px;
 }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
@@ -167,9 +167,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	border: none !important;
 	border-radius: 8px;
 	overflow: hidden;
-	width: 32px;
+	width: 30px;
 	white-space: nowrap;
-	padding: 6px 12px 6px 2px;
+	padding: 5px 12px 5px 1px;
+	margin: 1px;
 	transition: 0.2s; 
 }
 
