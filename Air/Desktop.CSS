@@ -496,16 +496,17 @@ a#switch-platform-link:before { content: " "; }
 #movetotop img { display: none; }
 #movetotop {
 	border: 2px solid var(--maincolor);
-	border-radius: 5px;
+	border-radius: 10px;
 	background: #ffffffbf;
 	backdrop-filter: blur(2px);
 	margin: 0 0 25px 0;	
 	left: calc(50%) !important;
 	right: auto;
-	width: 80px;
-	height: 40px;
-	padding: 8px;
+	width: 50px;
+	height: 50px;
+	padding: 5px 0;
 	opacity: 1;
+	font-size: 24px;
 	text-align: center;
 	text-decoration: none;
 }
