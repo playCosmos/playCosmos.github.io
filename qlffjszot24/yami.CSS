@@ -166,7 +166,6 @@ div#article-list div#article-list-category {
 
 div#article-list div.article-list-row {
     width:calc(100% - 10px);
-	border:0;
 	background:#fdfdfd;
 	margin:4px 5px 0 5px;
 	border-radius:15px;
@@ -174,11 +173,11 @@ div#article-list div.article-list-row {
 	transition:.15s ease 0s;
 }
 
-div#article-list div.article-list-row div.item div.list-header { border: 0; }
 div#article-list div.article-list-row .v0 span { background:#ccc!important; }
-div#article-list div.article-list-row>div.item>.list-title { border-bottom:0; }
-div#article-list div.article-list-row>div.item>.list-title>a:visited { color:#999!important; }
-div#article-list div.article-list-row>div.item>.list-time { border-bottom:0; }
+div#article-list div.article-list-row div.item div.list-header,
+div#article-list div.article-list-row>div.item>.list-title,
+div#article-list div.article-list-row>div.item>.list-time { border:0; }
+div#article-list div.article-list-row>div.item>.list-title>a:visited { color:#999 !important; }
 div#article-list div.article-list-row:hover { background:rgba(100, 100, 100, .5); }
 div#article-list div.article-list-row.notice { 
 	border: 1px solid rgba(79, 105, 126, .20);
@@ -190,12 +189,12 @@ div#article-list div.article-list-row.hot:hover { background:rgba(100, 100, 100,
 div#article-list #article-list-menu>.btn.best { 
 	border-radius:15px;
 	background: #505050;
-    color:#fff;
+	color:#fff;
 }
 div#article-list #article-list-menu>.btn.write {
-    border-radius:15px;
-    background: #505050;
-    color:#fff;
+	border-radius:15px;
+	background: #505050;
+	color:#fff;
 }
 div#article-list #article-list-menu .pagination>li>a {
     color: #505050;
