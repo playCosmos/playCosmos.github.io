@@ -9,9 +9,6 @@
 	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
 		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
-/* 마우스 커서 */
-/* 출처: https://www.deviantart.com/rosea92/art/Material-Design-Cursors-Dark-756850032 */
-
 
 /* 기본 설정 */
 :root {
