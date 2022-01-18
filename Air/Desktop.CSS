@@ -501,7 +501,7 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
-button#theme_btn_box { position: fixed; margin-left: -5px; bottom: 1em; z-index: 99; }
+button#theme_btn_box { position: fixed; margin-left: 60px; bottom: 1em; z-index: 99; }
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
