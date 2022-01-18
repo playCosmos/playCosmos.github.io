@@ -207,7 +207,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
-#main #main-content { padding: 0 0 0 6px; }
+#main #main-content { padding: 0 5px 0 0; margin-left: 0.66666666%; }
 
 #main #main-content>div.frame {	
 	width: calc(100% + 140px);
