@@ -149,7 +149,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
-	margin: 0 6px 0 2px;
+	margin: 0 4px 0 2px;
 }
 
 #main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 2px; }
