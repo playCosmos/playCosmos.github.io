@@ -144,12 +144,8 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>a:last-child { }
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
-/* #main .menu-wrapper .spacer { background: transparent !important; height: 3px; } */
-#main .menu-wrapper .spacer {
-	height: 1px;
-	margin: 1px;
-	background: var(--maincolor);
-}
+/* #main .menu-wrapper .spacer { display: none; } */
+#main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
 
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em,
@@ -170,13 +166,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	width: 30px;
 	white-space: nowrap;
 	padding: 5px 12px 5px 1px;
-	margin: 1px;
+	margin: 2px 1px;
 	transition: 0.2s; 
 }
 
 /* #main .menu-wrapper>.header:hover, */
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: 152px; }
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: 150px; }
 
 @media (min-width: 1400px) {
 /* 	#main .menu-wrapper>.header:hover, */
