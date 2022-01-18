@@ -204,7 +204,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 #main .menu-wrapper>a:hover:after,
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
-#main #main-content { width: min-content; }
+#main #main-content { width: calc(100% - 36px); padding: 0px 0px 0 6px; }
 
 #main #main-content>div.frame {	
 	border: none !important;
@@ -322,7 +322,7 @@ img[title="Moderator"] { display: none; }
 /* 게시글 제목 */
 #article-info {
 	margin: 0px 14px;
-	width: 989px;
+	width: 1000px;
 	position: sticky;
 	top: 15px;
 	z-index: 99;
