@@ -129,19 +129,27 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	top: 15px;
 	width: 36px;
 	z-index: 1;
-	background: var(--bgframe);
-	border-radius: 10px;
 }
 
 #main #main-menu:hover { z-index: 999; }
-#main .menu-wrapper { border: none !important; margin: 0; }
+#main .menu-wrapper {
+	border: none !important;
+	border-radius: 10px;
+	padding: 2px;
+	background: var(--bgframe);
+	margin-bottom: 5px;
+}
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 
 #main .menu-wrapper>a:last-child { }
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
 /* #main .menu-wrapper .spacer { background: transparent !important; height: 3px; } */
-#main .menu-wrapper .spacer { display: none; }
+#main .menu-wrapper .spacer {
+	height: 1px;
+	margin: 1px;
+	background: var(--maincolor);
+}
 
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em,
@@ -162,7 +170,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	width: 32px;
 	white-space: nowrap;
 	padding: 6px 12px 6px 2px;
-	margin: 2px;
 	transition: 0.2s; 
 }
 
@@ -177,7 +184,12 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 /* 광고 패딩 조절 */
-#main #main-menu>div:last-child { margin: 0 0 0 -120px; padding: 0 !important; border: none; }
+#main #main-menu>div:last-child {
+	margin: 0;
+	padding: 0 !important;
+	border: none;
+	transform: translateX(-124px);
+}
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
 #main .menu-wrapper>a:hover,
