@@ -65,6 +65,8 @@ body { background: transparent !important; }
 }
 
 /************ 헤더 ************/
+header { padding: 8px 0 5px 0; }
+
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a>img {
 	content: url(./image/logo.svg);
@@ -83,7 +85,7 @@ header #right-search-form>#right-search-btn {
 }
 
 /* 헤더 하단 여백 */
-header #header-bar { margin-bottom: 10px !important; }
+header #header-bar { margin-bottom: 0px !important; }
 
 /* 헤더 상단 메뉴 */
 header #header-bar>.row {
