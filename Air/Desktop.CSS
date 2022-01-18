@@ -468,8 +468,8 @@ html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; 
 
 footer {
 	text-align: right;
-	padding: 1.5em 0;
-	margin-bottom: 2em;
+	padding: 20px 0;
+	margin-bottom: 20px;
 }
 footer .container { 
 	width: 1100px !important;
@@ -499,7 +499,7 @@ a#switch-platform-link:before { content: " "; }
 	border-radius: 10px;
 	background: #ffffffbf;
 	backdrop-filter: blur(2px);
-	margin: 0 0 25px 0;	
+	margin: 0 0 20px 0;	
 	left: calc(50%) !important;
 	right: auto;
 	width: 50px;
@@ -516,7 +516,7 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:hover::after { color: white; }
 
 /* 다크모드 버튼 위치 조정 */
-button#theme_btn_box { position: fixed; margin-left: 60px; bottom: 1em; z-index: 99; }
+button#theme_btn_box { position: fixed; margin-left: 60px; bottom: 20px; z-index: 99; }
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
