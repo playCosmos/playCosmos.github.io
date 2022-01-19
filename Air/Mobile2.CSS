@@ -260,6 +260,8 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 	border-top: 3px solid var(--maincolor) !important;
 }
 
+html.darkmode textarea.fr-code { color: white; }
+
 #comment-write-form #comment-write-button-area {
     flex-direction: row !important;
     display: flex !important;
