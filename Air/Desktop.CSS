@@ -64,8 +64,7 @@ body { background: transparent !important; }
 }
 
 /* 마우스 커서 기본 */
-html,
-body,
+html, body,
 .fr-popup, 
 .fr-active div>*, 
 .fr-btn-wrap,
@@ -73,10 +72,7 @@ span#viewers,
 select.form-control,
 input[type=checkbox],
 input[type=radio],
-.opt
- {
- cursor: url(https://playcosmos.github.io/Air/Cursor/pointer.cur) 0 0, auto !important;
-}
+.opt { cursor: url(https://playcosmos.github.io/Air/Cursor/pointer.cur) 0 0, auto !important; }
 
 
 /* 마우스 커서 링크 */
