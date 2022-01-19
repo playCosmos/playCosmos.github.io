@@ -30,7 +30,6 @@ html.darkmode:root {
 @media (max-width: 1120px) {	
 	/* 모바일로 전환 사이즈 조정 */
 	a#switch-platform-link { font-size: 36px; }
-	
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -63,6 +62,49 @@ body { background: transparent !important; }
 	border: 1px solid transparent;
 	border-radius: 5px;
 }
+
+html,
+body,
+.fr-popup, 
+.fr-active div>*, 
+.fr-btn-wrap,
+span#viewers,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt
+ {
+ cursor: url(https://playcosmos.github.io/Air/Cursor/pointer.cur) 0 0, auto !important;
+}
+
+
+/* 마우스 커서 링크 */
+#right-search-form>#right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.btn,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+a {
+ cursor: url(https://playcosmos.github.io/Air/Cursor/link.cur) 8 0, auto !important;
+}
+
+
+
+/* 마우스 커서 텍스트 */
+#article-list #boardSearchForm .form-control,
+.fr-view,
+.fr-box.fr-basic.fr-element,
+input[type='text']
+ {
+ cursor: url(https://playcosmos.github.io/Air/Cursor/text.cur) 6 11, auto !important;
+}
+
 
 /************ 헤더 ************/
 header { padding: 8px 0 5px 0; }
@@ -549,3 +591,7 @@ span.a-badge i.fa.fa-star {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
+
+</style>
+<script type="text/javascript"></script>
+<style>
