@@ -63,6 +63,7 @@ body { background: transparent !important; }
 	border-radius: 5px;
 }
 
+/* 마우스 커서 기본 */
 html,
 body,
 .fr-popup, 
@@ -209,7 +210,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	white-space: nowrap;
 	padding: 5px 12px 5px 1px;
 	margin: 1px;
-	transition: 0.2s; 
+	transition: 0.4s; 
 }
 
 /* #main .menu-wrapper>.header:hover, */
