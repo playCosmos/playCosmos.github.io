@@ -13,7 +13,7 @@
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
-	--highlight: #f1f5fe;	/* 강조색 */
+	--highlight: #edeff7;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
 	--bgframe: #ffffff;	/* 프레임배경 */
 	--bgblur: #ffffff7f;	/* 블러배경 */
@@ -163,14 +163,9 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu {
-	position: sticky;
-	top: 15px;
-	width: 36px;
-	z-index: 1;
-}
-
+#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
 #main #main-menu:hover { z-index: 999; }
+
 #main .menu-wrapper {
 	background: var(--bgframe);
 	border: none !important;
@@ -178,13 +173,25 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	padding: 2px;
 	margin-bottom: 5px;
 }
+
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
+#main .menu-wrapper>.header,
+#main .menu-wrapper>a,
+#main .menu-wrapper #fav-shortcut-area>a {
+	border: none !important;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 30px;
+	white-space: nowrap;
+	padding: 5px 12px 5px 1px;
+	margin: 1px;
+	transition: 0.4s; 
+}
 
 #main .menu-wrapper>a:last-child { }
+
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
-/* #main .menu-wrapper .spacer { display: none; } */
-#main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
 
 #main .menu-wrapper>a>em,
 #main .menu-wrapper #fav-shortcut-area>a>em,
@@ -194,31 +201,18 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	margin: 0 4px 0 2px;
 }
 
-#main .menu-wrapper>.header>i.fa.fa-bars { margin-right: 2px; }
-
-#main .menu-wrapper>.header,
-#main .menu-wrapper>a,
-#main .menu-wrapper #fav-shortcut-area>a {
-	border: 2px solid var(--bgframe) !important;
-	border-radius: 8px;
-	overflow: hidden;
-	width: 32px;
-	white-space: nowrap;
-	padding: 4px 12px 4px 0px;
-	margin: 0px;
-	transition: 0.4s; 
-}
-#main .menu-wrapper>.header {
-	background: var(--maincolor) !important;
-	width: 36px;
-	padding: 6px 12px 6px 2px;
-	margin: -2px;
-}
-
+/* #main .menu-wrapper .spacer { display: none; } */
+#main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
 
 /* #main .menu-wrapper>.header:hover, */
-#main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: 150px; border-color: var(--maincolor) !important; }
+#main .menu-wrapper #fav-shortcut-area>a:hover,
+#main .menu-wrapper>a:hover {
+	background-color: var(--highlight) !important;
+	border-color: var(--maincolor) !important;
+	width: 150px;
+}
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover,
+html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 
 @media (min-width: 1400px) {
 /* 	#main .menu-wrapper>.header:hover, */
@@ -235,14 +229,6 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
-#main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover{
-	background-color: var(--highlight) !important;
-}
-html.darkmode #main .menu-wrapper>a:hover,
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
-	color: white !important;
-}
 
 /*
 #main .menu-wrapper>a:after,
@@ -281,13 +267,12 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover{
 h3 { margin-bottom: 0.5em !important; }
 
 #board-info #board-info-bottom { padding-top: 7px !important;}
-
 #board-info #board-info-bottom a { color: black; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px !important; }
-#article-list #article-option-area>#article-option-area-toggle-btn {
+#article-list #article-option-area > #article-option-area-toggle-btn {
 	background: var(--bgcolor) !important;
 	border-radius: 8px !important;
 	height: auto !important;
@@ -298,10 +283,7 @@ html.darkmode #board-info #board-info-bottom a { color: white; }
 }
 
 /* 눈 모양 아이콘을 스위치 모양으로 변경 */
-button>.fa-eye:before {
-	content: "\f205";
-	color: var(--maincolor) !important;
-}
+button>.fa-eye:before { content: "\f205"; color: var(--maincolor) !important;}
 button>.fa-eye-slash:before { content: "\f204"; }
 .darkmode button>.fa-eye:before { color: var(--bgcolor) !important; }
 .darkmode #article-list #article-option-area>#article-option-area-toggle-btn {
