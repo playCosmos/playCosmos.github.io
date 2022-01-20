@@ -90,13 +90,13 @@ input[type='text'] { cursor: url(https://playcosmos.github.io/Air/Cursor/text.cu
 header { padding: 8px 0 5px 0; }
 
 /* 트게더 로고 */
-header .row>div:nth-child(1)>a>img {
+body header>.container>.row>.col-xs-4>a>img {
 	/*content: url(./image/logo.svg);*/
 	height: 50px !important;
 	filter: brightness(0.8) hue-rotate(320deg) saturate(0.5);
 }
-html.darkmode header .row>div:nth-child(1)>a>img {
-	filter: brightness(2.5) hue-rotate(290deg) saturate(0.25) !important;
+html.darkmode body header>.container>.row>.col-xs-4>a>img {
+	filter: brightness(2.5) hue-rotate(290deg) saturate(0.25);
 }
 
 /* 헤더 검색창 */
