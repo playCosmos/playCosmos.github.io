@@ -199,19 +199,19 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 #main .menu-wrapper>.header,
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
-	border: none !important;
+	border: 2px solid var(--bgframe) !important;
 	border-radius: 8px;
 	overflow: hidden;
-	width: 30px;
+	width: 32px;
 	white-space: nowrap;
-	padding: 5px 12px 5px 1px;
-	margin: 1px;
+	padding: 4px 12px 4px 0px;
+	margin: 0px;
 	transition: 0.4s; 
 }
 
 /* #main .menu-wrapper>.header:hover, */
 #main .menu-wrapper>a:hover,
-#main .menu-wrapper #fav-shortcut-area>a:hover { width: 150px; }
+#main .menu-wrapper #fav-shortcut-area>a:hover { width: 150px; border-color: var(--maincolor) !important; }
 
 @media (min-width: 1400px) {
 /* 	#main .menu-wrapper>.header:hover, */
