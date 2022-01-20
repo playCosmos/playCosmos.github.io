@@ -208,6 +208,13 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 	margin: 0px;
 	transition: 0.4s; 
 }
+#main .menu-wrapper>.header {
+	background: var(--maincolor) !important;
+	width: 36px;
+	padding: 6px 12px 6px 2px;
+	margin: -2px;
+}
+
 
 /* #main .menu-wrapper>.header:hover, */
 #main .menu-wrapper>a:hover,
