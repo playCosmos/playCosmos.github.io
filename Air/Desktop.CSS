@@ -208,9 +208,9 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 
 /* 광고 패딩 조절 */
 #main #main-menu>div:last-child {
-	margin: 0;
+	background: transparent !important;
 	padding: 0 !important;
-	border: none;
+	margin: 0;
 	transform: translateX(-124px);
 }
 #article-list>div:nth-child(3) { padding: 0 !important; }
