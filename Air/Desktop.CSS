@@ -547,7 +547,7 @@ a#switch-platform-link:before { content: " "; }
 	border-radius: 10px;
 	background: #ffffffbf;
 	backdrop-filter: blur(2px);
-	margin: 0 0 20px 0;	
+	margin: 20px -25px;
 	left: calc(50%) !important;
 	right: auto;
 	width: 50px;
