@@ -418,7 +418,6 @@ html.darkmode footer a { color: var(--maincolor); }
 	height: 50px;
 	padding: 5px 0;
 	margin: 12px;
-	bottom: 0;
 	left: calc(100% - 75px);
 	font-size: 24px;
 	opacity: 1;
