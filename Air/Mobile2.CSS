@@ -418,6 +418,7 @@ html.darkmode footer a { color: var(--maincolor); }
 	height: 50px;
 	padding: 5px 0;
 	margin: 12px;
+	bottom: 0;
 	font-size: 24px;
 	opacity: 1;
 	text-align: center;
@@ -427,7 +428,12 @@ html.darkmode #movetotop { background: #242424bf; }
 #movetotop:after { content: ""; }
 #movetotop:hover { background: var(--maincolor) !important; }
 #movetotop:hover::after { color: white; }
-.theme_btn_box { transition: all 0.2s; margin: 20px auto 0; }
+
+.theme_btn_box {
+	transition: all 0.5s;
+	position: fixed;
+	bottom: 15px;
+}
 
 /******* 애니메이션 *******/
 small.favo i.fa.fa-heart {
