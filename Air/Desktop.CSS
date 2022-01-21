@@ -290,9 +290,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 @media (min-width: 1400px) {
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
-		width: 120px;
-		left: -50px;
-		right: 50px;
+		width: 150px;
+		left: -30px;
+		right: 30px;
 		top: -8px;
 		max-height: none;
 	}
@@ -300,7 +300,6 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		border-radius: 4px;
 		border: none;
 		width: auto;
-		text-align-last: justify;
 	}
 }
 
