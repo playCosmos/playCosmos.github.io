@@ -88,8 +88,9 @@ header #header-bar>.row,
 /* fa색상 */
 header #header-bar .fa { color: #505050; }
 
-/* 헤더 [광고]배경색 */
-header #header-bar #header-top-notice strong.notice-badge { background: #505050 !important; }
+/* 헤더 [광고], 뱃지 배경색 */
+header #header-bar #header-top-notice strong.notice-badge,
+header #header-bar a.dropdown-toggle #notification-badge  { background: #505050 !important; }
 
 /* 좌측메뉴 숏컷링크 글씨 색상 */
 #main .menu-wrapper>a>em { color: #505050; }
@@ -148,16 +149,15 @@ div#article-list div.article-list-row {
 	width: calc(100% - 10px);
 	background: #fdfdfd;
 	margin: 4px 5px 0 5px;
+	border: 1px solid #eee !important;
 	border-radius: 15px;
-	border: 1px solid #eee;
 	transition: .15s ease 0s;
-	border-right:none
 }
 
 div#article-list div.article-list-row .v0 span { background: #ccc !important; }
 div#article-list div.article-list-row div.item div.list-header,
 div#article-list div.article-list-row>div.item>.list-title,
-div#article-list div.article-list-row>div.item>.list-time { border:0; }
+div#article-list div.article-list-row>div.item>.list-time { border: none !important; }
 div#article-list div.article-list-row>div.item>.list-title>a:visited { color: #999 !important; }
 div#article-list div.article-list-row:hover { background:rgba(100, 100, 100, .5); }
 div#article-list div.article-list-row.notice { 
@@ -178,40 +178,34 @@ div#article-list #article-list-menu>.btn.write {
 	color:#fff;
 }
 div#article-list #article-list-menu .pagination>li>a {
-    color: #505050;
-    border-radius:50%;
-    margin-left:5px;
+	color: #505050;
+	border-radius:50%;
+	margin-left:5px;
 }
 div#article-list #article-list-menu .pagination>li>a:hover {
-    background:#fafafa;
+	background:#fafafa;
 }
 div#article-list #article-list-menu .pagination>li.active>a {
-    color:#fff;
-    font-weight:bold;
+	color:#fff;
+	font-weight:bold;
 }
 div#article-list form.input-group input[type="text"] {
-    padding:6px;
-    height:31px!important;
-    border:1px solid #ccc;
-    border-left:0;
-    border-right:0;
+	padding:6px;
+	height:31px!important;
+	border:1px solid #ccc;
+	border-left:0;
+	border-right:0;
 }
 div#article-list form.input-group .input-group-btn button { border:1px solid #ccc; }
 div#article-list form.input-group .input-group-btn button:hover { transition:.3s ease 0s; }
 
 div#article-list form.input-group .input-group-btn button.btn.square.btn-default.dropdown-toggle {
-    padding-left:15px;
-    padding-right:10px;
-    border-top-left-radius:17px;
-    border-bottom-left-radius:17px;
-    border-top-right-radius:0;
-    border-bottom-right-radius:0;
+    padding: 6px 10px 6px 15px;
+    border-radius: 17px 0 0 17px;
 }
 div#article-list form.input-group .input-group-btn button.btn.square.btn-default {
-    padding-left:10px;
-    padding-right:15px;
-    border-top-right-radius:17px;
-    border-bottom-right-radius:17px;
+    padding: 6px 15px 6px 10px;
+    border-radius: 0 17px 17px 0;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
@@ -234,28 +228,6 @@ div#article-list form.input-group .input-group-btn button.btn.square.btn-default
 	color: #505050;
 }
 	
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-    background-color: #505050;
-    border-color:#505050
-}
-
-.pagination>li>a,
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-    color:#505050
-}
-
-.pagination>li>a,
-.pagination>li>span { color:#505050; }
-
 #article-content-wrapper>.header { border-top:2px solid #505050; }
 
 #article-reply-area#reply-real-area.reply>.reply-header>.reply-writer.logged,
@@ -293,20 +265,27 @@ span.a-badge i.fa.fa-info-circle {
      border-color: #505050;
 }
 
-.badge {
-    display: inline-block;
-    min-width: 10px;
-    padding: 3px 7px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
     background-color: #505050;
-    border-radius: 10px;
+    border-color:#505050
 }
+
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color:#505050
+}
+
+.pagination>li>a,
+.pagination>li>span { color:#505050; }
 
 .btn-primary {
   background: #505050 !important;
@@ -316,23 +295,17 @@ span.a-badge i.fa.fa-info-circle {
 }
 
 /* 새 글 작성 */
-.fr-toolbar {
- border-top:5px solid #505050
-}
-
-.fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn {
- color:#505050
-}
+.fr-popup, .fr-toolbar { border-top:5px solid #505050 !important; }
+.fr-dropdown::after { border-top: 4px solid #505050 !important; }
+.fr-btn { color:#505050 !important; }
+html.darkmode .fr-code { color: white; }
 
 /* 게시판 접두 */
 #board-info #viewers-area #viewers:before {
-  content: "캣게더에 ";
-  cursor: text
+	content: "캣게더에 ";
 }
 
 /* 게시판 접미 */
 #board-info #viewers-area #viewers:after {
-  content: "명의 야메단이 대기중";
-  cursor: text
+	content: "명의 야메단이 대기중";
 }
