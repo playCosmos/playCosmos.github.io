@@ -45,7 +45,7 @@ span.category,
 select.form-control,
 div#article-content,
 #movetotop:after,
-a#switch-platform-link:before { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+a#switch-platform-link:before { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace !important; }
 
 /* 알림 */
 .alert { border-radius: 10px; margin-bottom: 5px !important; padding: 10px 35px 10px 15px !important; }
@@ -127,7 +127,6 @@ header #header-bar #header-top-notice strong.notice-badge { display: none; }
 header #header-bar #header-top-notice > * ,
 header #header-bar #header-top-notice { animation: fadein 0.4s; }
 @keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
-
 
 /* 헤더 드롭다운 */
 header #header-bar a.dropdown-toggle { color: var(--maincolor); }
@@ -301,6 +300,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		border-radius: 4px;
 		border: none;
 		width: auto;
+		text-align-last: justify;
 	}
 }
 
