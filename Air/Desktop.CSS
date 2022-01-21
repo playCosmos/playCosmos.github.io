@@ -439,18 +439,16 @@ input.form-control:focus {
 	color: white !important;
 }
 
-.btn[data-target="#pollModal"] { --btcolor: #46b8da; }
-.btn[data-target="#scheduleModal"],
+/* .btn[data-target="#pollModal"] { --btcolor: #46b8da; } */
+/* .btn[data-target="#scheduleModal"], */
 .btn[data-type="up"] { --btcolor: #5cb85c; }
 .btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
 .btn-outline-danger { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
 
-.btn-primary,
-.btn-default,
-.btn-info,
-input.form-control { --btcolor: var(--maincolor); }
+.btn-primary, .btn-default, .btn-info, input.form-control,
+.btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
 
 select.form-control,
 input#title {
