@@ -208,6 +208,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 /* 광고 패딩 조절 */
 #main #main-menu>div:last-child {
 	background: transparent !important;
+	border: none;
 	padding: 0 !important;
 	margin: 0;
 	transform: translateX(-124px);
@@ -425,8 +426,7 @@ input.form-control {
 
 .vote-btn { height: 32px !important; }
 
-.btn[tabindex="-1"],
-.btn[type="submit"] { padding: 4px 12px !important; }
+.btn[tabindex="-1"], .btn[type="submit"] { padding: 4px 12px !important; }
  
 .btn:hover,
 .btn:focus,
