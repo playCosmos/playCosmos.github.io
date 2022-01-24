@@ -243,18 +243,18 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 #board-info #board-info-profile-img {
 	display: inline-block;
 	float: left !important;
-	width: 36px;
+	width: 48px;
 }
 #board-info h1 {
 	display: inline-block;
 	border: none !important;
-	margin: 5px !important;
+	margin: 12px 5px 5px 10px !important;
 	padding: 0px;
 }
 #board-info #board-info-bottom {
 	display: inline-block;
 	margin: 5px;
-	padding-top: 7px !important;
+	padding-top: 15px !important;
 	float: right;	
 }
 
