@@ -240,6 +240,11 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	margin: 0 !important;
 	padding: 0.5em 1em !important;
 }
+#board-info #board-info-profile-img {
+	float: left !important;
+	margin-right: 12px;
+	width: 60px;
+}
 #board-info h1 {
 	border: none !important;
 	margin-top: 5px !important;
