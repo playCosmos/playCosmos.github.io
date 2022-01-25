@@ -11,8 +11,8 @@
 }
 
 html.darkmode:root {
-	--mainColor:	#bdc8db;	/* 메인색 */
-	--bgColor:	black;	/* 배경색 */
+	--mainColor:	#bfbfbf;	/* 메인색 */
+	--bgColor:	black;		/* 배경색 */
 	--bgFrame:	#242424;	/* 프레임배경 */
 	--bgBlur:	#2424247f;	/* 블러배경 */
 	--borderColor:	#505050;	/* 보더색 */
@@ -26,6 +26,16 @@ html.darkmode a, a,
 html.darkmode .btn, .btn { transition: all 0.3s ease 0s; }
 
 /* a:hover, a:focus { color: var(--maincolor) !important; } */
+
+/* 스크롤 바 */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb { 
+	background: var(--mainColor) content-box;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
 
 html { background: var(--bgColor); }
 body {
@@ -55,6 +65,7 @@ input[type=radio],
 #article-list #boardSearchForm .form-control,
 .fr-view, .fr-box.fr-basic.fr-element,
 input[type='text'] { cursor: url(https://upload.tgd.kr/20190220/10b7072018d3161b41fc70ef78b54add.png) 3 5, auto !important; }
+
 
 /* 트게더 로고 */
 body header>.container>.row>.col-xs-4>a {
@@ -228,13 +239,15 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 .pagination>.active>a:hover,
 .pagination>.active>span:hover {
 	color: var(--mainColor) !important;
-	background-color: var(--mainColor) !important;
+	background-color: transparent !important;
 	border-color: var(--mainColor) !important;
 	transition: 0.2s;
 }
 /* 게시글 페이지 끝 */
 
 /* 버튼, 하단 검색 */
+.btn, .btn.best, .btn.write { border-radius: 15px; }
+
 .btn.square {
 	border: 1px solid !important;
 	margin-right: -1px !important;
@@ -266,8 +279,6 @@ select.form-control, input#title,
 .btn-primary, .btn-default, .btn-info, input.form-control,
 .btn[data-target="#scheduleModal"] { --btColor: var(--mainColor); }
 
-.btn.best, .btn.write { border-radius:15px; }
-
 .square.btn-default[data-toggle="dropdown"] {
 	padding: 6px 10px 6px 15px;
 	border-radius: 17px 0 0 17px;
@@ -290,8 +301,8 @@ html.darkmode .input-group-btn i.fa-search { color: var(--maincolor); }
 /* 버튼, 하단 검색 끝 */
 
 /* 새 글 작성 */
-.fr-popup, .fr-toolbar, { border-top: px solid #505050 !important; }
-.fr-dropdown::after { border-top: 4px solid #505050 !important; }
+.fr-popup, .fr-toolbar, 
+.fr-dropdown::after { border-top: 4px solid var(--mainColor) !important; }
 .fr-btn { color: var(--mainColor) !important; }
 
 html.darkmode .fr-code { color: white; }
