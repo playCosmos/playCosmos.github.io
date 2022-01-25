@@ -25,8 +25,6 @@ html.darkmode a, a { color: var(--mainColor); }
 html.darkmode a, a,
 html.darkmode .btn, .btn { transition: all 0.3s ease 0s; }
 
-/* a:hover, a:focus { color: var(--maincolor) !important; } */
-
 /* 스크롤 바 */
 ::-webkit-scrollbar { width: 12px; height: 12px; }
 ::-webkit-scrollbar-track { background: transparent; }
@@ -39,17 +37,15 @@ html.darkmode .btn, .btn { transition: all 0.3s ease 0s; }
 
 html { background: var(--bgColor); }
 body {
-  letter-spacing: -0.05em !important;
-  background: transparent;
-  font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: -0.05em !important;
+	background: transparent;
 }
 
 /* 마우스 커서 기본 */
 html, body, .fr-popup, .fr-active div>*, 
-.fr-btn-wrap, span#viewers,
-select.form-control,
-input[type=checkbox],
-input[type=radio],
+.fr-btn-wrap, span#viewers, select.form-control,
+input[type=checkbox], input[type=radio],
 .opt { cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; }
 
 /* 마우스 커서 링크 */
@@ -179,7 +175,6 @@ div#article-list div.article-list-row div.item .list-header,
 div#article-list div.article-list-row div.item .list-title,
 div#article-list div.article-list-row div.item .list-time { border: none !important; }
 div#article-list div.article-list-row div.item .list-title > a:visited { color: #999 !important; }
-
 div#article-list div.article-list-row div.item .list-header>span { background-color: var(--mainColor); }
 div#article-list div.article-list-row div.item .list-title small.comment-count { color: var(--mainColor); }
 div#article-list div.article-list-row div.item .list-title .list-writer>span { width: 120px !important; }
