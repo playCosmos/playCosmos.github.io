@@ -6,7 +6,6 @@
 	--mainColor:	#505050;	/* 메인색 */
 	--bgColor:	#282828;	/* 배경색 */
 	--bgFrame:	#ffffff;	/* 프레임배경 */
-	--bgBlur:	#ffffff7f;	/* 블러배경 */
 	--borderColor:	#c7c7c7;	/* 보더색 */
 }
 
@@ -14,7 +13,6 @@ html.darkmode:root {
 	--mainColor:	#bfbfbf;	/* 메인색 */
 	--bgColor:	black;		/* 배경색 */
 	--bgFrame:	#242424;	/* 프레임배경 */
-	--bgBlur:	#2424247f;	/* 블러배경 */
 	--borderColor:	#505050;	/* 보더색 */
 }
 
