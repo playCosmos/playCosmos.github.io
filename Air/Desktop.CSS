@@ -248,7 +248,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 #board-info h1 {
 	display: inline-block;
 	border: none !important;
-	padding: 15px 10px 5px 10px !important;
+	padding: 14px 10px 5px 10px !important;
 }
 #board-info #board-info-bottom {
 	display: inline-block;
