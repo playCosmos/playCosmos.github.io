@@ -86,6 +86,7 @@ header #right-search-form>#right-search-btn { color: var(--mainColor) !important
 	border-radius: 17px 17px 0 0;
 }
 #main .menu-wrapper { border: none; border-radius: 20px; }
+#main .menu-wrapper #fav-shortcut-area>a,
 #main .menu-wrapper>a { padding:.5em 1.4em .5em .7em !important }
 
 /* 헤더 [광고], 뱃지 배경색 */
@@ -105,7 +106,8 @@ header #header-bar a.dropdown-toggle #notification-badge  { background: var(--ma
 #board-info {
 	width: auto;
 	height: auto;
-	margin: 3px;
+	margin: 0 3px 3px;
+	padding 1em 1em 0.5em;
 	background: var(--bgFrame);
 	border-radius: 20px;
 }
