@@ -289,8 +289,7 @@ form#boardSearchForm { padding-bottom: 20px; }
 form#boardSearchForm > input.form-control::placeholder { color: var(--btColor) !important; }
 html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; }
 
-form#boardSearchForm .input-group-btn .btn:hover,
-form#boardSearchForm .input-group-btn .btn:focus {
+form#boardSearchForm .input-group-btn .btn:hover {
 	background: var(--btColor) !important;
 	color: white !important;
 }
