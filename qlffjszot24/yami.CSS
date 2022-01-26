@@ -85,6 +85,7 @@ header #right-search-form>#right-search-btn { color: var(--mainColor) !important
 	background: var(--mainColor) !important;
 	border-radius: 17px 17px 0 0;
 }
+
 #main .menu-wrapper { border: none; border-radius: 20px; }
 #main .menu-wrapper #fav-shortcut-area>a,
 #main .menu-wrapper>a { padding:.5em 1.4em .5em .7em !important }
@@ -101,6 +102,9 @@ header #header-bar a.dropdown-toggle #notification-badge  { background: var(--ma
 
 /* 메인 컨텐츠 모서리 */
 #main #main-content>div.frame { border-radius: 20px; }
+
+/* 광고 패딩 */
+#main #main-menu>div:last-child { padding: 0 !important }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
 #board-info {
