@@ -86,7 +86,7 @@ header #right-search-form>#right-search-btn { color: var(--mainColor) !important
 	border-radius: 17px 17px 0 0;
 }
 
-#main .menu-wrapper { border: none; border-radius: 20px; }
+#main .menu-wrapper { border: none; border-radius: 20px 20px 0 0; }
 #main .menu-wrapper #fav-shortcut-area>a,
 #main .menu-wrapper>a { padding:.5em 1.4em .5em .7em !important }
 
@@ -282,6 +282,8 @@ input.form-control {
 .btn-default.best { --btColor: #efc839; }
 .btn-outline-danger { --btColor: #d9534f; }
 .btn-danger { --btColor: #ff6e6e; }
+
+select.form-control:focus, input#title:focus { box-shadow: none; }
 
 select.form-control, input#title,
 .btn-primary, .btn-default, .btn-info, input.form-control,
