@@ -104,7 +104,7 @@ header #header-bar a.dropdown-toggle #notification-badge  { background: var(--ma
 #main #main-content>div.frame { border-radius: 20px; }
 
 /* 광고 패딩 */
-#main #main-menu>div:last-child { padding: 0 !important }
+#main #main-menu>div:last-child { border: none; padding: 0 !important }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
 #board-info {
@@ -120,14 +120,14 @@ header #header-bar a.dropdown-toggle #notification-badge  { background: var(--ma
 #board-info>h1, #board-info>img { float: left !important; }
 
 #board-info>img#board-info-profile-img {
-	width:90px;
-	margin-right:20px;
-	border:1px dashed var(--borderColor);
-	border-radius:50%;
+	width: 90px;
+	margin-right: 20px;
+	border: 1px dashed var(--borderColor);
+	border-radius: 50%;
 }
 
 #board-info>h1 { margin-top: 12px; width: calc(100% - 110px); }
-#board-info>h1>a { font-size: 30px; }
+#board-info>h1>a { font-size: 23px; }
 #board-info>h1>a:hover { color: var(--mainColor); }
 
 #board-info>#board-info-bottom { margin-top: 8px; }
