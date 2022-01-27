@@ -454,11 +454,10 @@ input.form-control {
 .btn-primary, .btn-default, .btn-info, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
 
-select.form-control,
-input#title {
+select.form-control, input#title {
 	--btcolor: var(--maincolor);
 	height: 30px !important;
-	transition: 0.2s;
+	box-shadow: none;
 }
 
 div#title_color>input { height: 30px !important; }
