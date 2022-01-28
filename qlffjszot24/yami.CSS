@@ -10,7 +10,7 @@
 }
 
 html.darkmode:root {
-	--mainColor:	#bfbfbf;	/* 메인색 */
+	--mainColor:	#a0a0a0;	/* 메인색 */
 	--bgColor:	black;		/* 배경색 */
 	--bgFrame:	#242424;	/* 프레임배경 */
 	--borderColor:	#505050;	/* 보더색 */
