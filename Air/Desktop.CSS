@@ -27,7 +27,7 @@ html.darkmode:root {
 	--bgblur: #2424247f;	/* 블러배경 */
 }
 /*@media (min-width: 1112px) { body{ position: absolute; left: calc(calc(1100px - 100%) / 2); } }*/
-@media (max-width: 1120px) {	
+@media (max-width: 1120px) {
 	/* 모바일로 전환 사이즈 조정 */
 	a#switch-platform-link { font-size: 36px; }
 }
@@ -205,8 +205,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
 }
 
-/* 광고 조절 */
-#main #main-menu>div:last-child div { height: min-content !important; }
+/* 광고 패딩 조절 */
 #main #main-menu>div:last-child {
 	background: transparent !important;
 	border: none;
@@ -215,7 +214,6 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	transform: translateX(-124px);
 }
 #article-list>div:nth-child(3) { padding: 0 !important; }
-
 
 /*
 #main .menu-wrapper>a:after,
@@ -456,10 +454,11 @@ input.form-control {
 .btn-primary, .btn-default, .btn-info, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
 
+select.form-control:focus, input#title:focus { box-shadow: none; }
+
 select.form-control, input#title {
 	--btcolor: var(--maincolor);
 	height: 30px !important;
-	box-shadow: none;
 }
 
 div#title_color>input { height: 30px !important; }
