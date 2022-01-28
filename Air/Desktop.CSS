@@ -205,7 +205,8 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
 }
 
-/* 광고 패딩 조절 */
+/* 광고 조절 */
+#main #main-menu>div:last-child div { height: min-content !important; }
 #main #main-menu>div:last-child {
 	background: transparent !important;
 	border: none;
@@ -214,6 +215,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	transform: translateX(-124px);
 }
 #article-list>div:nth-child(3) { padding: 0 !important; }
+
 
 /*
 #main .menu-wrapper>a:after,
