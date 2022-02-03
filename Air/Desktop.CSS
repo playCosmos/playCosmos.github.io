@@ -238,7 +238,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 #board-info {
 	height: inherit !important;
 	margin: 0 !important;
-	padding: 0.5em 1em 0 !important;
+	padding: 0.5em 1em !important;
 }
 #board-info #board-info-profile-img {
 	display: inline-block;
@@ -260,6 +260,9 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
 h3 { margin-bottom: 0.5em !important; }
+
+#article-list { margin: 0; }
+#article-neighbor-list { margin-bottom: 0.5em; }
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area { top: 5px !important; }
@@ -377,7 +380,6 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 .fr-btn { color: var(--maincolor) !important; }
 
 html.darkmode .fr-code { color: white; }
-
 
 /* 게시글 페이지 */
 .pagination>li>a,
