@@ -11,7 +11,7 @@
 }
 
 /* 기본 설정 */
-:root {
+html {
 	--maincolor: #31405a;	/* 메인색 */
 	--highlight: #edeff7;	/* 강조색 */
 	--bgcolor: #e7eaef;	/* 배경색 */
@@ -19,7 +19,7 @@
 	--bgblur: #ffffff7f;	/* 블러배경 */
 }
 
-html.darkmode:root {
+html.darkmode {
 	--maincolor: #bdc8db;	/* 메인색 */
 	--highlight: #414958;	/* 강조색 */
 	--bgcolor: black;	/* 배경색 */
