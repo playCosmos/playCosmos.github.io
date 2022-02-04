@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
 :root {
-	--before:	"캣게더에 ";	   /* 게시판 접두 */
-	--after:	"명의 야메단이 대기중"; /* 게시판 접미 */
-	--mainColor:	#505050;	/* 메인색 */
+	--before:	"돼지 ";	   /* 게시판 접두 */
+	--after:	"마리 꿀꿀"; /* 게시판 접미 */
+	--mainColor:	#f38bb8;	/* 메인색 */
 	--bgColor:	#282828;	/* 배경색 */
 	--bgFrame:	#ffffff;	/* 프레임배경 */
 	--borderColor:	#c7c7c7;	/* 보더색 */
@@ -33,40 +33,19 @@ html.darkmode .btn, .btn { transition: all 0.3s ease 0s; }
 	border-radius: 5px;
 }
 
-html { background: var(--bgColor); }
+html { background: linear-gradient(to bottom, #ffe8f3, #ffffff); }
 body {
 	font-family: 'Noto Sans KR', sans-serif;
 	letter-spacing: -0.05em !important;
 	background: transparent;
 }
 
-/* 마우스 커서 기본 */
-html, body, .fr-popup, .fr-active div>*, 
-.fr-btn-wrap, span#viewers, select.form-control,
-input[type=checkbox], input[type=radio],
-.opt { cursor: url(https://upload.tgd.kr/20190220/e247333d1a8aef0894ea350018e16e43.png) 3 5, auto !important; }
-
-/* 마우스 커서 링크 */
-#right-search-form>#right-search-btn,
-#board-info #board-info-bottom #addFavoriteBtn,
-#article-list #article-option-area>#article-option-area-toggle-btn,
-#article-list>.article-list-row>.item>.list-title>.list-writer>span,
-.reply > .reply-header > .reply-writer.logged,
-.reply-menu, .btn, .fr-command.fr-btn, .fr-view img,
-.pull-left, a { cursor: url(https://upload.tgd.kr/20190220/12c6c1fda96dcab1854eddeaf0b365f4.png) 3 5, auto !important; }
-
-/* 마우스 커서 텍스트 */
-#article-list #boardSearchForm .form-control,
-.fr-view, .fr-box.fr-basic.fr-element,
-input[type='text'] { cursor: url(https://upload.tgd.kr/20190220/10b7072018d3161b41fc70ef78b54add.png) 3 5, auto !important; }
-
-
 /* 트게더 로고 */
 body header>.container>.row>.col-xs-4>a {
   display: block;
   width: 180px;
   height: 50px;
-  background: url(https://cdn.discordapp.com/attachments/763682781875929088/888684399661576212/2.png) no-repeat;
+  background: url(https://upload.tgd.kr/20190108/b8520e8bc4b127293aa5eb7e57612665.png) no-repeat;
 }
 body header>.container>.row>.col-xs-4>a>img { display: none; }
 
@@ -122,8 +101,8 @@ header #header-bar a.dropdown-toggle #notification-badge  { background: var(--ma
 #board-info>img#board-info-profile-img {
 	width: 90px;
 	margin-right: 20px;
-	border: 1px dashed var(--borderColor);
-	border-radius: 50%;
+	border-radius: 20%;
+	border: 1px dashed rgba(235, 109, 177, .7);
 }
 
 #board-info>h1 { margin-top: 12px; width: calc(100% - 110px); }
