@@ -283,7 +283,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 
 /* 카테고리 */
 #article-list #article-list-category {
-	background: transparent !important;
+	background: var(--bgframe) !important;
 	border-top: 2px solid var(--maincolor) !important;
 	border-bottom: 2px solid var(--maincolor) !important;
 }
