@@ -304,6 +304,9 @@ button>.fa-eye-slash:before { content: "\f204"; }
 @media (min-width: 1400px) {
 	#article-list #article-list-category.can-float { 
 		border: 2px solid var(--maincolor);
+		left: unset;
+		right: unset;
+		top: unset;
 		width: 150px;
 		transform: translate(1020px, -60px);
 		max-height: none;
