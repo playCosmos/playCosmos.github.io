@@ -308,7 +308,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		right: unset;
 		top: unset;
 		width: 150px;
-		transform: translate(1020px, -60px);
+		transform: translate(1020px, -111px);
 		max-height: none;
 	}
 	#article-list #article-list-category.can-float > a {
