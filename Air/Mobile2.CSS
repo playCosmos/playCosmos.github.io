@@ -267,7 +267,7 @@ html.darkmode textarea.fr-code { color: white; }
     display: flex !important;
     flex-wrap: wrap !important;
 }
-/* .pull-left { margin-right: calc(100% - 100px) !important; } */
+label.pull-left { margin-right: calc(100% - 100px); }
 #addEmoteBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
 #writeCommentBtn { flex: 1 !important; }
