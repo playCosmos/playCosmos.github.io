@@ -263,14 +263,14 @@ span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
 html.darkmode textarea.fr-code { color: white; }
 
 #comment-write-form #comment-write-button-area {
-    flex-direction: row !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
-label.pull-left { margin-right: calc(100% - 100px); }
+label.pull-left { margin-bottom: 5px; margin-right: calc(100% - 100px); }
 #addEmoteBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
-#writeCommentBtn { flex: 1 !important; }
+#writeCommentBtn { flex: 1; }
 
 
 /* 게시글 페이지 */
