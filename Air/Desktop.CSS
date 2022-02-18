@@ -375,6 +375,17 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a { color: var(--maincolor) !important; }
 
 
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left { margin: 0px calc(100% - 100px) 5px 0px; }
+#addEmoteBtn,
+#btnRereplyCancelBtn { margin-right: 3px; }
+#writeCommentBtn { margin-left: auto; }
+
 /* 게시글, 댓글 쓰기 상단바 */
 .fr-popup, .fr-toolbar { border-top: 2px solid var(--maincolor) !important; }
 .fr-dropdown::after { border-top: 4px solid var(--maincolor) !important; }
