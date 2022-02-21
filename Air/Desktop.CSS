@@ -62,7 +62,7 @@ body { background: transparent !important; }
 	border-radius: 5px;
 }
 
-/* 텍스트 드래그 시 */
+/* 드래그 시 */
 ::selection {
     color: white;
     background-color: var(--maincolor);
