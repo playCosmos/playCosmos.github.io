@@ -9,7 +9,6 @@
 	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
 		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
 }
-
 /* 기본 설정 */
 html {
 	--maincolor: #31405a;	/* 메인색 */
@@ -61,6 +60,12 @@ body { background: transparent !important; }
 	background: var(--maincolor) content-box;
 	border: 1px solid transparent;
 	border-radius: 5px;
+}
+
+/* 텍스트 드래그 시 */
+root::selection {
+    color: white;
+    background-color: var(--maincolor);
 }
 
 /* 마우스 커서 기본 */
