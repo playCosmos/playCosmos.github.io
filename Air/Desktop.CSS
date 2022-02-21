@@ -63,7 +63,7 @@ body { background: transparent !important; }
 }
 
 /* 텍스트 드래그 시 */
-root::selection {
+::selection {
     color: white;
     background-color: var(--maincolor);
 }
