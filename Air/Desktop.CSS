@@ -260,6 +260,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	padding: 20px 10px 0px 10px !important;
 	float: right;	
 }
+#board-info #score-area { display: none; }
 
 #board-info #board-info-bottom a { color: black; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
