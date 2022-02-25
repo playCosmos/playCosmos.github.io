@@ -1,10 +1,12 @@
 html { 
 	--mainColor: #888;
-	--bgBorder: white;
+	--borderColor: #DDD;
+	--borderBackground: #FFF;
 }
 html.darkmode { 
-	--mainColor: #888;
-	--bgBorder: #242424;
+	--mainColor: #DDD;
+	--borderColor: #888;
+	--borderBackground: #242424;
 }
 
 html { background: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete_seamless.png"); }
@@ -29,9 +31,9 @@ a:focus { color: #333; }
 /* header .row>div:nth-child(1) > a > img { display: none; } */
 header #right-search-form { display: inline-flex; padding-top: 12px; }
 header #right-search-form>input[type=text] {
-    margin-right: 15px;
-    border: 1px dashed #ddd;
-    box-shadow: 0 0 0 3px var(--bgBorder), 0 0 0 5px #ddd;
+    margin-right: 18px;
+    border: 1px dashed var(--borderColor) !important;
+    box-shadow: 0 0 0 3px var(--borderBackground), 0 0 0 5px var(--borderColor);
     transition: 0.2s;
 }
 
@@ -39,17 +41,17 @@ header #right-search-form>input[type=text]:hover,
 header #right-search-form>input[type=text]:focus {
     border-color: var(--mainColor);
     box-shadow:
-    0 0 0 3px var(--bgBorder),
-    0 0 0 5px var(--mainColor),
-    0 0 0 8px var(--bgBorder),
-    0 0 2px 8px var(--mainColor);
+        0 0 0 3px var(--borderBackground),
+        0 0 0 5px var(--mainColor),
+        0 0 0 8px var(--borderBackground),
+        0 0 2px 8px var(--mainColor);
 }
 
 header #right-search-form>#right-search-btn {
-    color: #ddd;
-    background: var(--bgBorder);
-    border: 1px dashed #ddd;
-    box-shadow: 0 0 0 3px var(--bgBorder), 0 0 0 5px #ddd;
+    color: var(--borderColor) !important;
+    background: var(--borderBackground);
+    border: 1px dashed var(--borderColor) !important;
+    box-shadow: 0 0 0 3px var(--borderBackground), 0 0 0 5px var(--borderColor);
     transition: 0.2s;
 }
 
@@ -58,20 +60,19 @@ header #right-search-form>#right-search-btn:focus {
     color: var(--mainColor);
     border: 1px dashed var(--mainColor);
     box-shadow:
-    0 0 0 3px var(--bgBorder),
-    0 0 0 5px var(--mainColor),
-    0 0 0 8px var(--bgBorder),
-    0 0 2px 8px var(--mainColor);
+        0 0 0 3px var(--borderBackground),
+        0 0 0 5px var(--mainColor),
+        0 0 0 8px var(--borderBackground),
+        0 0 2px 8px var(--mainColor);
 }
 
 header #header-bar>.row {
     margin-top: 5px;
-    border: 1px dashed #ddd;
+    border: none !important;
+    border: 1px dashed var(--borderColor) !important;
     box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 5px #ddd,
-    0 0 0 8px #fff,
-    0 0 2px 8px #eee;
+        0 0 0 3px var(--borderBackground),
+        0 0 0 5px var(--borderColor);
 }
 
 header #header-bar a.dropdown-toggle {
@@ -92,12 +93,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #main .menu-wrapper {
     margin-bottom: 1.8em;
-    border: 1px dashed #ddd;
+    border: 1px dashed var(--borderColor) !important;
     box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 5px #ddd,
-    0 0 0 8px #fff,
-    0 0 2px 8px #eee;
+        0 0 0 3px var(--borderBackground),
+        0 0 0 5px var(--borderColor);
 }
 
 #main .menu-wrapper>.header {
@@ -129,12 +128,10 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 }
 
 #main #main-content>div.frame {
-    border: 1px dashed #ddd;
+    border: 1px dashed var(--borderColor) !important;
     box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 5px #ddd,
-    0 0 0 8px #fff,
-    0 0 2px 8px #eee;
+        0 0 0 3px var(--borderBackground),
+        0 0 0 5px var(--borderColor);
 }
 
 #board-info #board-info-bottom a {
@@ -153,24 +150,22 @@ header #header-bar #header-menu-right #userDropdown #notification-badge {
 
 #article-list #article-option-area>#article-option-area-toggle-btn {
     line-height: inherit;
-    background: white;
+    background: var(--borderBackground);
     border-radius: 20px;
-    border: 1px dashed #ddd;
+    border: 1px dashed var(--borderColor);
     box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 5px #aaa,
-    0 0 0 8px #fff,
-    0 0 2px 8px #eee;
+    0 0 0 3px var(--borderBackground),
+    0 0 0 5px var(--borderColor);
     color: var(--mainColor);
 }
 
 #article-list #article-list-category {
-    background: white;
-    border-top: 2px dashed #ddd;
+    background: var(--borderBackground);
+    border-top: 2px dashed var(--borderColor);
 }
 
 #article-list #article-list-category>a {
-    background: white;
+    background: var(--borderBackground);
     transition: 0.2s;
 }
 
