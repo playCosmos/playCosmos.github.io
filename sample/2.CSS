@@ -1,0 +1,277 @@
+html { 
+	--mainColor: #888;
+	--bgBorder: white;
+}
+html.darkmode { 
+	--mainColor: #888;
+	--bgBorder: #242424;
+}
+
+html { background: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete_seamless.png"); }
+body { background: transparent; }
+
+*:focus { outline: none; }
+
+a { color: var(--mainColor); }
+a:hover,
+a:focus { color: #333; }
+
+/* 트게더 로고 */
+/*header .row>div:nth-child(1)>a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-size: auto 50px;
+    background: url("") no-repeat;
+}
+*/
+/* 기본 트게더 로고 제거 */
+/* header .row>div:nth-child(1) > a > img { display: none; } */
+header #right-search-form { display: inline-flex; padding-top: 12px; }
+header #right-search-form>input[type=text] {
+    margin-right: 15px;
+    border: 1px dashed #ddd;
+    box-shadow: 0 0 0 3px var(--bgBorder), 0 0 0 5px #ddd;
+    transition: 0.2s;
+}
+
+header #right-search-form>input[type=text]:hover,
+header #right-search-form>input[type=text]:focus {
+    border-color: var(--mainColor);
+    box-shadow:
+    0 0 0 3px var(--bgBorder),
+    0 0 0 5px var(--mainColor),
+    0 0 0 8px var(--bgBorder),
+    0 0 2px 8px var(--mainColor);
+}
+
+header #right-search-form>#right-search-btn {
+    color: #ddd;
+    background: var(--bgBorder);
+    border: 1px dashed #ddd;
+    box-shadow: 0 0 0 3px var(--bgBorder), 0 0 0 5px #ddd;
+    transition: 0.2s;
+}
+
+header #right-search-form>#right-search-btn:hover,
+header #right-search-form>#right-search-btn:focus {
+    color: var(--mainColor);
+    border: 1px dashed var(--mainColor);
+    box-shadow:
+    0 0 0 3px var(--bgBorder),
+    0 0 0 5px var(--mainColor),
+    0 0 0 8px var(--bgBorder),
+    0 0 2px 8px var(--mainColor);
+}
+
+header #header-bar>.row {
+    margin-top: 5px;
+    border: 1px dashed #ddd;
+    box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 5px #ddd,
+    0 0 0 8px #fff,
+    0 0 2px 8px #eee;
+}
+
+header #header-bar a.dropdown-toggle {
+    color: var(--mainColor);
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: var(--mainColor);
+}
+
+header #header-bar #header-top-notice a {
+    color: var(--mainColor);
+}
+
+header #header-bar #header-menu-right #userDropdown #notification-badge {
+    background: var(--mainColor);
+}
+
+#main .menu-wrapper {
+    margin-bottom: 1.8em;
+    border: 1px dashed #ddd;
+    box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 5px #ddd,
+    0 0 0 8px #fff,
+    0 0 2px 8px #eee;
+}
+
+#main .menu-wrapper>.header {
+    background: #fff;
+    color: var(--mainColor);
+    border-bottom: 1px dashed #ddd;
+}
+
+#main .menu-wrapper>a,
+#main .menu-wrapper>.header>a {
+    color: var(--mainColor);
+}
+
+#main .menu-wrapper>a>em {
+    color: var(--mainColor);
+}
+
+#main .menu-wrapper .spacer {
+    background: #ddd;
+    height: 2px;
+}
+
+#main .menu-wrapper>a>i.fa.fa-square {
+    color: var(--mainColor);
+}
+
+#main #main-content {
+    padding-left: 21px;
+}
+
+#main #main-content>div.frame {
+    border: 1px dashed #ddd;
+    box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 5px #ddd,
+    0 0 0 8px #fff,
+    0 0 2px 8px #eee;
+}
+
+#board-info #board-info-bottom a {
+    color: var(--mainColor);
+}
+
+#board-info #viewers-area #viewers:before {
+    content: ""; /* 접속자 수 앞 문구 */
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: ""; /* 접속자 수 뒤 문구 */
+    cursor: text;
+}
+
+#article-list #article-option-area>#article-option-area-toggle-btn {
+    line-height: inherit;
+    background: white;
+    border-radius: 20px;
+    border: 1px dashed #ddd;
+    box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 5px #aaa,
+    0 0 0 8px #fff,
+    0 0 2px 8px #eee;
+    color: var(--mainColor);
+}
+
+#article-list #article-list-category {
+    background: white;
+    border-top: 2px dashed #ddd;
+}
+
+#article-list #article-list-category>a {
+    background: white;
+    transition: 0.2s;
+}
+
+#article-list #article-list-category>a:hover,
+#article-list #article-list-category>a:focus {
+    background: #eee;
+}
+
+#article-list #article-list-category>a>.fa-home:before {
+    color: var(--mainColor);
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background: var(--mainColor);
+}
+
+span.a-badge i.fa.fa-info-circle {
+    color: var(--mainColor);
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: var(--mainColor);
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: var(--mainColor);
+}
+
+#article-content-wrapper>.header { border-top: 1px dashed #ddd; }
+
+#article-reply-area > .header h5,
+#article-reply-area > .header h5 > a { color: var(--mainColor); }
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
+    color: var(--mainColor);
+}
+
+.fr-popup,
+.fr-toolbar.fr-top {
+    border-top: 3px dashed var(--mainColor);
+}
+
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+    color: var(--mainColor);
+}
+
+#article-neighbor-list>div,
+#article-neighbor-list>div>a {
+    color: var(--mainColor);
+}
+
+#article-list #boardSearchForm .form-control {
+    width: calc(100% - 2px);
+    margin-left: 1.5px;
+    border: 1px solid var(--mainColor);
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    transition: 0.2s;
+}
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+    background-color: white;
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+    transition: 0.2s;
+}
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+    color: var(--mainColor);
+    background: white;
+    transition: 0.2s;
+}
+
+/* 버튼 */
+.btn {
+    color: white !important;
+    background-color: var(--mainColor) !important;
+    border-color: var(--mainColor) !important;
+    border-radius: 0;
+    transition: 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--mainColor) !important;
+    background-color: white !important;
+}
+
+.btn.square { margin-right: -2px; }
