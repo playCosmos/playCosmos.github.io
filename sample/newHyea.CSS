@@ -224,7 +224,7 @@ html.darkmode #board-info #board-info-bottom a { color: white; }
 #article-list #article-option-area-toggle-btn {
 	border-radius: 8px !important;
 	height: auto !important;
-	margin: 0 16px 0 0 !important;
+	margin: -2px 16px 0 0 !important;
 	padding: 5px !important;
 	opacity: 1 !important;
 	display: inline-grid !important;
@@ -392,7 +392,8 @@ html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer.log
 }
 
 #article-neighbor-list:hover,
-#article-neighbor-list:focus { background: linear-gradient(to right, var(--bgFrame), var(--mainColor2), var(--bgFrame)); }
+#article-neighbor-list:focus { transition: all 0.2s ease 0s;
+	background: linear-gradient(to right, var(--bgFrame), var(--mainColor2), var(--bgFrame)); }
 #article-neighbor-list>div:hover { background: unset !important; }
 
 #article-neighbor-list>div>* { color: var(--mainColor) !important; }
