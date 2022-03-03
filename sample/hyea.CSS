@@ -1,9 +1,8 @@
-/* 사용자 설정 부분 */
 :root {
 	   --bgColor: #ffffff;   /* 배경 색 */
 	 --mainColor: #ff7e9a;   /* 메인 컬러 */
-	 --infoColor: ##ff0037;
-	--mainColor7: ##ff0037;
+	 --infoColor: #ff0037;
+	--mainColor7: #ff0037;
 	--mainColor5: #ff7e9a; /* 공지, 인기글 hover */
 	--mainColor3: #ff7e9a; /* 공지, 인기글 */
 	--mainColor2: #ff7e9a; /* 트게더 메뉴, 게시글 hover */
@@ -11,35 +10,24 @@
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "불침번 중인 "; /* 접속자 수 앞 문구 */
 	--after: "명의 트수";  /* 접속자 수 뒤 문구 */
-	--mainColor6: ##ff0037; /* 스트리머 닉네임 옆에 추천수 및  색*/
+	--mainColor6: #ff0037; /* 스트리머 닉네임 옆에 추천수 및  색*/
 	--backcolor: #ffffff;
 }
 
-@font-face { font-family: 'GoyangIlsan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GoyangIlsan'; font-weight: normal; font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); }
 
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-html {
-	background: linear-gradient(to bottom,#ffffff,#ffffff,#ff7e9a);
-    /* 방향 = to bottom, to right, to left, to top */
-	height: auto;
-}
-
-body {
-  background: transparent;
-font-family: 'GoyangIlsan'
-}
+html { background: linear-gradient(to bottom,#ffffff,#ffffff,#ff7e9a); height: auto; }
+body { background: transparent; font-family: 'GoyangIlsan' }
 
 
 
 /*************** header ***************/
-
-header {
-	padding: 0.5em 0 0.5em 0;
-}
-
-header .row>div:nth-child(1)>a {
+header { padding: 0.5em 0 0.5em 0; }
+header .row>div:nth-child(1) > a {
 	display: block;
 	width: var(--logoWidth);
 	height: 50px;
@@ -47,9 +35,7 @@ header .row>div:nth-child(1)>a {
 	background-size: auto 50px;
 } 
 
-header .row>div:nth-child(1) > a > img {
-	display: none;
-}
+header .row>div:nth-child(1) > a > img { display: none; }
 
 /* 검색 창 */
 header #right-search-form>input[type='text'] {
@@ -259,17 +245,12 @@ header #header-bar>.row {
 
 #article-list #article-list-category>a {
 	background: transparent;
-  color: #fbd4dc;
 	position: relative;
+	color: #fbd4dc;
 }
 
-#article-list #article-list-category>a::before {
-	top: 0;
-}
-
-#article-list #article-list-category>a::after {
-	bottom: 0;
-}
+#article-list #article-list-category>a::before { top: 0; }
+#article-list #article-list-category>a::after { bottom: 0; }
 
 #article-list #article-list-category>a::before,
 #article-list #article-list-category>a::after {
@@ -475,4 +456,82 @@ span#article-list #boardSearchForm, input[type='text']{
 .pagination>.active>a:focus,
 .pagination>.active>span,
 .pagination>.active>span:focus {
-	background-colo…
+	background-color: var(--mainColor);
+	border-color: var(--mainColor);
+	transition: 0.2s;
+}
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--mainColor);
+	color: var(--mainColor);
+	transition: 0.2s;
+}
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--mainColor);
+	background: transparent;
+	transition: 0.2s;
+}
+
+/* 드롭다운 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--mainColor);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
+	padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+	transition: 0.1s;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: 0.1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--mainColor);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--mainColor);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--mainColor);
+	height: 2px;
+	margin: 3px 0;
+}
+
+/* 버튼 */
+.btn {
+	color: var(--mainColor) !important;
+	background-color: var(--mainColor7) !important;
+	border-color: var(--mainColor7) !important;
+  border-radius: 10px, 10px;
+	transition: 0.2s;
+}
