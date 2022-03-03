@@ -20,7 +20,6 @@ html.darkmode:root {
 	--mainColor5: #77777755; /* 공지, 인기글 hover */
 	--mainColor3: #77777733; /* 공지, 인기글 */
 	--mainColor2: #77777722; /* 트게더 메뉴, 게시글 hover */
-	--infoColor: #ff0037;
 }
 
 /* 모바일로 전환 사이즈 조정 */
