@@ -1,6 +1,6 @@
 /* 사용자 설정 부분 */
 :root {
-	--bgColor: linear-gradient(to bottom,#ffffff,#ffffff,var(--mainColor5));   /* 배경 색 */
+	--bgColor: linear-gradient(to bottom,#ffffff,#ffffff,#ffffff,var(--mainColor5));   /* 배경 색 */
 	--bgFrame: #ffffff;   /* 프레임 배경색 */
 	--mainColor: #ff7e9a;   /* 메인 컬러 */
 	--mainColor5: #ff7e9a55; /* 공지, 인기글 hover */
