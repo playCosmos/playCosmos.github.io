@@ -230,26 +230,6 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	position: relative;
 }
 
-#article-list #article-list-category>a::before { top: 0; }
-#article-list #article-list-category>a::after { bottom: 0; }
-
-#article-list #article-list-category>a::before,
-#article-list #article-list-category>a::after {
-	height: 2px;
-	width: 100%;
-	background: var(--mainColor) !important;
-	content: "";
-	position: absolute;
-	left: 0px;
-	transform: scaleX(0);
-	transition: 0.3s;
-}
-
-#article-list #article-list-category>a:hover::before,
-#article-list #article-list-category>a:hover::after {
-	transform: scaleX(1);
-}
-
 /* 게시글 */
 #article-list>.article-list-row {
 	border: none !important;
