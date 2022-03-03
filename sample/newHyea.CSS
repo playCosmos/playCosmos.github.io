@@ -284,9 +284,7 @@ html.darkmode #article-list>.article-list-row.notice:focus,
 
 html.darkmode #article-comment a { color: white; }
 
-#article-list>.article-list-row>.item>.list-header {
-	border-left: none;
-}
+#article-list>.article-list-row>.item>.list-header { border-left: none !important; }
 
 /* AD, 공지 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--mainColor) !important; }
