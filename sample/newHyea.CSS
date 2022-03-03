@@ -23,16 +23,15 @@ html.darkmode:root {
 	--mainColor3: #405b8055; /* 공지, 인기글 */
 	--mainColor2: #2a2f37; /* 트게더 메뉴, 게시글 hover */
 }
-
+/* 
 @font-face {
     font-family: 'WONDotum'; font-weight: normal; font-style: normal;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/WONDotum.woff') format('woff');
 }
-
 @font-face {
     font-family: 'Dovemayo-Bold'; font-weight: normal; font-style: normal;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Bold.woff') format('woff');
-}
+} */
 @font-face {
      font-family: 'KOMACON'; font-weight: normal; font-style: normal;
      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
@@ -46,7 +45,7 @@ html.darkmode:root {
 
 html { background: var(--bgColor); height: auto;}
 body { background: transparent;
-	font-family: 'WONDotum'; }
+     font-family: 'KOMACON'; }
 
 html.darkmode a ,a { color: var(--mainColor); transition: all 0.2s ease 0s; }
 a:hover, a:focus { color: var(--mainColor) !important; }
