@@ -586,10 +586,11 @@ input.form-control {
 
 select.form-control:focus, input#title:focus { box-shadow: none; }
 
-select.form-control, input#title {
-	--btColor: var(--mainColor);
-	height: 30px !important;
-}
+select.form-control,
+input#title{ --btColor: var(--mainColor); height: 30px !important;}
+
+select.form-control:focus,
+input#title:focus { box-shadow: none !important; }
 
 div#title_color>input { height: 30px !important; }
 
