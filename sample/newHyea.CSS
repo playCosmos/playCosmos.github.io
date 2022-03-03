@@ -374,16 +374,11 @@ html.darkmode #article-list>.article-list-row>.item>.list-title>.list-writer.log
 }
 
 #article-neighbor-list:hover,
-#article-neighbor-list:focus {
-	background: linear-gradient(to right, var(--bgFrame), var(--mainColor2), var(--bgFrame));
-}
+#article-neighbor-list:focus { background: linear-gradient(to right, var(--bgFrame), var(--mainColor2), var(--bgFrame)); }
 #article-neighbor-list>div:hover { background: unset !important; }
 
-#article-neighbor-list>div>a,
-#article-neighbor-list>div>span.indicator,
-#article-neighbor-list>div>span.author {
-	color: var(--mainColor) !important;
-}
+#article-neighbor-list>div>* { color: var(--mainColor) !important; }
+html.darkmode #article-neighbor-list>div>* { color: white !important; }
 
 html.darkmode textarea.fr-code { color: white; }
 
@@ -397,9 +392,9 @@ html.darkmode textarea.fr-code { color: white; }
 	margin-bottom: 5px;
 }
 
-#article-reply-area > .header h5 {
-	color: var(--mainColor) !important;
-}
+#article-reply-area > .header h5 { color: var(--mainColor); }
+html.darkmode #article-reply-area > .header h5,
+html.darkmode a#lastc { color: white !important; }
 
 #article-reply-area #reply-real-area .reply.active,
 #article-reply-area #reply-best-area .reply.active {
