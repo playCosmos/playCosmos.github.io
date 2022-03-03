@@ -73,12 +73,13 @@ header { padding: 0.5em 0 0.5em 0; }
 /* 트게더 로고 */
 header .row>div:nth-child(1)>a {
 	display: block;
-	width: var(--logoWidth);
+	width: var(--logoWidth);	
 	height: 50px;
 	background: var(--logoURL) no-repeat;
+	filter:
 	background-size: auto 50px;
 }
-html.darkmode header .row>div:nth-child(1)>a { filter: grayscale(1); }
+html.darkmode header .row>div:nth-child(1)>a { filter: invert(89%) hue-rotate(48.6deg) brightness(0.803); }
 
 header .row>div:nth-child(1) > a > img { display: none; }
 
