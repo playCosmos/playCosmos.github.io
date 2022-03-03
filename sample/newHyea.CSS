@@ -11,6 +11,8 @@
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "불침번 중인 "; /* 접속자 수 앞 문구 */
 	--after: "명의 트수";  /* 접속자 수 뒤 문구 */
+
+	scroll-behavior: smooth;
 }
 /* 다크모드용 색 설정 */
 html.darkmode:root {
@@ -434,6 +436,17 @@ html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .rep
 .fr-popup .fr-command.fr-btn.fr-dropdown::after {
 	border-top: 4px solid var(--mainColor);
 }
+
+#comment-write-form #comment-write-button-area {
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+label.pull-left { margin: 0px calc(100% - 100px) 5px 0px; }
+#addEmoteBtn,
+#btnRereplyCancelBtn { margin-right: 3px; }
+#writeCommentBtn { margin-left: auto; }
 
 /* 트게더 페이지 */
 .pagination>li>a,
