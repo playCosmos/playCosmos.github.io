@@ -2,10 +2,10 @@
 :root {
 	--bgColor: linear-gradient(to bottom,#ffffff,#ffffff,#ffffff,var(--mainColor5));   /* 배경 색 */
 	--bgFrame: #ffffff;   /* 프레임 배경색 */
-	--mainColor: #ff7e9a;   /* 메인 컬러 */
-	--mainColor5: #ff7e9a55; /* 공지, 인기글 hover */
-	--mainColor3: #ff7e9a33; /* 공지, 인기글 */
-	--mainColor2: #ff7e9a22; /* 트게더 메뉴, 게시글 hover */
+	--mainColor: #a93453;   /* 메인 컬러 */
+	--mainColor5: #a9345355; /* 공지, 인기글 hover */
+	--mainColor3: #a9345333; /* 공지, 인기글 */
+	--mainColor2: #a9345322; /* 트게더 메뉴, 게시글 hover */
 	
 	--logoURL: url(https://cdn.discordapp.com/attachments/680723906704965662/680742877290299456/b7c05f9f2689cd34.png);
 	--logoWidth: 200px;	 /* 로고 너비 */
@@ -18,10 +18,10 @@
 html.darkmode:root {
 	--bgColor: #f0f0f0;   /* 배경 색 */
 	--bgFrame: #242424;   /* 프레임 배경색 */
-	--mainColor: #777777;   /* 메인 컬러 */
-	--mainColor5: #77777755; /* 공지, 인기글 hover */
-	--mainColor3: #77777733; /* 공지, 인기글 */
-	--mainColor2: #77777722; /* 트게더 메뉴, 게시글 hover */
+	--mainColor: #405b80;   /* 메인 컬러 */
+	--mainColor5: #405b8077; /* 공지, 인기글 hover */
+	--mainColor3: #405b8055; /* 공지, 인기글 */
+	--mainColor2: #2a2f37; /* 트게더 메뉴, 게시글 hover */
 }
 
 /* 모바일로 전환 사이즈 조정 */
@@ -246,7 +246,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	}
 	#article-list #article-list-category.can-float > a {
 		border-radius: 4px;
-		border: none;
+		border: none !important;
 		width: auto;
 	}
 }
