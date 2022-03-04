@@ -109,11 +109,13 @@ header #right-search-form>#right-search-btn:focus {
 header #header-bar { margin-bottom: 0.5em; }
 header #header-bar>.row { border: 2px solid var(--mainColor) !important; border-radius: 10px; }
 
-/* 전광판 */ header #header-bar #header-top-notice strong.notice-badge,
-/* 트게더 알림 */ header #header-bar #header-menu-right #userDropdown #notification-badge {
+header #header-bar #header-top-notice strong.notice-badge, /* 전광판 */ 
+header #header-bar #header-menu-right #userDropdown #notification-badge, /* 트게더 알림 */ 
+header #header-bar #header-menu-right #note-notification-badge /* 쪽지 */ {
 	background: var(--mainColor) !important;
 }
-
+/* 쪽지 봉투 표시 줄맞춤 */
+a[href='/note/lists']>i.fa.fa-envelope-o { vertical-align: -2px; }
 
 /*************** main ***************/
 
