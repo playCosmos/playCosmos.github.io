@@ -204,7 +204,6 @@ html.darkmode #board-info #board-info-bottom a { color: white; }
 	border-radius: 10px;
 	transition: 0.2s;
 }
-
 #board-info>img#board-info-profile-img:hover { transform: scale(1.1); }
 
 #board-info #viewers-area #viewers:before { content: var(--before);}
@@ -234,8 +233,7 @@ html.darkmode #board-info #board-info-bottom a { color: white; }
 button>.fa-eye:before { content: "\f205"; color: var(--mainColor) !important;}
 button>.fa-eye-slash:before { content: "\f204"; }
 .darkmode button>.fa-eye:before { color: var(--bgColor) !important; }
-.darkmode #article-option-area-toggle-btn { background: var(--mainColor) !important; }
-
+.darkmode #article-option-area-toggle-btn { background: var(--mainColor) !important; animation:none; }
 
 /* 카테고리 */
 #article-list #article-list-category {
