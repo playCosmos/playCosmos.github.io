@@ -79,7 +79,7 @@ header .row>div:nth-child(1)>a {
 	
 	background-size: auto 50px;
 }
-html.darkmode header .row>div:nth-child(1)>a { filter: invert(100%) hue-rotate(68.2deg) brightness(107%) sepia(7%) saturate(71%); }
+html.darkmode header .row>div:nth-child(1)>a { filter: invert(100%) hue-rotate(68.2deg) brightness(113%) sepia(7%) saturate(71%); }
 
 header .row>div:nth-child(1) > a > img { display: none; }
 
