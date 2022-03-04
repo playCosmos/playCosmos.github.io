@@ -61,10 +61,7 @@ a:hover, a:focus { color: var(--mainColor) !important; }
 }
 
 /* 드래그 시 */
-::selection {
-    color: white;
-    background-color: var(--mainColor);
-}
+::selection { color: white; background-color: var(--mainColor); }
 
 /*************** header ***************/
 
@@ -308,7 +305,7 @@ html.darkmode #article-comment a { color: white; }
 /* AD, 공지 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--mainColor) !important; }
 /* 공지 i 아이콘 색 */
-span.a-badge i.fa.fa-info-circle { color: var(--mainColor) !important; }
+span.a-badge i.fa.fa-info-circle { color: var(--mainColor) !important; vertical-align: -5px !important; }
 /* 공지 작성자 가리기 */
 #article-list>.article-list-row.notice>.item>.list-title>.list-writer { display: none !important; }
 
@@ -320,8 +317,8 @@ span.a-badge i.fa.fa-info-circle { color: var(--mainColor) !important; }
 /* 게시글 추천 수 0 */
 #article-list>.article-list-row>.item>.list-header.v0>span,
 #article-list>.article-list-row>.item>.list-header.v0>span:hover {
-    color: transparent;
-    background-color: transparent !important;
+	color: transparent;
+	background-color: transparent !important;
 }
 
 /* 게시글 댓글 수 */
