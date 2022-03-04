@@ -7,7 +7,7 @@
 	--mainColor3: #a9345333; /* 공지, 인기글 */
 	--mainColor2: #a9345322; /* 트게더 메뉴, 게시글 hover */
 	
-	--logoURL: url(https://cdn.discordapp.com/attachments/680723906704965662/680742877290299456/b7c05f9f2689cd34.png);
+	--logoURL: url(https://cdn.discordapp.com/attachments/774970973744791563/948994028421124116/505a773600bf2a4a.png);
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "불침번 중인 "; /* 접속자 수 앞 문구 */
 	--after: "명의 트수";  /* 접속자 수 뒤 문구 */
@@ -18,10 +18,10 @@
 html.darkmode:root {
 	--bgColor: #f0f0f0;   /* 배경 색 */
 	--bgFrame: #242424;   /* 프레임 배경색 */
-	--mainColor: #405b80;   /* 메인 컬러 */
-	--mainColor5: #405b8077; /* 공지, 인기글 hover */
-	--mainColor3: #405b8055; /* 공지, 인기글 */
-	--mainColor2: #2a2f37; /* 트게더 메뉴, 게시글 hover */
+	--mainColor: #a6c0e8;   /* 메인 컬러 */
+	--mainColor5: #a6c0e877; /* 공지, 인기글 hover */
+	--mainColor3: #a6c0e855; /* 공지, 인기글 */
+	--mainColor2: #3e434b; /* 트게더 메뉴, 게시글 hover */
 }
 /* 
 @font-face {
@@ -79,7 +79,7 @@ header .row>div:nth-child(1)>a {
 	
 	background-size: auto 50px;
 }
-html.darkmode header .row>div:nth-child(1)>a { filter: invert(89%) hue-rotate(48.6deg) brightness(0.803); }
+html.darkmode header .row>div:nth-child(1)>a { filter: invert(100%) hue-rotate(68.2deg) brightness(107%) sepia(7%) saturate(71%); }
 
 header .row>div:nth-child(1) > a > img { display: none; }
 
