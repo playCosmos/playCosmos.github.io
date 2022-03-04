@@ -192,6 +192,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 #board-info #board-info-bottom a { color: black; font-size: 14px; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
+#board-info #viewers-area, #board-info #score-area { font-size: 15px; }
 #board-info > #board-info-bottom { margin-top: 10px; }
 
 #board-info>img, #board-info>h1,
