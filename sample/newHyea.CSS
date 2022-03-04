@@ -50,6 +50,12 @@ body { background: transparent;
 html.darkmode a ,a { color: var(--mainColor); transition: all 0.2s ease 0s; }
 a:hover, a:focus { color: var(--mainColor) !important; }
 
+/* 만화진흥원체 폰트가 밑으로 쳐져 있는거 수정 */
+/* a[href='#']>i.fa.fa-clock-o, a[href='#']>i.fa.fa-star, a[href='#']>i.fa.fa-smile-o,
+a[href='/note/lists']>i.fa.fa-envelope-o { vertical-align: -2px; }
+#board-info>#board-info-bottom > a > i.fa { vertical-align: -2px; }
+a.btn > i.fa { vertical-align: -1px; } */
+
 /* 스크롤 바 */
 ::-webkit-scrollbar { width: 12px; height: 12px; }
 ::-webkit-scrollbar-track { background: transparent; }
@@ -114,8 +120,7 @@ header #header-bar #header-menu-right #userDropdown #notification-badge, /* 트�
 header #header-bar #header-menu-right #note-notification-badge /* 쪽지 */ {
 	background: var(--mainColor) !important;
 }
-/* 쪽지 봉투 표시 줄맞춤 */
-a[href='/note/lists']>i.fa.fa-envelope-o { vertical-align: -2px; }
+
 
 /*************** main ***************/
 
