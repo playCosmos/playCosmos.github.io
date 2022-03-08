@@ -1,6 +1,12 @@
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard-Regular';    
 }
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { font-family: 'Noto Sans KR', sans-serif; }
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanumgothic * { font-family: 'Nanum Gothic', sans-serif; }
 
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -14,12 +20,6 @@ body {
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
 }
 
 @font-face {
@@ -36,21 +36,9 @@ body {
     font-style: normal;
 }
 
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-.nanumgothic * {
- font-family: 'Nanum Gothic', sans-serif;
-}
-
 @font-face {
-    font-family: 'IBMPlexSansKR-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GowunBatang-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-family: 'MinSans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,16 +50,3 @@ body {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Dovemayo-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MinSans-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
