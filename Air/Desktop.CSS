@@ -211,7 +211,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 }
 
 /* 광고 패딩 조절 */
-#main #main-menu>div:last-child {
+#main #main-menu>div:not(:first-child) {
 	background: transparent !important;
 	border: none;
 	padding: 0 !important;
