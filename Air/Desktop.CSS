@@ -218,6 +218,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	margin: 0;
 	transform: translateX(-124px);
 }
+#main #main-menu>span>div { width: 160px; }
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
 /*
