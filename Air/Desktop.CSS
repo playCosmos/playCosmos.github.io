@@ -216,9 +216,10 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	border: none;
 	padding: 0 !important;
 	margin: 0;
+	width: 160px;
 	transform: translateX(-124px);
 }
-#main #main-menu>*:not(:first-child)>div { width: 160px; }
+/* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
 /*
