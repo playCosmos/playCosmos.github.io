@@ -217,6 +217,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	padding: 0 !important;
 	margin: 0;
 	width: 160px;
+	display: block;
 	transform: translateX(-124px);
 }
 /* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
