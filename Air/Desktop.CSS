@@ -219,6 +219,9 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	display: block;
 	transform: translateX(-124px);
 }
+ad-shield-ads>* {
+    padding: 0 !important;
+}
 /* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
