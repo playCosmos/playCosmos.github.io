@@ -217,7 +217,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	padding: 0 !important;
 	width: 160px;
 	display: block;
-	transform: translateX(-124px);
+	transform: translateX(-124px) !important;
 }
 ad-shield-ads>* {
     padding: 0 !important;
