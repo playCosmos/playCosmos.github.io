@@ -1,0 +1,2 @@
+#article-list>.article-list-row.notice>.item>.list-title,
+#article-list>.article-list-row.notice>.item>.list-time { display: none; }
