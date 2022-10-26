@@ -116,6 +116,10 @@ header #right-search-form>#right-search-btn {
 	color: var(--maincolor) !important;
 }
 
+header #tgd-home-nav {
+	color: var(--maincolor) !important;
+}
+
 /* 헤더 하단 여백 */
 header #header-bar { margin-bottom: 0px !important; }
 
