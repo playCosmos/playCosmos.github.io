@@ -309,7 +309,11 @@ button>.fa-eye-slash:before { content: "\f204"; }
 	margin: 2px;
 }
 
-#article-list #article-list-category > a.nav-link { background: transparent !important; }
+#article-list #article-list-category > a.nav-link {
+	background: transparent !important;
+	border: none !important;
+}
+
 #article-list #article-list-category > a.active,
 #article-list #article-list-category > a:hover { 
 	color: white !important;
