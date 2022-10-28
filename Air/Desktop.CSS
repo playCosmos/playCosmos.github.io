@@ -54,8 +54,8 @@ body { background: transparent !important; }
 
 /* 스크롤 바 */
 ::-webkit-scrollbar { width: 12px; height: 12px; }
-::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { 
 	background: var(--maincolor) content-box;
 	border: 1px solid transparent;
