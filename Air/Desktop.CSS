@@ -388,11 +388,9 @@ img[title="Moderator"] { display: none; }
 html.darkmode #article-content-wrapper>.header #article-comment a { color: white; }
 
 #article-reply-area > .header h5 { color: var(--maincolor) !important; }
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a { color: var(--maincolor) !important; }
 
+:is(#article-reply-area) .reply-writer.logged,
+:is(#article-reply-area) .reply-menu a { color: var(--maincolor) !important; }
 
 #comment-write-form #comment-write-button-area {
     flex-direction: row;
@@ -559,7 +557,7 @@ button#theme_btn_box { position: fixed; margin-left: 50px; bottom: 20px; z-index
 
 /* 댓글 삭제 백드롭 효과 */
 .alertify {
-	animation: backdrop;
+	animation: backdrop 0.4s;
 	animation-fill-mode: forwards;
 }
 
