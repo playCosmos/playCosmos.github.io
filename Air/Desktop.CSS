@@ -379,6 +379,7 @@ img[title="Moderator"] { display: none; }
 	position: sticky;
 	top: -1px;
 	z-index: 99;
+	border: 1px solid transparent;
 	backdrop-filter: blur(5px);
 	background: var(--bgblur);
 	transition: 0.5s;
