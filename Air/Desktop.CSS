@@ -276,7 +276,7 @@ html.darkmode #board-info #board-info-bottom a { color: white; }
 
 h3 { margin-bottom: 0.5em !important; }
 
-#article-list { margin: 0; }
+#article-list { margin: 0; position: sticky; }
 #article-neighbor-list { margin-bottom: 0.5em; }
 
 /* 공지 숨기기 버튼 */
