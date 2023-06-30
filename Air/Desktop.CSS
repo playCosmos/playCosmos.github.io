@@ -450,11 +450,11 @@ html.darkmode .fr-code { color: white; }
 .pagination>li>span:hover,
 .pagination>.active>a:hover,
 .pagination>.active>span:hover {
-	color: white !important;
-	background-color: var(--maincolor) !important;
-	border-color: var(--maincolor) !important;
+	color: var(--maincolor) !important;
+	background: transparent !important;
 	transition: 0.2s;
 }
+
 /* 게시글 페이지 끝 */
 
 
