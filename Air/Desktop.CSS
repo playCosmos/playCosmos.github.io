@@ -452,6 +452,7 @@ html.darkmode .fr-code { color: white; }
 .pagination>.active>span:hover {
 	color: var(--maincolor) !important;
 	background: transparent !important;
+	border-color: var(--maincolor) !important;
 	transition: 0.2s;
 }
 
