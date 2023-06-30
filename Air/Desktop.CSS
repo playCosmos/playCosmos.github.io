@@ -376,6 +376,7 @@ img[title="Moderator"] { display: none; }
 #article-info {
 	margin: 0px 14px;
 	width: 1000px;
+	position: -webkit-sticky;
 	position: sticky;
 	top: -1px;
 	z-index: 99;
