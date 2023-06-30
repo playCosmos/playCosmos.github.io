@@ -377,11 +377,19 @@ img[title="Moderator"] { display: none; }
 	margin: 0px 14px;
 	width: 1000px;
 	position: sticky;
-	top: 15px;
+	top: -1px;
 	z-index: 99;
+	transition: 0.5s;
+}
+
+div#article-info.isSticked {
+	border: 1px solid var(--maincolor);
+	border-radius: 0 0 10px 10px;
 	backdrop-filter: blur(5px);
 	background: var(--bgblur);
+	transition: 0.5s;
 }
+div#article-info.isSticked:hover { }
 
 /* 게시글 내부 상단 테두리 */
 #article-content-wrapper>.header { border-top: 2px solid var(--maincolor) !important; }
