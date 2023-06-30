@@ -4,4 +4,4 @@ function sel(selector) {
 };
 
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
-observer.observe(sel("div#article-info"));
+document.addEventListener("DOMContentLoaded", function() { observer.observe(sel("div#article-info")); });
