@@ -388,6 +388,7 @@ img[title="Moderator"] { display: none; }
 @media (min-width: 1120px) {
 	div#article-info.isSticked {
 		border: 1px solid var(--maincolor);
+		border-top: transparent;
 		border-radius: 0 0 10px 10px;
 		transition: 0.5s;
 	}
