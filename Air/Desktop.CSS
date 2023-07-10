@@ -607,4 +607,5 @@ span.a-badge i.fa.fa-star {
 	100% { transform: rotate(360deg); }
 }
 
+.fab { font-family: "Font Awesome 5 Brands"; }
 i.fab.fa-discord:before { content: "\f392"; }
