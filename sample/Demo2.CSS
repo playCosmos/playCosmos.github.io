@@ -206,6 +206,8 @@ span.a-badge i.fa.fa-info-circle {
 html.darkmode #article-content-wrapper>.header,
 #article-content-wrapper>.header { border-top: 1px dashed #ddd; }
 
+html.darkmode #article-comment a { color: white; }
+
 #article-reply-area > .header h5,
 #article-reply-area > .header h5 > a { color: var(--mainColor); }
 
