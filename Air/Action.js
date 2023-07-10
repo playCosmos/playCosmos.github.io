@@ -9,6 +9,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // var a1 = document.createElement('div');
     // var a2 = document.createElement('div');
     
+    var aDiscord = document.createElement('a');
+    aDiscord.setAttribute('href', "https://discord.gg/CE6bWsQ7QH");
+    aDiscord.innerText = "디스코드";
+    
+    var iDiscord = document.createElement('i');
+    iDiscord.setAttribute('class', "fab fa-discord");
+    aDiscord.prepend(iDiscord);
+    
+    var fav = sel("a#addFavoriteBtn");
+    fav.after(aDiscord);    
+
     var article_info = sel("div#article-info");
     observer.observe(article_info);
     // article_info.before(a1);
