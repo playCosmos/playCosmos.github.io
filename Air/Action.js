@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var aDiscord = document.createElement('a');
     aDiscord.setAttribute('href', "https://discord.gg/CE6bWsQ7QH");
-    aDiscord.innerText = "디스코드";
+    aDiscord.innerText = " 디스코드";
     
     var iDiscord = document.createElement('i');
     iDiscord.setAttribute('class', "fab fa-discord");
