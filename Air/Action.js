@@ -26,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var fav = sel("a#addFavoriteBtn");
     fav.after(aInstagram);
-    fav.after(aDiscord);    
+    fav.after(aDiscord);
+
+    var article_option_area = sel("#article-option-area");
+    sel("#board-info-bottom").append(article_option_area);
 
     var article_info = sel("div#article-info");
     observer.observe(article_info);
