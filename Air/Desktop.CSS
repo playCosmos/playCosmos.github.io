@@ -1,0 +1,630 @@
+/**** Designed by Million_Air in Twitch ****/
+/******* Discord me Million_Air#9087 *******/
+
+/* 폰트 */
+@font-face {
+	font-family: 'NanumSquareRoundEB';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'),
+		url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
+}
+
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	src: url('../fonts/fa-brands-400.ttf') format('truetype'),
+	  url('../fonts/fa-brands-400.woff') format('woff'),
+	  url('../fonts/fa-brands-400.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+/* 기본 설정 */
+html {
+	--maincolor: #31405a;	/* 메인색 */
+	--highlight: #edeff7;	/* 강조색 */
+	--bgcolor: #e7eaef;	/* 배경색 */
+	--bgframe: #ffffff;	/* 프레임배경 */
+	--bgblur: #ffffff7f;	/* 블러배경 */
+}
+
+html.darkmode {
+	--maincolor: #bdc8db;	/* 메인색 */
+	--highlight: #414958;	/* 강조색 */
+	--bgcolor: black;	/* 배경색 */
+	--bgframe: #242424;	/* 프레임배경 */
+	--bgblur: #2424247f;	/* 블러배경 */
+}
+/*@media (min-width: 1112px) { body{ position: absolute; left: calc(calc(1100px - 100%) / 2); } }*/
+@media (max-width: 1120px) {
+	/* 모바일로 전환 사이즈 조정 */
+	a#switch-platform-link { font-size: 36px; }
+}
+
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
+/* 링크 기본 */
+html.darkmode a, a { color: var(--maincolor); transition: all 0.2s ease 0s; }
+a:hover, a:focus { color: var(--maincolor) !important; }
+
+/* fontawesome 사용 */
+a.nav-link,
+span.category,
+select.form-control,
+div#article-content,
+#movetotop:after,
+a#switch-platform-link:before { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace !important; }
+
+/* 알림 */
+.alert { border-radius: 10px; margin-bottom: 5px !important; padding: 10px 35px 10px 15px !important; }
+
+html { background: var(--bgcolor) !important; scroll-behavior: smooth; }
+body { background: transparent !important; }
+
+/* 스크롤 바 */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+	background: var(--maincolor) content-box;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+/* 드래그 시 */
+::selection {
+    color: white;
+    background-color: var(--maincolor);
+}
+
+/* 마우스 커서 기본 */
+html, body, .fr-popup, .fr-active div>*, 
+.fr-btn-wrap, span#viewers,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt { cursor: url(https://playcosmos.github.io/Air/Cursor/pointer.cur) 0 0, auto !important; }
+
+/* 마우스 커서 링크 */
+#right-search-form>#right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu, .btn, .fr-command.fr-btn, .fr-view img,
+.pull-left, a { cursor: url(https://playcosmos.github.io/Air/Cursor/link.cur) 8 0, auto !important; }
+
+/* 마우스 커서 텍스트 */
+#article-list #boardSearchForm .form-control,
+.fr-view, .fr-box.fr-basic.fr-element,
+input[type='text'] { cursor: url(https://playcosmos.github.io/Air/Cursor/text.cur) 6 11, auto !important; }
+
+
+/************ 헤더 ************/
+header { padding: 8px 0 5px 0; }
+
+/* 트게더 로고 */
+body header>.container>.row>.col-xs-4>a>img {
+	/*content: url(./image/logo.svg);*/
+	height: 50px !important;
+	filter: brightness(0.8) hue-rotate(320deg) saturate(0.5);
+}
+html.darkmode body header>.container>.row>.col-xs-4>a>img {
+	filter: brightness(2.5) hue-rotate(290deg) saturate(0.25);
+}
+
+/* 헤더 검색창 */
+header #right-search-form>input[type=text] {
+	border: 3px solid var(--maincolor) !important;
+	border-radius: 5px !important;
+	background: transparent !important;
+	color: var(--maincolor) !important;
+}
+header #right-search-form>input::placeholder,
+header #right-search-form>#right-search-btn { 
+	color: var(--maincolor) !important;
+}
+
+header #tgd-home-nav {
+	color: var(--maincolor) !important;
+}
+
+/* 헤더 하단 여백 */
+header #header-bar { margin-bottom: 0px !important; }
+
+/* 헤더 상단 메뉴 */
+header #header-bar>.row {
+    border: none !important;
+    border-top: 3px solid var(--maincolor) !important;
+    border-radius: 0 0 10px 10px !important;
+}
+
+/* 헤더 광고 뱃지 */
+/*header #header-bar #header-top-notice strong.notice-badge { background: var(--maincolor) !important; }*/
+header #header-bar #header-top-notice strong.notice-badge { display: none; }
+header #header-bar #header-top-notice > * ,
+header #header-bar #header-top-notice { animation: fadein 0.4s; }
+@keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+/* 헤더 드롭다운 */
+header #header-bar a.dropdown-toggle { color: var(--maincolor); }
+
+/* 헤더 알림 뱃지 */
+header #header-bar a.dropdown-toggle #notification-badge {
+	padding: 5px 6px 3px 6px !important;
+	background: var(--maincolor) !important;
+}
+
+.dropdown-menu { border: 1px solid var(--maincolor) !important; }
+.dropdown-menu .divider { margin: 3px 0; }
+.dropdown-menu > li > a {
+    padding: 3px 3px 0 10px !important;
+    height: 27px;
+}
+.dropdown-menu .label-default { background: var(--maincolor) !important; }
+.dropdown-menu .delrow { color: var(--maincolor) !important; } 
+
+
+/******* 좌측 트게더 메뉴 *******/
+#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
+#main #main-menu:hover { z-index: 999; }
+
+#main .menu-wrapper {
+	background: var(--bgframe);
+	border: none !important;
+	border-radius: 10px;
+	padding: 2px;
+	margin-bottom: 5px;
+}
+
+#main .menu-wrapper>.header { background: var(--maincolor) !important; }
+#main .menu-wrapper>.header,
+#main .menu-wrapper>a,
+#main .menu-wrapper #fav-shortcut-area>a {
+	border: none !important;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 30px;
+	white-space: nowrap;
+	padding: 5px 12px 5px 1px;
+	margin: 1px;
+	transition: 0.4s; 
+}
+
+#main .menu-wrapper>a:last-child { }
+
+#main .menu-wrapper>a>em,
+#main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
+
+#main .menu-wrapper>a>em,
+#main .menu-wrapper #fav-shortcut-area>a>em,
+#main .menu-wrapper>.header>i.fa.fa-bars {
+	width: 24px;
+	text-align: center;
+	margin: 0 4px 0 2px;
+}
+
+/* #main .menu-wrapper .spacer { display: none; } */
+#main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
+
+/* #main .menu-wrapper>.header:hover, */
+#main .menu-wrapper #fav-shortcut-area>a:hover,
+#main .menu-wrapper>a:hover {
+	background-color: var(--highlight) !important;
+	border-color: var(--maincolor) !important;
+	width: 150px;
+}
+html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover,
+html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
+
+@media (min-width: 1400px) {
+/* 	#main .menu-wrapper>.header:hover, */
+	#main .menu-wrapper>a:hover,
+	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
+}
+
+/* 광고 패딩 조절 */
+#main #main-menu>*:not(:first-child) {
+	background: transparent !important;
+	border: none;
+	padding: 0 !important;
+	width: 160px;
+	display: block;
+	transform: translateX(-124px) !important;
+}
+ad-shield-ads>* {
+    padding: 0 !important;
+}
+/* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
+#article-list>div:nth-child(3) { padding: 0 !important; }
+
+/*
+#main .menu-wrapper>a:after,
+#main .menu-wrapper #fav-shortcut-area>a:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 0;
+	transition: all 0.2s ease 0s;
+	z-index: -1;
+	background-color: var(--highlight) !important;
+}
+#main .menu-wrapper>a:hover:after,
+#main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
+*/
+
+#main #main-content { width: calc(100% - 36px); padding: 0px 0px 0 6px; }
+#main #main-content > div.frame { border: none !important; border-radius: 10px; }
+
+#board-info {
+	height: inherit !important;
+	margin: 0 !important;
+	padding: 0.5em 1em !important;
+}
+#board-info #board-info-profile-img {
+	display: inline-block;
+	float: left !important;
+	width: 48px;
+}
+#board-info h1 {
+	display: inline-block;
+	border: none !important;
+	padding: 14px 10px 5px 10px !important;
+}
+#board-info #board-info-bottom {
+	display: inline-block;
+	padding: 20px 10px 0px 10px !important;
+	float: right;	
+}
+#board-info #score-area { display: none; }
+
+#board-info #board-info-bottom a { color: black; }
+html.darkmode #board-info #board-info-bottom a { color: white; }
+
+/* 프로필 링크 제거 */
+a[href="https://ranking.tgd.kr/streamers/180791181"],
+/*a[href="/s/million_air/profile"],*/
+a[href="/s/million_air/schedule"],
+a[href="/s/million_air?gallery=1"],
+a[href="/clips?streamer_id=180791181"] { display: none !important; }
+
+h3 { margin-bottom: 0.5em !important; }
+
+#article-list { margin: 0; position: sticky; }
+#article-neighbor-list { margin-bottom: 0.5em; }
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area { top: 5px !important; }
+#article-list #article-option-area-toggle-btn {
+	border-radius: 8px !important;
+	height: auto !important;
+	margin: 0 16px 0 0 !important;
+	padding: 5px !important;
+	opacity: 1 !important;
+	display: inline-grid !important;
+}
+
+/* 눈 모양 아이콘을 스위치 모양으로 변경 */
+button>.fa-eye:before { content: "\f205"; color: var(--maincolor) !important;}
+button>.fa-eye-slash:before { content: "\f204"; }
+.darkmode button>.fa-eye:before { color: var(--bgcolor) !important; }
+.darkmode #article-option-area-toggle-btn { background: var(--maincolor) !important; }
+
+/* 카테고리 */
+#article-list #article-list-category {
+	background: var(--bgframe) !important;
+	border-top: 2px solid var(--maincolor) !important;
+	border-bottom: 2px solid var(--maincolor) !important;
+}
+#article-list #article-list-category>a {
+	border-radius: 4px;
+	background: transparent !important;
+	padding: 8px 14px;
+	margin: 2px;
+}
+
+#article-list #article-list-category > a.nav-link {
+	background: transparent !important;
+	border: none !important;
+}
+
+#article-list #article-list-category > a.active,
+#article-list #article-list-category > a:hover { 
+	color: white !important;
+	background: var(--maincolor) !important;
+}
+
+@media (min-width: 1400px) {
+	#article-list #article-list-category.can-float { 
+		border: 2px solid var(--maincolor);
+		left: unset;
+		right: unset;
+		top: unset;
+		width: 150px;
+		transform: translate(1020px, -112px);
+		max-height: none;
+	}
+	#article-list #article-list-category.can-float > a {
+		border-radius: 4px;
+		border: none;
+		width: auto;
+	}
+}
+
+#article-list>.article-list-row.notice {} /* 공지글 */
+#article-list>.article-list-row.hot {} /* 인기글 */
+#article-list>.article-list-row {} /* 일반글 */
+
+/* AD 글자색 */
+#article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
+
+/* 공지 i 아이콘 색 */
+span.a-badge i.fa.fa-info-circle { color: var(--maincolor) !important; }
+
+/* 공지 작성자 가리기 */
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer { display: none !important; }
+
+/* 게시글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span { background-color: var(--maincolor) !important; }
+/* 게시글 댓글 수 */
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+/* 게시글 로그인한 작성자 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span { color: var(--maincolor) !important; }
+/* 게시글 작성 시간 */
+#article-list>.article-list-row>.item>.list-time { Width: 50px !important; }
+
+#article-list>.article-list-row>.item>.list-title>.list-category { padding: 0 10px !important; }
+#article-list>.article-list-row>.item>.list-title>.list-category>span {
+    text-overflow: clip !important;
+    white-space: unset !important;
+    width: 13px !important;
+}
+#article-list>.article-list-row:hover,
+html.darkmode #article-list>.article-list-row:hover { background: var(--highlight) !important; transition: 0.2s; }
+
+/* 스트리머, 관리자 뱃지 */
+/*img[title="Broadcaster"] { display: none; }*/
+img[title="Moderator"] { display: none; }
+
+/* 게시글 제목 */
+#article-info {
+	margin: 0px 14px;
+	width: 1000px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -1px;
+	z-index: 99;
+	border: 2px solid transparent;
+	backdrop-filter: blur(5px);
+	background: var(--bgblur);
+}
+
+@media (min-width: 1120px) {
+	div#article-info.isSticked {
+		border: 2px solid var(--maincolor);
+		border-top: transparent;
+		border-radius: 0 0 10px 10px;
+		padding: 14px 1em;
+		transition: 0.5s;
+	}
+	div#article-info.isSticked:hover { }
+
+	div#article-info.isSticked .article-profile-img,
+	div#article-info.isSticked #article-info-writer { height: 0; opacity: 0; padding: 0; transition: 0.5s;}
+}
+
+/* 게시글 내부 상단 테두리 */
+#article-content-wrapper>.header { border-top: 2px solid var(--maincolor) !important; }
+html.darkmode #article-content-wrapper>.header #article-comment a { color: white; }
+
+#article-reply-area > .header h5 { color: var(--maincolor) !important; }
+
+:is(#article-reply-area) .reply-writer.logged,
+:is(#article-reply-area) .reply-menu a { color: var(--maincolor) !important; }
+
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left { margin: 0px calc(100% - 100px) 5px 0px; }
+#addEmoteBtn,
+#btnRereplyCancelBtn { margin-right: 3px; }
+#writeCommentBtn { margin-left: auto; }
+
+/* 게시글, 댓글 쓰기 상단바 */
+.fr-popup, .fr-toolbar { border-top: 2px solid var(--maincolor) !important; }
+.fr-dropdown::after { border-top: 4px solid var(--maincolor) !important; }
+.fr-btn { color: var(--maincolor) !important; }
+
+html.darkmode .fr-code { color: white; }
+
+/* 게시글 페이지 */
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+	color: var(--maincolor) !important;
+	background: transparent !important;
+	transition: 0.2s;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	color: white !important;
+	background-color: var(--maincolor) !important;
+	border-color: var(--maincolor) !important;
+	transition: 0.2s;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover {
+	color: var(--maincolor) !important;
+	background: transparent !important;
+	border-color: var(--maincolor) !important;
+	transition: 0.2s;
+}
+
+/* 게시글 페이지 끝 */
+
+
+/* 버튼, 하단 검색 */
+.btn.square {
+	border-radius: 3px;
+	border: 1px solid !important;
+	margin-right: -1px !important;
+}
+
+button.btn.square.btn-default.dropdown-toggle { border-radius: 3px 0px 0px 3px; }
+.input-group-btn:last-child>.btn { }
+html.darkmode .input-group-btn i.fa-search { color: unset; }
+
+.btn,
+select.form-control,
+input.form-control {
+	border-color: var(--btcolor) !important;
+	color: var(--btcolor) !important;
+	padding: 5px 12px;
+	height: 28px !important;
+	background: transparent !important;
+	transition: 0.2s !important;
+}
+
+.vote-btn { height: 32px !important; }
+
+.btn[tabindex="-1"], .btn[type="submit"] { padding: 4px 12px !important; }
+ 
+.btn:hover, select.form-control:hover {
+	background: var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
+	color: white !important;
+}
+
+/* .btn[data-target="#pollModal"] { --btcolor: #46b8da; } */
+/* .btn[data-target="#scheduleModal"], */
+.btn[data-type="up"] { --btcolor: #5cb85c; }
+.btn[data-type="down"] { --btcolor: #0275d8; }
+.btn-default.best { --btcolor: #efc839; }
+.btn-outline-danger { --btcolor: #d9534f; }
+.btn-danger { --btcolor: #ff6e6e; }
+
+.btn-primary, .btn-default, .btn-info, input.form-control,
+.btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
+
+select.form-control:focus, input#title:focus { box-shadow: none; }
+
+select.form-control, input#title {
+	--btcolor: var(--maincolor);
+	height: 30px !important;
+}
+
+div#title_color>input { height: 30px !important; }
+
+form#boardSearchForm .input-group-btn .btn:hover,
+form#boardSearchForm .input-group-btn .btn:focus {
+	background: var(--btcolor) !important;
+	color: white !important;
+}
+form#boardSearchForm > input.form-control::placeholder { color: var(--btcolor) !important; }
+html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; }
+/* 버튼, 하단 검색 끝 */
+
+footer {
+	text-align: right;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+footer .container { 
+	width: 1100px !important;
+	margin: 0 auto;
+	padding-right: 25px;
+}
+
+html.darkmode footer a { color: var(--maincolor); }
+
+a#switch-platform-link:before { content: " "; }
+
+
+/* 상단으로 이동 */
+/*#movetotop img{display:none}
+#movetotop {
+	display: inline-block;
+	opacity: 1;
+	background: url();
+	width: 120px;
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}*/
+#movetotop img { display: none; }
+#movetotop {
+	border: 2px solid var(--maincolor);
+	border-radius: 10px;
+	background: #ffffffbf;
+	backdrop-filter: blur(2px);
+	margin: 20px -25px;
+	left: calc(50%) !important;
+	right: auto;
+	width: 50px;
+	height: 50px;
+	padding: 5px 0;
+	opacity: 1;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+}
+html.darkmode #movetotop { background: #242424bf; }
+#movetotop:after { content: ""; }
+#movetotop:hover { background: var(--maincolor) !important; }
+#movetotop:hover::after { color: white; }
+
+/* 다크모드 버튼 위치 조정 */
+button#theme_btn_box { position: fixed; margin-left: 50px; bottom: 20px; z-index: 99; }
+
+/* 댓글 삭제 백드롭 효과 */
+.alertify {
+	animation: backdrop 0.4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes backdrop{
+	0% { backdrop-filter: blur(0px); }	
+	100% { backdrop-filter: blur(1px); }
+}
+
+
+/******* 애니메이션 *******/
+small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
+
+@keyframes heartbeat{
+	0% { transform: scale(1); }
+	30% { transform: scale(1.25); }
+	42% { transform: scale(0.9); }
+	60% { transform: scale(1.15); }
+	85% { transform: scale(0.95); }
+	100% { transform: scale(1); }
+}
+
+/*i.fa.fa-refresh,*/
+span.a-badge i.fa.fa-star {
+	animation: shiningstar 2s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes shiningstar {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.fab { font-family: "Font Awesome 5 Brands"; font-style: normal; }
+i.fab.fa-discord:before { content: "\f392"; }
+i.fab.fa-instagram:before { content: "\f16d"; }
