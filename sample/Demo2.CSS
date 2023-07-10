@@ -208,6 +208,8 @@ html.darkmode #article-content-wrapper>.header,
 
 html.darkmode #article-comment a { color: white; }
 
+html.darkmode #article-reply-area>.header h5,
+html.darkmode #article-reply-area>.header h5 > a,
 #article-reply-area > .header h5,
 #article-reply-area > .header h5 > a { color: var(--mainColor); }
 
@@ -218,9 +220,9 @@ html.darkmode #article-comment a { color: white; }
     color: var(--mainColor);
 }
 
-.fr-popup,
-.fr-toolbar.fr-top {
-    border-top: 3px dashed var(--mainColor);
+html.darkmode .fr-popup, html.darkmode .fr-toolbar.fr-top,
+.fr-popup, .fr-toolbar.fr-top {
+    border-top: 2px dashed var(--mainColor);
 }
 
 
