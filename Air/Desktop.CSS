@@ -607,4 +607,4 @@ span.a-badge i.fa.fa-star {
 	100% { transform: rotate(360deg); }
 }
 
-i.fab.fa-discord:before { content: ""; }
+i.fab.fa-discord:before { content: "\f392"; }
