@@ -12,8 +12,8 @@
 
 @font-face {
 	font-family: 'Font Awesome 5 Brands';
-	src: url('.././fonts/fa-brands-400.ttf') format('truetype'),
-	  url('.././fonts/fa-brands-400.woff') format('woff');
+	src: url('../fonts/fa-brands-400.ttf') format('truetype'),
+	  url('../fonts/fa-brands-400.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: block;
