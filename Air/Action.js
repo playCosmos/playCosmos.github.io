@@ -8,6 +8,7 @@ const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("is
 document.addEventListener("DOMContentLoaded", function() {
     var aDiscord = document.createElement('a');
     aDiscord.setAttribute('href', "https://discord.gg/CE6bWsQ7QH");
+    aDiscord.setAttribute('target', "_blank");
     aDiscord.innerText = " 디스코드";
     
     var iDiscord = document.createElement('i');
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var aInstagram = document.createElement('a');
     aInstagram.setAttribute('href', "https://www.instagram.com/million_air_");
+    aInstagram.setAttribute('target', "_blank");
     aInstagram.innerText = " 인스타그램";
     
     var iInstagram = document.createElement('i');
