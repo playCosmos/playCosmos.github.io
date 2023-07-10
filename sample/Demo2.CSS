@@ -14,7 +14,11 @@ body { background: transparent; }
 
 *:focus { outline: none; }
 
+html.darkmode a,
 a { color: var(--mainColor); }
+
+html.darkmode a:hover,
+html.darkmode a:focus,
 a:hover,
 a:focus { color: #333; }
 
