@@ -1,6 +1,16 @@
 /**** Designed by Million_Air in Twitch ****/
 /******* Discord me Million_Air#9087 *******/
 
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	src: url('../fonts/fa-brands-400.ttf') format('truetype'),
+	  url('../fonts/fa-brands-400.woff') format('woff'),
+	  url('../fonts/fa-brands-400.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
 /* 기본 설정 */
 :root {
 	--maincolor: #31405a;	/* 메인색 */
@@ -161,6 +171,13 @@ nav#nav>.nav-menu-area>.right {
 }
 .open>.dropdown-menu { border: 1px solid var(--maincolor) !important; }
 /* 트게더 전체메뉴 끝 */
+
+/* 프로필 링크 제거 */
+a[href="https://ranking.tgd.kr/streamers/180791181"],
+/*a[href="/s/million_air/profile"],*/
+a[href="/s/million_air/schedule"],
+a[href="/s/million_air?gallery=1"],
+a[href="/clips?streamer_id=180791181"] { display: none !important; }
 
 #board-info>a.board-right-menu,
 #board-info>div.dropdown>a {
@@ -461,3 +478,7 @@ span.a-badge i.fa.fa-star {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
+
+.fab { font-family: "Font Awesome 5 Brands"; font-style: normal; }
+i.fab.fa-discord:before { content: "\f392"; }
+i.fab.fa-instagram:before { content: "\f16d"; }
