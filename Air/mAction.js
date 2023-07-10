@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	var lInstagram = document.createElement('li');
 	lInstagram.prepend(aInstagram);
 	
-    var ul = sel("ul.dropdown-menu.dropdown-menu-right");
+    var ul = sel("#board-info ul.dropdown-menu.dropdown-menu-right");
     ul.prepend(lInstagram);
     ul.prepend(lDiscord);
 });
