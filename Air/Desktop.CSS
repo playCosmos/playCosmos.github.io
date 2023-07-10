@@ -285,6 +285,12 @@ ad-shield-ads>* {
 #board-info #board-info-bottom a { color: black; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
+/* 프로필 링크 제거 */
+a[href="https://ranking.tgd.kr/streamers/180791181"],
+a[href="/s/million_air/schedule"],
+a[href="/s/million_air?gallery=1"],
+a[href="/clips?streamer_id=180791181"] { display: none !important; }
+
 h3 { margin-bottom: 0.5em !important; }
 
 #article-list { margin: 0; position: sticky; }
