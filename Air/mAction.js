@@ -15,20 +15,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	var lDiscord = document.createElement('li');
 	lDiscord.prepend(aDiscord);
-  
-    var aInstagram = document.createElement('a');
-    aInstagram.setAttribute('href', "https://www.instagram.com/million_air_");
-    aInstagram.setAttribute('target', "_blank");
-    aInstagram.innerText = " 인스타그램";
-    
-    var iInstagram = document.createElement('i');
-    iInstagram.setAttribute('class', "fab fa-instagram");
-    aInstagram.prepend(iInstagram);
+	
+	var aInstagram = document.createElement('a');
+	aInstagram.setAttribute('href', "https://www.instagram.com/million_air_");
+	aInstagram.setAttribute('target', "_blank");
+	aInstagram.innerText = " 인스타그램";
+	
+	var iInstagram = document.createElement('i');
+	iInstagram.setAttribute('class', "fab fa-instagram");
+	aInstagram.prepend(iInstagram);
     
 	var lInstagram = document.createElement('li');
 	lInstagram.prepend(aInstagram);
 	
-    var ul = sel("#board-info ul.dropdown-menu.dropdown-menu-right");
-    ul.prepend(lInstagram);
-    ul.prepend(lDiscord);
+	var ul = sel("#board-info ul.dropdown-menu.dropdown-menu-right");
+	ul.prepend(lInstagram);
+	ul.prepend(lDiscord);
 });
