@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     aDiscord.prepend(iDiscord);
     
     var aInstagram = document.createElement('a');
-    aInstagram.setAttribute('href', "https://www.instagram.com/million_air_/");
+    aInstagram.setAttribute('href', "https://www.instagram.com/million_air_");
     aInstagram.innerText = " 인스타그램";
     
     var iInstagram = document.createElement('i');
