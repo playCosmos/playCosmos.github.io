@@ -17,7 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
     iDiscord.setAttribute('class', "fab fa-discord");
     aDiscord.prepend(iDiscord);
     
+    var aInstagram = document.createElement('a');
+    aInstagram.setAttribute('href', "https://www.instagram.com/million_air_/");
+    aInstagram.innerText = " 인스타그램";
+    
+    var iInstagram = document.createElement('i');
+    iInstagram.setAttribute('class', "fab fa-instagram");
+    aInstagram.prepend(iInstagram);
+    
     var fav = sel("a#addFavoriteBtn");
+    fav.after(aInstagram);
     fav.after(aDiscord);    
 
     var article_info = sel("div#article-info");
