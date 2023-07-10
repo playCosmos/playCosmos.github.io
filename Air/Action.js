@@ -5,10 +5,10 @@ function sel(selector) {
 
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
-const a1 = new document.createElement('div');
-const a2 = new document.createElement('div');
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {  
+    var a1 = new document.createElement('div');
+    var a2 = new document.createElement('div');
+    
     var article_info = sel("div#article-info");
     observer.observe(article_info);
     article_info.before(a1);
