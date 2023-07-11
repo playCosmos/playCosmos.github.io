@@ -82,7 +82,7 @@ html, body, .fr-popup, .fr-active div>*,
 select.form-control,
 input[type=checkbox],
 input[type=radio],
-.opt { cursor: url(https://playcosmos.github.io/Air/Cursor/pointer.cur) 0 0, auto !important; }
+.opt { cursor: url(./Cursor/pointer.cur) 0 0, auto !important; }
 
 /* 마우스 커서 링크 */
 #right-search-form>#right-search-btn,
@@ -91,12 +91,12 @@ input[type=radio],
 #article-list>.article-list-row>.item>.list-title>.list-writer>span,
 .reply > .reply-header > .reply-writer.logged,
 .reply-menu, .btn, .fr-command.fr-btn, .fr-view img,
-.pull-left, a { cursor: url(https://playcosmos.github.io/Air/Cursor/link.cur) 8 0, auto !important; }
+.pull-left, a { cursor: url(./Cursor/link.cur) 8 0, auto !important; }
 
 /* 마우스 커서 텍스트 */
 #article-list #boardSearchForm .form-control,
 .fr-view, .fr-box.fr-basic.fr-element,
-input[type='text'] { cursor: url(https://playcosmos.github.io/Air/Cursor/text.cur) 6 11, auto !important; }
+input[type='text'] { cursor: url(./Cursor/text.cur) 6 11, auto !important; }
 
 
 /************ 헤더 ************/
@@ -243,7 +243,6 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 	padding: 0.5em 1em !important;
 }
 #board-info #board-info-profile-img {
-	display: inline-block;
 	float: left !important;
 	width: 48px;
 }
@@ -253,7 +252,6 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 	padding: 14px 10px 5px 10px !important;
 }
 #board-info #board-info-bottom {
-	display: inline-block;
 	padding: 20px 10px 0px 10px !important;
 	float: right;	
 }
