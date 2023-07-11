@@ -179,8 +179,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 #main .menu-wrapper>.header, 
-#main .menu-wrapper>a,
-#main .menu-wrapper #fav-shortcut-area>a {
+:is(#main .menu-wrapper) > a {
 	border: none !important;
 	border-radius: 8px;
 	padding: 5px 12px 5px 1px;
@@ -189,9 +188,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	overflow: hidden;
 	transition: 0.4s; 
 }
-/* #main .menu-wrapper>.header:hover, */
-#main .menu-wrapper #fav-shortcut-area>a:hover,
-#main .menu-wrapper>a:hover {
+:is(#main .menu-wrapper) > a:hover {
 	background-color: var(--highlight) !important;
 	border-color: var(--maincolor) !important;
 }
@@ -201,16 +198,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	#main #main-menu:hover { z-index: 999; }
 
 	#main .menu-wrapper>.header,
-	#main .menu-wrapper>a,
-	#main .menu-wrapper #fav-shortcut-area>a { width: 30px; }
-
-	/* #main .menu-wrapper>.header:hover, */
-	#main .menu-wrapper #fav-shortcut-area>a:hover,
-	#main .menu-wrapper>a:hover { width: 150px; }
-
-	/* #main .menu-wrapper>.header:hover, */
-	#main .menu-wrapper>a:hover,
-	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
+	:is(#main .menu-wrapper) > a { width: 30px; }
+	:is(#main .menu-wrapper) > a:hover { width: 150px; transform: translateX(-120px); }
 
 	#main #main-content { width: calc(100% - 36px); }
 	#article-info { width: 1000px; transition: 0.4s; }
@@ -228,15 +217,12 @@ header #header-bar a.dropdown-toggle #notification-badge {
 #main .menu-wrapper>a>em { color: var(--maincolor) !important; }
 
 :is(#main .menu-wrapper) > a > em,
-/*#main .menu-wrapper>a>em,
-#main .menu-wrapper #fav-shortcut-area>a>em,*/
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
 	margin: 0 4px 0 2px;
 }
 
-/* #main .menu-wrapper .spacer { display: none; } */
 #main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
 
 html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover,
