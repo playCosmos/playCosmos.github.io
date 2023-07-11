@@ -189,6 +189,12 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	overflow: hidden;
 	transition: 0.4s; 
 }
+/* #main .menu-wrapper>.header:hover, */
+#main .menu-wrapper #fav-shortcut-area>a:hover,
+#main .menu-wrapper>a:hover {
+	background-color: var(--highlight) !important;
+	border-color: var(--maincolor) !important;
+}
 
 @media (min-width: 1350px) {
 	#main #main-menu { width: 36px; }
@@ -200,11 +206,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 	/* #main .menu-wrapper>.header:hover, */
 	#main .menu-wrapper #fav-shortcut-area>a:hover,
-	#main .menu-wrapper>a:hover {
-		background-color: var(--highlight) !important;
-		border-color: var(--maincolor) !important;
-		width: 150px;
-	}
+	#main .menu-wrapper>a:hover { width: 150px; }
 
 	/* #main .menu-wrapper>.header:hover, */
 	#main .menu-wrapper>a:hover,
