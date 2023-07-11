@@ -9,8 +9,9 @@ function detect() {
     iframe.width = "1px";
     iframe.id = "ads-text-iframe";
     iframe.src = "http://domain.com/ads.html";
-    
-    document.body.appendChild(iframe);
+
+    try { document.body.appendChild(iframe); }
+    catch { return true; }
     
     setTimeout(function() {
         var iframe = document.getElementById("ads-text-iframe");
