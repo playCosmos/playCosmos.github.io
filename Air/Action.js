@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
     iInstagram.setAttribute('class', "fab fa-instagram");
     aInstagram.prepend(iInstagram);
     
-    var fav = sel("a#addFavoriteBtn");
-    fav.after(aInstagram);
-    fav.after(aDiscord);
+    var info = sel("#board-info-bottom");
+    info.append(aDiscord);
+    info.append(aInstagram);
 
     var article_option_area = sel("#article-option-area");
     sel("#board-info-bottom").append(article_option_area);
