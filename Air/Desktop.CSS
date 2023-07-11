@@ -74,10 +74,7 @@ body { background: transparent !important; }
 }
 
 /* 드래그 시 */
-::selection {
-    color: white;
-    background-color: var(--maincolor);
-}
+::selection { background-color: var(--maincolor); color: white; }
 
 /* 마우스 커서 기본 */
 html, body, .fr-popup, .fr-active div>*, 
@@ -127,9 +124,7 @@ header #right-search-form>#right-search-btn {
 	color: var(--maincolor) !important;
 }
 
-header #tgd-home-nav {
-	color: var(--maincolor) !important;
-}
+header #tgd-home-nav { color: var(--maincolor) !important; }
 
 /* 헤더 하단 여백 */
 header #header-bar { margin-bottom: 0px !important; }
