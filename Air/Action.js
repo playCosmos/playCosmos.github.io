@@ -3,12 +3,25 @@ function sel(selector) {
     return target;
 };
 
+function CreateSocialLink(innerText, url, iconClass) {
+    let target = document.createElement('a');
+    target.setAttribute('href', url);
+    aYoutube.setAttribute('target', "_blank");
+    aYoutube.innerText = " " + innerText;
+    
+    var icon = document.createElement('i');
+    icon.setAttribute('class', iconClass);
+    target.prepend(icon);
+    return target;
+};
+
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
     var info = sel("#board-info-bottom");
     if (info != null)
     {
+        /*
         var aYoutube = document.createElement('a');
         aYoutube.setAttribute('href', "https://www.youtube.com/");
         aYoutube.setAttribute('target', "_blank");
@@ -35,6 +48,11 @@ document.addEventListener("DOMContentLoaded", function() {
         var iInstagram = document.createElement('i');
         iInstagram.setAttribute('class', "fab fa-instagram");
         aInstagram.prepend(iInstagram);
+        */
+        
+        var aYoutube = CreateSocialLink("유튜브", "https://www.youtube.com/", "fab fa-youtube");
+        var aDiscord = CreateSocialLink("디스코드", "https://discord.gg/CE6bWsQ7QH", "fab fa-discord");
+        var aInstagram = CreateSocialLink("인스타그램", "https://www.instagram.com/million_air_", "fab fa-instagram");
         
         info.append(aYoutube);
         info.append(aDiscord);
