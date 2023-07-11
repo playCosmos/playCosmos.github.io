@@ -196,9 +196,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 	#main .menu-wrapper>.header,
 	#main .menu-wrapper>a,
-	#main .menu-wrapper #fav-shortcut-area>a {
-		width: 30px;
-	}
+	#main .menu-wrapper #fav-shortcut-area>a { width: 30px; }
 
 	/* #main .menu-wrapper>.header:hover, */
 	#main .menu-wrapper #fav-shortcut-area>a:hover,
