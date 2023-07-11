@@ -21,36 +21,7 @@ const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("is
 document.addEventListener("DOMContentLoaded", function() {
     var info = sel("#board-info-bottom");
     if (info != null)
-    {
-        /*
-        var aYoutube = document.createElement('a');
-        aYoutube.setAttribute('href', "https://www.youtube.com/");
-        aYoutube.setAttribute('target', "_blank");
-        aYoutube.innerText = " 유튜브";
-        
-        var iYoutube = document.createElement('i');
-        iYoutube.setAttribute('class', "fab fa-youtube");
-        aYoutube.prepend(iYoutube);
-        
-        var aDiscord = document.createElement('a');
-        aDiscord.setAttribute('href', "https://discord.gg/CE6bWsQ7QH");
-        aDiscord.setAttribute('target', "_blank");
-        aDiscord.innerText = " 디스코드";
-        
-        var iDiscord = document.createElement('i');
-        iDiscord.setAttribute('class', "fab fa-discord");
-        aDiscord.prepend(iDiscord);
-        
-        var aInstagram = document.createElement('a');
-        aInstagram.setAttribute('href', "https://www.instagram.com/million_air_");
-        aInstagram.setAttribute('target', "_blank");
-        aInstagram.innerText = " 인스타그램";
-        
-        var iInstagram = document.createElement('i');
-        iInstagram.setAttribute('class', "fab fa-instagram");
-        aInstagram.prepend(iInstagram);
-        */
-        
+    {        
         var aYoutube = CreateSocialLink("유튜브", "https://www.youtube.com/", "fab fa-youtube");
         var aDiscord = CreateSocialLink("디스코드", "https://discord.gg/CE6bWsQ7QH", "fab fa-discord");
         var aInstagram = CreateSocialLink("인스타그램", "https://www.instagram.com/million_air_", "fab fa-instagram");
