@@ -168,29 +168,33 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
-#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
-#main #main-menu:hover { z-index: 999; }
+@media (min-width: 1350px) {
+	#main #main-content { width: calc(100% - 36px); }
 
-#main .menu-wrapper {
-	background: var(--bgframe);
-	border: none !important;
-	border-radius: 10px;
-	padding: 2px;
-	margin-bottom: 5px;
-}
+	#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
+	#main #main-menu:hover { z-index: 999; }
 
-#main .menu-wrapper>.header { background: var(--maincolor) !important; }
-#main .menu-wrapper>.header,
-#main .menu-wrapper>a,
-#main .menu-wrapper #fav-shortcut-area>a {
-	border: none !important;
-	border-radius: 8px;
-	overflow: hidden;
-	width: 30px;
-	white-space: nowrap;
-	padding: 5px 12px 5px 1px;
-	margin: 1px;
-	transition: 0.4s; 
+	#main .menu-wrapper {
+		background: var(--bgframe);
+		border: none !important;
+		border-radius: 10px;
+		padding: 2px;
+		margin-bottom: 5px;
+	}
+
+	#main .menu-wrapper>.header { background: var(--maincolor) !important; }
+	#main .menu-wrapper>.header,
+	#main .menu-wrapper>a,
+	#main .menu-wrapper #fav-shortcut-area>a {
+		border: none !important;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 30px;
+		white-space: nowrap;
+		padding: 5px 12px 5px 1px;
+		margin: 1px;
+		transition: 0.4s; 
+	}
 }
 
 #main .menu-wrapper>a:last-child { }
@@ -257,7 +261,7 @@ ad-shield-ads>* {
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
 
-#main #main-content { width: calc(100% - 36px); padding: 0px 0px 0 6px; }
+#main #main-content { padding: 0px 0px 0 6px; }
 #main #main-content > div.frame { border: none !important; border-radius: 10px; }
 
 #board-info {
