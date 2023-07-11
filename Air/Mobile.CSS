@@ -480,5 +480,6 @@ span.a-badge i.fa.fa-star {
 }
 
 .fab { font-family: "Font Awesome 5 Brands"; font-style: normal; }
+i.fab.fa-youtube:before { content: "\f167"; }
 i.fab.fa-discord:before { content: "\f392"; }
 i.fab.fa-instagram:before { content: "\f16d"; }
