@@ -33,4 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var article_info = sel("div#article-info");
     observer.observe(article_info);
+
+    var article_list_category = sel("#article-list-category");
+    var nxt article_list_category.nextElementSibling;
+    if (!!nxt.getAttribute('style'))
+    {
+        nxt.remove();
+    }
 });
