@@ -212,7 +212,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	#main .menu-wrapper>a:hover,
 	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
 
-	#main #main-content { width: calc(100% - 36px); transition: 0.4s; }
+	#main #main-content { width: calc(100% - 36px); }
 	#article-info { width: 1000px; transition: 0.4s; }
 
 	/* 광고 패딩 조절 */
@@ -248,10 +248,10 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	border: none;
 	width: 160px;
 	display: block;
+	transition: 0.4s; 
 }
-ad-shield-ads>* {
-    padding: 0 !important;
-}
+ad-shield-ads>* { padding: 0 !important; }
+
 /* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
 #article-list>div:nth-child(3) { padding: 0 !important; }
 
@@ -272,7 +272,7 @@ ad-shield-ads>* {
 #main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
 */
 
-#main #main-content { padding: 0px 0px 0 6px; }
+#main #main-content { padding: 0px 0px 0 6px; transition: 0.4s; }
 #main #main-content > div.frame { border: none !important; border-radius: 10px; }
 
 #board-info {
