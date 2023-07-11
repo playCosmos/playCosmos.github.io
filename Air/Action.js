@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
     info.append(aInstagram);
 
     var article_option_area = sel("#article-option-area");
-    sel("#board-info-bottom").append(article_option_area);
+    article_option_area.setAttribute('title', "공지 숨김/보기");
+    info.append(article_option_area);
 
     var article_info = sel("div#article-info");
     if (article_info != null)
