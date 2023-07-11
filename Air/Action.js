@@ -6,8 +6,8 @@ function sel(selector) {
 function CreateSocialLink(innerText, url, iconClass) {
     let target = document.createElement('a');
     target.setAttribute('href', url);
-    aYoutube.setAttribute('target', "_blank");
-    aYoutube.innerText = " " + innerText;
+    target.setAttribute('target', "_blank");
+    target.innerText = " " + innerText;
     
     var icon = document.createElement('i');
     icon.setAttribute('class', iconClass);
