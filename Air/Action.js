@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var info = sel("#board-info-bottom");
     if (info != null)
     {
+        var aYoutube = document.createElement('a');
+        aYoutube.setAttribute('href', "https://www.youtube.com/");
+        aYoutube.setAttribute('target', "_blank");
+        aYoutube.innerText = " 유튜브";
+        
+        var iYoutube = document.createElement('i');
+        iYoutube.setAttribute('class', "fab fa-youtube");
+        aYoutube.prepend(iYoutube);
+        
         var aDiscord = document.createElement('a');
         aDiscord.setAttribute('href', "https://discord.gg/CE6bWsQ7QH");
         aDiscord.setAttribute('target', "_blank");
@@ -26,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var iInstagram = document.createElement('i');
         iInstagram.setAttribute('class', "fab fa-instagram");
         aInstagram.prepend(iInstagram);
-
+        
+        info.append(aYoutube);
         info.append(aDiscord);
         info.append(aInstagram);
         
