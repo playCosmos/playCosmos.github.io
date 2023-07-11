@@ -169,8 +169,6 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 /******* 좌측 트게더 메뉴 *******/
 @media (min-width: 1350px) {
-	#main #main-content { width: calc(100% - 36px); }
-
 	#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
 	#main #main-menu:hover { z-index: 999; }
 
@@ -195,6 +193,9 @@ header #header-bar a.dropdown-toggle #notification-badge {
 		margin: 1px;
 		transition: 0.4s; 
 	}
+
+	#main #main-content { width: calc(100% - 36px); }
+	#article-info { width: 1000px; }
 }
 
 #main .menu-wrapper>a:last-child { }
@@ -404,7 +405,7 @@ img[title="Moderator"] { display: none; }
 /* 게시글 제목 */
 #article-info {
 	margin: 0px 14px;
-	width: 1000px;
+	width: auto;
 	position: -webkit-sticky;
 	position: sticky;
 	top: -1px;
