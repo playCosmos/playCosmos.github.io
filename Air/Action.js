@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
     sel("#board-info-bottom").append(article_option_area);
 
     var article_info = sel("div#article-info");
-    observer.observe(article_info);
+    if (article_info != null)
+        observer.observe(article_info);
 
     var article_list_category = sel("#article-list-category");
     var nxt = article_list_category.nextElementSibling;
