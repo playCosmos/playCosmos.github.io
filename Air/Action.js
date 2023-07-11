@@ -3,33 +3,6 @@ function sel(selector) {
     return target;
 };
 
-function detect() {
-    var iframe = document.createElement("iframe");
-    iframe.height = "1px";
-    iframe.width = "1px";
-    iframe.id = "ads-text-iframe";
-    iframe.src = "http://domain.com/ads.html";
-
-    try { document.body.appendChild(iframe); }
-    catch { return true; }
-    
-    setTimeout(function() {
-        var iframe = document.getElementById("ads-text-iframe");
-        if(iframe.style.display == "none" || iframe.style.display == "hidden" || iframe.style.visibility == "hidden" || iframe.offsetHeight == 0)
-        {
-            console.log('AdBlock is enabled');
-            iframe.remove();            
-            return true;
-        }
-        else
-        {
-            console.log('AdBlock is not enabled');
-            iframe.remove();
-            return false;
-        }
-    }, 100);
-}
-
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,12 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
     var article_info = sel("div#article-info");
     if (article_info != null)
         observer.observe(article_info);
-
-    var article_list_category = sel("#article-list-category");
-    var nxt = article_list_category.nextElementSibling;
-    if (detect())
-        if (!!nxt.getAttribute('style'))
-        {
-            nxt.remove();
-        }
 });
