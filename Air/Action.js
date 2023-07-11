@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(article_info);
 
     var article_list_category = sel("#article-list-category");
-    var nxt article_list_category.nextElementSibling;
+    var nxt = article_list_category.nextElementSibling;
     if (detect())
         if (!!nxt.getAttribute('style'))
         {
