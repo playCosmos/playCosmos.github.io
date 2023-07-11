@@ -185,6 +185,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	border-radius: 8px;
 	padding: 5px 12px 5px 1px;
 	margin: 1px;
+	white-space: nowrap;
+	overflow: hidden;
 	transition: 0.4s; 
 }
 
@@ -196,8 +198,6 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	#main .menu-wrapper>a,
 	#main .menu-wrapper #fav-shortcut-area>a {
 		width: 30px;
-		white-space: nowrap;
-		overflow: hidden;
 	}
 
 	/* #main .menu-wrapper>.header:hover, */
