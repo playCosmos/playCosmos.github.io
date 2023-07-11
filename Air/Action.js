@@ -12,6 +12,7 @@ function CreateSocialLink(innerText, url, iconClass) {
     var icon = document.createElement('i');
     icon.setAttribute('class', iconClass);
     target.prepend(icon);
+    
     return target;
 };
 
