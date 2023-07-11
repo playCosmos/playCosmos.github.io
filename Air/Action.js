@@ -21,14 +21,10 @@ const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("is
 document.addEventListener("DOMContentLoaded", function() {
     var info = sel("#board-info-bottom");
     if (info != null)
-    {        
-        var aYoutube = CreateSocialLink("유튜브", "https://www.youtube.com/", "fab fa-youtube");
-        var aDiscord = CreateSocialLink("디스코드", "https://discord.gg/CE6bWsQ7QH", "fab fa-discord");
-        var aInstagram = CreateSocialLink("인스타그램", "https://www.instagram.com/million_air_", "fab fa-instagram");
-        
-        info.append(aYoutube);
-        info.append(aDiscord);
-        info.append(aInstagram);
+    {
+        info.append(CreateSocialLink("유튜브", "https://www.youtube.com/", "fab fa-youtube"));
+        info.append(CreateSocialLink("디스코드", "https://discord.gg/CE6bWsQ7QH", "fab fa-discord"));
+        info.append(CreateSocialLink("인스타그램", "https://www.instagram.com/million_air_", "fab fa-instagram"));
         
         var article_option_area = sel("#article-option-area");    
         article_option_area.setAttribute('title', "공지 숨김/보기");
