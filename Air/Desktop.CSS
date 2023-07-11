@@ -188,7 +188,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 }
 
 @media (min-width: 1350px) {
-	#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; }
+	#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; transition: 0.4s;}
 	#main #main-menu:hover { z-index: 999; }
 
 	#main .menu-wrapper>.header,
@@ -199,8 +199,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 		overflow: hidden;
 	}
 
-	#main #main-content { width: calc(100% - 36px); }
-	#article-info { width: 1000px; }
+	#main #main-content { width: calc(100% - 36px); transition: 0.4s; }
+	#article-info { width: 1000px; transition: 0.4s; }
 }
 
 #main .menu-wrapper>a:last-child { }
