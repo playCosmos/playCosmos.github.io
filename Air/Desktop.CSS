@@ -178,7 +178,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	transition: 0.4s; 
 }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
-#main .menu-wrapper>.header,
+#main .menu-wrapper>.header, 
 #main .menu-wrapper>a,
 #main .menu-wrapper #fav-shortcut-area>a {
 	border: none !important;
@@ -224,11 +224,12 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 #main .menu-wrapper>a:last-child { }
 
-#main .menu-wrapper>a>em,
-#main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star { color: var(--maincolor) !important; }
+#main .menu-wrapper #fav-shortcut-area>a>em>i.fa.fa-star ,
+#main .menu-wrapper>a>em { color: var(--maincolor) !important; }
 
-#main .menu-wrapper>a>em,
-#main .menu-wrapper #fav-shortcut-area>a>em,
+:is(#main .menu-wrapper) > a > em,
+/*#main .menu-wrapper>a>em,
+#main .menu-wrapper #fav-shortcut-area>a>em,*/
 #main .menu-wrapper>.header>i.fa.fa-bars {
 	width: 24px;
 	text-align: center;
@@ -250,27 +251,7 @@ html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 	display: block;
 	transition: 0.4s; 
 }
-ad-shield-ads>* { padding: 0 !important; }
-
-/* #main #main-menu>*:not(:first-child)>div { width: 160px; } */
-#article-list>div:nth-child(3) { padding: 0 !important; }
-
-/*
-#main .menu-wrapper>a:after,
-#main .menu-wrapper #fav-shortcut-area>a:after{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 0;
-	transition: all 0.2s ease 0s;
-	z-index: -1;
-	background-color: var(--highlight) !important;
-}
-#main .menu-wrapper>a:hover:after,
-#main .menu-wrapper #fav-shortcut-area>a:hover:after{ width: 100%; }
-*/
+ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 
 #main #main-content { padding: 0px 0px 0 6px; transition: 0.4s; }
 #main #main-content > div.frame { border: none !important; border-radius: 10px; }
@@ -296,7 +277,6 @@ ad-shield-ads>* { padding: 0 !important; }
 	float: right;	
 }
 #board-info #score-area { display: none; }
-
 #board-info #board-info-bottom a { color: black; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
@@ -577,16 +557,6 @@ a#switch-platform-link:before { content: " "; }
 
 
 /* 상단으로 이동 */
-/*#movetotop img{display:none}
-#movetotop {
-	display: inline-block;
-	opacity: 1;
-	background: url();
-	width: 120px;
-	height: 120px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}*/
 #movetotop img { display: none; }
 #movetotop {
 	border: 2px solid var(--maincolor);
