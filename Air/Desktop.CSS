@@ -182,7 +182,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 :is(#main .menu-wrapper) a {
 	border: none !important;
 	border-radius: 8px;
-	padding: 5px 12px 5px 1px;
+	padding: 5px 12px 5px 1px !important;
 	margin: 1px;
 	white-space: nowrap;
 	overflow: hidden;
