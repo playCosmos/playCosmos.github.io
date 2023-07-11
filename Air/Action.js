@@ -1,19 +1,19 @@
 function sel(selector) {
-    let target = document.querySelector(selector);
-    return target;
+    let ret = document.querySelector(selector);
+    return ret;
 };
 
 function CreateSocialLink(innerText, url, iconClass) {
-    let target = document.createElement('a');
-    target.setAttribute('href', url);
-    target.setAttribute('target', "_blank");
-    target.innerText = " " + innerText;
+    let ret = document.createElement('a');
+    ret.setAttribute('href', url);
+    ret.setAttribute('target', "_blank");
+    ret.innerText = " " + innerText;
     
     var icon = document.createElement('i');
     icon.setAttribute('class', iconClass);
-    target.prepend(icon);
+    ret.prepend(icon);
     
-    return target;
+    return ret;
 };
 
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
