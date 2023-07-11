@@ -168,6 +168,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 
 /******* 좌측 트게더 메뉴 *******/
+#main #main-menu { position: sticky; top: 15px; transition: 0.4s;}
 #main .menu-wrapper {
 	background: var(--bgframe);
 	border: none !important;
@@ -188,7 +189,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 }
 
 @media (min-width: 1350px) {
-	#main #main-menu { position: sticky; top: 15px;	width: 36px; z-index: 1; transition: 0.4s;}
+	#main #main-menu { width: 36px; }
 	#main #main-menu:hover { z-index: 999; }
 
 	#main .menu-wrapper>.header,
@@ -198,6 +199,18 @@ header #header-bar a.dropdown-toggle #notification-badge {
 		white-space: nowrap;
 		overflow: hidden;
 	}
+
+	/* #main .menu-wrapper>.header:hover, */
+	#main .menu-wrapper #fav-shortcut-area>a:hover,
+	#main .menu-wrapper>a:hover {
+		background-color: var(--highlight) !important;
+		border-color: var(--maincolor) !important;
+		width: 150px;
+	}
+
+	/* #main .menu-wrapper>.header:hover, */
+	#main .menu-wrapper>a:hover,
+	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
 
 	#main #main-content { width: calc(100% - 36px); transition: 0.4s; }
 	#article-info { width: 1000px; transition: 0.4s; }
@@ -219,21 +232,9 @@ header #header-bar a.dropdown-toggle #notification-badge {
 /* #main .menu-wrapper .spacer { display: none; } */
 #main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
 
-/* #main .menu-wrapper>.header:hover, */
-#main .menu-wrapper #fav-shortcut-area>a:hover,
-#main .menu-wrapper>a:hover {
-	background-color: var(--highlight) !important;
-	border-color: var(--maincolor) !important;
-	width: 150px;
-}
 html.darkmode #main .menu-wrapper #fav-shortcut-area>a:hover,
 html.darkmode #main .menu-wrapper>a:hover { color: white !important; }
 
-@media (min-width: 1400px) {
-/* 	#main .menu-wrapper>.header:hover, */
-	#main .menu-wrapper>a:hover,
-	#main .menu-wrapper #fav-shortcut-area>a:hover { transform: translateX(-120px); }
-}
 
 /* 광고 패딩 조절 */
 #main #main-menu>*:not(:first-child) {
