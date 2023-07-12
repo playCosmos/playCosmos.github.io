@@ -17,7 +17,7 @@ function CreateSocialLink(innerText, url, iconClass) {
 };
 
 function pump(element) {
-    element.className = "pump";
+    element.classList.toggle("pump");
 }
 
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
