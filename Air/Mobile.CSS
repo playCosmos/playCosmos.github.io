@@ -452,7 +452,6 @@ html.darkmode #movetotop { background: #242424bf; }
 	position: fixed;
 	bottom: 15px;
 	left: calc(100% - 65px);
-	pointer-events: none;
 }
 
 /******* 애니메이션 *******/
