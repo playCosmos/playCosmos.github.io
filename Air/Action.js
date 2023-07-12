@@ -46,4 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var profileImage = sel("img#board-info-profile-img");
     ToggleOnClickListener(profileImage, "pump");
+
+    var voteUpBtn = sel("#article-content-wrapper>.vote-area>button");
+    ToggleOnClickListener(voteUpBtn, "animate");
 });
