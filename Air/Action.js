@@ -16,13 +16,12 @@ function CreateSocialLink(innerText, url, iconClass) {
     return ret;
 };
 
-function ToggleOnClickListener(element, toggleClassName, Timeout = 600) {
+function ToggleOnClickListener(element, toggleClassName, Timeout = 1200) {
     element.addEventListener("click", (e) => {
         element.classList.add(toggleClassName);
         setTimeout(() => { element.classList.remove(toggleClassName); }, Timeout);
     });
 }
-
 
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
