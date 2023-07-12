@@ -527,7 +527,6 @@ input.form-control {
 .btn#reportBtn { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
 
-.btn-default { font-size: 12px; }
 .btn-primary, .btn-default, .btn-info, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
 
