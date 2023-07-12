@@ -115,7 +115,7 @@ html.darkmode #main .menu-wrapper>.header,
 #main .menu-wrapper>a>i.fa.fa-square,
 html.darkmode :is(#main .menu-wrapper) a>em,
 :is(#main .menu-wrapper) a>em,
-:is(#main .menu-wrapper) a { color: var(--mainColor); }
+:is(#main .menu-wrapper) a { color: var(--mainColor) !important; }
 
 #main .menu-wrapper .spacer {
     background: #ddd;
