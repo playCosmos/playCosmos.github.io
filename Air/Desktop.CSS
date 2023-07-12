@@ -642,6 +642,7 @@ i.fab.fa-instagram:before { content: "\f16d"; }
 	width: 160%;
 	height: 80%;
 	background-repeat: no-repeat;
+	z-index: -99;
 }
 
 .animate::before { top: -60%;
