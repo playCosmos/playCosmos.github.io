@@ -16,10 +16,6 @@ function CreateSocialLink(innerText, url, iconClass) {
     return ret;
 };
 
-function pump(element) {
-    element.classList.toggle("pump");
-}
-
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -40,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(article_info);
     
     var profileImage = sel("img#board-info-profile-img");
-    profileImage.setAttribute('onclick', "pump(this)");
-    
+    profileImage.addEventListener("click", (e) => {
+        e.preventDefault;
+        profileImage.classList.add("pump");
+        setTimeout(() => {
+            profileImage.classList.remove("pump");
+        }, 600);
+    });
 });
