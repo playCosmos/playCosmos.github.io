@@ -80,17 +80,13 @@ header #header-bar>.row {
         0 0 0 5px var(--borderColor);
 }
 
-header #header-bar a.dropdown-toggle {
-    color: var(--mainColor);
-}
+header #header-bar a.dropdown-toggle { color: var(--mainColor); }
 
 header #header-bar #header-top-notice strong.notice-badge {
     background: var(--mainColor);
 }
 
-header #header-bar #header-top-notice a {
-    color: var(--mainColor);
-}
+header #header-bar #header-top-notice a { color: var(--mainColor); }
 
 header #header-bar #header-menu-right #userDropdown #notification-badge {
     background: var(--mainColor);
@@ -110,31 +106,18 @@ html.darkmode #main .menu-wrapper>.header,
     color: var(--mainColor);
     border-bottom: 1px dashed #ddd;
 }
-      
-#main .menu-wrapper>a,
-#main .menu-wrapper>.header>a {
-    color: var(--mainColor);
-}
 
-html.darkmode #main .menu-wrapper>a>em,
-html.darkmode #main .menu-wrapper #fav-shortcut-area>a>em,
-#main .menu-wrapper>a>em,
-#main .menu-wrapper #fav-shortcut-area>a>em {
-    color: var(--mainColor);
-}
+#main .menu-wrapper>a>i.fa.fa-square,
+html.darkmode :is(#main .menu-wrapper) a>em,
+:is(#main .menu-wrapper) a>em,
+:is(#main .menu-wrapper) a { color: var(--mainColor); }
 
 #main .menu-wrapper .spacer {
     background: #ddd;
     height: 2px;
 }
 
-#main .menu-wrapper>a>i.fa.fa-square {
-    color: var(--mainColor);
-}
-
-#main #main-content {
-    padding-left: 21px;
-}
+#main #main-content { padding-left: 21px; }
 
 #main #main-content>div.frame {
     border: 1px dashed var(--borderColor) !important;
