@@ -177,7 +177,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 :is(#main .menu-wrapper) a {
 	border: none !important;
 	border-radius: 8px;
-	padding: 5px 12px 5px 1px !important;
+	padding: 5px 12px 5px 5px;
 	margin: 1px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -193,7 +193,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	#main #main-menu:hover { z-index: 999; }
 
 	#main .menu-wrapper>.header,
-	:is(#main .menu-wrapper) a { width: 30px; }
+	:is(#main .menu-wrapper) a { width: 30px; padding: 5px 12px 5px 1px; }
 	:is(#main .menu-wrapper) a:hover { width: 150px; transform: translateX(-120px); }
 
 	#main #main-content { width: calc(100% - 36px); }
