@@ -430,7 +430,7 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
     align-items: center;
     justify-content: center;
 }
-#article-content-wrapper>.vote-area>button { margin: 0 3px; }
+#article-content-wrapper>.vote-area>button { margin: 0 3px; position: relative; }
 
 :is(#article-reply-area) .reply-writer.logged,
 :is(#article-reply-area) .reply-menu a { color: var(--maincolor) !important; }
