@@ -39,8 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
     profileImage.addEventListener("click", (e) => {
         e.preventDefault;
         profileImage.classList.add("pump");
-        setTimeout(() => {
-            profileImage.classList.remove("pump");
-        }, 600);
+        setTimeout(() => { profileImage.classList.remove("pump"); }, 600);
     });
 });
