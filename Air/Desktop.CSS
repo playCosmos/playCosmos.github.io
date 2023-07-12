@@ -591,6 +591,7 @@ small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
 @keyframes pump{
 	0% { transform: rotate(0deg) scale(1); }
 	15% { transform: rotate(15deg) scale(1.25); }
+	70% { transform: rotate(-5deg); }
 	100% { transform: rotate(0deg) scale(1); }
 }
 
