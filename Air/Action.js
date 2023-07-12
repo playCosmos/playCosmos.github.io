@@ -16,6 +16,10 @@ function CreateSocialLink(innerText, url, iconClass) {
     return ret;
 };
 
+function pump(element) {
+    element.className = "pump";
+}
+
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -30,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
         article_option_area.setAttribute('title', "공지 숨김/보기");
         info.append(article_option_area);
     }
+    var profileImage = sel(img#board-info-profile-img);
+    profileImage.setAttribute('onclick', "pump(this)");
     
     var article_info = sel("div#article-info");
     if (article_info != null)
