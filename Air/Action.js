@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (article_info != null)
         observer.observe(article_info);
 
-    var page = sel("html");
     var article_list_category = sel("#article-list #article-list-category");
     var new_category = article_list_category.cloneNode(true);
     new_category.classList.add("new");
