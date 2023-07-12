@@ -516,8 +516,8 @@ input.form-control {
 .btn[data-type="up"] { --btcolor: #5cb85c; }
 .btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
-.btn#reportBtn,
-.btn#reportArticleBtn { --btcolor: #d9534f; }
+.btn#reportArticleBtn,
+.btn#reportBtn { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
 
 .btn-primary, .btn-default, .btn-info, input.form-control,
