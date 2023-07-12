@@ -339,6 +339,20 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		border: none;
 		width: auto;
 	}
+	#article-list #article-list-category.new.can-float { 
+		border: 2px solid var(--maincolor);
+		left: unset;
+		right: unset;
+		top: unset;
+		width: 150px;
+		transform: translate(1020px, -112px);
+		max-height: none;
+	}
+	#article-list #article-list-category.new.can-float > a {
+		border-radius: 4px;
+		border: none;
+		width: auto;
+	}
 }
 
 #article-list>.article-list-row.notice {} /* 공지글 */
