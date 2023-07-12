@@ -45,7 +45,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var page = sel("html");
     if (page.offsetWidth >= 1388 && article_info != null)
     {
-        var article_list_category = sel("#article-list #article-list-category");
+        /*var article_list_category = sel("#article-list #article-list-category");
+        var new_category = article_list_category.cloneNode(true);
+        new_category.classList.add("new");
+        article_list_category.after(new_category);*/
     }
     
     var voteBtn = sel("#article-content-wrapper>.vote-area>button");
