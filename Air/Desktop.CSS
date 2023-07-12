@@ -194,7 +194,13 @@ header #header-bar a.dropdown-toggle #notification-badge {
 
 	#main .menu-wrapper>.header,
 	:is(#main .menu-wrapper) a { width: 30px; padding: 5px 12px 5px 1px !important; }
-	:is(#main .menu-wrapper) a:hover { width: 150px; transform: translateX(-120px); text-align: right; transitioin: 0.4s; }
+	:is(#main .menu-wrapper) a:hover {
+		width: 150px;
+		text-align: right;
+		background: linear-gradient(90deg, transparent, var(--highlight)) !important;
+		transform: translateX(-120px);
+		transitioin: 0.4s;
+	}
 
 	#main #main-content { width: calc(100% - 36px); }
 	#article-info { width: 1000px; transition: 0.4s; }
