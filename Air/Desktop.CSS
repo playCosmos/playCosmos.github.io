@@ -252,7 +252,7 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 	width: 48px;
 }
 #board-info #board-info-profile-img:hover { animation: sway 2s infinite; }
-@keyframes pump{
+@keyframes sway {
 	0% { transform: rotate(0deg); }
 	15% { transform: rotate(15deg); }
 	30% { transform: rotate(-25deg); }
@@ -263,7 +263,7 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 	100% { transform: rotate(0deg); }
 }
 .pump { animation: pump 0.8s; }
-@keyframes pump{
+@keyframes pump {
 	0% { transform: rotate(0deg) scale(1); }
 	15% { transform: rotate(15deg) scale(1.25); }
 	60% { transform: rotate(-10deg); }
