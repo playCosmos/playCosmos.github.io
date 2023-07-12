@@ -106,8 +106,8 @@ header #tgd-home-nav {
 }
 
 html.darkmode #main .menu-wrapper>.header,
-#main .menu-wrapper>.header {
-    background: #fff;
+#main .menu-wrapper>.header {    
+    background: var(--frameColor);
     color: var(--mainColor);
     border-bottom: 1px dashed #ddd;
 }
