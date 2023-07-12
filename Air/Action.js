@@ -41,6 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var article_info = sel("div#article-info");
     if (article_info != null)
         observer.observe(article_info);
+
+    var page = sel("html");
+    if (page.offsetWidth >= 1388 && article_info != null)
+    {
+        var article_list_category = sel("#article-list #article-list-category");
+    }
     
     var voteBtn = sel("#article-content-wrapper>.vote-area>button");
     ToggleOnClickListener(voteBtn, "animate");
