@@ -425,12 +425,19 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 
 #article-reply-area > .header h5 { color: var(--maincolor) !important; }
 
+#article-content-wrapper>.vote-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#article-content-wrapper>.vote-area>button { margin: 0 3px; }
+
 :is(#article-reply-area) .reply-writer.logged,
 :is(#article-reply-area) .reply-menu a { color: var(--maincolor) !important; }
 
 #comment-write-form #comment-write-button-area {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -622,3 +629,15 @@ span.a-badge i.fa.fa-star {
 .fab { font-family: "Font Awesome 5 Brands"; font-style: normal; }
 i.fab.fa-discord:before { content: "\f392"; }
 i.fab.fa-instagram:before { content: "\f16d"; }
+
+button.btn.btn-outline-success.vote-btn:before,
+button.btn.btn-outline-success.vote-btn:after {
+    content: "";
+    display: block;
+    left: -10%;
+    position: absolute;
+    width: 120%;
+    height: 60%;
+}
+button.btn.btn-outline-success.vote-btn:before { top: -30%; }
+button.btn.btn-outline-success.vote-btn:after { bottom: -30%; }
