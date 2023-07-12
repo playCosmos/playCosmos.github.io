@@ -632,9 +632,9 @@ i.fab.fa-instagram:before { content: "\f16d"; }
 
 
 
-button.btn.btn-outline-success.vote-btn:active { transform: scale(0.92); }
-button.btn.btn-outline-success.vote-btn:before,
-button.btn.btn-outline-success.vote-btn:after {
+#article-content-wrapper>.vote-area>button:active { transform: scale(0.92); }
+#article-content-wrapper>.vote-area>button:before,
+#article-content-wrapper>.vote-area>button:after {
 	content: "";
 	display: block;
 	left: -30%;
@@ -644,7 +644,7 @@ button.btn.btn-outline-success.vote-btn:after {
 	background-repeat: no-repeat;
 }
 
-button.btn.btn-outline-success.vote-btn.animate::before {
+#article-content-wrapper>.vote-area>button.animate::before {
 	top: -60%;
 	background-image: radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
 		radial-gradient(circle, transparent 20%, var(--btcolor) 20%, transparent 30%),
@@ -666,7 +666,7 @@ button.btn.btn-outline-success.vote-btn.animate::before {
 	background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
 }
 
-button.btn.btn-outline-success.vote-btn.animate::after {
+#article-content-wrapper>.vote-area>button.animate::after {
 	bottom: -60%;
 	background-image: radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
 		radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
