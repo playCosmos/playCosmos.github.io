@@ -199,7 +199,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 		text-align: right;
 		background: linear-gradient(90deg, transparent, var(--highlight)) !important;
 		transform: translateX(-120px);
-		transitioin: 0.4s;
+		transition: 0.4s;
 	}
 
 	#main #main-content { width: calc(100% - 36px); }
