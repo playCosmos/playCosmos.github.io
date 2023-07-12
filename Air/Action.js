@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (article_info != null)
         observer.observe(article_info);
     
-    var profileImage = sel(img#board-info-profile-img);
+    var profileImage = sel("img#board-info-profile-img");
     profileImage.setAttribute('onclick', "pump(this)");
     
 });
