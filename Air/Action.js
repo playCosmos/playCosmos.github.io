@@ -16,6 +16,15 @@ function CreateSocialLink(innerText, url, iconClass) {
     return ret;
 };
 
+function ToggleOnClickListener(element, toggleClassName, Timeout = 600) {
+    element.addEventListener("click", (e) => {
+        e.preventDefault;
+        element.classList.add(toggleClassName);
+        setTimeout(() => { element.classList.remove(toggleClassName); }, Timeout);
+    });
+}
+
+
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -36,9 +45,5 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(article_info);
     
     var profileImage = sel("img#board-info-profile-img");
-    profileImage.addEventListener("click", (e) => {
-        e.preventDefault;
-        profileImage.classList.add("pump");
-        setTimeout(() => { profileImage.classList.remove("pump"); }, 600);
-    });
+    ToggleOnClickListener(profileImage, "pump");
 });
