@@ -34,10 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
         article_option_area.setAttribute('title', "공지 숨김/보기");
         info.append(article_option_area);
     }
-    var profileImage = sel(img#board-info-profile-img);
-    profileImage.setAttribute('onclick', "pump(this)");
     
     var article_info = sel("div#article-info");
     if (article_info != null)
         observer.observe(article_info);
+    
+    var profileImage = sel(img#board-info-profile-img);
+    profileImage.setAttribute('onclick', "pump(this)");
+    
 });
