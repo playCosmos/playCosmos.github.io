@@ -18,7 +18,6 @@ function CreateSocialLink(innerText, url, iconClass) {
 
 function ToggleOnClickListener(element, toggleClassName, Timeout = 600) {
     element.addEventListener("click", (e) => {
-        e.preventDefault;
         element.classList.add(toggleClassName);
         setTimeout(() => { element.classList.remove(toggleClassName); }, Timeout);
     });
