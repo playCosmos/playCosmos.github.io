@@ -259,7 +259,7 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 	45% { transform: rotate(20deg); }
 	60% { transform: rotate(-10deg); }
 	75% { transform: rotate(15deg); }
-	90% { transform: rotate(-5deg); }
+	90% { transform: rotate(-15deg); }
 	100% { transform: rotate(0deg); }
 }
 .pump { animation: pump 0.8s !important; }
