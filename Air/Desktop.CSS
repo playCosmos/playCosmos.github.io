@@ -340,11 +340,8 @@ button>.fa-eye-slash:before { content: "\f204"; }
 		width: auto;
 	}
 	#article-list #article-list-category.new.can-float { 
-		border: 2px solid var(--maincolor);
 		right: 70px;
 		top: -8px;
-		width: 150px;
-		max-height: none;
 	}
 }
 
