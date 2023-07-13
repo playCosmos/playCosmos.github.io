@@ -148,7 +148,8 @@ div#article-list {
 	border-radius: 20px;
 	padding: 0;
 }
-
+html.darkmode #article-list #article-list-category #board-home-link-btn { background: #9567fd;
+}
 div#article-list div#article-list-category {
 	border-top: 2px solid var(--mainColor) !important;
 	padding: 5px;
@@ -164,6 +165,9 @@ div#article-list div#article-list-category {
 }
 
 @media (min-width: 1400px) {
+	html.darkmode #article-list #article-list-category #board-home-link-btn { background: unset; }
+
+	html.darkmode #article-list #article-list-category.can-float>a.active,
 	#article-list #article-list-category.can-float>a.active,
 	#article-list #article-list-category.can-float>a:hover {
 		background: #7f7f7f7f;
