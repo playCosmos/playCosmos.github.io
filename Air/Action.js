@@ -33,6 +33,7 @@ function CopyArticleListCategory(original, copied, checkPoint = null ) {
 const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
 
 document.addEventListener("DOMContentLoaded", function() {
+    /* SNS 항목 추가 */
     var info = sel("#board-info-bottom");
     if (info != null)
     {
@@ -45,10 +46,12 @@ document.addEventListener("DOMContentLoaded", function() {
         info.append(article_option_area);
     }
     
+    /* 게시글 제목 감지 */
     var article_info = sel("div#article-info");
     if (article_info != null)
         observer.observe(article_info);
 
+    /* 게시글 내 카테고리 복사 */
     var article_list_category = sel("#article-list #article-list-category");
     var new_category = article_list_category.cloneNode(true);
     new_category.classList.add("new");
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
         try { CopyArticleListCategory(article_list_category, new_category, article_info); } catch {}
     }, true);
     
+    /* 추천버튼 클릭 후 파티클 애니메이션 */
     var voteBtn = sel("#article-content-wrapper>.vote-area>button");
     ToggleOnClickListener(voteBtn, "animate");
 });
