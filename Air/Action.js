@@ -58,9 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     new_category.classList.add("can-float");
     
     CopyArticleListCategory(article_list_category, new_category, article_info);
-    window.addEventListener('resize', function(event) {
-        try { CopyArticleListCategory(article_list_category, new_category, article_info); } catch {}
-    }, true);
+    window.addEventListener('resize', function(event) { CopyArticleListCategory(article_list_category, new_category, article_info); }, true);
     
     /* 추천버튼 클릭 후 파티클 애니메이션 */
     var voteBtn = sel("#article-content-wrapper>.vote-area>button");
