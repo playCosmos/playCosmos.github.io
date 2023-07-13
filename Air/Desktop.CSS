@@ -316,6 +316,7 @@ button>.fa-eye-slash:before { content: "\f204"; }
 #article-list #article-list-category > a.nav-link {
 	background: transparent !important;
 	border: none !important;
+	text-shadow: 0 0 3px white, 0 0 2px white, 0 0 1px var(--maincolor), 0 0 1px var(--maincolor),0 0 1px var(--maincolor);
 }
 
 #article-list #article-list-category > a.active,
