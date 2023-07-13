@@ -62,5 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     /* 추천버튼 클릭 후 파티클 애니메이션 */
     var voteBtn = sel("#article-content-wrapper>.vote-area>button");
-    ToggleOnClickListener(voteBtn, "animate");
+    if (voteBtn != null)
+        ToggleOnClickListener(voteBtn, "animate");
 });
