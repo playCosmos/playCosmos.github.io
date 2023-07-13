@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
     /* 게시글 제목 감지 */
     var article_info = sel("div#article-info");
-    if (article_info != null)
-        observer.observe(article_info);
+    //if (article_info != null)
+    //    observer.observe(article_info);
 
     /* 게시글 내 카테고리 복사 */
     var article_list_category = sel("#article-list #article-list-category");
