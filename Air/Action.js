@@ -3,7 +3,7 @@ function sel(selector) {
     return ret;
 };
 
-function CreateSocialLink(innerText, url, iconClass) {
+function CreateSocialLink(iconClass, url, innerText = "") {
     let ret = document.createElement('a');
     ret.setAttribute('href', url);
     ret.setAttribute('target', "_blank");
@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var info = sel("#board-info-bottom");
     if (info != null)
     {
-        info.append(CreateSocialLink("유튜브", "https://www.youtube.com/", "fab fa-youtube"));
-        info.append(CreateSocialLink("디스코드", "https://discord.com/channels/@me/472262435261251594", "fab fa-discord"));
-        info.append(CreateSocialLink("인스타그램", "https://www.instagram.com/million_air_", "fab fa-instagram"));
+        info.append(CreateSocialLink("fab fa-youtube", "https://www.youtube.com/", "유튜브"));
+        info.append(CreateSocialLink("fab fa-discord", "https://discord.com/channels/@me/472262435261251594", "디스코드"));
+        info.append(CreateSocialLink("fab fa-instagram", "https://www.instagram.com/million_air_", "인스타그램"));
         
         var article_option_area = sel("#article-option-area");    
         article_option_area.setAttribute('title', "공지 숨김/보기");
