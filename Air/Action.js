@@ -7,7 +7,8 @@ function CreateSocialLink(innerText, url, iconClass) {
     let ret = document.createElement('a');
     ret.setAttribute('href', url);
     ret.setAttribute('target', "_blank");
-    ret.innerText = " " + innerText;
+    if ( innerText != "")
+        ret.innerText = " " + innerText;
     
     var icon = document.createElement('i');
     icon.setAttribute('class', iconClass);
