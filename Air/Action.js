@@ -46,6 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
         article_option_area.setAttribute('title', "공지 숨김/보기");
         info.append(article_option_area);
     }
+    /* 다크모드 전환 스위치 조정 */
+    /*var spacer = document.createElement('div');
+    spacer.setAttribute('class',"spacer");
+    sel(".menu-wrapper").append(spacer);
+    sel(".menu-wrapper").append(sel("button#theme_btn_box"))*/
     
     /* 게시글 제목 감지 */
     var article_info = sel("div#article-info");
