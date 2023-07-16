@@ -27,12 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	var theme_color = document.head.querySelector("[name~=theme-color]");
 	var observer = new MutationObserver(m => { 
-		if ((Boolean)(m[0].target.getAttribute(".darkmode")))
-		{
-			theme_color.setAttribute('content', "#242424");
-		}
-		else
+		if (!(m[0].target.getAttribute(".darkmode")))
 			theme_color.setAttribute('content', "#31405a");
+		else
+			theme_color.setAttribute('content', "#242424");
 			
 	}), elTarget=sel("html"),objConfig = {attributes: true};
 	observer.observe(elTarget,objConfig);
