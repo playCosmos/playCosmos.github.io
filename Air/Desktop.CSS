@@ -582,7 +582,19 @@ html.darkmode #movetotop { background: #242424bf; }
 }
 /* 다크모드 버튼 위치 조정 */
 button#theme_btn_box { position: fixed; right: -5px; left: auto; bottom: 10px; margin: 1em; z-index: 99; }
-    
+/*
+button#theme_btn_box {
+	position: relative;
+	border-radius: 8px;
+	background-size: 70% !important;
+	background-position: 7px !important;
+	width: 30px;
+	height: 30px;
+	margin: 1px;
+	padding: 0 !important;
+}
+.theme_btn_box .theme_btn { display: none; }
+*/
 /* 댓글 삭제 백드롭 효과 */
 .alertify {
 	animation: backdrop 0.4s;
