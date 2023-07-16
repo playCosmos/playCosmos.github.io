@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		ul.prepend(CreateSocialLink("fab fa-discord", "https://discord.com/channels/@me/472262435261251594", "디스코드"));
 		ul.prepend(CreateSocialLink("fab fa-instagram", "https://www.instagram.com/million_air_", "인스타그램"));
 	}
-
+/*
 	var theme_color = document.head.querySelector("[name~=theme-color]");
 	var observer = new MutationObserver(m => { 
 		if (!(m[0].target.getAttribute(".darkmode")))
@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function() {
 			theme_color.setAttribute('content', "#242424");
 			
 	}), elTarget=sel("html"),objConfig = {attributes: true};
-	observer.observe(elTarget,objConfig);
+	observer.observe(elTarget,objConfig);*/
 });
