@@ -31,7 +31,8 @@ function CopyArticleListCategory(original, copied, checkPoint = null ) {
     }
     else { copied.remove(); }
 }
-const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });
+
+/*const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });*/
 
 document.addEventListener("DOMContentLoaded", function() {
     /* SNS 항목 추가 */
