@@ -59,7 +59,7 @@ a#switch-platform-link:before { font-family: FontAwesome, "Helvetica Neue", Helv
 /* 알림 */
 .alert { border-radius: 10px; margin-bottom: 5px !important; padding: 10px 35px 10px 15px !important; }
 
-html { background: linear-gradient((var(--bgcolor), (var(--bgcolor)) !important; scroll-behavior: smooth; }
+html { background: linear-gradient(var(--bgcolor), var(--bgcolor)) !important; scroll-behavior: smooth; }
 body { background: transparent !important; }
 
 /* 스크롤 바 */
