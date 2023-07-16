@@ -115,7 +115,7 @@ html.darkmode body header>.container>.row>.col-xs-4>a>img {
 header #right-search-form>input[type=text] {
 	border: 3px solid var(--maincolor) !important;
 	border-radius: 5px !important;
-	background: transparent !important;
+	background: white;
 	color: var(--maincolor) !important;
 }
 header #right-search-form>input::placeholder,
