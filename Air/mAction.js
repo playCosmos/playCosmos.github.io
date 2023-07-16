@@ -17,8 +17,6 @@ function CreateSocialLink(iconClass, url, innerText = "") {
 	return ret;
 };
 
-const 
-
 document.addEventListener("DOMContentLoaded", function() {
 	var ul = sel("#board-info ul.dropdown-menu.dropdown-menu-right");
 	if (ul != null)
