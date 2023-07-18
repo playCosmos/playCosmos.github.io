@@ -197,7 +197,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	:is(#main .menu-wrapper) a:hover {
 		width: 150px;
 		/*text-align: right;*/
-		background: linear-gradient(90deg, var(--highlight), transparent) !important;
+		background: var(--highlight) !important;
 		/*transform: translateX(-120px);*/
 		transition: 0.4s;
 	}
