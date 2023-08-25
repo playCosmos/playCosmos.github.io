@@ -4,7 +4,6 @@ function sel(selector) {
 };
 
 function CreateSocialLink(iconClass, url, innerText = "") {
-	
 	var a = document.createElement('a');
 	a.setAttribute('href', url);
 	a.setAttribute('target', "_blank");
