@@ -4,7 +4,7 @@ function sel(selector) {
 };
 
 function CreateSocialLink(iconClass, url, innerText = "") {
-	let ret = document.createElement('li');
+	
 	var a = document.createElement('a');
 	a.setAttribute('href', url);
 	a.setAttribute('target', "_blank");
@@ -14,7 +14,9 @@ function CreateSocialLink(iconClass, url, innerText = "") {
 	var icon = document.createElement('i');
 	icon.setAttribute('class', iconClass);
 	a.prepend(icon);	
-	ret.before(a);
+
+	var ret = document.createElement('li');
+	ret.prepend(a);
 
 	return ret;
 };
