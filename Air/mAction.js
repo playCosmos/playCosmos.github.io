@@ -4,15 +4,18 @@ function sel(selector) {
 };
 
 function CreateSocialLink(iconClass, url, innerText = "") {
-	let ret = document.createElement('a');
-	ret.setAttribute('href', url);
-	ret.setAttribute('target', "_blank");
+	let ret = document.createElement('li');
+	var a = document.createElement('a');
+	a.setAttribute('href', url);
+	a.setAttribute('target', "_blank");
 	if ( innerText != "")
 		ret.innerText = " " + innerText;
 	
 	var icon = document.createElement('i');
 	icon.setAttribute('class', iconClass);
-	ret.prepend(icon);
+	a.prepend(icon);
+	
+	ret.prepend(a);
 
 	return ret;
 };
