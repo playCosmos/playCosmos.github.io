@@ -81,16 +81,11 @@ header #header-bar>.row {
 }
 
 header #header-bar a.dropdown-toggle { color: var(--mainColor); }
-
-header #header-bar #header-top-notice strong.notice-badge {
-    background: var(--mainColor);
-}
-
+header #header-bar #header-top-notice strong.notice-badge { background: var(--mainColor); }
+html.darkmode header #header-bar #header-top-notice strong.notice-badge { background: var(--borderColor); }
 header #header-bar #header-top-notice a { color: var(--mainColor); }
-
-header #header-bar #header-menu-right #userDropdown #notification-badge {
-    background: var(--mainColor);
-}
+header #header-bar #header-menu-right #userDropdown #notification-badge { background: var(--mainColor);}
+html.darkmode header #header-bar #header-menu-right #userDropdown #notification-badge { background: var(--borderColor);}
 
 header #tgd-home-nav {
     margin: 2px 0 2px 10px;
