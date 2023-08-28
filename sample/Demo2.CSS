@@ -252,18 +252,36 @@ html.darkmode .fr-popup, html.darkmode .fr-toolbar.fr-top,
 }
 
 /* 버튼 */
-.btn {
-    color: white !important;
-    background-color: var(--mainColor) !important;
-    border-color: var(--mainColor) !important;
+.btn,
+select.form-control,
+input.form-control {
+	border-color: var(--btcolor) !important;
+	color: var(--btcolor) !important;
+	background: transparent !important;
     border-radius: 0;
     transition: 0.2s;
 }
 
 .btn:hover,
-.btn:focus {
-    color: var(--mainColor) !important;
-    background-color: white !important;
+.btn:focus,
+select.form-control:hover {
+	background: var(--btcolor) !important;
+	border-color: var(--btcolor) !important;
+	color: white !important;
 }
 
 .btn.square { margin-right: -2px; }
+
+.btn[data-type="up"] { --btcolor: #5cb85c; }
+.btn[data-type="down"] { --btcolor: #0275d8; }
+.btn-default.best { --btcolor: #efc839; }
+.btn#reportArticleBtn,
+.btn#reportBtn { --btcolor: #d9534f; }
+.btn-danger { --btcolor: #ff6e6e; }
+
+.btn-primary, .btn-default, .btn-info, input.form-control,
+.btn[data-target="#scheduleModal"] { --btcolor: var(--mainColor); }
+
+select.form-control, input#title { --btcolor: var(--mainColor); }
+
+select.form-control:focus, input#title:focus { box-shadow: none; }
