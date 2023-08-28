@@ -69,7 +69,7 @@ a#switch-platform-link:before { font-family: FontAwesome, "Helvetica Neue", Helv
 
 html { background: linear-gradient(var(--bgcolor), var(--bgcolor)) !important; scroll-behavior: smooth; }
 body { background: transparent !important;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, FontAwesome; }
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, FontAwesome; }
 
 /* 스크롤 바 */
 ::-webkit-scrollbar { width: 12px; height: 12px; }
