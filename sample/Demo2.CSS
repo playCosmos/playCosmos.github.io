@@ -225,30 +225,34 @@ html.darkmode .fr-popup, html.darkmode .fr-toolbar.fr-top,
     border: 1px solid var(--mainColor);
 }
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>span,
-.pagination>.active>span:focus {
-    background-color: var(--mainColor);
-    border-color: var(--mainColor);
-    transition: 0.2s;
-}
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>li>a:hover,
-.pagination>li>span:hover {
-    background-color: white;
-    border-color: var(--mainColor);
-    color: var(--mainColor);
-    transition: 0.2s;
-}
+/* 게시글 페이지 */
 .pagination>li>a,
+.pagination>li>span,
 .pagination>li>a:focus,
-.pagination>li>span
 .pagination>li>span:focus {
-    color: var(--mainColor);
-    background: white;
-    transition: 0.2s;
+	color: var(--mainColor) !important;
+	background: transparent !important;
+	transition: 0.2s;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	color: white !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	transition: 0.2s;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover {
+	color: var(--mainColor) !important;
+	background: transparent !important;
+	border-color: var(--mainColor) !important;
+	transition: 0.2s;
 }
 
 /* 버튼 */
@@ -285,3 +289,6 @@ select.form-control:hover {
 select.form-control, input#title { --btcolor: var(--mainColor); }
 
 select.form-control:focus, input#title:focus { box-shadow: none; }
+
+
+html.darkmode footer a { color: var(--mainColor); }
