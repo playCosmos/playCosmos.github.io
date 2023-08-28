@@ -2,14 +2,22 @@
 /******* Discord me Million_Air#9087 *******/
 
 @font-face {
-	font-family: 'Font Awesome 5 Brands';
-	src: url('../fonts/fa-brands-400.ttf') format('truetype'),
-	  url('../fonts/fa-brands-400.woff') format('woff'),
-	  url('../fonts/fa-brands-400.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	font-display: block;
-}
+  font-family: 'Font Awesome 5 Brands';
+  font-display: block;
+  font-weight: 400;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-display: block;
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-display: block;
+  font-weight: 400;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
 
 /* 기본 설정 */
 :root {
@@ -62,7 +70,8 @@ a#switch-platform-link:before  { font-family: FontAwesome, "Helvetica Neue", Hel
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
 
 html { background: transparent; scroll-behavior: smooth; }
-body { background: transparent !important; padding-top: 55px; }
+body { background: transparent !important; padding-top: 55px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, FontAwesome; }
 
 /* 트게더 로고 */
 header>#header-area>a>h1 {
