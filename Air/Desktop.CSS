@@ -394,8 +394,8 @@ img[title="Moderator"] { display: none; }
 /* 게시글 제목 */
 #article-info {
 	margin: 0px 14px;
-	/*width: auto;
-	position: -webkit-sticky;
+	width: auto;
+	/*position: -webkit-sticky;
 	position: sticky;
 	top: -1px;
 	z-index: 99;
