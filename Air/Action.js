@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (info != null)
     {
         info.append(CreateSocialLink("fab fa-youtube", "https://www.youtube.com/", "유튜브"));
-        info.append(CreateSocialLink("fab fa-discord", "https://discord.com/channels/@me/472262435261251594", "디스코드"));
+        info.append(CreateSocialLink("fab fa-discord", "https://discord.com/channels/@me/472262435261251594", "DM"));
         info.append(CreateSocialLink("fab fa-instagram", "https://www.instagram.com/million_air_", "인스타그램"));
         
         var article_option_area = sel("#article-option-area");    
