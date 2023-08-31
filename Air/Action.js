@@ -35,6 +35,14 @@ function CopyArticleListCategory(original, copied, checkPoint = null ) {
 /*const observer = new IntersectionObserver(([e]) => e.target.classList.toggle("isSticked", e.intersectionRatio < 1), { threshold: [1] });*/
 
 document.addEventListener("DOMContentLoaded", function() {
+    if (sel("html").classList.contains("darkmode"))
+    {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#bdc8db');
+    }
+    else
+    {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#31405a');
+    }
     /* SNS 항목 추가 */
     var info = sel("#board-info-bottom");
     if (info != null)
