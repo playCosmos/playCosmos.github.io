@@ -21,6 +21,14 @@ function CreateSocialLink(iconClass, url, innerText = "") {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
+	if (sel("html").classList.contains("darkmode"))
+    {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#bdc8db');
+    }
+    else
+    {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#31405a');
+    }
 	var ul = sel("#board-info ul.dropdown-menu.dropdown-menu-right");
 	if (ul != null)
 	{
