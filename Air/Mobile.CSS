@@ -76,7 +76,7 @@ body { background: transparent !important; padding-top: 55px;
 /* 트게더 로고 */
 header>#header-area>a>h1 {
 	background: url(./image/logo.svg) no-repeat;
-	background-size: 90px 32px;
+	background-size: 88px 32px;
 	margin-top: 2px;
 }
 html.darkmode.mb header>#header-area>a>h1 {
