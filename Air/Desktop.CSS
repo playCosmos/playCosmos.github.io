@@ -117,7 +117,7 @@ body header>.container>.row>.col-xs-4>a>img {
 	filter: brightness(0) saturate(100%) invert(21%) sepia(13%) saturate(1691%) hue-rotate(179deg) brightness(95%) contrast(86%);
 }
 html.darkmode body header>.container>.row>.col-xs-4>a>img {
-	filter: brightness(2.5) hue-rotate(290deg) saturate(0.25);
+	filter: brightness(0) saturate(100%) invert(87%) sepia(17%) saturate(271%) hue-rotate(182deg) brightness(92%) contrast(86%);
 }
 
 /* 헤더 검색창 */
