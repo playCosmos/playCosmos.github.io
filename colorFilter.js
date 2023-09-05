@@ -4,7 +4,7 @@ class Color {
   constructor(r, g, b) {
     this.set(r, g, b);
   }
-  
+
   toString() {
     return `rgb(${Math.round(this.r)}, ${Math.round(this.g)}, ${Math.round(this.b)})`;
   }
@@ -157,17 +157,15 @@ class Solver {
     this.reusedColor = new Color(0, 0, 0);
   }
 
-	solve()
-	{
-		const result = this.solveNarrow(this.solveWide());
-		var low = result;
-		for (var i = 0; result.loss < 0.2; i++)
-		{
-			result = this.solveNarrow(this.solveWide());
-			if (low.loss > result.loss) low = result;
-			if (i > 25) break;
-		}
-    
+  solve() {
+    const result = this.solveNarrow(this.solveWide());
+    var low = result;
+    for (var i = 0; result.loss < 0.2; i++) {
+      result = this.solveNarrow(this.solveWide());
+      if (low.loss > result.loss) low = result;
+      if (i > 25) break;
+    }
+
     return {
       values: low.values,
       loss: low.loss,
@@ -180,7 +178,9 @@ class Solver {
     const c = 15;
     const a = [60, 180, 18000, 600, 1.2, 1.2];
 
-    let best = { loss: Infinity };
+    let best = {
+      loss: Infinity
+    };
     for (let i = 0; best.loss > 25 && i < 3; i++) {
       const initial = [50, 20, 3750, 50, 100, 100];
       const result = this.spsa(A, a, c, initial, 1000);
@@ -230,17 +230,20 @@ class Solver {
         bestLoss = loss;
       }
     }
-    return { values: best, loss: bestLoss };
+    return {
+      values: best,
+      loss: bestLoss
+    };
 
     function fix(value, idx) {
       let max = 100;
-      if (idx === 2 /* saturate */) {
+      if (idx === 2 /* saturate */ ) {
         max = 7500;
-      } else if (idx === 4 /* brightness */ || idx === 5 /* contrast */) {
+      } else if (idx === 4 /* brightness */ || idx === 5 /* contrast */ ) {
         max = 200;
       }
 
-      if (idx === 3 /* hue-rotate */) {
+      if (idx === 3 /* hue-rotate */ ) {
         if (value > max) {
           value %= max;
         } else if (value < 0) {
@@ -294,13 +297,13 @@ function hexToRgb(hex) {
   });
 
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result
-    ? [
+  return result ?
+    [
       parseInt(result[1], 16),
       parseInt(result[2], 16),
       parseInt(result[3], 16),
-    ]
-    : null;
+    ] :
+    null;
 }
 
 $(document).ready(() => {
