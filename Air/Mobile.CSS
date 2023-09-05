@@ -80,7 +80,7 @@ header>#header-area>a>h1 {
 	margin-top: 2px;
 }
 html.darkmode.mb header>#header-area>a>h1 {
-	filter: invert(90%) sepia(5%) saturate(1097%) hue-rotate(187deg) brightness(86%) contrast(100%);
+	filter: invert(89%) sepia(9%) saturate(567%) hue-rotate(184deg) brightness(92%) contrast(86%);
 }
 
 /* 헤더 */
