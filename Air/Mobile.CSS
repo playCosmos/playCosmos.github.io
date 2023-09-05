@@ -79,6 +79,9 @@ header>#header-area>a>h1 {
 	background-size: 90px 32px;
 	margin-top: 2px;
 }
+html.darkmode header>#header-area>a>h1 {
+	filter: invert(90%) sepia(5%) saturate(1097%) hue-rotate(187deg) brightness(86%) contrast(100%);
+}
 
 /* 헤더 */
 header {
