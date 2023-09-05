@@ -241,7 +241,8 @@ html.darkmode #article-list #article-list-category>a:hover {
 	background: var(--maincolor) !important;
 	color: white !important;
 }
-#article-list>.article-list-row:hover { background: var(--highlight); }
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:active { background: var(--highlight); }
 
 /* AD 글자색 */
 #article-list>.article-list-row>.item>.list-header>strong { color: var(--maincolor) !important; }
