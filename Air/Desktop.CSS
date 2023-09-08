@@ -123,9 +123,10 @@ html.darkmode body header>.container>.row>.col-xs-4>a>img {
 /* 헤더 검색창 */
 header #right-search-form>input[type=text] {
 	border: 3px solid var(--maincolor) !important;
-	border-radius: 5px !important;
+	border-radius: 3px !important;
 	color: var(--maincolor) !important;
 }
+
 header #right-search-form>input::placeholder,
 header #right-search-form>#right-search-btn { 
 	color: var(--maincolor) !important;
