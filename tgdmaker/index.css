@@ -1,0 +1,9 @@
+header{
+ display:flex; 
+}
+details>p {
+  padding-left: var(--indent);
+  text-indent: calc(var(--indent)*-1);
+}
+
+/* https://joshua1988.github.io/web-development/vuejs/v-model-usage/ */
