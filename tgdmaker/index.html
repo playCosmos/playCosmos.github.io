@@ -1,106 +1,117 @@
 <html>
-  <head>
-    <style>@import url(https://playcosmos.github.io/tgdmaker/index.CSS);</style> 
-  </head>
+
   <body>
     <header>
-      <div id="preset">
-      <details>
-        <summary>0. 글로벌 설정</summary>
-        <p style="--indent: 5px;"> 사용시 체크
-        <br>
-        <input type="checkbox" v-model="isUsingColor1"> 
-        <input type="color" v-model="color1"> Color 1
-        <br>
-        <input type="checkbox" v-model="isUsingColor2"> 
-        <input type="color" v-model="color2"> Color 2
-        <br>
-        <input type="checkbox" v-model="isUsingColor3"> 
-        <input type="color" v-model="color3"> Color 3
-        <br>
-        <input type="checkbox" v-model="isUsingColor4"> 
-        <input type="color" v-model="color4"> Color 4
-        <br>
-        <input type="checkbox" v-model="isUsingColor5"> 
-        <input type="color" v-model="color5"> Color 5
-        <br>
-        <input type="checkbox" v-model="isUsingColor6"> 
-        <input type="color" v-model="color6"> Color 6
-        </p>
-        <p style="--indent: 20px;">
-        <input type="checkbox"> Global Border Radius :
-        <br>
-        <input type="number" style="width: 45px" value="3" v-model="globalBorderRadius">px
-        </p>
-      </details>
-      <details>
-        <summary>1. 트게더 로고</summary>
-        <p style="--indent: 20px;">
-        <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
-        <br>
-        <input type="text" v-model="urlCustomLogoImage"> 커스텀 이미지 주소
-        <br>
-        <input type="text" v-model="urlCustomLogoImageDark"> 다크모드 이미지 주소
-        </p>
-        <p style="--indent: 20px;">
-        <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
-        <br>
-        <input type="text" v-model="CustomLogoFilter"> 라이트모드 로고 색
-        <br>
-        <input type="text" v-model="CustomLogoFilterDark"> 다크모드 로고 색
-        </p>
-      </details>
-      <details>
-        <summary>2. 마우스 커서</summary>
-        <p style="--indent: 20px;">
-        <input type="checkbox" v-model="isUsingSingleCursor"> 단일 마우스 커서
-        <br>
-        <input type="text" v-model="urlCustomCursorImage"> 커스텀 이미지 주소
-        <br>
-        x:<input type="number" style="width: 40px" value="0" v-model="singleCursorX">
-        , y:<input type="number" style="width: 40px" value="0" v-model="singleCursorY">
-        </p>
-        <p style="--indent: 20px;">
-        <input type="checkbox" v-model="isUsingMultiCursor"> 상황별 마우스 커서
-        <br>
-        <input type="text" v-model="urlCustomCursorImage"> 기본 커서 이미지 주소
-        <br>
-        x:<input type="number" style="width: 40px" value="0" v-model="pointerCursorX">
-        , y:<input type="number" style="width: 40px" value="0" v-model="pointerCursorY">
-        <br>
-        <input type="text" v-model="urlCustomCursorImage"> 링크 커서 이미지 주소
-        <br>
-        x:<input type="number" style="width: 40px" value="0" v-model="linkCursorX">
-        , y:<input type="number" style="width: 40px" value="0" v-model="linkCursorY">
-        <br>
-        <input type="text" v-model="urlCustomCursorImage"> 텍스트 커서 이미지 주소
-        <br>
-        x:<input type="number" style="width: 40px" value="0" v-model="textCursorX">
-        , y:<input type="number" style="width: 40px" value="0" v-model="textCursorY">
-        </p>
-      </details>
-      
-      <details>
-        <summary>ex. 기타</summary>
-        <p style="--indent: 20px;">
-        <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 스크롤바
-        <br>
-        <input type="number" style="width: 45px" value="12" v-model="numScrollbarWidth">px; 스크롤바 폭, 높이
-        <br>
-        <input type="color" value="#f3f2f0" v-model="numScrollbarBackgroundColor"> 스크롤바 배경색
-        <br>
-        <input type="color" value="#6441a5" v-model="numScrollbarColor"> 스크롤바 색
-        </p>
-        <p style="--indent: 0px;">
-        <input type="checkbox" v-model="isUsingSmoothScroll"> 부드러운 스크롤
-        </p>
-      </details>
+      <div id="preset" style="flex:1">
+        <details>
+          <summary>글로벌 설정</summary>
+          <p style="--indent: 5px;"> 사용시 체크
+            <br>
+            <input type="checkbox" v-model="isUsingColor1">
+            <input type="color" v-model="color1"> Color 1
+            <br>
+            <input type="checkbox" v-model="isUsingColor2">
+            <input type="color" v-model="color2"> Color 2
+            <br>
+            <input type="checkbox" v-model="isUsingColor3">
+            <input type="color" v-model="color3"> Color 3
+            <br>
+            <input type="checkbox" v-model="isUsingColor4">
+            <input type="color" v-model="color4"> Color 4
+            <br>
+            <input type="checkbox" v-model="isUsingColor5">
+            <input type="color" v-model="color5"> Color 5
+            <br>
+            <input type="checkbox" v-model="isUsingColor6">
+            <input type="color" v-model="color6"> Color 6
+          </p>
+          <p style="--indent: 20px;">
+            <input type="checkbox"> Global Border Radius :
+            <br>
+            <input type="number" style="width: 45px" value="3" v-model="globalBorderRadius">px
+          </p>
+          <br>
+        </details>
+        <details>
+          <summary>트게더 로고</summary>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomLogoImage"> 커스텀 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomLogoImageDark"> 다크모드 이미지 주소
+          </p>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
+            <br>
+            <input type="text" v-model="CustomLogoFilter"> 라이트모드 로고 색
+            <br>
+            <input type="text" v-model="CustomLogoFilterDark"> 다크모드 로고 색
+          </p>
+          <br>
+        </details>
+        <details>
+          <summary>마우스 커서</summary>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingSingleCursor"> 단일 마우스 커서
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 커스텀 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" v-model="singleCursorX">
+            , y:<input type="number" style="width: 40px" value="0" v-model="singleCursorY">
+          </p>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingMultiCursor"> 상황별 마우스 커서
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 기본 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" v-model="pointerCursorX">
+            , y:<input type="number" style="width: 40px" value="0" v-model="pointerCursorY">
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 링크 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" v-model="linkCursorX">
+            , y:<input type="number" style="width: 40px" value="0" v-model="linkCursorY">
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 텍스트 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" v-model="textCursorX">
+            , y:<input type="number" style="width: 40px" value="0" v-model="textCursorY">
+          </p>
+          <br>
+        </details>
+
+        <details>
+          <summary>스크롤 및 스크롤바</summary>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 스크롤바
+            <br>
+            <input type="number" style="width: 45px" value="12" v-model="numScrollbarWidth">px; 스크롤바 폭, 높이
+            <br>
+            <input type="color" value="#f3f2f0" v-model="numScrollbarBackgroundColor"> 스크롤바 배경색
+            <br>
+            <input type="color" value="#6441a5" v-model="numScrollbarColor"> 스크롤바 색
+          </p>
+          <p style="--indent: 0px;">
+            <input type="checkbox" v-model="isUsingSmoothScroll"> 부드러운 스크롤
+          </p>
+          <br>
+        </details>
       </div>
-      <div id="custom"></div>
+      <div id="custom" style="flex:1">
+        custom CSS
+        <br>
+        <textarea name="custom_css_desktop" id="custom_css_desktop" cols="30" rows="10" style="width:100%"></textarea>
+        <br>
+        <button>
+        현재 CSS 복사
+        </button>
+      </div>
     </header>
     <div class="main">
       <iframe src="https://playcosmos.github.io/tgdmaker/base.html" name="base" width="100%" height="640px" style="border:none">
       </iframe>
     </div>
   </body>
+
 </html>
