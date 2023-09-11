@@ -3,7 +3,7 @@
   <body>
     <header>
       <div id="preset" style="flex:1">
-        <details>
+        <details id="global">
           <summary>글로벌 설정</summary>
           <p style="--indent: 5px;"> 사용시 체크
             <br>
@@ -32,30 +32,12 @@
           </p>
           <br>
         </details>
-        <details>
-          <summary>트게더 로고</summary>
-          <p style="--indent: 20px;">
-            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
-            <br>
-            <input type="text" v-model="urlCustomLogoImage"> 커스텀 이미지 주소
-            <br>
-            <input type="text" v-model="urlCustomLogoImageDark"> 다크모드 이미지 주소
-          </p>
-          <p style="--indent: 20px;">
-            <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
-            <br>
-            <input type="text" v-model="CustomLogoFilter"> 라이트모드 로고 색
-            <br>
-            <input type="text" v-model="CustomLogoFilterDark"> 다크모드 로고 색
-          </p>
-          <br>
-        </details>
-        <details>
+        <details id="cursor">
           <summary>마우스 커서</summary>
           <p style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingSingleCursor"> 단일 마우스 커서
             <br>
-            <input type="text" v-model="urlCustomCursorImage"> 커스텀 이미지 주소
+            <input type="text" v-model="urlCustomCursorImage"> 단일 커서 이미지 주소
             <br>
             x:<input type="number" style="width: 40px" value="0" v-model="singleCursorX">
             , y:<input type="number" style="width: 40px" value="0" v-model="singleCursorY">
@@ -80,8 +62,7 @@
           </p>
           <br>
         </details>
-
-        <details>
+        <details id="scroll">
           <summary>스크롤 및 스크롤바</summary>
           <p style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 스크롤바
@@ -97,11 +78,47 @@
           </p>
           <br>
         </details>
+        <details id="topBanner">
+          <summary>상단 배너</summary>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomBannerImage"> 라이트모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomBannerImageDark"> 다크모드 이미지 주소
+          </p>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerColor"> 배경색 사용
+            <br>
+            <input type="text" v-model="CustomBannerColor"> 라이트모드 배경색
+            <br>
+            <input type="text" v-model="CustomBannerColorDark"> 다크모드 배경색
+          </p>
+          <br>
+        </details>
+        <details id="logo">
+          <summary>트게더 로고</summary>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomLogoImage"> 라이트모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomLogoImageDark"> 다크모드 이미지 주소
+          </p>
+          <p style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
+            <br>
+            <input type="text" v-model="CustomLogoFilter"> 라이트모드 로고 색
+            <br>
+            <input type="text" v-model="CustomLogoFilterDark"> 다크모드 로고 색
+          </p>
+          <br>
+        </details>
       </div>
       <div id="custom" style="flex:1">
         custom CSS
         <br>
-        <textarea name="custom_css_desktop" id="custom_css_desktop" cols="30" rows="10" style="width:100%"></textarea>
+        <textarea id="customcss" cols="30" rows="10" style="width:100%"></textarea>
         <br>
         <button>
         현재 CSS 복사
