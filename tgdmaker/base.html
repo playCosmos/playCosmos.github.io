@@ -1,515 +1,261 @@
-<html lang="ko" class="" data-backskin-light="" data-backskin-dark="">
-  <head>
-    <link rel="stylesheet" type="text/css" href="https://cdn-assets.tgd.kr/css/tgd.layout.min.css?v=b351">
-    <link rel="stylesheet" type="text/css" href="https://cdn-assets.tgd.kr/css/1145f263256c923716d2b8eade2f6689.min.css?v=b351">
-    <script type="text/javascript" src="https://cdn-assets.tgd.kr/js/tgd.base.min.js?v=b351"></script>
-  </head>
+<html>
 
   <body>
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-4"><a href="#"><img src="https://d4fodtu7cqfym.cloudfront.net/images/logo_new.png" alt=""></a></div>
-          <div class="col-xs-8" align="right">
-            <form action="/search" method="get" id="right-search-form">
-              <input type="text" placeholder="트게더 검색" value="" id="right-search-input" name="q">
-              <button type="submit" id="right-search-btn"><i class="fa fa-search"></i></button>
-            </form>
+      <div id="preset" style="flex:1">
+        <details id="global">
+          <summary>글로벌 설정</summary>
+          <div style="--indent: 5px;"> 사용시 체크
+            <table style="width: auto;">
+              <tbody>
+                <tr>
+                  <td style="width: 25px;"><br></td>
+                  <td style="width: 80px;">색이름</td>
+                  <td style="width: auto;">일반모드</td>
+                  <td style="width: auto;">다크모드</td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor1"></td>
+                  <td style="width: 80px;">Color 1</td>
+                  <td style="width: auto;"><input type="color" v-model="color1"></td>
+                  <td style="width: auto;"><input type="color" v-model="color1Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor2"></td>
+                  <td style="width: 80px;">Color 2</td>
+                  <td style="width: auto;"><input type="color" v-model="color2"><br></td>
+                  <td style="width: auto;"><input type="color" v-model="color2Dark"><br></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor3"></td>
+                  <td style="width: 80px;">Color 3</td>
+                  <td style="width: auto;"><input type="color" v-model="color3"></td>
+                  <td style="width: auto;"><input type="color" v-model="color3Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor4"></td>
+                  <td style="width: 80px;">Color 4</td>
+                  <td style="width: auto;"><input type="color" v-model="color4"></td>
+                  <td style="width: auto;"><input type="color" v-model="color4Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor5"></td>
+                  <td style="width: 80px;">Color 5</td>
+                  <td style="width: auto;"><input type="color" v-model="color5"></td>
+                  <td style="width: auto;"><input type="color" v-model="color5Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor6"></td>
+                  <td style="width: 80px;">Color 6</td>
+                  <td style="width: auto;"><input type="color" v-model="color6"></td>
+                  <td style="width: auto;"><input type="color" v-model="color6Dark"></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox"> Global Border Radius (--globalBorderRadius)
+            <br>
+            <input type="number" style="width: 45px" value="3" min="0" v-model="globalBorderRadius">px
+          </div>
+          <br>
+        </details>
+        <details id="cursor">
+          <summary>마우스 커서</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingSingleCursor"> 단일 마우스 커서
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 단일 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="singleCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="singleCursorY">
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingMultiCursor"> 상황별 마우스 커서
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 기본 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="pointerCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="pointerCursorY">
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 링크 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="linkCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="linkCursorY">
+            <br>
+            <input type="text" v-model="urlCustomCursorImage"> 텍스트 커서 이미지 주소
+            <br>
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="textCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="textCursorY">
+          </div>
+          <br>
+        </details>
+        <details id="scroll">
+          <summary>스크롤 및 스크롤바</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 스크롤바
+            <br>
+            <input type="number" style="width: 45px" value="12" v-model="numScrollbarWidth">px; 스크롤바 폭, 높이
+            <br>
+            <input type="color" value="#f3f2f0" v-model="numScrollbarBackgroundColor"> 스크롤바 배경색
+            <br>
+            <input type="color" value="#6441a5" v-model="numScrollbarColor"> 스크롤바 색
+          </div>
+          <br>
+          <div style="--indent: 0px;">
+            <input type="checkbox" v-model="isUsingSmoothScroll"> 부드러운 스크롤 (우하단 스크롤업 버튼)
+          </div>
+          <br>
+        </details>
+        <details id="topBanner">
+          <summary>상단 배너</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomBannerImage"> 일반모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomBannerImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerColor"> 배경색 사용
+            <br>
+            <select id="selCustomBannerColor" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomBannerColor"> 일반모드 배경색
+            <br>
+            <select id="selCustomBannerColorDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomBannerColorDark"> 다크모드 배경색
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerImage"> 배너 높이 (체크 후 값이 0이면 auto)
+            <br>
+            <input type="number" style="width: 45px" value="0" min="0" v-model="numBannerHeight">px
+          </div>
+          <br>
+        </details>
+        <details id="logo">
+          <summary>트게더 로고</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomLogoImage"> 일반모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomLogoImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingCustomBannerImage"> 로고 너비, 높이 수정
+              <br>
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numLogoWidth">px,
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numLogoHeight">px
+            </div>
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
+            <br>
+            <select id="selCustomLogoFilter" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilter"> 일반모드 로고 색
+            <br>
+            <select id="selCustomLogoFilterDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilterDark"> 다크모드 로고 색
+          </div>
+          <br>
+        </details>
+        <details id="logo">
+          <summary>트게더 배경</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustombackgroundImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomLogoImage"> 일반모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomLogoImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingCustomBackgroundSize"> 배경 너비, 높이 수정
+              <br>
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numBackgroundWidth">px,
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numBackgroundoHeight">px
+            </div>
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingNoReapeatBackground"> 반복 금지
+            </div>
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBackgroundColor"> 배경색 설정
+            <br>
+            <select id="selCustomBackgroundColor" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilter"> 일반모드 배경색
+            <br>
+            <select id="selCustomBackgroundColorDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilterDark"> 다크모드 배경색
+          </div>
+          <br>
+        </details>
       </div>
-      <div id="header-bar" class="container">
-        <div class="row">
-          <div id="header-menu-left" class="col-xs-2" align="left">
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle" id="latestDropdown" data-toggle="dropdown">
-                <i class="fa fa-clock-o"></i> 최근 <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="latestDropdown" id="latestDropdownMenu">
-                <li><a href="#"><span class="name">최근 본 게시판 1</span> <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a href="#"><span class="name">최근 본 게시판 2</span> <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a href="#"><span class="name">최근 본 게시판 3</span> <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a href="#"><span class="name">최근 본 게시판 4</span> <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a href="#"><span class="name">최근 본 게시판 5</span> <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle" id="favoriteDropdown" data-toggle="dropdown">
-                <i class="fa fa-star"></i>
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="favoriteDropdown" id="favoriteDropdownMenu">
-                <li><a data-shortcut="1" href="#">
-                    <span class="label label-default">1</span>
-                    <span class="name">즐겨찾기 1</span>
-                    <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a data-shortcut="2" href="#">
-                    <span class="label label-default">2</span>
-                    <span class="name">즐겨찾기 2</span>
-                    <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-                <li><a data-shortcut="3" href="#">
-                    <span class="label label-default">3</span>
-                    <span class="name">즐겨찾기 3</span>
-                    <span class="delrow"><i class="fa fa-remove"></i></span></a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle" id="playgroundDropdown" data-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-smile-o"></i> <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="playgroundDropdown" id="playgroundDropdownMenu">
-                <li><a href="/play/attendance">출석체크</a></li>
-                <li><a href="/play/ad">전광판</a></li>
-                <li><a href="/play/iconshop">아이콘샵</a></li>
-                <li><a href="/play/giveaway">포인트경품</a></li>
-                <li class="divider"></li>
-                <li><a href="/play/chatutil">채팅툴</a></li>
-              </ul>
-            </div>
-          </div>
-          <div id="header-top-notice" class="col-xs-8" align="center"><strong class="notice-badge">안내</strong> <a href="#">광고 영역</a></div>
-          <div id="header-menu-right" class="col-xs-2" align="right">
-            <div class="dropdown">
-              <a href="/note/lists" class="dropdown-toggle">
-                <span class="badge badge-pill badge-danger hide" id="note-notification-badge">0</span>
-                <i class="fa fa-envelope-o"></i> <span class="caret"></span>
-              </a>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle" id="userDropdown" data-toggle="dropdown" data-id="180791181" aria-expanded="false">
-                <span class="badge badge-pill badge-danger" id="notification-badge" style="right: 4px;">40</span>
-                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/447050e1-3f74-4837-8671-8d8bdf5172cf-profile_image-300x300.png" alt="" class="profile-img">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <li><a href="#">새로운 알림 (<strong id="notification-badge-ea">40</strong>개)</a></li>
-                <li><a href="#"><strong>닉네임</strong> <small>ID</small></a></li>
-                <li><a href="#"><strong>2147483647</strong> 포인트</a></li>
-                <li class="divider"></li>
-                <li><a href="#">설정</a></li>
-                <li><a href="#">글 보관함</a></li>
-                <li><a href="#">아이콘 보관함</a></li>
-                <li><a href="#">로그아웃</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div id="content-area">
-      <div class="container" id="main">
-        <div class="row">
-          <div class="col-xs-2" id="main-menu">
-            <div class="menu-wrapper">
-              <div class="header"><i class="fa fa-bars"></i> 트게더 전체 메뉴</div>
-              <a class="shortcut-link" data-shortcut="a" href="#"><em>A</em>전체 글 보기</a>
-              <div class="spacer"></div>
-              <div id="fav-shortcut-area">
-                <a class="shortcut-link" href="#"><em><i class="fa fa-star"></i></em>즐겨찾기 1</a>
-                <a class="shortcut-link" href="#"><em><i class="fa fa-star"></i></em>즐겨찾기 2</a>
-                <a class="shortcut-link" href="#"><em><i class="fa fa-star"></i></em>즐겨찾기 3</a>
-                <div class="spacer"></div>
-              </div>
-              <a class="shortcut-link" data-shortcut="b" href="#"><em>B</em>스트리머 게시판</a>
-              <a class="shortcut-link" data-shortcut="c" href="#"><em>C</em>커뮤니티</a>
-              <a class="shortcut-link" data-shortcut="h" href="#"><em>H</em>핫클립</a>
-              <div class="spacer"></div>
-              <a class="shortcut-link" data-shortcut="c" href="#"><em>C</em>자유게시판</a>
-              <a class="shortcut-link" data-shortcut="r" href="#"><em>R</em>포인트 경품 응모</a>
-              <div class="spacer"></div>
-              <a class="shortcut-link" href="#"><em><i class="fa fa-external-link"></i></em>방송천재</a>
-              <a class="shortcut-link" href="#"><em><i class="fa fa-external-link"></i></em>트게더 랭킹</a>
-              <div class="spacer"></div>
-              <a class="shortcut-link" data-shortcut="p" href="#"><em>P</em>방송홍보</a>
-              <a class="shortcut-link" data-shortcut="q" href="#"><em>Q</em>Q&amp;A</a>
-              <a class="shortcut-link" data-shortcut="t" href="#"><em>T</em>방송 TIP</a>
-              <div class="spacer"></div>
-              <a class="shortcut-link" data-shortcut="n" href="#"><em>N</em>공지사항</a>
-              <a class="shortcut-link" data-shortcut="e" href="#"><em>E</em>이벤트</a>
-              <a class="shortcut-link" data-shortcut="s" href="#"><em>S</em>건의/신고</a>
-            </div>
-          </div>
-          <div class="col-xs-10" id="main-content">
-            <div class="frame">
-              <div id="board-info">
-                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a141e585-65fd-4d5c-96f2-9e46f1993bc3-profile_image-300x300.png" alt="" id="board-info-profile-img" class="pull-right img-rounded" width="64" height="64">
-                <h1>
-                  <a href="#">스트리머</a>
-                  <span id="score-area" title="게시판 점수"><i class="fa fa-trophy"></i> 445.3k</span>
-                  <span id="viewers-area" class=""><i class="fa fa-user"></i> <span id="viewers">256</span></span>
-                </h1>
-                <div id="board-info-bottom">
-                  <a href="#" data-id="44707823" class="" id="addFavoriteBtn" title="즐겨찾기에 추가"><i class="fa fa-star-o"></i>즐겨찾기 (127)</a>
-                  <a href="#" target="_blank"><i class="fa fa-trophy"></i> 랭킹</a>
-                  <a href="#"><i class="fa fa-info-circle"></i> 소개</a>
-                  <a href="#"><i class="fa fa-twitch"></i> 채널</a>
-                  <a href="#"><i class="fa fa-calendar"></i> 스케줄</a>
-                  <a href="#"><i class="fa fa-photo"></i> 갤러리</a>
-                </div>
-              </div>
-              <!-- tgd_board_list -->
-              <div id="article-list">
-                <div id="article-option-area">
-                  <input type="checkbox" id="hide_notice" class="hide">
-                  <button id="article-option-area-toggle-btn"><i class="fa fa-eye"></i></button>
-                </div>
-                <div id="article-list-category" class="can-float">
-                  <a class="nav-link active" id="board-home-link-btn" href="/dajunghyun"><i class="fa fa-home"></i></a>
-                  <a style="color:#ff0011" class="nav-link " href="#">공지</a>
-                  <a style="color:#ff969d" class="nav-link " href="#">게시판 1</a>
-                  <a style="color:#ff969d" class="nav-link " href="#">게시판 2</a>
-                  <a style="color:#ffb784" class="nav-link " href="#">게시판 3</a>
-                  <a style="color:#84ffc8" class="nav-link " href="#">게시판 4</a>
-                  <a style="color:#96d3ff" class="nav-link " href="#">게시판 5</a>
-                </div>
-
-                <div class="article-list-row has-category notice featured  ">
-                  <div class="item">
-                    <div class="list-header v0"><strong>AD</strong> </div>
-                    <div class="list-title">
-                      <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
-                      <a title="트게더 광고! 🎁🎁" style="color:#000000"> 트게더 광고! 🎁🎁 </a>
-                      <div class="list-writer logged"> <span> 트게더 </span> </div>
-                    </div>
-                    <div class="list-time"> 12:56 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category notice   " id="article-list-row-62730703">
-                  <div class="item">
-                    <div class="list-header v0">
-                      <strong>공지</strong> </div>
-                    <div class="list-title">
-                      <span class="a-badge"><i class="fa fa-info-circle"></i></span>
-                      <a href="/1" style="font-weight:bold;color:#000000"> 공지1 공지1 공지1 공지1 공지1 </a>
-                      <div class="list-writer logged"><span> <img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time"> 03-23 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category notice   " id="article-list-row-62686545">
-                  <div class="item">
-                    <div class="list-header v0"> <strong>공지</strong> </div>
-                    <div class="list-title">
-                      <span class="a-badge"><i class="fa fa-info-circle"></i></span>
-                      <a href="/2" style="font-weight:bold;color:#000000"> 공지2 공지2 공지2 공지2 공지2 </a>
-                      <div class="list-writer  logged"><span> <img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time"> 03-21 </div>
-                  </div>
-                </div>
-                
-                <div class="article-list-row has-category   hot " id="article-list-row-71541157">
-                  <div class="item">
-                    <div class="list-header v128"><b>인기</b> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판2</span></div>
-                      <span class="a-badge"><i class="fa fa-star"></i></span>
-                      <a href="/3" style=""> 인기글1 인기글1 인기글1 인기글1 </a>
-                      <small class="comment-count">[2]</small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/427bedbc-9cdc-4ed2-9976-db2d6e2406f1/1" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">07:58 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71487955">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
-                      <a href="/4" style=""> 게시글1 게시글1 게시글1 게시글1 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> 작성자1 </span> </div>
-                    </div>
-                    <div class="list-time"> 09-02 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71484152">
-                  <div class="item">
-                    <div class="list-header v1"> <span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/5" style=""> 게시글2 게시글2 게시글2 게시글2 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> <img src="https://static-cdn.jtvnw.net/badges/v1/4320b15e-16ee-4381-a2cd-2f06c7de0498/1" align="absmiddle"> 작성자2 </span></div>
-                    </div>
-                    <div class="list-time"> 09-02 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71408914">
-                  <div class="item">
-                    <div class="list-header v1"> <span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/6" style=""> 게시글3 게시글3 게시글3 게시글3 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"> <span> 작성자3 </span> </div>
-                    </div>
-                    <div class="list-time"> 08-26 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71378691">
-                  <div class="item">
-                    <div class="list-header v0"> <span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/7" style="color:#000000"> 공지글1 공지글1 공지글1 공지글1 </a>
-                      <small class="comment-count">[1]</small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머</span></div>
-                    </div>
-                    <div class="list-time"> 08-24 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71341974">
-                  <div class="item">
-                    <div class="list-header v1"> <span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/8" style=""> 게시글4 게시글4 게시글4 게시글4 </a>
-                      <small class="comment-count">[2]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer logged"><span> <img src="https://static-cdn.jtvnw.net/badges/v1/698a67b1-e0b8-474c-85f1-a6f5ebec5a99/1" align="absmiddle"> 작성자4 </span></div>
-                    </div>
-                    <div class="list-time"> 08-21 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71269451">
-                  <div class="item">
-                    <div class="list-header v0"><span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/9" style="color:#000000"> 공지글2 공지글2 공지글2 공지글2 </a>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle">스트리머</span></div>
-                    </div>
-                    <div class="list-time"> 08-14 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71232003">
-                  <div class="item">
-                    <div class="list-header v1"> <span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/10" style=""> 게시글5 게시글5 게시글5 게시글5 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> 작성자5 </span></div>
-                    </div>
-                    <div class="list-time"> 08-11 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-71112360">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/11" style=""> 게시글6 게시글6 게시글6 게시글6 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/4320b15e-16ee-4381-a2cd-2f06c7de0498/1" align="absmiddle"> 작성자6 </span></div>
-                    </div>
-                    <div class="list-time">07-31 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-70946747">
-                  <div class="item">
-                    <div class="list-header v0"><span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/12" style="color:#000000"> 공지글3 공지글3 공지글3 공지글3 </a>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">07-17 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-70890848">
-                  <div class="item">
-                    <div class="list-header v0"><span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/13" style="color:#000000"> 공지글4 공지글4 공지글4 공지글4 </a>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">07-12</div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-70824080">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
-                      <a href="/14" style=""> 게시글7 게시글7 게시글7 게시글7 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> 작성자6 </span></div>
-                    </div>
-                    <div class="list-time">07-06 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category    " id="article-list-row-70779740">
-                  <div class="item">
-                    <div class="list-header v0"><span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/15" style="color:#000000"> 공지글5 공지글5 공지글5 공지글5 </a>
-                      <div class="list-writer logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">07-02 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category    " id="article-list-row-70618749">
-                  <div class="item">
-                    <div class="list-header v0"><span>0</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/16" style="color:#000000"> 공지글6 공지글6 공지글6 공지글6 </a>
-                      <small class="comment-count">[1]</small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">06-20 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-70611003">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#84ffc8">게시판4</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/17" style=""><i class="fa fa-lock"></i> 비밀글1 비밀글1 비밀글1 비밀글1 </a>
-                      <small class="comment-count">[4]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/7efa373b-0ec1-4bda-8cca-f9f17de43e31/1" align="absmiddle"> 작성자7 </span></div>
-                    </div>
-                    <div class="list-time">06-19 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-69896663">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff0011">공지</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/18" style="color:#000000"> 공지글7 공지글7 공지글7 공지글7 </a>
-                      <small class="comment-count">[1]</small>
-                      <div class="list-writer  logged"><span><img src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1" alt="Broadcaster" title="Broadcaster" align="absmiddle"> 스트리머 </span></div>
-                    </div>
-                    <div class="list-time">04-30 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-69883248">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
-                      <a href="/19" style=""> 게시글8 게시글8 게시글8 게시글8 </a>
-                      <small class="comment-count">[1]</small>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> 작성자8 </span></div>
-                    </div>
-                    <div class="list-time">04-29 </div>
-                  </div>
-                </div>
-
-                <div class="article-list-row has-category" id="article-list-row-69876595">
-                  <div class="item">
-                    <div class="list-header v1"><span>1</span> </div>
-                    <div class="list-title">
-                      <div class="list-category"><span class="category" style="color:#ff969d">게시판1</span></div>
-                      <span class="a-badge"><i class="fa fa-picture-o"></i></span>
-                      <a href="/20" style=""> 게시글9 게시글9 게시글9 게시글9 </a>
-                      <small class="favo"><i class="fa fa-heart"></i></small>
-                      <div class="list-writer  logged"><span> 작성자9 </span></div>
-                    </div>
-                    <div class="list-time">04-29 </div>
-                  </div>
-                </div>
-                <div id="article-list-menu">
-                  <a href="#" class="btn square btn-default best"><i class="fa fa-star"></i> 인기글</a>
-                  <a href="#" class="btn square btn-default cog"><i class="fa fa-cog"></i> 설정</a>
-                  <button class="btn square del btn-danger" type="button" id="deleteAllBtn"><i class="fa fa-trash"></i> 삭제</button>
-                  <ul class="pagination">
-                  <li><a rel="prev">&lt;</a></li>
-                  <li><a rel="start">1</a></li>
-                  <li class="disabled"></li>
-                  <li class="active"><a href="#">2<span class="sr-only"></span></a></li>
-                  <li><a>3</a></li>
-                  <li><a>4</a></li>
-                  <li><a>5</a></li>
-                  <li><a rel="next">&gt;</a></li></ul>
-                  <a href="#" class="btn square btn-primary write"><i class="fa fa-pencil"></i> 글 쓰기</a>
-                </div>
-
-                <form class="input-group" id="boardSearchForm">
-                  <input type="hidden" name="search_type" value="titlecont">
-                  <span class="input-group-btn">
-                    <button type="button" class="btn square btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-type-desc">제목+내용</span> <span class="caret"></span></button>
-                    <div class="dropdown-menu">
-                      <!-- <li><a href="#" data-value="title">제목</a></li> -->
-                      <li><a href="#" data-value="titlecont">제목+내용</a></li>
-                      <li><a href="#" data-value="nickname">닉네임</a></li>
-                    </div>
-                  </span>
-                  <input type="text" name="search_term" class="form-control" placeholder="검색어" value="">
-                  <span class="input-group-btn">
-                    <button class="btn square btn-default" type="submit"><i class="fa fa-search"></i></button>
-                  </span>
-                </form>
-              </div>
-
-              <ul id="writerContextMenu" class="dropdown-menu" role="menu" style="display: none;">
-                <li><a tabindex="-1" href="#">프로필</a></li>
-                <li><a tabindex="-1" href="#">작성 글 보기</a></li>
-                <li><a tabindex="-1" href="#">차단하기</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <span>© 2017-2023 트게더<br><a href="#" target="_blank">이용약관</a> | <a href="#" target="_blank">개인정보처리방침</a> | <a href="#" target="_blank">인재 채용 중</a> | <a href="#">광고문의</a> | <a href="#">고객센터</a><br>트게더는 Twitch에서 운영하는 사이트가 아닙니다.<br><br><a href="" id="switch-platform-link">모바일버전으로 전환하기</a>
-        </span>
-        <button class="theme_btn_box" id="theme_btn_box">
-          <div class="theme_btn"></div>
+      <div id="custom" style="flex:1">
+        custom CSS
+        <br>
+        <textarea id="customcss" cols="30" rows="10" style="width:100%"></textarea>
+        <br>
+        <button>
+          현재 CSS 복사
         </button>
       </div>
-    </footer>
-    <a href="#" id="movetotop" style="left: 1168.5px; display: none;"><img src="https://d4fodtu7cqfym.cloudfront.net/images/move_to_top.png" alt=""></a>
+    </header>
+    <div class="main">
+      <iframe src="https://playcosmos.github.io/tgdmaker/base.html" name="base" width="100%" height="640px" style="border:none">
+      </iframe>
+    </div>
   </body>
 
 </html>
