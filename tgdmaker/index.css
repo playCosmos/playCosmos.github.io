@@ -2,7 +2,7 @@ header {
   display: flex;
 }
 
-details>p {
+:is(details) div {
   padding-left: var(--indent);
   text-indent: calc(var(--indent)*-1);
 }
@@ -13,4 +13,32 @@ div.main {
 
 input[type="text"] {
   margin-top: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table tbody {
+  display: table-row-group;
+  vertical-align: center;
+}
+
+table td {
+  border: 1px solid #ddd;
+}
+select option[name="color1"] {
+}
+select option[name="color2"] {  
+}
+select option[name="color3"] {  
+}
+select option[name="color4"] {  
+}
+select option[name="color5"] {  
+}
+select option[name="color6"] {  
+}
+select option[name="other"] {  
 }
