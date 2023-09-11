@@ -5,66 +5,96 @@
       <div id="preset" style="flex:1">
         <details id="global">
           <summary>글로벌 설정</summary>
-          <p style="--indent: 5px;"> 사용시 체크
+          <div style="--indent: 5px;"> 사용시 체크
+            <table style="width: auto;">
+              <tbody>
+                <tr>
+                  <td style="width: 25px;"><br></td>
+                  <td style="width: 80px;">색이름</td>
+                  <td style="width: auto;">일반모드</td>
+                  <td style="width: auto;">다크모드</td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor1"></td>
+                  <td style="width: 80px;">Color 1</td>
+                  <td style="width: auto;"><input type="color" v-model="color1"></td>
+                  <td style="width: auto;"><input type="color" v-model="color1Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor2"></td>
+                  <td style="width: 80px;">Color 2</td>
+                  <td style="width: auto;"><input type="color" v-model="color2"><br></td>
+                  <td style="width: auto;"><input type="color" v-model="color2Dark"><br></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor3"></td>
+                  <td style="width: 80px;">Color 3</td>
+                  <td style="width: auto;"><input type="color" v-model="color3"></td>
+                  <td style="width: auto;"><input type="color" v-model="color3Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor4"></td>
+                  <td style="width: 80px;">Color 4</td>
+                  <td style="width: auto;"><input type="color" v-model="color4"></td>
+                  <td style="width: auto;"><input type="color" v-model="color4Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor5"></td>
+                  <td style="width: 80px;">Color 5</td>
+                  <td style="width: auto;"><input type="color" v-model="color5"></td>
+                  <td style="width: auto;"><input type="color" v-model="color5Dark"></td>
+                </tr>
+                <tr>
+                  <td style="width: 25px;"><input type="checkbox" v-model="isUsingColor6"></td>
+                  <td style="width: 80px;">Color 6</td>
+                  <td style="width: auto;"><input type="color" v-model="color6"></td>
+                  <td style="width: auto;"><input type="color" v-model="color6Dark"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox"> Global Border Radius (--globalBorderRadius)
             <br>
-            <input type="checkbox" v-model="isUsingColor1">
-            <input type="color" v-model="color1"> Color 1
-            <br>
-            <input type="checkbox" v-model="isUsingColor2">
-            <input type="color" v-model="color2"> Color 2
-            <br>
-            <input type="checkbox" v-model="isUsingColor3">
-            <input type="color" v-model="color3"> Color 3
-            <br>
-            <input type="checkbox" v-model="isUsingColor4">
-            <input type="color" v-model="color4"> Color 4
-            <br>
-            <input type="checkbox" v-model="isUsingColor5">
-            <input type="color" v-model="color5"> Color 5
-            <br>
-            <input type="checkbox" v-model="isUsingColor6">
-            <input type="color" v-model="color6"> Color 6
-          </p>
-          <p style="--indent: 20px;">
-            <input type="checkbox"> Global Border Radius :
-            <br>
-            <input type="number" style="width: 45px" value="3" v-model="globalBorderRadius">px
-          </p>
+            <input type="number" style="width: 45px" value="3" min="0" v-model="globalBorderRadius">px
+          </div>
           <br>
         </details>
         <details id="cursor">
           <summary>마우스 커서</summary>
-          <p style="--indent: 20px;">
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingSingleCursor"> 단일 마우스 커서
             <br>
             <input type="text" v-model="urlCustomCursorImage"> 단일 커서 이미지 주소
             <br>
-            x:<input type="number" style="width: 40px" value="0" v-model="singleCursorX">
-            , y:<input type="number" style="width: 40px" value="0" v-model="singleCursorY">
-          </p>
-          <p style="--indent: 20px;">
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="singleCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="singleCursorY"> - 커서 포인터 위치 조정
+          </div>
+          <br>
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingMultiCursor"> 상황별 마우스 커서
             <br>
             <input type="text" v-model="urlCustomCursorImage"> 기본 커서 이미지 주소
             <br>
-            x:<input type="number" style="width: 40px" value="0" v-model="pointerCursorX">
-            , y:<input type="number" style="width: 40px" value="0" v-model="pointerCursorY">
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="pointerCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="pointerCursorY">
             <br>
             <input type="text" v-model="urlCustomCursorImage"> 링크 커서 이미지 주소
             <br>
-            x:<input type="number" style="width: 40px" value="0" v-model="linkCursorX">
-            , y:<input type="number" style="width: 40px" value="0" v-model="linkCursorY">
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="linkCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="linkCursorY">
             <br>
             <input type="text" v-model="urlCustomCursorImage"> 텍스트 커서 이미지 주소
             <br>
-            x:<input type="number" style="width: 40px" value="0" v-model="textCursorX">
-            , y:<input type="number" style="width: 40px" value="0" v-model="textCursorY">
-          </p>
+            x:<input type="number" style="width: 40px" value="0" min="0" v-model="textCursorX">
+            , y:<input type="number" style="width: 40px" value="0" min="0" v-model="textCursorY">
+          </div>
           <br>
         </details>
         <details id="scroll">
           <summary>스크롤 및 스크롤바</summary>
-          <p style="--indent: 20px;">
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 스크롤바
             <br>
             <input type="number" style="width: 45px" value="12" v-model="numScrollbarWidth">px; 스크롤바 폭, 높이
@@ -72,46 +102,143 @@
             <input type="color" value="#f3f2f0" v-model="numScrollbarBackgroundColor"> 스크롤바 배경색
             <br>
             <input type="color" value="#6441a5" v-model="numScrollbarColor"> 스크롤바 색
-          </p>
-          <p style="--indent: 0px;">
-            <input type="checkbox" v-model="isUsingSmoothScroll"> 부드러운 스크롤
-          </p>
+          </div>
+          <br>
+          <div style="--indent: 0px;">
+            <input type="checkbox" v-model="isUsingSmoothScroll"> 부드러운 스크롤 (우하단 스크롤업 버튼)
+          </div>
           <br>
         </details>
         <details id="topBanner">
           <summary>상단 배너</summary>
-          <p style="--indent: 20px;">
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomBannerImage"> 커스텀 이미지 사용 (사용시 체크)
             <br>
-            <input type="text" v-model="urlCustomBannerImage"> 라이트모드 이미지 주소
+            <input type="text" v-model="urlCustomBannerImage"> 일반모드 이미지 주소
             <br>
-            <input type="text" v-model="urlCustomBannerImageDark"> 다크모드 이미지 주소
-          </p>
-          <p style="--indent: 20px;">
+            <input type="text" v-model="urlCustomBannerImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+          </div>
+          <br>
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomBannerColor"> 배경색 사용
             <br>
-            <input type="text" v-model="CustomBannerColor"> 라이트모드 배경색
+            <select id="selCustomBannerColor" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomBannerColor"> 일반모드 배경색
             <br>
-            <input type="text" v-model="CustomBannerColorDark"> 다크모드 배경색
-          </p>
+            <select id="selCustomBannerColorDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomBannerColorDark"> 다크모드 배경색
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBannerImage"> 배너 높이 (체크 후 값이 0이면 auto)
+            <br>
+            <input type="number" style="width: 45px" value="0" min="0" v-model="numBannerHeight">px
+          </div>
+          <br>
+        </details>
+        <details id="background">
+          <summary>트게더 배경</summary>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustombackgroundImage"> 커스텀 이미지 사용 (사용시 체크)
+            <br>
+            <input type="text" v-model="urlCustomLogoImage"> 일반모드 이미지 주소
+            <br>
+            <input type="text" v-model="urlCustomLogoImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingCustomBackgroundSize"> 배경 너비, 높이 수정
+              <br>
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numBackgroundWidth">px,
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numBackgroundoHeight">px
+            </div>
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingNoReapeatBackground"> 반복 금지
+            </div>
+          </div>
+          <br>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomBackgroundColor"> 배경색 설정
+            <br>
+            <select id="selCustomBackgroundColor" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilter"> 일반모드 배경색
+            <br>
+            <select id="selCustomBackgroundColorDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilterDark"> 다크모드 배경색
+          </div>
           <br>
         </details>
         <details id="logo">
           <summary>트게더 로고</summary>
-          <p style="--indent: 20px;">
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomLogoImage"> 커스텀 이미지 사용 (사용시 체크)
             <br>
-            <input type="text" v-model="urlCustomLogoImage"> 라이트모드 이미지 주소
+            <input type="text" v-model="urlCustomLogoImage"> 일반모드 이미지 주소
             <br>
-            <input type="text" v-model="urlCustomLogoImageDark"> 다크모드 이미지 주소
-          </p>
-          <p style="--indent: 20px;">
+            <input type="text" v-model="urlCustomLogoImageDark" placeholder="없을 시 none 처리"> 다크모드 이미지 주소
+            <div style="--indent: 20px;">
+              <input type="checkbox" v-model="isUsingCustomBannerImage"> 로고 너비, 높이 수정
+              <br>
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numLogoWidth">px,
+              <input type="number" style="width: 45px" value="0" min="0" v-model="numLogoHeight">px
+            </div>
+          </div>
+          <br>
+          <div style="--indent: 20px;">
             <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
             <br>
-            <input type="text" v-model="CustomLogoFilter"> 라이트모드 로고 색
+            <select id="selCustomLogoFilter" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilter"> 일반모드 로고 색
             <br>
-            <input type="text" v-model="CustomLogoFilterDark"> 다크모드 로고 색
-          </p>
+            <select id="selCustomLogoFilterDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilterDark"> 다크모드 로고 색
+          </div>
           <br>
         </details>
       </div>
@@ -121,7 +248,7 @@
         <textarea id="customcss" cols="30" rows="10" style="width:100%"></textarea>
         <br>
         <button>
-        현재 CSS 복사
+          현재 CSS 복사
         </button>
       </div>
     </header>
