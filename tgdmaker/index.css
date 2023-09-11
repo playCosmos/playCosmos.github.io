@@ -1,3 +1,10 @@
+:root{
+  --mainColor: #6441a5;
+  --bgColor: #f6f0ff;
+}
+
+::selection { background-color: var(--mainColor); color: #fff}
+
 header {
   display: flex;
 }
@@ -5,6 +12,26 @@ header {
 :is(details) div {
   padding-left: var(--indent);
   text-indent: calc(var(--indent)*-1);
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 1px;
+  transition: 0.4s;
+}
+
+summary {
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  transition: 0.4s;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 5px;
+  background-color: var(--bgColor);
 }
 
 div.main {
@@ -28,17 +55,17 @@ table tbody {
 table td {
   border: 1px solid #ddd;
 }
-select option[name="color1"] {
-}
-select option[name="color2"] {  
-}
-select option[name="color3"] {  
-}
-select option[name="color4"] {  
-}
-select option[name="color5"] {  
-}
-select option[name="color6"] {  
-}
-select option[name="other"] {  
-}
+
+select option[name="color1"] {}
+
+select option[name="color2"] {}
+
+select option[name="color3"] {}
+
+select option[name="color4"] {}
+
+select option[name="color5"] {}
+
+select option[name="color6"] {}
+
+select option[name="other"] {}
