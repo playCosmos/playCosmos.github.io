@@ -5,7 +5,7 @@
   
   ::selection { background-color: var(--mainColor); color: #fff}
   
-  header {
+  header { display: inline-block;
   }
   
   :is(details) div {
@@ -27,7 +27,7 @@
     transition: 0.4s;
   }
   
-  details[open] summary {
+  details[open] > summary {
     border-bottom: 1px solid #aaa;
     border-radius: 10px 10px 0 0;
     margin-bottom: 5px;
