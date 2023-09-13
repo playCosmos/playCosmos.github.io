@@ -67,6 +67,7 @@
           </div>
           <br>
         </details>
+
         <details id="cursor">
           <summary>마우스 커서</summary>
           <div style="--indent: 20px;">
@@ -256,13 +257,71 @@
             <input type="checkbox" v-model="isUsingCustomLogoImage"> 테마 적용
             <br>
             <select id="selCustomSearchBarTheme" style="width: 80px">
-              <option name="other">직접 입력</option>
               <option name="color1">Theme 1</option>
               <option name="color2">Theme 2</option>
               <option name="color3">Theme 3</option>
               <option name="color4">Theme 4</option>
               <option name="color5">Theme 5</option>
               <option name="color6">Theme 6</option>
+              <option name="other" selected>직접 입력</option>
+            </select>
+            <br>
+            <textarea id="customSearchBarCSS" cols="30" rows="10" style="min-width: 300px; width:100%;"></textarea>
+          </div>
+          <div style="--indent: 20px;">
+            <input type="checkbox" v-model="isUsingCustomLogoFilter"> 로고 색 변경(필터) #6441a5 -> @
+            <br>
+            <select id="selCustomLogoFilter" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilter"> 일반모드 로고 색
+            <br>
+            <select id="selCustomLogoFilterDark" style="width: 80px">
+              <option name="color1">Color 1</option>
+              <option name="color2">Color 2</option>
+              <option name="color3">Color 3</option>
+              <option name="color4">Color 4</option>
+              <option name="color5">Color 5</option>
+              <option name="color6">Color 6</option>
+              <option name="other">직접 선택</option>
+            </select>
+            <input type="color" v-model="CustomLogoFilterDark"> 다크모드 로고 색
+          </div>
+          <br>
+        </details>
+
+        <details id="tgdHeaderBar">
+          <summary>헤더바 설정</summary>
+          <div style="--indent: 20px;">
+            <details>
+              <summary>좌측 메뉴</summary>
+              <br>
+            </details>
+            <details>
+              <summary>광고 영역</summary>
+              <br>
+            </details>
+            <details>
+              <summary>우측 메뉴</summary>
+              <br>
+            </details>
+
+            <input type="checkbox" v-model="isUsingCustomLogoImage"> 테마 적용
+            <br>
+            <select id="selCustomSearchBarTheme" style="width: 80px">
+              <option name="color1">Theme 1</option>
+              <option name="color2">Theme 2</option>
+              <option name="color3">Theme 3</option>
+              <option name="color4">Theme 4</option>
+              <option name="color5">Theme 5</option>
+              <option name="color6">Theme 6</option>
+              <option name="other" selected>직접 입력</option>
             </select>
             <br>
             <textarea id="customSearchBarCSS" cols="30" rows="10" style="min-width: 300px; width:100%;"></textarea>
