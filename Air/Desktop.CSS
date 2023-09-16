@@ -441,7 +441,7 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
     flex-wrap: wrap;
 }
 
-label.pull-left { margin: 0px calc(100% - 100px) 5px 0px; }
+label.pull-left { width: 100%; }
 #addEmoteBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
 #writeCommentBtn { margin-left: auto; }
