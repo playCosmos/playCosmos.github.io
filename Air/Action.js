@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         info.append(CreateSocialLink("fab fa-discord", "https://discord.com/channels/@me/472262435261251594", "디스코드"));
         info.append(CreateSocialLink("fab fa-instagram", "https://www.instagram.com/million_air_", "인스타그램"));
         
-        /*var article_option_area = sel("#article-option-area");    
+        var article_option_area = sel("#article-option-area");    
         article_option_area.setAttribute('title', "공지 숨김/보기");
-        info.append(article_option_area);*/
+        /*info.append(article_option_area);*/
     }
     /* 다크모드 전환 스위치 조정 */
     /*var spacer = document.createElement('div');
