@@ -530,8 +530,9 @@ input.form-control {
 .btn#reportArticleBtn,
 .btn#reportBtn { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
+.btn-info { -btcolor: #5bc0de; }
 
-.btn-primary, .btn-default, .btn-info, input.form-control,
+.btn-primary, .btn-default, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
 
 select.form-control:focus, input#title:focus { box-shadow: none; }
