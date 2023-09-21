@@ -216,7 +216,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	#article-info { width: 1000px; transition: 0.4s; }
 
 	/* 광고 패딩 조절 */
-	#main #main-menu>:last-child { 
+	#main #main-menu>*:last-child { 
 		padding: 0 !important;
 		transform: translateX(-124px) !important;
 	}
