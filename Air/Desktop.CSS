@@ -530,7 +530,7 @@ input.form-control {
 .btn#reportArticleBtn,
 .btn#reportBtn { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
-.btn-info { -btcolor: #5bc0de; }
+.btn-info { --btcolor: #5bc0de; }
 
 .btn-primary, .btn-default, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
