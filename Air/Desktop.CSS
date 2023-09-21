@@ -309,8 +309,8 @@ div#article-option-area { top: 5px !important; display: inline-block; }
 	line-height: normal !important;
 }
 .darkmode #article-option-area-toggle-btn {
-	background: var(--bgframe);
-	border-color: white;
+	background: var(--bgframe) !important;
+	border-color: white !important;
 }
 
 /* 눈 모양 아이콘을 스위치 모양으로 변경 */
