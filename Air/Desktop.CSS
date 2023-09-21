@@ -307,6 +307,7 @@ div#article-option-area { top: 5px !important; display: inline-block; }
 	width: unset !important;
 	height: 25px !important;
 	line-height: normal !important;
+	transition: 0.2s;
 }
 .darkmode #article-option-area-toggle-btn {
 	background: var(--bgframe) !important;
