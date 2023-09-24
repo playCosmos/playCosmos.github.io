@@ -189,7 +189,7 @@ a[href="https://ranking.tgd.kr/streamers/180791181"],
 /*a[href="/s/million_air/profile"],*/
 a[href="/s/million_air/schedule"],
 a[href="/s/million_air?gallery=1"],
-a[href="/clips?streamer_id=180791181"] { display: none !important; }
+a[href="https://vod.twip.kr/creator/million_air"] { display: none !important; }
 
 #board-info>a.board-right-menu,
 #board-info>div.dropdown>a {
