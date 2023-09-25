@@ -483,7 +483,7 @@ small.favo i.fa.fa-heart {
 }
 
 span.a-badge i.fa.fa-star {
-	animation: shiningstar 2s infinite;
+	animation: shiningstar 4s infinite;
 	animation-timing-function: linear;
 }
 
