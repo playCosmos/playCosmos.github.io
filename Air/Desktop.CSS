@@ -637,7 +637,7 @@ small.favo i.fa.fa-heart { animation: heartbeat 1s infinite; }
 
 i.fa.fa-refresh,
 span.a-badge i.fa.fa-star {
-	animation: shiningstar 2s infinite;
+	animation: shiningstar 4s infinite;
 	animation-timing-function: linear;
 }
 
