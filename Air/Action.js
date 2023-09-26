@@ -62,9 +62,10 @@ document.addEventListener("DOMContentLoaded", function() {
     sel(".menu-wrapper").append(sel("button#theme_btn_box"))*/
 
     /* 광고 감지 */
-    if (sel(".frame").querySelector("iframe") == null)
+    var f = sel(".frame");
+    if (f.querySelector("iframe") == null)
     {
-        var ad = Array.from(document.querySelectorAll('div')).find(el => el.textContent === 'AD');
+        var ad = Array.from(f.querySelectorAll('div')).find(el => el.textContent === 'AD');
         ad.remove();
     }
     
