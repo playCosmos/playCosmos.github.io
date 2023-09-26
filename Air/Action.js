@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sel(".menu-wrapper").append(sel("button#theme_btn_box"))*/
 
     /* 광고 감지 */
+    // 애드블럭 등으로 광고가 나오지 않을 때 광고 영역 삭제
     var f = sel(".frame");
     if (f.querySelector("iframe") == null)
     {
