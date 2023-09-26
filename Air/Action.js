@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (f.querySelector("iframe") == null)
     {
         var ad = Array.from(f.querySelectorAll('div')).find(el => el.textContent === 'AD');
-        ad.remove();
+        //ad.remove();
     }
     
     /* 게시글 제목 감지 */
