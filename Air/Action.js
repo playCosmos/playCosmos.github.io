@@ -60,6 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
     spacer.setAttribute('class',"spacer");
     sel(".menu-wrapper").append(spacer);
     sel(".menu-wrapper").append(sel("button#theme_btn_box"))*/
+
+    /* 광고 감지 */
+    if (sel(".frame").querySelector("iframe") == null)
+    {
+        var ad = Array.from(document.querySelectorAll('div')).find(el => el.textContent === 'AD');
+        ad.remove();
+    }
     
     /* 게시글 제목 감지 */
     var article_info = sel("div#article-info");
