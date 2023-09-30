@@ -465,7 +465,7 @@ html.darkmode #movetotop { background: #242424bf; }
 	transition: all 0.5s;
 	position: fixed;
 	bottom: 55px;
-	z-index: 20;
+	z-index: 99;
 	left: calc(100% - 80px);
 }
 
