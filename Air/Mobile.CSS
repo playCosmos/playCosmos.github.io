@@ -70,7 +70,7 @@ a#switch-platform-link:before  { font-family: FontAwesome, "Helvetica Neue", Hel
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
 
 html { background: transparent; scroll-behavior: smooth; }
-body { background: transparent !important; padding-top: 55px;
+body { background: transparent !important; padding-top: 5px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, FontAwesome; }
 
 /* 트게더 로고 */
