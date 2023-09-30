@@ -597,7 +597,7 @@ html.darkmode #movetotop { background: #242424bf; }
 	button#theme_btn_box {  }
 }
 /* 다크모드 버튼 위치 조정 */
-button#theme_btn_box { position: fixed; right: -5px; left: auto; bottom: 10px; margin: 1em; z-index: 99; }
+button#theme_btn_box { position: fixed; right: 0px; bottom: 15px; margin: 1em; z-index: 99; }
 /*
 button#theme_btn_box {
 	position: relative;
