@@ -286,6 +286,7 @@ h3 { margin-bottom: 0.5em !important; }
 
 #article-list { margin: 0; }
 #article-neighbor-list { margin-bottom: 0.5em; }
+#article-list #article_action_wrap___DO_NOT_MODIFY { bottom: 12px; }
 
 /* 공지 숨기기 버튼 */
 /*#article-list #article-option-area { top: 5px !important; }
