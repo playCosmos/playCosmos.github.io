@@ -464,7 +464,8 @@ html.darkmode #movetotop { background: #242424bf; }
 .theme_btn_box {
 	transition: all 0.5s;
 	position: fixed;
-	bottom: 15px;
+	bottom: 50px;
+	z-index: 20;
 	left: calc(100% - 65px);
 }
 
