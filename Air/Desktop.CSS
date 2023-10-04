@@ -665,7 +665,7 @@ i.fab.fa-instagram:before { content: "\f16d"; }
 	pointer-events: none;
 }
 
-#article-content-wrapper>.vote-area>button.animate::before { top: -60%;
+#article-content-wrapper>.vote-area>button:active::before { top: -60%;
 	background-image: radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
 		radial-gradient(circle, transparent 20%, var(--btcolor) 20%, transparent 30%),
 		radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
@@ -686,7 +686,7 @@ i.fab.fa-instagram:before { content: "\f16d"; }
 	background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
 }
 
-#article-content-wrapper>.vote-area>button.animate::after { bottom: -60%;
+#article-content-wrapper>.vote-area>button:active::after { bottom: -60%;
 	background-image: radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
 		radial-gradient(circle, var(--btcolor) 20%, transparent 20%),
 		radial-gradient(circle, transparent 10%, var(--btcolor) 15%, transparent 20%),
