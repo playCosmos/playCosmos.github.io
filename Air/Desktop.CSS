@@ -559,6 +559,8 @@ form#boardSearchForm .input-group-btn .btn:focus {
 }
 form#boardSearchForm > input.form-control::placeholder { color: var(--btcolor) !important; }
 html.darkmode #article-list #boardSearchForm .form-control { border: 1px solid; }
+
+button#select-icon-dropdown-btn { padding: 3px 12px; } /* 게시글 에디터v2 아이콘 */
 /* 버튼, 하단 검색 끝 */
 
 footer {
