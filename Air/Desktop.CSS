@@ -198,6 +198,11 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	border-color: var(--maincolor) !important;
 }
 
+#main .menu-wrapper#article-category-left-list > a > em { display: none; }
+#main .menu-wrapper#article-category-left-list > a {
+	padding: 5px 13px !important;
+}
+
 @media (min-width: 1350px) {
 	#main #main-menu { width: 36px; }
 	#main #main-menu:hover { z-index: 999; }
@@ -210,6 +215,9 @@ header #header-bar a.dropdown-toggle #notification-badge {
 		background: var(--highlight) !important;
 		/*transform: translateX(-120px);*/
 		transition: 0.4s;
+	}
+	#main .menu-wrapper#article-category-left-list > a {
+		padding: 5px 10px !important;
 	}
 
 	#main #main-content { width: calc(100% - 36px); }
