@@ -187,7 +187,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 :is(#main .menu-wrapper) a {
 	border: none !important;
 	border-radius: 8px;
-	padding: 5px 12px 5px 5px !important;
+	padding: 5px !important;
 	margin: 1px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -228,10 +228,11 @@ header #header-bar a.dropdown-toggle #notification-badge {
 #main .menu-wrapper>a>em { color: var(--maincolor) !important; }
 
 :is(#main .menu-wrapper) a > em,
-#main .menu-wrapper>.header>i.fa.fa-bars {
+#main .menu-wrapper>.header>i.fa.fa-bars,
+#main .menu-wrapper>.header>i.fa.fa-home {
 	width: 24px;
 	text-align: center;
-	margin: 0 4px 0 2px;
+	margin: 0 2px;
 }
 
 #main .menu-wrapper .spacer { height: 1px; margin: 1px; background: var(--maincolor); }
