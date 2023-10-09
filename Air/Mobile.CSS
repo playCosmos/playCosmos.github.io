@@ -154,7 +154,7 @@ nav#nav {
 	100% { transform: translateX(0px); }
 }
 
-nav#nav>#nav-upper { padding: 5px 0; }
+nav#nav>#nav-upper { padding: 5px 0 33px; }
 nav#nav>#nav-upper-shortcut { padding: 6px 10px; display: flex; }
 nav#nav>#nav-upper-shortcut>.dropdown { flex: 1 !important; }
 nav#nav>#nav-upper #userDropdown #notification-badge { 
@@ -163,7 +163,7 @@ nav#nav>#nav-upper #userDropdown #notification-badge {
 
 nav#nav>.nav-header {
 	background: var(--maincolor) !important;
-	margin-top: 1px;
+	/*margin-top: 1px;*/
 	height: 35px;
 	font-size: 14px;
 	padding: 8px 15px;
