@@ -519,6 +519,7 @@ input.form-control {
 	transition: 0.2s !important;
 }
 
+button#open-donate-modal-btn,
 .vote-btn { height: 32px !important; }
 
 .btn[tabindex="-1"], .btn[type="submit"] { padding: 4px 12px !important; }
@@ -539,6 +540,7 @@ input.form-control {
 .btn-danger { --btcolor: #ff6e6e; }
 .btn-info { --btcolor: #5bc0de; }
 
+button#open-donate-modal-btn,
 button#writeCommentBtn,
 button#openDraftModalBtn,
 .btn-primary, .btn-default, input.form-control,
