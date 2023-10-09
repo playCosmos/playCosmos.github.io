@@ -451,7 +451,13 @@ label.pull-left { width: 100%; }
 #writeCommentBtn { margin-left: auto; }
 
 /* 게시글, 댓글 쓰기 상단바 */
-.fr-popup, .fr-toolbar { border-top: 2px solid var(--maincolor) !important; }
+.fr-popup, .fr-toolbar {
+	border: 1px solid var(--maincolor) !important;
+	border-bottom: none !important;
+}
+.fr-box.fr-basic .fr-wrapper,
+.fr-second-toolbar { border: 1px solid var(--maincolor); }
+
 .fr-dropdown::after { border-top: 4px solid var(--maincolor) !important; }
 .fr-btn { color: var(--maincolor) !important; }
 
