@@ -451,11 +451,13 @@ label.pull-left { width: 100%; }
 #writeCommentBtn { margin-left: auto; }
 
 /* 게시글, 댓글 쓰기 상단바 */
-.fr-popup, .fr-toolbar.fr-top {
-	border-top: 2px solid var(--maincolor);
+.fr-popup, .fr-toolbar.fr-top {	
+	border: 1px solid var(--maincolor);
+	border-top: 2px solid;
+	border-bottom: 0px;
 }
-.fr-box.fr-basic .fr-wrapper { border: 1px solid var(--maincolor); }
-.fr-second-toolbar { border: 1px solid var(--maincolor); }
+.fr-box.fr-basic .fr-wrapper { border: 1px solid var(--maincolor); border-bottom: none; }
+.fr-second-toolbar { border: 1px solid var(--maincolor); border-top: none; }
 
 .fr-dropdown::after { border-top: 4px solid var(--maincolor) !important; }
 .fr-btn { color: var(--maincolor) !important; }
