@@ -457,7 +457,7 @@ label.pull-left { width: 100%; }
 	border-top: 2px solid;
 	border-bottom: 0px;
 }
-.fr-box.fr-basic .fr-wrapper { border: 1px solid var(--maincolor); border-bottom: none; }
+.fr-box.fr-basic .fr-wrapper { border: 1px solid var(--maincolor); }
 .fr-second-toolbar { border: 1px solid var(--maincolor); border-top: none; }
 
 .fr-dropdown::after { border-top: 4px solid var(--maincolor) !important; }
