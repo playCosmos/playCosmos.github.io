@@ -123,10 +123,13 @@ header>#header-area>#header-bar-link {
 }
 header>#header-area>#header-bar-link,
 nav#nav>#nav-upper>#header-close-bar-link { color: var(--maincolor) !important; }
-nav#nav>#nav-upper>#header-close-bar-link,
+nav#nav>#nav-upper>#header-close-bar-link {
+	padding: 0 7px;
+	margin: -2px 8px 0;
+}
 nav#nav>#nav-upper>#header-search-link {
-	padding: 0 7px !important;
-	margin: -2px 8px 0 !important;
+	margin: -3px 8px 0;
+	
 }
 
 /* 헤더 드롭다운 */
