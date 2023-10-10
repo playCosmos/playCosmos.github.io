@@ -551,11 +551,10 @@ button#open-donate-modal-btn,
 .btn[data-type="down"] { --btcolor: #0275d8; }
 .btn-default.best { --btcolor: #efc839; }
 .btn#reportArticleBtn,
-.btn#reportBtn { --btcolor: #d9534f; }
+.btn-outline-danger { --btcolor: #d9534f; }
 .btn-danger { --btcolor: #ff6e6e; }
 .btn-info { --btcolor: #5bc0de; }
 
-button#open-donate-modal-btn,
 button#writeCommentBtn,
 button#openDraftModalBtn,
 .btn-primary, .btn-default, input.form-control,
