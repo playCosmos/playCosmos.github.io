@@ -284,6 +284,12 @@ ad-shield-ads>*, #article-list>div:nth-child(3) { padding: 0 !important; }
 #board-info #board-info-bottom a { color: black; }
 html.darkmode #board-info #board-info-bottom a { color: white; }
 
+/* 알림 드롭다운 위치 수정 */
+ul#alertDropdown {
+    left: 120px !important;
+    top: 40px !important;
+}
+
 /* 프로필 링크 제거 */
 a[href="https://ranking.tgd.kr/streamers/180791181"],
 /*a[href="/s/million_air/profile"],*/
