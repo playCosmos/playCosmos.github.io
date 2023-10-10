@@ -365,6 +365,7 @@ input.form-control {
     padding: 4px 12px !important;
 }
 
+button#open-donate-modal-btn,
 .vote-btn { height: 32px !important; } 
 
 .btn:hover,
