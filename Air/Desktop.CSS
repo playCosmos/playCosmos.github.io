@@ -203,6 +203,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	padding: 5px 13px !important;
 }
 
+div#extra-links i.pull-right.fa.fa-caret-down { display: none; }
+
 @media (min-width: 1350px) {
 	#main #main-menu { width: 36px; }
 	#main #main-menu:hover { z-index: 999; }
