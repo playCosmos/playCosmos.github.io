@@ -64,7 +64,7 @@ span.category,
 select.form-control,
 div#article-content,
 #movetotop:after,
-a#switch-platform-link:before  { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+a#switch-platform-link:before  { font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace, "Font Awesome 5 Free", "Font Awesome 5 Brands" !important; }
 
 /* 알림 */
 .alert { margin: 0 5px 5px 5px !important; width: calc(100% - 10px) !important; }
