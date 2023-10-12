@@ -559,9 +559,9 @@ button#open-donate-modal-btn,
 
 button#writeCommentBtn,
 button#openDraftModalBtn,
+#anonToggleBtn, #secretToggleBtn,
 .btn-primary, .btn-default, input.form-control,
 .btn[data-target="#scheduleModal"] { --btcolor: var(--maincolor); }
-button#openDraftModalBtn 
 
 select.form-control:focus, input#title:focus { box-shadow: none; }
 
