@@ -302,6 +302,7 @@ html.darkmode textarea.fr-code { color: white; }
     display: flex;
     flex-wrap: wrap;
 }
+#comment-write-form #comment-write-button-area>.buttons { flex: unset; }
 label.pull-left { margin-bottom: 5px; margin-right: calc(100% - 100px); }
 #addEmoteBtn, #anonToggleBtn, #secretToggleBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
