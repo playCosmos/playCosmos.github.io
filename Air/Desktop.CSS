@@ -293,11 +293,7 @@ ul#alertDropdown {
 }
 
 /* 프로필 링크 제거 */
-a[href="https://ranking.tgd.kr/streamers/180791181"],
-/*a[href="/s/million_air/profile"],*/
-a[href="/s/million_air/schedule"],
-a[href="/s/million_air?gallery=1"],
-a[href="https://vod.twip.kr/creator/million_air"] { display: none !important; }
+a#goClipBtn { display: none !important; }
 
 h3 { margin-bottom: 0.5em !important; }
 
