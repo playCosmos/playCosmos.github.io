@@ -468,9 +468,9 @@ html.darkmode #movetotop { background: #242424bf; }
 .theme_btn_box {
 	transition: all 0.5s;
 	position: fixed;
-	bottom: 55px;
+	bottom: 15px;
 	z-index: 99;
-	left: calc(100% - 80px);
+	/*left: calc(100% - 80px);*/
 }
 
 /******* 애니메이션 *******/
