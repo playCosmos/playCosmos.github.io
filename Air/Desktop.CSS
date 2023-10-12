@@ -197,6 +197,10 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	background-color: var(--highlight) !important;
 	border-color: var(--maincolor) !important;
 }
+#main .menu-wrapper>.header>a:hover {
+	background: unset !important;
+	color: unset !important;
+}
 
 #main .menu-wrapper#article-category-left-list > a > em { display: none; }
 #main .menu-wrapper#article-category-left-list > a {
