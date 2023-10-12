@@ -456,6 +456,9 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 :is(#article-reply-area) .reply-writer.logged,
 :is(#article-reply-area) .reply-menu a { color: var(--maincolor) !important; }
 
+:is(#article-reply-area) .donate .reply-writer.logged,
+:is(#article-reply-area) .donate .reply-menu a { color: white !important; }
+
 #comment-write-form #comment-write-button-area {
     display: flex;
     flex-direction: row;
