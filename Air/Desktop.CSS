@@ -466,7 +466,7 @@ html.darkmode #article-content-wrapper>.header #article-comment a { color: white
 }
 
 label.pull-left { width: 100%; }
-#addEmoteBtn,
+#addEmoteBtn, #anonToggleBtn, #secretToggleBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
 #writeCommentBtn { margin-left: auto; }
 
