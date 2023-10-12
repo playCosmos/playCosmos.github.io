@@ -303,7 +303,7 @@ html.darkmode textarea.fr-code { color: white; }
     flex-wrap: wrap;
 }
 label.pull-left { margin-bottom: 5px; margin-right: calc(100% - 100px); }
-#addEmoteBtn,
+#addEmoteBtn, #anonToggleBtn, #secretToggleBtn,
 #btnRereplyCancelBtn { margin-right: 3px; }
 #writeCommentBtn { flex: 1; }
 
