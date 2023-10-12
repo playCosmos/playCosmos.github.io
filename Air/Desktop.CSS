@@ -173,7 +173,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 /******* 좌측 트게더 메뉴 *******/
 #main #main-menu { position: sticky; top: 15px; transition: 0.4s; }
 #main .menu-wrapper {
-	display: flex;
+	max-height: 36px;
+	overflow-y: hidden;
 	flex-direction: column;
 	background: var(--bgframe);
 	border: none !important;
@@ -182,6 +183,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	margin-bottom: 5px;
 	transition: 0.4s; 
 }
+#main .menu-wrapper:hover { max-height: max-content; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 #main .menu-wrapper>.header, 
 :is(#main .menu-wrapper) a {
@@ -210,6 +212,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 div#extra-links i.pull-right.fa.fa-caret-down { display: none; }
 
 @media (min-width: 1350px) {
+	#main .menu-wrapper { max-height: unset; overflow-y: unset; }
+
 	#main #main-menu { width: 36px; }
 	#main #main-menu:hover { z-index: 999; }
 
