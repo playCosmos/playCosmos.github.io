@@ -183,7 +183,7 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	margin-bottom: 5px;
 	transition: 0.4s; 
 }
-#main .menu-wrapper:hover, #main .menu-wrapper:active { max-height: max-content; }
+#main .menu-wrapper:hover, #main .menu-wrapper:active { max-height: 278px; }
 #main .menu-wrapper>.header { background: var(--maincolor) !important; }
 #main .menu-wrapper>.header, 
 :is(#main .menu-wrapper) a {
