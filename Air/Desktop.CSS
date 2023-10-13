@@ -199,7 +199,8 @@ header #header-bar a.dropdown-toggle #notification-badge {
 	background-color: var(--highlight) !important;
 	border-color: var(--maincolor) !important;
 }
-#main .menu-wrapper>.header>a:hover {
+#main .menu-wrapper>.header>a:hover,
+#main .menu-wrapper>.header>a:active {
 	background: unset !important;
 	color: unset !important;
 }
