@@ -477,7 +477,6 @@ label.pull-left { width: 100%; }
 /* 게시글, 댓글 쓰기 상단바 */
 .fr-popup, .fr-toolbar.fr-top {	
 	border: 1px solid var(--maincolor);
-	border-top: 2px solid;
 	border-bottom: 0px;
 }
 .fr-box.fr-basic .fr-wrapper { border: 1px solid var(--maincolor); }
