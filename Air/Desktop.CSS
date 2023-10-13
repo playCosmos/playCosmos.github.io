@@ -108,7 +108,7 @@ input[type='text'] { cursor: url(./Cursor/text.cur) 6 11, auto !important; }
 
 
 /************ 헤더 ************/
-header { padding: 8px 0 5px 0; }
+body header { padding: 8px 0 5px 0; }
 
 /* 트게더 로고 */
 body header>.container>.row>.col-xs-4>a>img {
