@@ -1,0 +1,397 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+
+<!-- 상태바 출력 -->
+<script language="JavaScript">
+<!--
+window.status='';
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+// 정렬 방식
+function orderChange(obj){
+var d = document.itemForm;
+	d.page.value="";
+	d.orderOPT.value = obj;
+	d.submit();
+}
+
+//-->
+</script>
+<script language="javascript">
+<!--
+// 이미지의 오른쪽과 아래쪽 여백
+var nimgTopMarginX = 30;
+var nimgTopMarginY = 15;
+
+// 세로스크롤바의 폭과 가로스크롤바의 높이
+var nScrollBarWidth = 16;
+var nScrollBarHeight = 16;
+
+// 브라우저 버전
+var nVersion = 3;
+
+// 이미지를 리프레시하는 간격
+var nInterval = 100;
+
+function SetUp()
+{
+// 브라우저의 버전을 정수로 변환
+nVersion = parseInt(navigator.appVersion);
+
+if (nVersion >= 4 )
+{
+//브라우저가 Microsoft Internet Explorer일 때
+if (navigator.appName == "Microsoft Internet Explorer")
+{
+window.setInterval ("imgTopMove_Explorer();", nInterval);
+}
+
+//브라우저가 Netscape Navigator일 때
+else
+{
+layerTop = document.layers["lyrTop"];
+window.setInterval ("imgTopMove_Navigator();", nInterval);
+}
+}
+}
+
+function imgTopMove_Explorer()
+{
+//스크롤하지 않았을 때는 이미지가 보이지 않게 위치시킨다.
+if (document.body.scrollLeft == 0 && document.body.scrollTop == 0) 
+{
+imgTop.style.pixelTop = -100;
+}
+
+//스크롤했을 때는 이미지의 위치를 셋팅한다.
+else 
+{
+nimgTopOriginX = document.body.clientWidth + document.body.scrollLeft - imgTop.width - nimgTopMarginX;
+nimgTopOriginY = document.body.clientHeight + document.body.scrollTop - imgTop.height - nimgTopMarginY;
+
+imgTop.style.pixelLeft = nimgTopOriginX; //이미지의 X좌표(왼쪽 여백)을 설정
+imgTop.style.pixelTop = nimgTopOriginY; //이미지의 Y좌표(위쪽 여백)을 설정
+}
+}
+
+function imgTopMove_Navigator()
+{ 
+//스크롤하지 않았을 때는 이미지가 보이지 않게 위치시킨다.
+if (window.pageXOffset == 0 && window.pageYOffset == 0) 
+{
+layerTop.top = -100
+}
+
+//스크롤했을 때는 이미지의 위치를 셋팅한다.
+else 
+{
+nimgTopOriginX = window.innerWidth + window.pageXOffset - layerTop.clip.width - nimgTopMarginX;
+nimgTopOriginY = window.innerHeight + window.pageYOffset - layerTop.clip.height - nimgTopMarginY;
+
+//윈도우에 스크롤바가 있을 경우
+if (window.scrollbars)
+{
+nimgTopOriginX -= nScrollBarWidth;
+nimgTopOriginY -= nScrollBarHeight;
+}
+layerTop.left = nimgTopOriginX; //레이어의 X좌표(왼쪽 여백)을 설정
+layerTop.top = nimgTopOriginY; //레이어의 Y좌표(위쪽 여백)을 설정
+}
+}
+-->
+</script>
+
+
+<link href="codeshop.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/admin/img/icon.png"><script language="javascript" src="/inc/TagScript.js"></script><meta http-equiv="Content-Type" content="text/html; charset=euc-kr"><title>(주)새싹바이오팜 판매관리 프로그램</title><style type="text/css">
+   <!--
+   a:link,a:visited,a:active {
+      text-decoration : none;
+   }
+   a:hover {
+      text-decoration : underline;
+      color : red;
+   }
+   TABLE, TD, TR, TH {
+      font-size : 9pt;
+   }
+   //-->
+   </style><script type="text/javascript"> 
+<!-- 페이지 뒤로 가기 방지 (2015.10.14) -->
+ if (history.pushState !== undefined)
+{
+    history.pushState(null, null, location.href);
+    window.onpopstate = function (event)
+    {
+        history.go(1);
+    };
+}
+else
+{
+    var storedHash = window.location.hash;
+    function changeHashOnLoad()
+    {
+        window.location.href += "#";
+        setTimeout("changeHashAgain()", "50");
+    }
+ 
+    function changeHashAgain()
+    {
+        window.location.href += "1";
+    }
+ 
+    function restoreHash()
+    {
+        if (window.location.hash != storedHash)
+        {
+            window.location.hash = storedHash;
+        }
+    }
+ 
+    if (window.addEventListener)
+    {
+        window.addEventListener("hashchange", function ()
+        {
+            restoreHash();
+        }, false);
+    }
+    else if (window.attachEvent)
+    {
+        window.attachEvent("onhashchange", function ()
+        {
+            restoreHash();
+        });
+    }
+    $(window).load(function () { changeHashOnLoad(); });
+}
+</script><script language="JavaScript">
+<!--
+function check(){
+	if(frm.id.value == ""){
+		alert("아이디을 입력하세요")
+		frm.id.focus();
+	} else if (frm.pw.value==""){
+		alert("비밀번호을 입력하세요")
+		frm.pw.focus();
+	} else {
+		frm.submit();
+	}
+}
+
+
+function copyToClipboard(val)
+{
+	var agent = navigator.userAgent.toLowerCase();
+	var clipboardData;
+
+	if(agent.indexOf("chrome") != -1)
+	{
+		var t = document.createElement("textarea");
+		document.body.appendChild(t);
+		t.value = val;
+		t.select();
+		document.execCommand('copy');
+		document.body.removeChild(t);
+	}
+	else
+	{
+		window.clipboardData.setData("Text",val);
+	}
+
+	alert('복사되었습니다.');
+}
+//-->
+</script><script language="javascript">
+// 아이디패스워드찾기
+function openIdpass() {
+	window.open("/shop/idpass.php", "","scrollbars=no, width=500, height=400");
+}
+//-->
+</script></head>
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+<body leftmargin="40" topmargin="10" marginheight="10" marginwidth="40" onload="JavaScript:document.forms[0].id.focus();">
+<form name="frm" method="post" action="/admin/admin_ref.htm">
+<!-- <input type=hidden name=mode value="admin"> -->
+
+<!--st. body-->
+<center>
+<table width="631" cellpadding="1" cellspacing="1" border="0">
+<tbody><tr>
+	<td bgcolor="#656565">
+
+	<table width="618" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td width="618">
+		<img src="/admin/img/main_title3.jpg" width="718" border="0">		</td>
+	</tr>
+	<tr>
+		<td width="618" height="25" bgcolor="#656565" align="center">
+				<font color="#FFFFFF"><b>안녕하세요! <font color="#ccff00"><b>(주)새싹바이오팜</b></font> 판매관리 프로그램입니다.</b></font>
+				</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#E1E1E1" height="150">
+		<table width="618" cellpadding="3" cellspacing="0" border="0">
+		<tbody><tr>
+			<td align="center">
+			<table width="200" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+			<td width="60">아이디</td>
+			<td width="140"><input type="Text" name="id" size="5" style="width:105;font-size:12px; ime-mode:inactive;">
+
+
+</td>
+			</tr>
+			<tr>
+			<td width="60">비밀번호</td>
+			<td width="140"><input type="password" name="pw" size="5" style="width:105;font-size:12px; ime-mode:inactive;"></td>
+			</tr>
+			</tbody></table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="center">
+			<table width="250" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+			<td align="center"><input type="radio" name="gubun" value="1" checked="">회원&nbsp;<input type="radio" name="gubun" value="2">센터<!-- &nbsp;<input type="radio" name= "gubun" value="3">가맹점 -->
+			</td></tr>
+			</tbody></table>
+			</td>
+			</tr>
+		<tr>
+			<td align="center">[<a href="/user/user_mem_reg.htm" "="">회원 등록</a>] [<a href="javascript:MM_openBrWindow('./admin/member/id_search.htm','','scrollbars=yes,resizable=yes,width=450,height=400,top=150,left=150');">회원ID 찾기</a>] <a href="javascript:check();"><img src="/admin/img/loginbtn.gif" width="60" heigth="18" border="0" tabindex="3"></a> </td>
+		</tr>
+
+
+		
+
+		<tr><td height="20" align="center">
+		<!-- <img src="/admin/img/main_logo.jpg" border=0> -->
+		</td></tr>
+		<tr><td height="20" align="center">
+		<!-- <b>전자지갑 주소() : 85PtnyGfTpn4CmShahzaDTe5LHAUYdYN8fiW4NbJUr1t</b> [<a onclick="copyToClipboard('85PtnyGfTpn4CmShahzaDTe5LHAUYdYN8fiW4NbJUr1t')">복사하기</a>]<br> -->
+		<br>
+		<b>
+				<!-- 1레벨기준 현재 () 입금수량 : 0개<br>
+		2레벨기준 현재 () 입금수량 : 0개<br>
+		3레벨기준 현재 () 입금수량 : 0개<br> -->
+		<!-- 4레벨기준 현재 () 입금수량 : 0개<br> -->
+		</b>
+		<!-- 실시간 회원가입 시작 /-->
+		<!-- <table border="0" cellpadding="1" cellspacing="1" width="100%">
+		<tr><td  bgcolor="#ff9900">
+		<table border="0" cellpadding="1" cellspacing="1" width="100%">
+												
+												 <tr bgcolor=#fffff height=25 align=center>
+													<td>등록시간(나눔)</td>
+													<td>회원ID</td>
+													<td>회원성명</td>
+												</tr> 
+												<tr bgcolor=#fffff height=25 align=center><td>2023-09-18 16:38</td><td>saessa***</td><td>(주)**</td></tr>												</table>
+		</td>
+		<td  bgcolor="#ff9900">
+		<table border="0" cellpadding="1" cellspacing="1" width="100%">
+												
+												 <tr bgcolor=#fffff height=25 align=center>
+													<td>등록시간(동행)</td>
+													<td>회원ID</td>
+													<td>회원성명</td>
+												</tr> 
+												<tr bgcolor=#fffff height=25 align=center><td>2023-09-18 16:38</td><td>saessa***</td><td>(주)**</td></tr>												</table>
+		</td>
+		</tr>
+		</table> -->
+		<!--/ 실시간 회원가입 끝  -->
+		
+		</td></tr>
+		<!-- <tr><td align=center>
+		<table width=55% cellpadding=0 cellspacing=0 border=0><tr><td><a href="/shop/idpw_sms.htm" onfocus='this.blur()'><img src=/admin/img/btn_pw_new.gif border=0></a></td>
+		<td> <a href="/shop/idpw_center_sms.htm" onfocus='this.blur()'><img src=/admin/img/btn_pw_new1.gif border=0></a></td></tr></table>
+		</td></tr> -->
+		 <tr><td height="20"></td></tr>
+	<tr>
+		<td align="center" bgcolor="#FFFFFF" height="70">
+		<br>
+		Copyright(c) 2023 (주)새싹바이오팜 Co., LTD. All Rights Reserved.
+		<!-- <br>TEL : 02-878-7191  &nbsp;&nbsp;&nbsp;FAX : 02-567-7191 -->
+		</td>
+	</tr>
+	</tbody></table>
+	</td>
+	<td width="13" background="img/main_bg_right3.gif">&nbsp;</td>
+</tr>
+</tbody></table>
+
+<br>
+<br><font size="2" color="#FFFFFF"></font>
+
+<!--ed. body-->
+
+
+
+</td></tr></tbody></table></center></form></body></html>
